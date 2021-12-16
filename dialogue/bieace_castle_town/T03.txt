@@ -1,0 +1,4 @@
+npc2
+Villager:[@]Be careful, this way leads to the Slime Forest.
+Villager:[@]The forest contains many dangerous monsters,[@]don't go there if you aren't prepared for battle.
+#END

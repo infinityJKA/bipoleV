@@ -1,0 +1,14 @@
+shop
+Shopkeeper:[@]Welcome to the Bieace Castle Town Armory!
+#SHOP_EQUIPMENT
+Bieace Castle Town Armory
+Bronze_Gauntlets
+Cut
+Jab
+Wooden_Staff
+Bow
+Fireball
+Heal
+#SHOP_END
+Shopkeeper:[@]Come again!
+#END

@@ -1,0 +1,5 @@
+npc1
+Guard:[@]This is Bieace Castle,[@]the castle of Bieace Castle Town.
+Guard:[@]Which is also the capital[@]of the Bieace Empire.
+Guard:[@]Pretty original name, huh?
+#END

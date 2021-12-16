@@ -1,0 +1,28 @@
+wicole
+Wicole:[@]Hey!
+Wicole:[@]What are you doing here!?
+Wicole:[@]There's a reason why I'm living[@]in the forest and not the town,[@]you know.
+Wicole:[@]If you have nothing important to[@]say, please leave.
+_
+_
+_
+_
+#CHOICE =Recruit Wicole?=[@][A] Yes[@][B] No
+#CHOICE_RESULT
+-pass-
+#END
+-pass-
+-pass-
+-pass-
+_
+Protipole:[@]We're on a quest to retrieve[@]the Holy Cards from the[@]Labyrinth of Binding.
+Protipole:[@]We could use some help from a[@]powerful mage like you.
+Wicole:[@]The Holy Cards, you say?
+Wicole:[@]So it seems they really do exist...
+Wicole:[@]Very well, you've got my interest.
+Wicole:[@]Not everyday that you're able[@]to see the Holy Cards.
+#RECRUIT
+Wicole
+-pass-
+Wicole joined your party!
+#DESTROY_SELF

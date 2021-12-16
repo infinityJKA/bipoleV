@@ -1,0 +1,5 @@
+king
+King Kipole III of Bieace:[@]You have been chosen to travel to the[@]Labyrinth of Binding and retrieve[@]the cards before anyone else does.
+King Kipole III of Bieace:[@]If you would need assistance in your[@]journey, seek Startole.
+King Kipole III of Bieace:[@]Startole should be somewhere within[@]this castle, and is willing[@]to aid you on your quest.
+#END

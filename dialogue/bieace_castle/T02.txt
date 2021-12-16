@@ -1,0 +1,4 @@
+npc2
+Guard:[@]Are you looking for[@]Startole?
+Guard:[@]I think he was in[@]the room east from[@]this room.
+#END

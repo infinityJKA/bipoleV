@@ -1,0 +1,5 @@
+npc1
+Villager:[@]This town has a tavern, an armory,[@]and a Razzion church.
+Villager:[@]You can buy consumable items at[@] taverns, and you can buy equipment[@]at armories.
+Villager:[@]Razzion churches contain a Shrine of[@]Bobbish that can heal the wounded.
+#END

@@ -1,0 +1,7 @@
+nothing
+!?
+#SET_IMAGE ragingsoul
+You are suddenly attacked by the[@]Raging Soul!
+#ENCOUNTER raging_soul_boss
+(*The Raging Soul evaporates*)
+#DESTROY_SELF

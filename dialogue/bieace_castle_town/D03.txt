@@ -1,0 +1,5 @@
+consul_herald
+Consul Herald:[@]Greetings.
+Consul Herald:[@]I am Consule Herald of the Ascendancy Conclave,[@] portal comptroller of the Surface Realm.
+Consul Herald:[@]Come back once you've become stronger,[@]and I may have something for you.
+#END
