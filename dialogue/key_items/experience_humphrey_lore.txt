@@ -497,7 +497,8 @@ So despite my efforts, I was[@]unable to live a normal life...
 This book has been attached to[@]a clone of myself that I have released[@]upon the Surface Realm.
 To whom is reading this and[@]defeated my clone, I await you in another Realm.
 Talk to Consul Herald at[@]Bieace Castle Town to travel across realms.
-I will have a small reward for[@]you, a little thanks for making[@]my life more interesting. 
+I will have a small reward for[@]you, a little thanks for making[@]my life more interesting.
+_
 _
 _
 #END_KEY_ITEM
