@@ -3828,11 +3828,15 @@ def Enemy_Perform_Move():
                 target.Current_HP += amount_to_heal
                 if amount_to_heal > 0:
                     write_text("Restored "+str(amount_to_heal)+"HP from "+target.DisplayName+"!\n"+str(hp_before_damage)+" > "+str(target.Current_HP))
+                else:
+                    write_text(target.DisplayName + " didn't restore HP!")
             elif Move_to_Use.Heal_Stat == "SP":
                 print("healing SP")
                 sp_before_heal = target.Current_SP
                 if amount_to_heal + target.Current_SP > target.Max_SP:
                     amount_to_heal = target.Max_SP - target.Current_SP
+                else:
+                    write_text(target.DisplayName + " didn't restore HP!")
                 target.Current_SP += amount_to_heal
                 if amount_to_heal > 0:
                     write_text("Restored "+str(amount_to_heal)+"SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
@@ -3846,6 +3850,7 @@ def Enemy_Perform_Move():
                 q_command = "Enemy_Perform_Move()"
                 space_command = "Enemy_Perform_Move()"
             else:
+                #write_text("But nothing happened!")
                 character_to_action_index += 1
                 a_button.config(command=Enemy_Turn)
                 talk_button.config(command=Enemy_Turn)
@@ -3906,6 +3911,7 @@ def Enemy_Perform_Move():
                 q_command = "Enemy_Turn()"
                 space_command = "Enemy_Turn()"
     else:
+        #write_text("But nothing happend!")
         character_to_action_index += 1
         a_button.config(command=Enemy_Turn)
         talk_button.config(command=Enemy_Turn)
@@ -4033,11 +4039,15 @@ def Perform_Move():
                 target.Current_HP += amount_to_heal
                 if amount_to_heal > 0:
                     write_text("Restored "+str(amount_to_heal)+"HP from "+target.DisplayName+"!\n"+str(hp_before_damage)+" > "+str(target.Current_HP))
+                else:
+                    write_text(target.DisplayName + " didn't restore HP!")
             elif Move_to_Use.Heal_Stat == "SP":
                 print("healing SP")
                 sp_before_heal = target.Current_SP
                 if amount_to_heal + target.Current_SP > target.Max_SP:
                     amount_to_heal = target.Max_SP - target.Current_SP
+                else:
+                    write_text(target.DisplayName + " didn't restore SP!")
                 target.Current_SP += amount_to_heal
                 if amount_to_heal > 0:
                     write_text("Restored "+str(amount_to_heal)+"SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
@@ -4051,6 +4061,7 @@ def Perform_Move():
                 q_command = "Perform_Move()"
                 space_command = "Perform_Move()"
             else:
+                #write_text("But nothing happened!")
                 character_to_action_index += 1
                 a_button.config(command=Character_Turn)
                 talk_button.config(command=Character_Turn)
@@ -4111,6 +4122,7 @@ def Perform_Move():
                 q_command = "Character_Turn()"
                 space_command = "Character_Turn()"
     else:
+        #write_text("But nothing happend!")
         character_to_action_index += 1
         a_button.config(command=Character_Turn)
         talk_button.config(command=Character_Turn)
@@ -4306,9 +4318,35 @@ def Win_Battle():
         space_command = "refresh()"
 
 
+def Instant_Level_Up(char,times):
+    for x in range(times):
+        print("\n")
+        char.Level += 1
+        print(char.DisplayName + " Level: "+ str(char.Level))
+        atk_before = char.ATK
+        char.ATK = round(char.ATK*((char.ATK_Growth+100)/100))
+        print("ATK "+str(atk_before)+" > "+str(char.ATK))
+        hp_before = char.Max_HP
+        char.Max_HP = round(char.Max_HP*((char.HP_Growth+100)/100))
+        print("HP "+str(hp_before)+" > "+str(char.Max_HP))
+        mag_before = char.MAG
+        char.MAG = round(char.MAG*((char.MAG_Growth+100)/100))
+        print("MAG "+str(mag_before)+" > "+str(char.MAG))
+        hlg_before = char.HLG
+        char.HLG = round(char.HLG*((char.HLG_Growth+100)/100))
+        print("HLG "+str(hlg_before)+" > "+str(char.HLG))
+        sp_before = char.Max_SP
+        char.Max_SP = round(char.Max_SP*((char.SP_Growth+100)/100))
+        print("SP "+str(sp_before)+" > "+str(char.Max_SP))
+        def_before = char.DEF
+        char.DEF = round(char.DEF*((char.DEF_Growth+100)/100))
+        print("DEF "+str(def_before)+" > "+str(char.DEF))
+        res_before = char.RES
+        char.RES = round(char.RES*((char.RES_Growth+100)/100))
+        print("RES "+str(res_before)+" > "+str(char.RES))
+        print("\n")
 
-
-
+Instant_Level_Up(characters.Bithecary,4)
         
     
     

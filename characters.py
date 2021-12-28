@@ -188,6 +188,39 @@ if True: #Party Members
     )
     List_of_All_Recruitable_Party_Members.append(Wicole)
 
+    Bithecary = Party_Character(
+    Display_Name = "Bithecary",
+    Usable_Weapons = ["Fists","Healing","Bithecary"],
+    Weakness = ["Sword","Fire"],
+    Equipped= [equipment.Champion],
+    Level = 1,
+    Effects = [],
+    
+    ATK = 87,
+    ATK_Growth = 18,
+    
+    MAG = 75,
+    MAG_Growth = 18,
+    
+    HLG = 100,
+    HLG_Growth = 18,
+
+    Max_HP = 550,
+    Current_HP = 550,
+    HP_Growth = 19,
+
+    Max_SP = 220,
+    Current_SP = 220,
+    SP_Growth = 16,
+    
+    DEF = 175,
+    DEF_Growth = 17,
+    
+    RES = 175,
+    RES_Growth = 17
+    )
+    List_of_All_Recruitable_Party_Members.append(Bithecary)
+
 
 
 
