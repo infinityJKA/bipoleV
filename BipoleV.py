@@ -3820,7 +3820,7 @@ def Enemy_Perform_Move():
                 amount_to_heal = 0
             if target.Current_HP <= 0:
                 write_text(target.DisplayName+" is defeated and can't be healed")
-            elif Move_to_Use.Heal_Stat == "HP":
+            elif Move_to_Use.Heal_Stat == "HP": 
                 print("healing HP")
                 hp_before_damage = target.Current_HP
                 if amount_to_heal + target.Current_HP > target.Max_HP:
