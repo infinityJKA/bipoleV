@@ -3815,7 +3815,9 @@ def Enemy_Perform_Move():
                 for effect in target.Effects:
                     if effect[0] == "HLG":
                         hlg_mul = hlg_mul*effect[1]
-            amount_to_heal = round((Current_Character.HLG*hlg_mul*Move_to_Use.PWR)/(target.DEF*hlg_mul))
+            # amount_to_heal = round((Current_Character.HLG*hlg_mul*Move_to_Use.PWR)/(target.DEF*hlg_mul))
+            amount_to_heal = round(Current_Character.HLG*hlg_mul*Move_to_Use.PWR)
+            print("amount_to_heal before cut: "+str(amount_to_heal))
             if amount_to_heal < 0:
                 amount_to_heal = 0
             if target.Current_HP <= 0:
@@ -4026,7 +4028,9 @@ def Perform_Move():
                 for effect in target.Effects:
                     if effect[0] == "HLG":
                         hlg_mul = hlg_mul*effect[1]
-            amount_to_heal = round((Current_Character.HLG*hlg_mul*Move_to_Use.PWR)/(target.DEF*hlg_mul))
+            # amount_to_heal = round((Current_Character.HLG*hlg_mul*Move_to_Use.PWR)/(target.DEF*hlg_mul))
+            amount_to_heal = round(Current_Character.HLG*hlg_mul*Move_to_Use.PWR)
+            print("amount_to_heal before cut: "+str(amount_to_heal))
             if amount_to_heal < 0:
                 amount_to_heal = 0
             if target.Current_HP <= 0:
@@ -4302,7 +4306,7 @@ def Win_Battle():
     global battle_during_cutscene
     global q_command
     global space_command
-    if characters.Protipole.Current_HP <= 0:
+    if characters.Protipole.Current_HP < 1:
         characters.Protipole.Current_HP = 1
     write_text("=== Battle Complete ===")
     progress_economy()

@@ -69,7 +69,7 @@ if True: #Party Members
     MAG = 80,
     MAG_Growth = 18,
     
-    HLG = 100,
+    HLG = 10,
     HLG_Growth = 17,
 
     Max_HP = 500,
@@ -103,8 +103,8 @@ if True: #Party Members
     MAG = 40,
     MAG_Growth = 12,
     
-    HLG = 45,
-    HLG_Growth = 11,
+    HLG = 6,
+    HLG_Growth = 17,
 
     Max_HP = 650,
     Current_HP = 650,
@@ -136,7 +136,7 @@ if True: #Party Members
     MAG = 90,
     MAG_Growth = 18,
     
-    HLG = 25,
+    HLG = 4,
     HLG_Growth = 15,
 
     Max_HP = 350,
@@ -169,7 +169,7 @@ if True: #Party Members
     MAG = 110,
     MAG_Growth = 18,
     
-    HLG = 105,
+    HLG = 10,
     HLG_Growth = 18,
 
     Max_HP = 375,
@@ -202,7 +202,7 @@ if True: #Party Members
     MAG = 75,
     MAG_Growth = 18,
     
-    HLG = 100,
+    HLG = 10,
     HLG_Growth = 18,
 
     Max_HP = 550,

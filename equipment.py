@@ -257,12 +257,12 @@ if True: #Healing
     Damage_Type = "Heal",
     Move_Type = "Heal", #Physical, Magic, Heal, Boost
     Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 35, #Deducted
+    SP_Cost = 30, #Deducted
     Priority = 150, #Added
-    PWR = 100,
+    PWR = 15,
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = "HP", #The stat to heal,
-    Description = "A weak healing spell"
+    Description = "A weak healing spell with a small cost."
     )
 
     Healing_Spores = Equipment(
@@ -273,7 +273,7 @@ if True: #Healing
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 20, #Deducted
     Priority = 150, #Added
-    PWR = 100,
+    PWR = 15,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = "HP", #The stat to heal,
     Description = "WHY DO THE ENEMIES GET AOE HEALING!?!?!?\nWHY DO THE ENEMIES GET AOE HEALING!?!?!?\nWHY DO THE ENEMIES GET AOE HEALING!?!?!?"
