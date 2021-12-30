@@ -8,6 +8,8 @@ Jab
 Wooden_Staff
 Bow
 Fireball
+Aqua
+Freeze
 Heal
 #SHOP_END
 Shopkeeper:[@]Come again!

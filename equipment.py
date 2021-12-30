@@ -248,7 +248,34 @@ if True: #Fire
     )
 
 if True: #Water
-    pass
+    Aqua = Equipment(
+    Display_Name = "Aqua",
+    Equip_Type = "Water", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Water",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 35, #Deducted
+    Priority = 75, #Added
+    PWR = 100,
+    Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A weak water attack"
+    )
+
+if True: #Ice
+    Freeze = Equipment(
+    Display_Name = "Freeze",
+    Equip_Type = "Ice", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 35, #Deducted
+    Priority = 75, #Added
+    PWR = 100,
+    Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A weak ice attack"
+    )
 
 if True: #Healing
     Heal = Equipment(
@@ -278,6 +305,9 @@ if True: #Healing
     Heal_Stat = "HP", #The stat to heal,
     Description = "WHY DO THE ENEMIES GET AOE HEALING!?!?!?\nWHY DO THE ENEMIES GET AOE HEALING!?!?!?\nWHY DO THE ENEMIES GET AOE HEALING!?!?!?"
     )
+    
+
+
 
 if True: #Boosts
     Energize = Equipment(
@@ -355,7 +385,7 @@ if True: #Boosts
     Description = "Fear the funk"
     )
 
-if True: #Uniques
+if True: #Starting Uniques
 
     The_22XX = Equipment(
     Display_Name = "The 22XX",
@@ -443,6 +473,35 @@ if True: #Uniques
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Finally, an AOE attack!"
+    )
+
+    Concoction = Equipment(
+    Display_Name = "Concoction",
+    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Healing, Gun
+    Damage_Type = "Heal",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 250, #Added
+    PWR = 5,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "SP", #The stat to heal,
+    Description = "Skill issue."
+    )
+
+    Camoflauge = Equipment(
+    Display_Name = "Camoflauge",
+    Equip_Type = "Archle", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Archle",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 50, #Deducted
+    Priority = -350, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["ATK",1.1,2],
+    Description = "Hide from the enemy and prepare\nfor the next attack."
     )
 
 

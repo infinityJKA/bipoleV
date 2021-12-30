@@ -78,7 +78,7 @@ if True: #Party Members
 
     Max_SP = 200,
     Current_SP = 200,
-    SP_Growth = 15,
+    SP_Growth = 16,
     
     DEF = 150,
     DEF_Growth = 17,
@@ -192,7 +192,7 @@ if True: #Party Members
     Display_Name = "Bithecary",
     Usable_Weapons = ["Fists","Healing","Bithecary"],
     Weakness = ["Sword","Fire"],
-    Equipped= [equipment.Champion],
+    Equipped= [equipment.Concoction],
     Level = 1,
     Effects = [],
     
@@ -220,6 +220,39 @@ if True: #Party Members
     RES_Growth = 17
     )
     List_of_All_Recruitable_Party_Members.append(Bithecary)
+    
+    Archle = Party_Character(
+    Display_Name = "Archle",
+    Usable_Weapons = ["Bow","Fire","Archle"],
+    Weakness = ["Staff","Water"],
+    Equipped= [equipment.Camoflauge],
+    Level = 1,
+    Effects = [],
+    
+    ATK = 86,
+    ATK_Growth = 18,
+    
+    MAG = 86,
+    MAG_Growth = 18,
+    
+    HLG = 8,
+    HLG_Growth = 17,
+
+    Max_HP = 450,
+    Current_HP = 450,
+    HP_Growth = 19,
+
+    Max_SP = 190,
+    Current_SP = 190,
+    SP_Growth = 17,
+    
+    DEF = 173,
+    DEF_Growth = 17,
+    
+    RES = 170,
+    RES_Growth = 17
+    )
+    List_of_All_Recruitable_Party_Members.append(Archle)
 
 
 

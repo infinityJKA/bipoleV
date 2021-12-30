@@ -680,6 +680,16 @@ def start_dialogue(input_file):
     print(dialogue)
     perform_dialogue()
 
+def start_dialogue_direct(input_file):
+    disable_inputs()
+    global dialogue
+    global dialogue_index
+    dialogue_index = 1
+    file_contents = open(current_directory+input_file)
+    dialogue = [line.rstrip('\n') for line in file_contents]
+    print(dialogue)
+    perform_dialogue()
+
 in_shop_list = False
 shop_inventory = []
 shop_end_index = 0
@@ -3308,7 +3318,7 @@ def save_data():
         pickle.dump(stuff, f)
 
 def start_menu_new_game():
-    start_dialogue("intro")
+    start_dialogue_direct("/dialogue/bieace_castle/intro.txt")
 
 character_to_action_index = 0
 def Combat_Start_Player_Turn():
@@ -4351,6 +4361,7 @@ def Instant_Level_Up(char,times):
         print("\n")
 
 Instant_Level_Up(characters.Bithecary,4)
+Instant_Level_Up(characters.Archle,4)
         
     
     
