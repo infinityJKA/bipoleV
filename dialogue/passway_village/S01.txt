@@ -1,0 +1,12 @@
+shop
+Shopkeeper:[@]Welcome to the Passway Village Tavern!
+#SHOP_ITEM
+Passway Village Tavern
+Alcohol
+Nuts
+Graham_Crackers
+Not_Butter
+J_Fuel
+#SHOP_END
+Shopkeeper:[@]Come again!
+#END

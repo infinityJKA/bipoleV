@@ -557,7 +557,6 @@ if True:
     Description = "It's a piece of bread."
     )
     
-
     Ramen = Consumable_Item(
     Display_Name = "Ramen",
     Purchasing_Price = 450,
@@ -588,15 +587,66 @@ if True:
     Description = "Herbs that contain a natural\nhealing property."
     )
 
-    Oatmeal = Consumable_Item(
-    Display_Name = "Oatmeal",
-    Purchasing_Price = 500,
+    Water = Consumable_Item(
+    Display_Name = "Water",
+    Purchasing_Price = 10,
     Target = "Single", #Single or Full Party
-    Stat = "SP",
+    Stat = "HP",
     Percent_or_Static = "Percent",
-    Amount = 1.3,
-    Description = "The holy Razzion delicacy."
+    Amount = 1.05,
+    Description = "It's literally just water."
     )
+
+    Alcohol = Consumable_Item(
+    Display_Name = "Alcohol",
+    Purchasing_Price = 250,
+    Target = "Single", #Single or Full Party
+    Stat = "HP",
+    Percent_or_Static = "Static",
+    Amount = -100000,
+    Description = "Specifically cleaning alcohol.\nDon't drink it."
+    )
+
+    Nuts = Consumable_Item(
+    Display_Name = "Nuts",
+    Purchasing_Price = 200,
+    Target = "Full Party", #Single or Full Party
+    Stat = "HP",
+    Percent_or_Static = "Static",
+    Amount = 300,
+    Description = "Deez nu... actually, they're legumes."
+    )
+
+    Graham_Crackers = Consumable_Item(
+    Display_Name = "Graham Cracker",
+    Purchasing_Price = 500,
+    Target = "Single", #Single or Party
+    Stat = "HP",
+    Percent_or_Static = "Static",
+    Amount = 650,
+    Description = "Perfect for crashing the economy."
+    )
+
+    Not_Butter = Consumable_Item(
+    Display_Name = "Not Butter",
+    Purchasing_Price = 1000,
+    Target = "Party", #Single or Party
+    Stat = "HP",
+    Percent_or_Static = "Percent",
+    Amount = -999999,
+    Description = "cyanide"
+    )
+
+    J_Fuel = Consumable_Item(
+    Display_Name = "J-Fuel",
+    Purchasing_Price = 900,
+    Target = "Single", #Single or Party
+    Stat = "HP",
+    Percent_or_Static = "Percent",
+    Amount = 1.5,
+    Description = "the j!?"
+    )
+
 
 item_inventory = []
 
