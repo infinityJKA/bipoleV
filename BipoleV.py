@@ -1686,19 +1686,23 @@ def generate_background():
     bottomerer = []
     things_to_check = ["---"]
     if vision_facing == "North":
-        if maps.current_location[1][cords[1]-3][cords[0]-2][0] == "---":
+        loc = maps.current_location[1][cords[1]-3][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]-3][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]-3][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]-3][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]-3][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]-3][cords[0]+2][0] == "---":
+        loc = maps.current_location[1][cords[1]-3][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
@@ -1707,37 +1711,45 @@ def generate_background():
         # sprites_canvas.itemconfig(bottomerer_background_image, image = bottomerer_background_sprite)
         # #
         
-        if maps.current_location[1][cords[1]-2][cords[0]-2][0] == "---":
+        loc = maps.current_location[1][cords[1]-2][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]-2][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]-2][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]-3][cords[0]][0] == "---":
+        loc = maps.current_location[1][cords[1]-3][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]-2][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]-2][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]-2][cords[0]+2][0] == "---":
+        loc = maps.current_location[1][cords[1]-2][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
 
         
-        if maps.current_location[1][cords[1]-1][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
-        if maps.current_location[1][cords[1]-2][cords[0]][0] == "---":
+        loc = maps.current_location[1][cords[1]-2][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
-        if maps.current_location[1][cords[1]-1][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
@@ -1747,15 +1759,18 @@ def generate_background():
         #
 
         
-        if maps.current_location[1][cords[1]][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
-        if maps.current_location[1][cords[1]-1][cords[0]][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
-        if maps.current_location[1][cords[1]][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
@@ -1766,19 +1781,23 @@ def generate_background():
         #
     elif vision_facing == "East":
         
-        if maps.current_location[1][cords[1]-2][cords[0]+3][0] == "---":
+        loc = maps.current_location[1][cords[1]-2][cords[0]+3][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]-1][cords[0]+3][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]+3][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]+1][cords[0]+3][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]+3][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]+2][cords[0]+3][0] == "---":
+        loc = maps.current_location[1][cords[1]+2][cords[0]+3][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
@@ -1788,23 +1807,28 @@ def generate_background():
         #
         
         
-        if maps.current_location[1][cords[1]-2][cords[0]+2][0] == "---":
+        loc = maps.current_location[1][cords[1]-2][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]-1][cords[0]+2][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]][cords[0]+3][0] == "---":
+        loc = maps.current_location[1][cords[1]][cords[0]+3][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]+1][cords[0]+2][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]+2][cords[0]+2][0] == "---":
+        loc = maps.current_location[1][cords[1]+2][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
@@ -1814,15 +1838,18 @@ def generate_background():
         #
 
         
-        if maps.current_location[1][cords[1]-1][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
-        if maps.current_location[1][cords[1]][cords[0]+2][0] == "---":
+        loc = maps.current_location[1][cords[1]][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
-        if maps.current_location[1][cords[1]+1][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
@@ -1832,15 +1859,18 @@ def generate_background():
         #
 
         
-        if maps.current_location[1][cords[1]-1][cords[0]][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
-        if maps.current_location[1][cords[1]][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
-        if maps.current_location[1][cords[1]+1][cords[0]][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
@@ -1850,19 +1880,23 @@ def generate_background():
         #
     elif vision_facing == "South":
         
-        if maps.current_location[1][cords[1]+3][cords[0]+2][0] == "---":
+        loc = maps.current_location[1][cords[1]+3][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]+3][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]+3][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]+3][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]+3][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]+3][cords[0]-2][0] == "---":
+        loc = maps.current_location[1][cords[1]+3][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
@@ -1872,23 +1906,28 @@ def generate_background():
         #
         
         
-        if maps.current_location[1][cords[1]+2][cords[0]+2][0] == "---":
+        loc = maps.current_location[1][cords[1]+2][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]+2][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]+2][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]+3][cords[0]][0] == "---":
+        loc = maps.current_location[1][cords[1]+3][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]+2][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]+2][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]+2][cords[0]-2][0] == "---":
+        loc = maps.current_location[1][cords[1]+2][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
@@ -1898,15 +1937,18 @@ def generate_background():
         #
 
         
-        if maps.current_location[1][cords[1]+1][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
-        if maps.current_location[1][cords[1]+2][cords[0]][0] == "---":
+        loc = maps.current_location[1][cords[1]+2][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
-        if maps.current_location[1][cords[1]+1][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
@@ -1916,15 +1958,18 @@ def generate_background():
         #
 
         
-        if maps.current_location[1][cords[1]][cords[0]+1][0] == "---":
+        loc = maps.current_location[1][cords[1]][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
-        if maps.current_location[1][cords[1]+1][cords[0]][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
-        if maps.current_location[1][cords[1]][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
@@ -1934,19 +1979,23 @@ def generate_background():
         #
     elif vision_facing == "West":
         
-        if maps.current_location[1][cords[1]+2][cords[0]-3][0] == "---":
+        loc = maps.current_location[1][cords[1]+2][cords[0]-3][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]+1][cords[0]-3][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]-3][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]-1][cords[0]-3][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]-3][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
-        if maps.current_location[1][cords[1]-2][cords[0]-3][0] == "---":
+        loc = maps.current_location[1][cords[1]-2][cords[0]-3][0]
+        if loc == "---" or loc.startswith("_"):
             bottomerer.append(1)
         else:
             bottomerer.append(0)
@@ -1956,23 +2005,28 @@ def generate_background():
         #
 
         
-        if maps.current_location[1][cords[1]+2][cords[0]-2][0] == "---":
+        loc = maps.current_location[1][cords[1]+2][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]+1][cords[0]-2][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]][cords[0]-3][0] == "---":
+        loc = maps.current_location[1][cords[1]][cords[0]-3][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]-1][cords[0]-2][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
-        if maps.current_location[1][cords[1]-2][cords[0]-2][0] == "---":
+        loc = maps.current_location[1][cords[1]-2][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
             bottomer.append(1)
         else:
             bottomer.append(0)
@@ -1982,15 +2036,18 @@ def generate_background():
         #
 
         
-        if maps.current_location[1][cords[1]+1][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
-        if maps.current_location[1][cords[1]][cords[0]-2][0] == "---":
+        loc = maps.current_location[1][cords[1]][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
-        if maps.current_location[1][cords[1]-1][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             bottom.append(1)
         else:
             bottom.append(0)
@@ -2000,15 +2057,18 @@ def generate_background():
         #
 
         
-        if maps.current_location[1][cords[1]+1][cords[0]][0] == "---":
+        loc = maps.current_location[1][cords[1]+1][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
-        if maps.current_location[1][cords[1]][cords[0]-1][0] == "---":
+        loc = maps.current_location[1][cords[1]][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
-        if maps.current_location[1][cords[1]-1][cords[0]][0] == "---":
+        loc = maps.current_location[1][cords[1]-1][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
             top.append(1)
         else:
             top.append(0)
