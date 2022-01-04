@@ -182,7 +182,7 @@ if True:
     bottomimg.append(sprites_canvas.create_image(50, 339, anchor=CENTER, image=bottomspr[1]))
 
     bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((100*mul,250*mul),resample=Image.NEAREST)))
-    bottomimg.append(sprites_canvas.create_image(325, 310, anchor=CENTER, image=bottomspr[2]))
+    bottomimg.append(sprites_canvas.create_image(325, 290, anchor=CENTER, image=bottomspr[2]))
 
     bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((150*mul,375*mul),resample=Image.NEAREST)))
     bottomimg.append(sprites_canvas.create_image(625, 339, anchor=CENTER, image=bottomspr[3]))
@@ -206,6 +206,8 @@ if True:
         top_background_images.append(sprites_canvas.create_image(0, 0, anchor=NW, image=top_background_sprites[ind]))
         ind += 1
     
+    topspr = (ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((175,420),resample=Image.NEAREST)))
+    topimg = (sprites_canvas.create_image(325, 345, anchor=CENTER, image=bottomspr[3]))
 
 
     key_background_unform = Image.open(str(current_directory)+"/sprites/"+"nothing"+".png").convert("RGBA")
@@ -2063,7 +2065,7 @@ def generate_background():
         else:
             top.append(loc)
         
-    letters_to_check = ["T","N","C","D","E","R"]
+    letters_to_check = ["T","N","C","D","E","R","H"]
 
     if(True): #bottomerer layer
         thing = str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"
@@ -2116,10 +2118,10 @@ def generate_background():
                 bottomer_background_sprites_sides[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
                 bottomer_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
                 if ind != 0 and ind != 4:
-                    bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+tile_file[0]+".png")
+                    bottomerspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
                     sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
                 else:
-                    bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                    bottomerspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/nothing.png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
                     sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
             else:
                 bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
@@ -2142,10 +2144,10 @@ def generate_background():
         print("bottom")
         print(lst)
         for x in range(5):
-            if(ind == 2 or ind == 4):
-                spr_size = (100,250)
+            if(ind == 1 or ind == 3):
+                spr_size = (150,375)
             else:
-                spr_size = (60,175)
+                spr_size = (100,250)
             if(lst[ind] == "wall"):
                 bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
                 sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
@@ -2161,10 +2163,10 @@ def generate_background():
                 bottom_background_sprites_sides[ind] = ImageTk.PhotoImage(spr_sides.resize(dimensions,resample=Image.NEAREST))
                 bottom_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
                 if ind != 0 and ind != 4:
-                    bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+tile_file[0]+".png")
+                    bottomspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
                     sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
                 else:
-                    bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                    bottomspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/nothing.png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
                     sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
             else:
                 bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
@@ -2187,9 +2189,24 @@ def generate_background():
         print("top")
         print(lst)
         for x in range(3):
+            spr_size = (175,420)
             if(lst[ind] == "wall"):
                 spr = Image.open(thing+walls[ind]+".png").convert("RGBA")
                 top_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
+            elif(lst[ind][0] in letters_to_check):
+                tile_file = [line.rstrip('\n') for line in open(current_directory+"/dialogue/"+maps.current_location[4]+"/"+lst[ind]+".txt")]
+                spr_sides = Image.open(thing+"000.png").convert("RGBA")
+                spr = Image.open(thing+"000.png").convert("RGBA")
+                print(tile_file[0]+" spr_size: "+str(spr_size))
+                top_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
+                if ind == 1:
+                    print("topspr active | "+tile_file[0]+".png")
+                    topspr = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
+                    sprites_canvas.itemconfig(topimg,image=topspr)
+                else:
+                    print("topspr empty")
+                    topspr = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                    sprites_canvas.itemconfig(topimg,image=topspr)
             else:
                 spr = Image.open(thing+"000.png").convert("RGBA")
                 top_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
@@ -2210,6 +2227,8 @@ def clear_other_npcs_sprites():
         bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
         sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
         ind += 1
+    topspr = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    sprites_canvas.itemconfig(topimg,image=topspr)
     print("clear_other_npcs_sprites()")
 
 def enable_movement_controls():
