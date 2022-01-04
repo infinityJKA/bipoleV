@@ -126,8 +126,6 @@ if True:
     bottomerer_background_sprites.append(bottomerer_background_sprite00010)
     bottomerer_background_images.append(sprites_canvas.create_image(0, 0, anchor=NW, image=bottomerer_background_sprite00010))
 
-    #bottomer_background_sprite = PhotoImage(file = str(current_directory)+"/world/"+world_color+"/bottomer_layer/"+bottomer_layer+".gif")
-    # bottomer_background_image = sprites_canvas.create_image(0, 0, anchor=NW, image=bottomer_background_sprite)
 
     bottomer_background_sprites_sides = []
     bottomer_background_images_sides = []    
@@ -144,26 +142,54 @@ if True:
         bottomer_background_images.append(sprites_canvas.create_image(0, 0, anchor=NW, image=bottomer_background_sprites[ind]))
         ind += 1
 
-    # #bottom_background_sprite = PhotoImage(file = str(current_directory)+"/world/"+world_color+"/bottom_layer/"+bottom_layer+".gif")
-    # bottom_background_image = sprites_canvas.create_image(0, 0, anchor=NW, image=bottom_background_sprite)
+    bottomerspr = [0]
+    bottomerimg = [0]
+
+    bottomerspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((100,250),resample=Image.NEAREST)))
+    bottomerimg.append(sprites_canvas.create_image(50+90, 310, anchor=CENTER, image=bottomerspr[1]))
+
+    bottomerspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((60,175),resample=Image.NEAREST)))
+    bottomerimg.append(sprites_canvas.create_image(325, 290, anchor=CENTER, image=bottomerspr[2]))
+
+    bottomerspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((100,250),resample=Image.NEAREST)))
+    bottomerimg.append(sprites_canvas.create_image(625-90, 310, anchor=CENTER, image=bottomerspr[3]))
+
+    bottomerspr.append(0)
+    bottomerimg.append(0)
+
 
     bottom_background_sprites_sides = []
     bottom_background_images_sides = []
     ind = 0
-    for x in range(3):
-        bottom_background_sprites_sides.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+"000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST)))
+    for x in range(5):
+        bottom_background_sprites_sides.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+"00000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST)))
         bottom_background_images_sides.append(sprites_canvas.create_image(0, 0, anchor=NW, image=bottom_background_sprites_sides[ind]))
         ind += 1
     bottom_background_sprites = []
     bottom_background_images = []
     ind = 0
-    for x in range(3):
-        bottom_background_sprites.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+"000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST)))
+    for x in range(5):
+        bottom_background_sprites.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+"00000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST)))
         bottom_background_images.append(sprites_canvas.create_image(0, 0, anchor=NW, image=bottom_background_sprites[ind]))
         ind += 1
 
-    # #top_background_sprite = PhotoImage(file = str(current_directory)+"/world/"+world_color+"/top_layer/"+top_layer+".gif")
-    # top_background_image = sprites_canvas.create_image(0, 0, anchor=NW, image=top_background_sprite)
+    bottomspr = [0]
+    bottomimg = [0]
+
+    mul = 1
+
+    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((150*mul,375*mul),resample=Image.NEAREST)))
+    bottomimg.append(sprites_canvas.create_image(50, 339, anchor=CENTER, image=bottomspr[1]))
+
+    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((100*mul,250*mul),resample=Image.NEAREST)))
+    bottomimg.append(sprites_canvas.create_image(325, 310, anchor=CENTER, image=bottomspr[2]))
+
+    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((150*mul,375*mul),resample=Image.NEAREST)))
+    bottomimg.append(sprites_canvas.create_image(625, 339, anchor=CENTER, image=bottomspr[3]))
+
+    bottomspr.append(0)
+    bottomimg.append(0)
+
 
     top_background_sprites_sides = []
     top_background_images_sides = []
@@ -194,7 +220,7 @@ if True:
     # character_sprite1 = PhotoImage(file = str(current_directory)+"/sprites/"+"bipoanderer.gif")
     # character_image1 = sprites_canvas.create_image(100, 362, anchor=CENTER, image=character_sprite1)
 
-    char2_background_sprite_unform = Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA")
+    char2_background_sprite_unform = Image.open(str(current_directory)+"/sprites/"+"nothing"+".png").convert("RGBA")
     character_sprite2 = ImageTk.PhotoImage(char2_background_sprite_unform.resize((200,500),resample=Image.NEAREST))
     character_image2 = sprites_canvas.create_image(325, 362, anchor=CENTER, image=character_sprite2)
 
@@ -205,17 +231,9 @@ if True:
     character_sprite3 = ImageTk.PhotoImage(char3_background_sprite_unform.resize((200,500),resample=Image.NEAREST))
     character_image3 = sprites_canvas.create_image(550, 362, anchor=CENTER, image=character_sprite3)
 
-    # character_sprite3 = PhotoImage(file = str(current_directory)+"/sprites/"+"startole.gif")
-    # character_image3 = sprites_canvas.create_image(550, 362, anchor=CENTER, image=character_sprite3)
 
 
-    # sprites_frame = tk.Frame(bg='black')
-    # sprites_window = sprites_canvas.create_window(300,325,anchor=CENTER,width=600,height=650,window=sprites_frame)
-
-    # sprite1 = PhotoImage(file=str(current_directory)+"/sprites/"+"bipoanderer.gif")
-    # sprite1_image = tk.Label(master=sprites_frame, image=sprite1,bg='black') 
-    # sprite1_image.grid(row=0,column=0)
-
+    
     dialouge = tk.Label(master=centrow, text="Lemniscate Bipole V: Dungeons of Biphero\n----------\n[A] Load Save\n[B] New Game", relief=tk.FLAT,width=50,height=30, bg='black')
     dialouge.config(font=(mainfont,12),fg='white')
     dialouge.grid(row=0,column=1)
@@ -1417,6 +1435,7 @@ current_encounter_all = []
 def refresh():
     disable_inputs()
     update_minimap()
+    clear_other_npcs_sprites()
     generate_background()
     clear_all_character_sprites()
     write_text("")
@@ -1684,409 +1703,379 @@ def generate_background():
     bottom = []
     bottomer = []
     bottomerer = []
-    things_to_check = ["---"]
     if vision_facing == "North":
         loc = maps.current_location[1][cords[1]-3][cords[0]-2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
+            bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]-3][cords[0]-1][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
+            bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]-3][cords[0]+1][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
+            bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]-3][cords[0]+2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
-        # bottomerer_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"+imageno+".png").convert("RGBA")
-        # bottomerer_background_sprite = ImageTk.PhotoImage(bottomerer_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottomerer_background_image, image = bottomerer_background_sprite)
-        # #
+            bottomerer.append(loc)
         
         loc = maps.current_location[1][cords[1]-2][cords[0]-2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]-1][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-3][cords[0]][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]+1][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]+2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
 
-        
+        loc = maps.current_location[1][cords[1]-1][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
+            bottom.append("wall")
+        else:
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]-1][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]+1][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
-        # bottom_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+imageno+".png").convert("RGBA")
-        # bottom_background_sprite = ImageTk.PhotoImage(bottom_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottom_background_image, image = bottom_background_sprite)
-        #
-
+            bottom.append(loc)
+        loc = maps.current_location[1][cords[1]-1][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
+            bottom.append("wall")
+        else:
+            bottom.append(loc)
         
         loc = maps.current_location[1][cords[1]][cords[0]-1][0]
         if loc == "---" or loc.startswith("_"):
-            top.append(1)
+            top.append("wall")
         else:
-            top.append(0)
+            top.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]][0]
         if loc == "---" or loc.startswith("_"):
-            top.append(1)
+            top.append("wall")
         else:
-            top.append(0)
+            top.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]+1][0]
         if loc == "---" or loc.startswith("_"):
-            top.append(1)
+            top.append("wall")
         else:
-            top.append(0)
-        
-        # top_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/top_layer/"+imageno+".png").convert("RGBA")
-        # top_background_sprite = ImageTk.PhotoImage(top_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(top_background_image, image = top_background_sprite)
-        #
+            top.append(loc)    
     elif vision_facing == "East":
-        
         loc = maps.current_location[1][cords[1]-2][cords[0]+3][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
+            bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]+3][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
+            bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]+3][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
+            bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]+3][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
-        # bottomerer_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"+imageno+".png").convert("RGBA")
-        # bottomerer_background_sprite = ImageTk.PhotoImage(bottomerer_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottomerer_background_image, image = bottomerer_background_sprite)
-        #
-        
+            bottomerer.append(loc)
         
         loc = maps.current_location[1][cords[1]-2][cords[0]+2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]+2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]+3][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]+2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]+2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
-        # bottomer_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottomer_layer/"+imageno+".png").convert("RGBA")
-        # bottomer_background_sprite = ImageTk.PhotoImage(bottomer_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottomer_background_image, image = bottomer_background_sprite)
-        #
-
+            bottomer.append(loc)
         
+        loc = maps.current_location[1][cords[1]-2][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
+            bottom.append("wall")
+        else:
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]+1][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]+2][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]+1][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
-        # bottom_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+imageno+".png").convert("RGBA")
-        # bottom_background_sprite = ImageTk.PhotoImage(bottom_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottom_background_image, image = bottom_background_sprite)
-        #
-
+            bottom.append(loc)
+        loc = maps.current_location[1][cords[1]+2][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
+            bottom.append("wall")
+        else:
+            bottom.append(loc)
         
         loc = maps.current_location[1][cords[1]-1][cords[0]][0]
         if loc == "---" or loc.startswith("_"):
-            top.append(1)
+            top.append("wall")
         else:
-            top.append(0)
+            top.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]+1][0]
         if loc == "---" or loc.startswith("_"):
-            top.append(1)
+            top.append("wall")
         else:
-            top.append(0)
+            top.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]][0]
         if loc == "---" or loc.startswith("_"):
-            top.append(1)
+            top.append("wall")
         else:
-            top.append(0)
-        # top_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/top_layer/"+imageno+".png").convert("RGBA")
-        # top_background_sprite = ImageTk.PhotoImage(top_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(top_background_image, image = top_background_sprite)
-        #
+            top.append(loc)
     elif vision_facing == "South":
         
         loc = maps.current_location[1][cords[1]+3][cords[0]+2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
+            bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+3][cords[0]+1][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
+            bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+3][cords[0]-1][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
+            bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+3][cords[0]-2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
+            bottomerer.append("wall")
         else:
-            bottomerer.append(0)
-        # bottomerer_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"+imageno+".png").convert("RGBA")
-        # bottomerer_background_sprite = ImageTk.PhotoImage(bottomerer_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottomerer_background_image, image = bottomerer_background_sprite)
-        #
-        
+            bottomerer.append(loc)
         
         loc = maps.current_location[1][cords[1]+2][cords[0]+2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]+1][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+3][cords[0]][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]-1][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]-2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
-        # bottomer_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottomer_layer/"+imageno+".png").convert("RGBA")
-        # bottomer_background_sprite = ImageTk.PhotoImage(bottomer_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottomer_background_image, image = bottomer_background_sprite)
-        #
+            bottomer.append(loc)
 
-        
+        loc = maps.current_location[1][cords[1]+1][cords[0]+2][0]
+        if loc == "---" or loc.startswith("_"):
+            bottom.append("wall")
+        else:
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]+1][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]-1][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
-        # bottom_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+imageno+".png").convert("RGBA")
-        # bottom_background_sprite = ImageTk.PhotoImage(bottom_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottom_background_image, image = bottom_background_sprite)
-        #
-
-        
-        loc = maps.current_location[1][cords[1]][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append(1)
-        else:
-            top.append(0)
-        loc = maps.current_location[1][cords[1]+1][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append(1)
-        else:
-            top.append(0)
-        loc = maps.current_location[1][cords[1]][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append(1)
-        else:
-            top.append(0)
-        # top_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/top_layer/"+imageno+".png").convert("RGBA")
-        # top_background_sprite = ImageTk.PhotoImage(top_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(top_background_image, image = top_background_sprite)
-        #
-    elif vision_facing == "West":
-        
-        loc = maps.current_location[1][cords[1]+2][cords[0]-3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
-        else:
-            bottomerer.append(0)
-        loc = maps.current_location[1][cords[1]+1][cords[0]-3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
-        else:
-            bottomerer.append(0)
-        loc = maps.current_location[1][cords[1]-1][cords[0]-3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
-        else:
-            bottomerer.append(0)
-        loc = maps.current_location[1][cords[1]-2][cords[0]-3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append(1)
-        else:
-            bottomerer.append(0)
-        # bottomerer_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"+imageno+".png").convert("RGBA")
-        # bottomerer_background_sprite = ImageTk.PhotoImage(bottomerer_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottomerer_background_image, image = bottomerer_background_sprite)
-        #
-
-        
-        loc = maps.current_location[1][cords[1]+2][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
-        else:
-            bottomer.append(0)
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]-2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottom.append("wall")
         else:
-            bottomer.append(0)
+            bottom.append(loc)
+
+        loc = maps.current_location[1][cords[1]][cords[0]+1][0]
+        if loc == "---" or loc.startswith("_"):
+            top.append("wall")
+        else:
+            top.append(loc)
+        loc = maps.current_location[1][cords[1]+1][cords[0]][0]
+        if loc == "---" or loc.startswith("_"):
+            top.append("wall")
+        else:
+            top.append(loc)
+        loc = maps.current_location[1][cords[1]][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
+            top.append("wall")
+        else:
+            top.append(loc)      
+    elif vision_facing == "West":
+        loc = maps.current_location[1][cords[1]+2][cords[0]-3][0]
+        if loc == "---" or loc.startswith("_"):
+            bottomerer.append("wall")
+        else:
+            bottomerer.append(loc)
+        loc = maps.current_location[1][cords[1]+1][cords[0]-3][0]
+        if loc == "---" or loc.startswith("_"):
+            bottomerer.append("wall")
+        else:
+            bottomerer.append(loc)
+        loc = maps.current_location[1][cords[1]-1][cords[0]-3][0]
+        if loc == "---" or loc.startswith("_"):
+            bottomerer.append("wall")
+        else:
+            bottomerer.append(loc)
+        loc = maps.current_location[1][cords[1]-2][cords[0]-3][0]
+        if loc == "---" or loc.startswith("_"):
+            bottomerer.append("wall")
+        else:
+            bottomerer.append(loc)
+        
+
+        loc = maps.current_location[1][cords[1]+2][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
+            bottomer.append("wall")
+        else:
+            bottomer.append(loc)
+        loc = maps.current_location[1][cords[1]+1][cords[0]-2][0]
+        if loc == "---" or loc.startswith("_"):
+            bottomer.append("wall")
+        else:
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]-3][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]-2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
+            bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]-2][0]
         if loc == "---" or loc.startswith("_"):
-            bottomer.append(1)
+            bottomer.append("wall")
         else:
-            bottomer.append(0)
-        # bottomer_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottomer_layer/"+imageno+".png").convert("RGBA")
-        # bottomer_background_sprite = ImageTk.PhotoImage(bottomer_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottomer_background_image, image = bottomer_background_sprite)
-        #
-
-        
+            bottomer.append(loc)
+       
+        loc = maps.current_location[1][cords[1]+2][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
+            bottom.append("wall")
+        else:
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]-1][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]-2][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
+            bottom.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]-1][0]
         if loc == "---" or loc.startswith("_"):
-            bottom.append(1)
+            bottom.append("wall")
         else:
-            bottom.append(0)
-        # bottom_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+imageno+".png").convert("RGBA")
-        # bottom_background_sprite = ImageTk.PhotoImage(bottom_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(bottom_background_image, image = bottom_background_sprite)
-        #
-
+            bottom.append(loc)
+        loc = maps.current_location[1][cords[1]-2][cords[0]-1][0]
+        if loc == "---" or loc.startswith("_"):
+            bottom.append("wall")
+        else:
+            bottom.append(loc)
+        
         
         loc = maps.current_location[1][cords[1]+1][cords[0]][0]
         if loc == "---" or loc.startswith("_"):
-            top.append(1)
+            top.append("wall")
         else:
-            top.append(0)
+            top.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]-1][0]
         if loc == "---" or loc.startswith("_"):
-            top.append(1)
+            top.append("wall")
         else:
-            top.append(0)
+            top.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]][0]
         if loc == "---" or loc.startswith("_"):
-            top.append(1)
+            top.append("wall")
         else:
-            top.append(0)
-        # top_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/top_layer/"+imageno+".png").convert("RGBA")
-        # top_background_sprite = ImageTk.PhotoImage(top_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-        # sprites_canvas.itemconfig(top_background_image, image = top_background_sprite)
-        # #
+            top.append(loc)
+        
+    letters_to_check = ["T","N","C","D","E","R"]
 
     if(True): #bottomerer layer
         thing = str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"
         walls = ["1000","0100","0010","0001"]
         lst = bottomerer
         ind = 0
+        print("bottomerer")
+        print(lst)
         for x in range(4):
-            if(lst[ind] == 1):
+            if(lst[ind] == "wall"):
                 spr = Image.open(thing+walls[ind]+".png").convert("RGBA")
                 spr_sides = Image.open(thing+walls[ind]+"sides.png").convert("RGBA")
-                #sprites_canvas.itemconfig(bottomerer_background_images[3-1], image = bottomerer_background_sprites[3-1])
                 bottomerer_background_sprites_sides[ind] = ImageTk.PhotoImage(spr_sides.resize(dimensions,resample=Image.NEAREST))
                 bottomerer_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
             else:
@@ -2104,14 +2093,38 @@ def generate_background():
         walls = ["10000","01000","00100","00010","00001"]
         lst = bottomer
         ind = 0
+        print("bottomer")
         for x in range(5):
-            if(lst[ind] == 1):
+            print(lst[ind][0])
+            if(ind == 1 or ind == 3):
+                spr_size = (100,250)
+            else:
+                spr_size = (60,175)
+            if(lst[ind] == "wall"):
+                bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
                 spr = Image.open(thing+walls[ind]+".png").convert("RGBA")
                 spr_sides = Image.open(thing+walls[ind]+"sides.png").convert("RGBA")
-                #sprites_canvas.itemconfig(bottomerer_background_images[3-1], image = bottomerer_background_sprites[3-1])
                 bottomer_background_sprites_sides[ind] = ImageTk.PhotoImage(spr_sides.resize(dimensions,resample=Image.NEAREST))
                 bottomer_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
+            elif(lst[ind][0] in letters_to_check):
+                print(lst[ind][0]+" is in "+str(letters_to_check))
+                tile_file = [line.rstrip('\n') for line in open(current_directory+"/dialogue/"+maps.current_location[4]+"/"+lst[ind]+".txt")]
+                spr_sides = Image.open(thing+"00000.png").convert("RGBA")
+                spr = Image.open(thing+"00000.png").convert("RGBA")
+                print(tile_file[0]+" spr_size: "+str(spr_size))
+                bottomer_background_sprites_sides[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
+                bottomer_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
+                if ind != 0 and ind != 4:
+                    bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+tile_file[0]+".png")
+                    sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
+                else:
+                    bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                    sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
             else:
+                bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
+                spr_sides = Image.open(thing+"00000.png").convert("RGBA")
                 spr = Image.open(thing+"00000.png").convert("RGBA")
                 bottomer_background_sprites_sides[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
                 bottomer_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
@@ -2123,19 +2136,47 @@ def generate_background():
             ind += 1
     if(True): #bottom layer
         thing = str(current_directory)+"/world/"+world_color+"/bottom_layer/"
-        walls = ["100","010","001"]
+        walls = ["10000","01000","00100","00010","00001"]
         lst = bottom
         ind = 0
-        for x in range(3):
-            if(lst[ind] == 1):
-                spr = Image.open(thing+walls[ind]+".png").convert("RGBA")
-                bottom_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
+        print("bottom")
+        print(lst)
+        for x in range(5):
+            if(ind == 2 or ind == 4):
+                spr_size = (100,250)
             else:
-                spr = Image.open(thing+"000.png").convert("RGBA")
+                spr_size = (60,175)
+            if(lst[ind] == "wall"):
+                bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
+                spr_sides = Image.open(thing+walls[ind]+"sides.png").convert("RGBA")
+                spr = Image.open(thing+walls[ind]+".png").convert("RGBA")
+                bottom_background_sprites_sides[ind] = ImageTk.PhotoImage(spr_sides.resize(dimensions,resample=Image.NEAREST))
+                bottom_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
+            elif(lst[ind][0] in letters_to_check):
+                tile_file = [line.rstrip('\n') for line in open(current_directory+"/dialogue/"+maps.current_location[4]+"/"+lst[ind]+".txt")]
+                spr_sides = Image.open(thing+"00000.png").convert("RGBA")
+                spr = Image.open(thing+"00000.png").convert("RGBA")
+                print(tile_file[0]+" spr_size: "+str(spr_size))
+                bottom_background_sprites_sides[ind] = ImageTk.PhotoImage(spr_sides.resize(dimensions,resample=Image.NEAREST))
+                bottom_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
+                if ind != 0 and ind != 4:
+                    bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+tile_file[0]+".png")
+                    sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
+                else:
+                    bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                    sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
+            else:
+                bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
+                spr_sides = Image.open(thing+"00000.png").convert("RGBA")
+                spr = Image.open(thing+"00000.png").convert("RGBA")
+                bottom_background_sprites_sides[ind] = ImageTk.PhotoImage(spr_sides.resize(dimensions,resample=Image.NEAREST))
                 bottom_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
             ind += 1
         ind = 0
-        for x in range(3):
+        for x in range(5):
+            sprites_canvas.itemconfig(bottom_background_images_sides[ind], image = bottom_background_sprites_sides[ind])
             sprites_canvas.itemconfig(bottom_background_images[ind], image = bottom_background_sprites[ind])
             ind += 1
     if(True): #top layer
@@ -2143,8 +2184,10 @@ def generate_background():
         walls = ["100","010","001"]
         lst = top
         ind = 0
+        print("top")
+        print(lst)
         for x in range(3):
-            if(lst[ind] == 1):
+            if(lst[ind] == "wall"):
                 spr = Image.open(thing+walls[ind]+".png").convert("RGBA")
                 top_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
             else:
@@ -2155,6 +2198,19 @@ def generate_background():
         for x in range(3):
             sprites_canvas.itemconfig(top_background_images[ind], image = top_background_sprites[ind])
             ind += 1
+
+def clear_other_npcs_sprites():
+    ind = 0
+    for x in range(5):
+        bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+        sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
+        ind += 1
+    ind = 0
+    for x in range(5):
+        bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+        sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
+        ind += 1
+    print("clear_other_npcs_sprites()")
 
 def enable_movement_controls():
     global w_command

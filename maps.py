@@ -1,8 +1,8 @@
 import enemies
 global player_cords
 global player_tracking
-#player_cords = [9,15]
-player_cords = [9,18]
+player_cords = [9,15]
+#player_cords = [9,18]
 player_tracking = [
     [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],
     [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],
@@ -204,9 +204,9 @@ List_of_All_Locations.append(Slime_Forest2)
 Passway_Village = ["Passway Village", passway_village_map, "stone", "green","passway_village",False,[],0,[100.00,["Neutral",1],[95.23,94.21,93.43,95.32,98.56]]]
 List_of_All_Locations.append(Bieace_Castle_Town)
 
-# current_location = Bieace_Castle
+current_location = Bieace_Castle
 
-current_location = Passway_Village
+#current_location = Passway_Village
 
 current_tile = "000"
 
