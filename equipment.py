@@ -647,6 +647,16 @@ if True:
     Description = "the j!?"
     )
 
+    Oatmeal = Consumable_Item(
+    Display_Name = "Oatmeal",
+    Purchasing_Price = 500,
+    Target = "Single", #Single or Full Party
+    Stat = "SP",
+    Percent_or_Static = "Percent",
+    Amount = 1.3,
+    Description = "The holy Razzion delicacy."
+    )
+
 
 item_inventory = []
 

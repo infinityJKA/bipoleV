@@ -1861,6 +1861,7 @@ def generate_background():
         for x in range(4):
             sprites_canvas.itemconfig(bottomerer_background_images_sides[ind], image = bottomerer_background_sprites_sides[ind])
             sprites_canvas.itemconfig(bottomerer_background_images[ind], image = bottomerer_background_sprites[ind])
+            sprites_canvas.delete(bottomer_background_sprites[ind])
             ind += 1
     if(True): #bottomer layer
         thing = str(current_directory)+"/world/"+world_color+"/bottomer_layer/"
@@ -1903,6 +1904,7 @@ def generate_background():
         for x in range(5):
             sprites_canvas.itemconfig(bottomer_background_images_sides[ind], image = bottomer_background_sprites_sides[ind])
             sprites_canvas.itemconfig(bottomer_background_images[ind], image = bottomer_background_sprites[ind])
+            sprites_canvas.delete(bottom_background_sprites[ind])
             ind += 1
     if(True): #bottom layer
         thing = str(current_directory)+"/world/"+world_color+"/bottom_layer/"
@@ -1943,6 +1945,7 @@ def generate_background():
         for x in range(3):
             sprites_canvas.itemconfig(bottom_background_images_sides[ind], image = bottom_background_sprites_sides[ind])
             sprites_canvas.itemconfig(bottom_background_images[ind], image = bottom_background_sprites[ind])
+            sprites_canvas.delete(bottom_background_sprites[ind])
             ind += 1
     if(True): #top layer
         thing = str(current_directory)+"/world/"+world_color+"/top_layer/"
@@ -1975,24 +1978,48 @@ def generate_background():
         ind = 0
         for x in range(3):
             sprites_canvas.itemconfig(top_background_images[ind], image = top_background_sprites[ind])
+            sprites_canvas.delete(top_background_sprites[ind])
             ind += 1
 
 def clear_other_npcs_sprites():
-    ind = 1
-    for x in range(3):
-        bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
-        sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
-        ind += 1
-    ind = 1
-    for x in range(3):
-        bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
-        sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
-        ind += 1
-    ind = 1
-    for x in range(1):
-        topspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
-        sprites_canvas.itemconfig(topimg[ind],image=topspr[ind])
-        ind += 1
+    bottomerspr[1] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    sprites_canvas.itemconfig(bottomerimg[1],image=bottomerspr[1])
+    bottomerspr[2] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    sprites_canvas.itemconfig(bottomerimg[2],image=bottomerspr[2])
+    bottomerspr[3] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    sprites_canvas.itemconfig(bottomerimg[3],image=bottomerspr[3])
+
+    bottomspr[1] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    sprites_canvas.itemconfig(bottomimg[1],image=bottomspr[1])
+    bottomspr[2] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    sprites_canvas.itemconfig(bottomimg[2],image=bottomspr[2])
+    bottomspr[3] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    sprites_canvas.itemconfig(bottomimg[3],image=bottomspr[3])
+
+    topspr[1] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    sprites_canvas.itemconfig(topimg[1],image=topspr[1])
+
+    # ind = 1
+    # for x in range(3):
+    #     sprites_canvas.delete(bottomerspr[ind])
+    #     bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    #     sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
+    #     sprites_canvas.delete(bottomerspr[ind])
+    #     ind += 1
+    # ind = 1
+    # for x in range(3):
+    #     sprites_canvas.delete(bottomspr[ind])
+    #     bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    #     sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
+    #     sprites_canvas.delete(bottomspr[ind])
+    #     ind += 1
+    # ind = 1
+    # for x in range(1):
+    #     sprites_canvas.delete(topspr[ind])
+    #     topspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+    #     sprites_canvas.itemconfig(topimg[ind],image=topspr[ind])
+    #     sprites_canvas.delete(topspr[ind])
+    #     ind += 1
     print("clear_other_npcs_sprites()")
 
 def enable_movement_controls():
