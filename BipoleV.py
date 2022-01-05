@@ -1707,365 +1707,160 @@ def generate_background():
     bottomerer = []
     if vision_facing == "North":
         loc = maps.current_location[1][cords[1]-3][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]-3][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]-3][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]-3][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
-        
+        bottomerer.append(loc)
+
         loc = maps.current_location[1][cords[1]-2][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-3][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
 
         loc = maps.current_location[1][cords[1]-1][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         
         loc = maps.current_location[1][cords[1]][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)
+        top.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)
+        top.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)    
+        top.append(loc)   
     elif vision_facing == "East":
         loc = maps.current_location[1][cords[1]-2][cords[0]+3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]+3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]+3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]+3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         
         loc = maps.current_location[1][cords[1]-2][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]+3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         
         loc = maps.current_location[1][cords[1]-2][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         
         loc = maps.current_location[1][cords[1]-1][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)
+        top.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)
+        top.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)
+        top.append(loc)
     elif vision_facing == "South":
-        
         loc = maps.current_location[1][cords[1]+3][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+3][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+3][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+3][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         
         loc = maps.current_location[1][cords[1]+2][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+3][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
 
         loc = maps.current_location[1][cords[1]+1][cords[0]+2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]+2][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
 
         loc = maps.current_location[1][cords[1]][cords[0]+1][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)
+        top.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)
+        top.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)      
+        top.append(loc)
     elif vision_facing == "West":
         loc = maps.current_location[1][cords[1]+2][cords[0]-3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]-3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]-3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]-3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomerer.append("wall")
-        else:
-            bottomerer.append(loc)
+        bottomerer.append(loc)
         
 
         loc = maps.current_location[1][cords[1]+2][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]-3][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottomer.append("wall")
-        else:
-            bottomer.append(loc)
+        bottomer.append(loc)
        
         loc = maps.current_location[1][cords[1]+2][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]+1][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]-2][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         loc = maps.current_location[1][cords[1]-2][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            bottom.append("wall")
-        else:
-            bottom.append(loc)
+        bottom.append(loc)
         
         
         loc = maps.current_location[1][cords[1]+1][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)
+        top.append(loc)
         loc = maps.current_location[1][cords[1]][cords[0]-1][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)
+        top.append(loc)
         loc = maps.current_location[1][cords[1]-1][cords[0]][0]
-        if loc == "---" or loc.startswith("_"):
-            top.append("wall")
-        else:
-            top.append(loc)
+        top.append(loc)
         
-    letters_to_check = ["T","N","C","D","E","R","H"]
+    letters_to_check = ["T","N","C","D","E","R","H","P","S"]
 
     if(True): #bottomerer layer
         thing = str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"
@@ -2075,7 +1870,7 @@ def generate_background():
         print("bottomerer")
         print(lst)
         for x in range(4):
-            if(lst[ind] == "wall"):
+            if(lst[ind] == "---" or lst[ind].startswith("_")):
                 spr = Image.open(thing+walls[ind]+".png").convert("RGBA")
                 spr_sides = Image.open(thing+walls[ind]+"sides.png").convert("RGBA")
                 bottomerer_background_sprites_sides[ind] = ImageTk.PhotoImage(spr_sides.resize(dimensions,resample=Image.NEAREST))
@@ -2102,8 +1897,8 @@ def generate_background():
                 spr_size = (100,250)
             else:
                 spr_size = (60,175)
-            if(lst[ind] == "wall"):
-                bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+            if(lst[ind] == "---" or lst[ind].startswith("_")):
+                #bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
                 sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
                 spr = Image.open(thing+walls[ind]+".png").convert("RGBA")
                 spr_sides = Image.open(thing+walls[ind]+"sides.png").convert("RGBA")
@@ -2121,11 +1916,12 @@ def generate_background():
                     bottomerspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
                     sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
                 else:
-                    bottomerspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/nothing.png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
-                    sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
+                    #bottomerspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/nothing.png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
+                    #sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
+                    pass
             else:
-                bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
-                sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
+                #bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                #sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
                 spr_sides = Image.open(thing+"00000.png").convert("RGBA")
                 spr = Image.open(thing+"00000.png").convert("RGBA")
                 bottomer_background_sprites_sides[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
@@ -2140,17 +1936,17 @@ def generate_background():
         thing = str(current_directory)+"/world/"+world_color+"/bottom_layer/"
         walls = ["10000","01000","00100","00010","00001"]
         lst = bottom
-        ind = 0
+        ind = 1
         print("bottom")
         print(lst)
-        for x in range(5):
+        for x in range(3):
             if(ind == 1 or ind == 3):
                 spr_size = (150,375)
             else:
                 spr_size = (100,250)
-            if(lst[ind] == "wall"):
-                bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
-                sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
+            if(lst[ind] == "---" or lst[ind].startswith("_")):
+                #bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                #sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
                 spr_sides = Image.open(thing+walls[ind]+"sides.png").convert("RGBA")
                 spr = Image.open(thing+walls[ind]+".png").convert("RGBA")
                 bottom_background_sprites_sides[ind] = ImageTk.PhotoImage(spr_sides.resize(dimensions,resample=Image.NEAREST))
@@ -2166,18 +1962,19 @@ def generate_background():
                     bottomspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
                     sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
                 else:
-                    bottomspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/nothing.png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
-                    sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
+                    pass
+                    #bottomspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/nothing.png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
+                    #sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
             else:
-                bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
-                sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
+                #bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                #sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
                 spr_sides = Image.open(thing+"00000.png").convert("RGBA")
                 spr = Image.open(thing+"00000.png").convert("RGBA")
                 bottom_background_sprites_sides[ind] = ImageTk.PhotoImage(spr_sides.resize(dimensions,resample=Image.NEAREST))
                 bottom_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
             ind += 1
-        ind = 0
-        for x in range(5):
+        ind = 1
+        for x in range(3):
             sprites_canvas.itemconfig(bottom_background_images_sides[ind], image = bottom_background_sprites_sides[ind])
             sprites_canvas.itemconfig(bottom_background_images[ind], image = bottom_background_sprites[ind])
             ind += 1
@@ -2190,7 +1987,7 @@ def generate_background():
         print(lst)
         for x in range(3):
             spr_size = (175,420)
-            if(lst[ind] == "wall"):
+            if(lst[ind] == "---" or lst[ind].startswith("_")):
                 spr = Image.open(thing+walls[ind]+".png").convert("RGBA")
                 top_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
             elif(lst[ind][0] in letters_to_check):
@@ -2204,9 +2001,9 @@ def generate_background():
                     topspr = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
                     sprites_canvas.itemconfig(topimg,image=topspr)
                 else:
-                    print("topspr empty")
-                    topspr = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
-                    sprites_canvas.itemconfig(topimg,image=topspr)
+                    print("topspr ind != 1")
+                    # topspr = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
+                    # sprites_canvas.itemconfig(topimg,image=topspr)
             else:
                 spr = Image.open(thing+"000.png").convert("RGBA")
                 top_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
@@ -2217,13 +2014,13 @@ def generate_background():
             ind += 1
 
 def clear_other_npcs_sprites():
-    ind = 0
-    for x in range(5):
+    ind = 1
+    for x in range(3):
         bottomerspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
         sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
         ind += 1
-    ind = 0
-    for x in range(5):
+    ind = 1
+    for x in range(3):
         bottomspr[ind] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
         sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
         ind += 1
