@@ -1984,20 +1984,27 @@ def generate_background():
 def clear_other_npcs_sprites():
     bottomerspr[1] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
     sprites_canvas.itemconfig(bottomerimg[1],image=bottomerspr[1])
+    sprites_canvas.delete(bottomerspr[1])
     bottomerspr[2] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
     sprites_canvas.itemconfig(bottomerimg[2],image=bottomerspr[2])
+    sprites_canvas.delete(bottomerspr[2])
     bottomerspr[3] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
     sprites_canvas.itemconfig(bottomerimg[3],image=bottomerspr[3])
+    sprites_canvas.delete(bottomerspr[3])
 
     bottomspr[1] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
     sprites_canvas.itemconfig(bottomimg[1],image=bottomspr[1])
+    sprites_canvas.delete(bottomspr[1])
     bottomspr[2] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
     sprites_canvas.itemconfig(bottomimg[2],image=bottomspr[2])
+    sprites_canvas.delete(bottomspr[2])
     bottomspr[3] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
     sprites_canvas.itemconfig(bottomimg[3],image=bottomspr[3])
+    sprites_canvas.delete(bottomspr[3])
 
     topspr[1] = PhotoImage(file = str(current_directory)+"/sprites/"+"nothing"+".png")
     sprites_canvas.itemconfig(topimg[1],image=topspr[1])
+    sprites_canvas.delete(topspr[1])
 
     # ind = 1
     # for x in range(3):
