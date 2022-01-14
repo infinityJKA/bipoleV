@@ -202,8 +202,8 @@ if True:
     topspr = [0]
     topimg = [0]
 
-    topspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((175,420),resample=Image.NEAREST)))
-    topimg.append(sprites_canvas.create_image(325, 330, anchor=CENTER, image=topspr[1]))
+    topspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((165,420),resample=Image.NEAREST)))
+    topimg.append(sprites_canvas.create_image(325, 320, anchor=CENTER, image=topspr[1]))
 
 
 
@@ -220,7 +220,7 @@ if True:
     # character_sprite1 = PhotoImage(file = str(current_directory)+"/sprites/"+"bipoanderer.gif")
     # character_image1 = sprites_canvas.create_image(100, 362, anchor=CENTER, image=character_sprite1)
 
-    char2_background_sprite_unform = Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA")
+    char2_background_sprite_unform = Image.open(str(current_directory)+"/sprites/"+"nothing"+".png").convert("RGBA")
     character_sprite2 = ImageTk.PhotoImage(char2_background_sprite_unform.resize((200,500),resample=Image.NEAREST))
     character_image2 = sprites_canvas.create_image(325, 362, anchor=CENTER, image=character_sprite2)
 
@@ -1534,7 +1534,8 @@ def refresh():
         dialouge_file = standing_on
         dialouge = [line.rstrip('\n') for line in open(current_directory+"/dialogue/"+maps.current_location[4]+"/"+standing_on+".txt")]
         #print(dialogue[0])
-        set_big_character_sprite(dialouge[0])
+        #set_big_character_sprite(dialouge[0])
+        set_character_sprite(2,dialouge[0])
         write_text("[SHOP]")
         enable_movement_controls()
     elif standing_on.startswith("P"):
@@ -1995,7 +1996,7 @@ def generate_background():
         # print(lst)
         back_spr_num = ""
         for x in range(3):
-            spr_size = (175,420)
+            spr_size = (165,420)
             if(lst[ind] == "---" or lst[ind].startswith("_")):
                 back_spr_num = back_spr_num + "1"
             elif(lst[ind][0] in letters_to_check):

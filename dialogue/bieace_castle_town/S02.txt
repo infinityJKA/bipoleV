@@ -1,5 +1,5 @@
-shop
-Shopkeeper:[@]Welcome to the Bieace Castle Town Tavern!
+rednet
+Rednet:[@]Welcome to the Bieace Castle Town Tavern!
 #SHOP_ITEM
 Bieace Castle Town Tavern
 Water
@@ -7,5 +7,5 @@ Sparkling_Water
 Bread
 Ramen
 #SHOP_END
-Shopkeeper:[@]Come again!
+Rednet:[@]Come again!
 #END

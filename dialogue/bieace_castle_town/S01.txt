@@ -1,5 +1,5 @@
-shop
-Shopkeeper:[@]Welcome to the Bieace Castle Town Armory!
+yhtims
+Yhtimis:[@]Welcome to the Bieace Castle Town Armory!
 #SHOP_EQUIPMENT
 Bieace Castle Town Armory
 Bronze_Gauntlets
@@ -12,5 +12,5 @@ Aqua
 Freeze
 Heal
 #SHOP_END
-Shopkeeper:[@]Come again!
+Yhtimis:[@]Come again!
 #END
