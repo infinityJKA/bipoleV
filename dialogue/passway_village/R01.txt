@@ -20,7 +20,7 @@ Protipole:[@]...
 Protipole:[@]What are your fees?
 Bithecary:[@]Hmmmmm...
 Bithecary:[@]Let's say...
-Bithecary:[@]75500G, a ROCKET LAUNCHER,[@]15 SPARKLING WATER, and a NOTRE DAME CEILING PANEL.
+Bithecary:[@]75500G, a ROCKET LAUNCHER, 15 SPARKLING WATER,[@]and a NOTRE DAME CEILING PANEL.
 Protipole:[@]...
 Protipole:[@]I don't have that.
 Bithecary:[@]Despicable.
@@ -31,15 +31,16 @@ Bithecary:[@]...
 Bithecary:[@]Actually wait I need some money.
 Bithecary:[@]500G and I'll follow you.
 #CHOICE =Pay 500G?=[@][A] Yes[@][B] No
-1.PAY
-2.DONTPAY
+#CHOICE_RESULT_GO_TO
+PAY
+DONTPAY
 _
-/==/PAY
-#SENTIFGOLD 500
-1.PAYING
-2.CANT
+/==/.PAY
+#SENDIFGOLD>= 500
+#PAYING
+CANT
 _
-/==/PAYING
+/==/.PAYING
 ADD_GOLD -500
 Bithecary:[@]Word to your mother.
 #RECRUIT
@@ -47,8 +48,8 @@ Bithecary
 Bithecary joined your party!
 #DESTROY_SELF
 _
-/==/DONTPAY
-/==/CANT
+/==/.DONTPAY
+/==/.CANT
 Bithecary:[@]Poor!
 Bithecary:[@]You're poor!
 Bithecary:[@]Can't afford me!

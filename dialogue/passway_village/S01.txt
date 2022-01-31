@@ -1,5 +1,6 @@
-shop
-Shopkeeper:[@]Welcome to the Passway Village Tavern!
+nrevat
+Nrevat:[@]Welcome to Passway Village Tavern!
+Nrevat:[@]I've got stuff so good you'll reach[@]levels of wackiness you thought impossible.
 #SHOP_ITEM
 Passway Village Tavern
 Alcohol
@@ -8,5 +9,5 @@ Graham_Crackers
 Not_Butter
 J_Fuel
 #SHOP_END
-Shopkeeper:[@]Come again!
+Nrevat:[@]Come again, unless it's for a[@]food safety violation arrest.
 #END

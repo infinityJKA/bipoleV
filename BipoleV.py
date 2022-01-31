@@ -35,7 +35,7 @@ if True:
     save_button.config(font=(mainfont,29),fg='red')
     save_button.grid(row=0,column=0)
 
-    Gold = 0
+    Gold = 500
 
     filedisplay = tk.Label(master=toprow,text="Location: Bieace Castle\nGold: 0",anchor=CENTER,relief=tk.GROOVE,width=42,height=3, bg='black')
     filedisplay.config(font=(mainfont,25),fg='magenta2')
@@ -845,7 +845,7 @@ def perform_dialogue():
         dialogue = [line.rstrip('\n') for line in file_contents]
         print(dialogue)
         perform_dialogue()
-    elif line == "_" or line == "-pass-":
+    elif line == "_" or line == "-pass-" or "/==/." in line:
         dialogue_index += 1
         perform_dialogue()
     elif "#CHOICE " in line:
@@ -859,6 +859,21 @@ def perform_dialogue():
         else:
             dialogue_index += 6
             perform_dialogue()
+    elif line == "#CHOICE_RESULT_GO_TO":
+        if yes_no_result == True:
+            thing = dialogue[dialogue_index+1]
+        else:
+            thing = dialogue[dialogue_index+2]
+        dialogue_index = search_for("/==/."+thing)
+        perform_dialogue()
+    elif "#SENDIFGOLD>= " in line:
+        amount = (int)(line.replace("#SENDIFGOLD>= ",""))
+        if Gold >= amount:
+            thing = dialogue[dialogue_index+1]
+        else:
+            thing = dialogue[dialogue_index+2]
+        dialogue_index = search_for("/==/."+thing)
+        perform_dialogue()
     elif line == "#DESTROY_SELF":
         cords = maps.return_player_cords()
         maps.current_location[1][cords[1]][cords[0]] = ["000"]
@@ -1158,6 +1173,18 @@ def perform_dialogue():
         g_command = "advance_text()"
         talk_button.config(command=advance_text)
         
+
+def search_for(text):
+    ind = 0
+    thing = text
+    for x in dialogue:
+        if x == thing:
+            return ind
+        ind += 1
+    print("deez nuts!!! 🤣🤣🤣🤣🤣🤣🤣")
+    return "deez nuts!!! 🤣🤣🤣🤣🤣🤣🤣"
+
+
 def progress_economy():
     # 1 Golden - (6 to 20)
     # 2/3 Flourishing - (3 to 12)
