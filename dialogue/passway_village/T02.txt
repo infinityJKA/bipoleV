@@ -1,0 +1,4 @@
+siphon_cognoscente
+Siphon Cognoscente:[@]Hello!
+Siphon Cognoscente:[@]Would you like to travel to Bieace Castle Town?
+#END

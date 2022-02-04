@@ -37,11 +37,11 @@ DONTPAY
 _
 /==/.PAY
 #SENDIFGOLD>= 500
-#PAYING
+PAYING
 CANT
 _
 /==/.PAYING
-ADD_GOLD -500
+#REMOVE_GOLD 500
 Bithecary:[@]Word to your mother.
 #RECRUIT
 Bithecary

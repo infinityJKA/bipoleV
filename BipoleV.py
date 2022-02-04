@@ -923,6 +923,14 @@ def perform_dialogue():
         space_command = "advance_text()"
         g_command = "advance_text()"
         talk_button.config(command=advance_text)
+    elif "#REMOVE_GOLD" in line:
+        Gold -= int(line.replace('#REMOVE_GOLD ',''))
+        #write_text("Lost "+line.replace('#REMOVE_GOLD ','')+" gold!")
+        dialogue_index += 1
+        # space_command = "advance_text()"
+        # g_command = "advance_text()"
+        # talk_button.config(command=advance_text)
+        advance_text()
     elif line == "#ECONOMY":
         thing = maps.current_location[8]
         print(thing)

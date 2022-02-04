@@ -1,0 +1,16 @@
+sellers
+Sellers:[@]Welcome!
+#SHOP_EQUIPMENT
+Passway Village Mechant Sellers
+Iron_Gauntlets
+Slice
+Stab
+Stone_Staff
+Long Bow
+Fire_Blast
+Hydro
+Congeal
+Recover
+#SHOP_END
+Sellers:[@]Come again!
+#END
