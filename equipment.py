@@ -43,6 +43,20 @@ if True: #Fists
     Description = "Perform a weak punch"
     )
 
+    Iron_Gauntlets = Equipment(
+    Display_Name = "Iron Gauntlets",
+    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fists",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 175, #Added
+    PWR = 150,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Perform an average punch"
+    )
+
     Slam = Equipment(
     Display_Name = "Slam",
     Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -71,6 +85,20 @@ if True: #Fists
 
 if True: #Swords
 
+    Dagger = Equipment(
+    Display_Name = "Dagger",
+    Equip_Type = "Sword", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 50, #Added
+    PWR = 75,
+    Purchasing_Price = 350, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deals weaker sword damage and gains\nless priority."
+    )
+
     Cut = Equipment(
     Display_Name = "Cut",
     Equip_Type = "Sword", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -83,6 +111,62 @@ if True: #Swords
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Cut the opponent with a weak strike"
+    )
+
+    Slice = Equipment(
+    Display_Name = "Slice",
+    Equip_Type = "Sword", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 175, #Added
+    PWR = 150,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Cut the opponent with an average strike"
+    )
+
+    Sweep = Equipment(
+    Display_Name = "Sweep",
+    Equip_Type = "Sword", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 40, #Deducted
+    Priority = 250, #Added
+    PWR = 80,
+    Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deals sword damage to all enemies"
+    )
+
+    Flame_Blade = Equipment(
+    Display_Name = "Flame Blade",
+    Equip_Type = "Archle", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 45, #Deducted
+    Priority = 130, #Added
+    PWR = 125,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deals magic-sword damage, Archle only"
+    )
+
+    Sword_Lance = Equipment(
+    Display_Name = "Sword-Lance",
+    Equip_Type = "Sword", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Lance",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 65,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A sword that deals lance damage"
     )
 
     Bite = Equipment(
@@ -113,6 +197,34 @@ if True: #Lances
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A weak attack using a lance"
+    )
+
+    Stab = Equipment(
+    Display_Name = "Stab",
+    Equip_Type = "Lance", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Lance",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 175, #Added
+    PWR = 150,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "An average attack using a lance"
+    )
+
+    Lance_Sword = Equipment(
+    Display_Name = "Lance-Sword",
+    Equip_Type = "Lance", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 65,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A lance that deals sword damage"
     )
 
     Fungal_Thorns = Equipment(
@@ -182,11 +294,25 @@ if True: #Bows
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 0, #Deducted
-    Priority = 100, #Added
-    PWR = 100,
+    Priority = 75, #Added
+    PWR = 85,
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "A standard bow"
+    Description = "A weak bow"
+    )
+
+    Long_Bow = Equipment(
+    Display_Name = "Long Bow",
+    Equip_Type = "Bow", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Bow",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 110, #Added
+    PWR = 130,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "An average bow"
     )
 
 if True: #Fire
@@ -203,6 +329,35 @@ if True: #Fire
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A weak fire attack"
+    )
+
+    Fire_Blast = Equipment(
+    Display_Name = "Fire Blast",
+    Equip_Type = "Fire", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 130, #Added
+    PWR = 150,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "An average fire attack"
+    )
+
+    Signal_Flare = Equipment(
+    Display_Name = "Signal Flare",
+    Equip_Type = "Fire", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 20, #Deducted
+    Priority = 300, #Added
+    PWR = 0,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict= ["ATK",0.9,2],
+    Description = "Increases your priority and slightly\ndecreases your ATK for 2 turns."
     )
 
     Abyssal_Inferno = Equipment(
@@ -262,6 +417,20 @@ if True: #Water
     Description = "A weak water attack"
     )
 
+    Hydro = Equipment(
+    Display_Name = "Hydro",
+    Equip_Type = "Water", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Water",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 130, #Added
+    PWR = 150,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "An average water attack"
+    )
+
 if True: #Ice
     Freeze = Equipment(
     Display_Name = "Freeze",
@@ -277,6 +446,20 @@ if True: #Ice
     Description = "A weak ice attack"
     )
 
+    Congeal = Equipment(
+    Display_Name = "Congeal",
+    Equip_Type = "Ice", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 130, #Added
+    PWR = 150,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "An average ice attack"
+    )
+
 if True: #Healing
     Heal = Equipment(
     Display_Name = "Heal",
@@ -290,6 +473,48 @@ if True: #Healing
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = "HP", #The stat to heal,
     Description = "A weak healing spell with a small cost."
+    )
+
+    Recover = Equipment(
+    Display_Name = "Recover",
+    Equip_Type = "Healing", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Healing, Gun
+    Damage_Type = "Heal",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 75, #Deducted
+    Priority = 315, #Added
+    PWR = 30,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "HP", #The stat to heal,
+    Description = "An average healing spell with an average cost."
+    )
+
+    Long_Heal = Equipment(
+    Display_Name = "Long Heal",
+    Equip_Type = "Healing", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Healing, Gun
+    Damage_Type = "Heal",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 60, #Deducted
+    Priority = 75, #Added
+    PWR = 15,
+    Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "HP", #The stat to heal,
+    Description = "A weak healing spell with lower priority\nbut a higher cost."
+    )
+
+    Far_Heal = Equipment(
+    Display_Name = "Far Heal",
+    Equip_Type = "Healing", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Healing, Gun
+    Damage_Type = "Heal",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 145, #Deducted
+    Priority = 160, #Added
+    PWR = 30,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "HP", #The stat to heal,
+    Description = "An average healing spell with lower priority\nbut a higher cost."
     )
 
     Healing_Spores = Equipment(

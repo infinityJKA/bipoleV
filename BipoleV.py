@@ -1544,6 +1544,13 @@ def refresh():
         set_character_sprite(2,dialouge[0])
         write_text("[TALK]")
         enable_movement_controls()
+    elif standing_on.startswith('Q'):
+        dialouge_file = standing_on
+        dialouge = [line.rstrip('\n') for line in open(current_directory+"/dialogue/"+maps.current_location[4]+"/"+standing_on+".txt")]
+        #print(dialogue[0])
+        set_character_sprite(2,dialouge[0])
+        write_text("[QUEST]")
+        enable_movement_controls()
     elif standing_on.startswith("C"):
         dialouge_file = standing_on
         dialouge = [line.rstrip('\n') for line in open(current_directory+"/dialogue/"+maps.current_location[4]+"/"+standing_on+".txt")]
@@ -1690,6 +1697,8 @@ def map_icon(thing):
         return "-"
     elif thing.startswith("C") == True:
         return "C"
+    elif thing.startswith("Q") == True:
+        return "Q"
     elif thing.startswith("R") == True:
         return "R"
     elif thing.startswith("S") == True:
@@ -1892,7 +1901,7 @@ def generate_background():
         loc = maps.current_location[1][cords[1]-1][cords[0]][0]
         top.append(loc)
         
-    letters_to_check = ["T","N","C","D","E","R","H","P","S"]
+    letters_to_check = ["T","N","C","D","E","R","H","P","S","Q"]
 
     if(True): #bottomerer layer
         thing = str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"
@@ -2627,7 +2636,7 @@ def print_equipment_stats():
     global list_to_use_in_multi
     global temporary_text_to_use_in_multi
     chosen_equip = list_to_use_in_multi[multiselect_index]
-    write_text(chosen_equip.DisplayName + "\n\nEquip Type: " + chosen_equip.Equip_Type + "\nDamage Type: " + chosen_equip.Damage_Type + "\Move Type: " + chosen_equip.Move_Type + "\nTarget: " + chosen_equip.Target + "\nSP Cost: " + str(chosen_equip.SP_Cost) + "\nPriority: " + str(chosen_equip.Priority) + "\nPWR: " + str(chosen_equip.PWR) + "\nHeal Stat: " + ("N/A" if chosen_equip.Heal_Stat == None else chosen_equip.Heal_Stat) + "\n\n" + chosen_equip.Description + "\n\n [Right] Return")
+    write_text(chosen_equip.DisplayName + "\n\nEquip Type: " + chosen_equip.Equip_Type + "\nDamage Type: " + chosen_equip.Damage_Type + "\nMove Type: " + chosen_equip.Move_Type + "\nTarget: " + chosen_equip.Target + "\nSP Cost: " + str(chosen_equip.SP_Cost) + "\nPriority: " + str(chosen_equip.Priority) + "\nPWR: " + str(chosen_equip.PWR) + "\nHeal Stat: " + ("N/A" if chosen_equip.Heal_Stat == None else chosen_equip.Heal_Stat) + "\n\n" + chosen_equip.Description + "\n\n [Right] Return")
     global right_command
     global d_command
     right_button.config(command=eval(equip_stat_return_to))

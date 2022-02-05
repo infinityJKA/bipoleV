@@ -6,7 +6,7 @@ Iron_Gauntlets
 Slice
 Stab
 Stone_Staff
-Long Bow
+Long_Bow
 Fire_Blast
 Hydro
 Congeal
