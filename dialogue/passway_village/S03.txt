@@ -2,12 +2,18 @@ solds
 Solds:[@]Welcome!
 #SHOP_EQUIPMENT
 Passway Village Mechant Solds
+Weakening_Punch
 Dagger
 Sweep
 Sword_Lance
 Flame_Blade
 Lance_Sword
+Magic_Bow
+Enrage
 Signal_Flare
+Flood
+Blizzard
+Shatter
 Long_Heal
 Far_Heal
 #SHOP_END

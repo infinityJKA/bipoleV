@@ -2,7 +2,7 @@ sellers
 Sellers:[@]Welcome!
 #SHOP_EQUIPMENT
 Passway Village Mechant Sellers
-Iron_Gauntlets
+
 #SHOP_END
 Sellers:[@]Come again!
 #END

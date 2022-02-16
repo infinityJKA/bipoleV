@@ -83,6 +83,21 @@ if True: #Fists
     Description = "632(x)"
     )
 
+    Weakening_Punch = Equipment(
+    Display_Name = "Weakening Punch",
+    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fists",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 25, #Deducted
+    Priority = 125, #Added
+    PWR = 100,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["WKN",1.2],
+    Description = "Perform a weak punch and weaken the enemy"
+    )
+
 if True: #Swords
 
     Dagger = Equipment(
@@ -285,6 +300,21 @@ if True: #Staves
     Description = "To the moon (trust me bro)"
     )
 
+    Enrage = Equipment(
+    Display_Name = "Slow",
+    Equip_Type = "Staff", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Staff",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 100,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.4,2],["DEF",0.5,2]],
+    Description = "Decreases enemy DEF but\nincrases their ATK"
+    )
+
 if True: #Bows
 
     Bow = Equipment(
@@ -313,6 +343,20 @@ if True: #Bows
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "An average bow"
+    )
+
+    Magic_Bow = Equipment(
+    Display_Name = "Magic Bow",
+    Equip_Type = "Bow", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Bow",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 75, #Added
+    PWR = 85,
+    Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A weak bow that deals magic damage"
     )
 
 if True: #Fire
@@ -431,6 +475,21 @@ if True: #Water
     Description = "An average water attack"
     )
 
+    Flood = Equipment(
+    Display_Name = "Flood",
+    Equip_Type = "Water", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Water",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 200, #Deducted
+    Priority = 300, #Added
+    PWR = 25,
+    Purchasing_Price = 1250, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",0.8,2],["MAG",0.8,2]],
+    Description = "Deals slight water damage and decreases\nATK/MAG for 2 turns to all enemies"
+    )
+
 if True: #Ice
     Freeze = Equipment(
     Display_Name = "Freeze",
@@ -458,6 +517,35 @@ if True: #Ice
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "An average ice attack"
+    )
+
+    Blizzard = Equipment(
+    Display_Name = "Blizzard",
+    Equip_Type = "Ice", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 180, #Added
+    PWR = 95,
+    Purchasing_Price = 1250, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deals ice damage to all enemies"
+    )
+
+    Shatter = Equipment(
+    Display_Name = "Shatter",
+    Equip_Type = "Ice", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 50, #Deducted
+    Priority = 90, #Added
+    PWR = 100,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",0.5,1]],
+    Description = "Deals weak ice damage and decreases\ntarget DEF/RES for the rest of the turn"
     )
 
 if True: #Healing
@@ -531,9 +619,6 @@ if True: #Healing
     Description = "WHY DO THE ENEMIES GET AOE HEALING!?!?!?\nWHY DO THE ENEMIES GET AOE HEALING!?!?!?\nWHY DO THE ENEMIES GET AOE HEALING!?!?!?"
     )
     
-
-
-
 if True: #Boosts
     Energize = Equipment(
     Display_Name = "Energize",
