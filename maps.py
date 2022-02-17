@@ -1,7 +1,7 @@
 import enemies
 global player_cords
 global player_tracking
-# player_cords = [9,15]
+#player_cords = [9,15]
 player_cords = [9,18]
 player_tracking = [
     [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],

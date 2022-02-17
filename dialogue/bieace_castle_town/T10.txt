@@ -1,0 +1,8 @@
+siphon_cognoscente
+Siphon Cognoscente:[@]Hello!
+Siphon Cognoscente:[@]Would you like to travel to Passway Village?
+#MOVE_TO
+Passway_Village
+17
+10
+South

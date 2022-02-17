@@ -974,6 +974,21 @@ def perform_dialogue():
         print(line)
         did_move = False
         refresh()
+    elif line == "#SET_TILE":
+        dialogue_index += 1
+        line = (dialogue[dialogue_index])
+        map = getattr(maps,line)
+        print("map: "+map[0])
+        dialogue_index += 1
+        line = (dialogue[dialogue_index])
+        y = (int)(dialogue[dialogue_index])
+        x = (int)(dialogue[dialogue_index+1])
+        dialogue_index += 2
+        print((dialogue[dialogue_index]))
+        map[1][y][x][0] = dialogue[dialogue_index]
+        print(map[1])
+        dialogue_index += 1
+        perform_dialogue()
     elif line == "#RESTORE_ALL":
         for char in characters.All_Recruited_Characters:
             char.Current_HP = char.Max_HP

@@ -1,4 +1,14 @@
 siphon_cognoscente
 Siphon Cognoscente:[@]Hello!
 Siphon Cognoscente:[@]Would you like to travel to Bieace Castle Town?
+#SET_TILE
+Bieace_Castle_Town
+7
+9
+T10
+#MOVE_TO
+Bieace_Castle_Town
+9
+8
+North
 #END
