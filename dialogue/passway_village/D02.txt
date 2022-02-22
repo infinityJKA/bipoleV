@@ -1,0 +1,14 @@
+door1
+#CHOICE Go to the Ruins of Time?[@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END
+-pass-
+-pass-
+-pass- 
+_
+#MOVE_TO
+Ruins_of_Time1
+17
+8
+West
