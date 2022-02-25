@@ -1,3 +1,4 @@
+from faulthandler import disable
 import tkinter as tk
 from tkinter.filedialog import askopenfilename
 from tkinter import * 
@@ -3565,8 +3566,9 @@ def Enemy_Turn():
         Current_Character = current_encounter[character_to_action_index]
         moves_possible = 0
         for move in Current_Character.Moves:
-            if move.SP_Cost <= Current_Character.Current_SP:
-                moves_possible += 1
+            if move[0].SP_Cost <= Current_Character.Current_SP:
+                if (Current_Character.Current_HP/Current_Character.Max_HP)*100 >= move[1] and (Current_Character.Current_HP/Current_Character.Max_HP)*100 <= move[2]:
+                    moves_possible += 1
         if moves_possible == 0:
             write_text(Current_Character.DisplayName+" did nothing")
             character_to_action_index += 1
@@ -3577,8 +3579,8 @@ def Enemy_Turn():
         else:
             possible_moves = []
             for move in Current_Character.Moves:
-                if move.SP_Cost <= Current_Character.Current_SP:
-                    possible_moves.append(move)
+                if move[0].SP_Cost <= Current_Character.Current_SP:
+                    possible_moves.append(move[0])
             Move_to_Use = possible_moves[random.randint(0,len(possible_moves)-1)]
             print("move to use: "+Move_to_Use.DisplayName)
             total_priority = 0
@@ -4530,10 +4532,12 @@ Instant_Level_Up(characters.Archle,4)
     
      
 
-
+enemy_attack_index = 0
 
 def Select_Enemy_to_Check_Stats():
     disable_inputs()
+    global enemy_attack_index
+    enemy_attack_index = 0
     global multi_char_stat_to_show
     multi_char_stat_to_show = None
     global text_to_use_in_multi
@@ -4577,9 +4581,21 @@ def print_enemy_stats():
     global multiselect_index
     global list_to_use_in_multi
     char = list_to_use_in_multi[multiselect_index]
-    currently_equipped_names = []
+    currently_equipped_names = ""
+    tempindex = 0
+    global enemy_attack_index
     for thing in char.Moves:
-        currently_equipped_names.append(thing.DisplayName)
+        if tempindex != 0:
+            currently_equipped_names = currently_equipped_names + ","
+        if tempindex%4 == 0 and tempindex != 0:
+            currently_equipped_names = currently_equipped_names + "\n"
+        else:
+            currently_equipped_names = currently_equipped_names + " "
+        if tempindex == enemy_attack_index:
+            currently_equipped_names = currently_equipped_names + ">" + thing[0].DisplayName
+        else:
+            currently_equipped_names = currently_equipped_names + thing[0].DisplayName
+        tempindex += 1
     effects = "Active Effects:\n"
     if len(char.Effects) > 0:
         print(char.DisplayName+" has active effects")
@@ -4594,12 +4610,61 @@ def print_enemy_stats():
     else:
         print("no active effects on "+char.DisplayName)
         effects = effects + "N/A"
-    write_text(char.DisplayName+"\nEXP Level Determinant: "+str(char.Level)+"\nHP: "+str(char.Current_HP)+"/"+str(char.Max_HP)+"\nSP: "+str(char.Current_SP)+"/"+str(char.Max_SP)+"\n ATK: "+str(char.ATK)+"\n MAG: "+str(char.MAG)+"\n HLG: "+str(char.HLG)+"\n DEF: "+str(char.DEF)+"\n RES: "+str(char.RES)+"\n\nWeak to:\n"+str(char.Weakness).replace("[","").replace("]","").replace("'","")+"\n\n"+effects+"\n\nMoves:\n"+str(currently_equipped_names).replace("[","").replace("]","").replace("'","")+"\n\n[Left] Return")
+    write_text(char.DisplayName+"\nEXP Level Determinant: "+str(char.Level)+"\nHP: "+str(char.Current_HP)+"/"+str(char.Max_HP)+"\nSP: "+str(char.Current_SP)+"/"+str(char.Max_SP)+"\n ATK: "+str(char.ATK)+"\n MAG: "+str(char.MAG)+"\n HLG: "+str(char.HLG)+"\n DEF: "+str(char.DEF)+"\n RES: "+str(char.RES)+"\n\nWeak to:\n"+str(char.Weakness).replace("[","").replace("]","").replace("'","")+"\n\n"+effects+"\n\nMoves:\n"+str(currently_equipped_names).replace("[","").replace("]","").replace("'","")+"\n\n[A]/[B] Select Move\n[Right] Check Move\n[Left] Return")
     global right_command
     global d_command
     right_button.config(command=eval(check_enemy_stat_return_to))
     right_command = check_enemy_stat_return_to + "()"
     d_command = check_enemy_stat_return_to + "()"
+    global q_command
+    a_button.config(command=enemy_attack_index_increase)
+    q_command = "enemy_attack_index_increase()"
+    global e_command
+    b_button.config(command=enemy_attack_index_decrease)
+    e_command = "enemy_attack_index_decrease()"
+    global left_command
+    global a_command
+    left_button.config(command=print_enemy_equip)
+    left_command = "print_enemy_equip()"
+    a_command = "print_enemy_equip()"
+
+def enemy_attack_index_increase():
+    disable_inputs()
+    print("enemy_attack_index_increase")
+    global enemy_attack_index
+    global list_to_use_in_multi
+    if enemy_attack_index+1 >= len(list_to_use_in_multi[multiselect_index].Moves):
+        enemy_attack_index = 0
+    else:
+        enemy_attack_index += 1
+    print_enemy_stats()
+
+def enemy_attack_index_decrease():
+    disable_inputs()
+    print("enemy_attack_index_decrease")
+    global enemy_attack_index
+    global list_to_use_in_multi
+    if enemy_attack_index-1 <= -1:
+        enemy_attack_index = len(list_to_use_in_multi[multiselect_index].Moves)-1
+    else:
+        enemy_attack_index -= 1
+    print_enemy_stats()
+
+def print_enemy_equip():
+    disable_inputs()
+    global list_to_use_in_multi
+    global enemy_attack_index
+    global multiselect_index
+    chosen_equip = list_to_use_in_multi[multiselect_index].Moves[enemy_attack_index][0]
+    hp_min = str(list_to_use_in_multi[multiselect_index].Moves[enemy_attack_index][1])
+    hp_max = str(list_to_use_in_multi[multiselect_index].Moves[enemy_attack_index][2])
+    write_text(chosen_equip.DisplayName + "\n\nDamage Type: " + chosen_equip.Damage_Type + "\nMove Type: " + chosen_equip.Move_Type + "\nTarget: " + chosen_equip.Target + "\nSP Cost: " + str(chosen_equip.SP_Cost) + "\nPWR: " + str(chosen_equip.PWR) + "\nHeal Stat: " + ("N/A" if chosen_equip.Heal_Stat == None else chosen_equip.Heal_Stat) + "\n\nHP Minimum: " + hp_min + "\nHP Maximum: " + hp_max + "\n\n" + chosen_equip.Description + "\n\n [Right] Return")
+    global right_command
+    global d_command
+    right_button.config(command=print_enemy_stats)
+    right_command = "print_enemy_stats()"
+    d_command = "print_enemy_stats()"
+
 
 def Select_Party_Member_to_Check_Stats():
     disable_inputs()
@@ -4638,8 +4703,6 @@ def Select_Party_Member_to_Check_Stats():
     left_button.config(command=Character_Turn)
     left_command = 'Character_Turn()'
     a_command = 'Character_Turn()'
-
-    
 
 
 

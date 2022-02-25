@@ -42,7 +42,7 @@ class Enemy:
 if True: #Slime Forest Enemies
     Red_Slime_A = Enemy(
         DisplayName = "Red Slime A",
-        Moves = [equipment.Slam],
+        Moves = [[equipment.Slam,0,100]],
         Weakness = ["Lance","Water"],
         Sprite = "red_slime",
         Level = 1,
@@ -61,7 +61,7 @@ if True: #Slime Forest Enemies
     )
     Red_Slime_B = Enemy(
         DisplayName = "Red Slime B",
-        Moves = [equipment.Slam],
+        Moves = [[equipment.Slam,0,100]],
         Weakness = ["Lance","Water"],
         Sprite = "red_slime",
         Level = 1,
@@ -80,7 +80,7 @@ if True: #Slime Forest Enemies
     )
     Red_Slime_C = Enemy(
         DisplayName = "Red Slime C",
-        Moves = [equipment.Slam],
+        Moves = [[equipment.Slam,0,100]],
         Weakness = ["Lance","Water"],
         Sprite = "red_slime",
         Level = 1,
@@ -99,7 +99,7 @@ if True: #Slime Forest Enemies
     )
     Skull_Slime_A = Enemy(
         DisplayName = "Skull Slime A",
-        Moves = [equipment.Bite],
+        Moves = [[equipment.Bite,0,100]],
         Weakness = ["Fists","Ice"],
         Sprite = "skull_slime",
         Level = 1,
@@ -118,7 +118,7 @@ if True: #Slime Forest Enemies
     )
     Mana_Fungus_A = Enemy(
         DisplayName = "Mana Fungus A",
-        Moves = [equipment.Energize,equipment.Healing_Spores],
+        Moves = [[equipment.Energize,0,100],[equipment.Healing_Spores,0,100]],
         Weakness = ["Sword","Staff"],
         Sprite = "mana_fungus",
         Level = 1,
@@ -138,7 +138,7 @@ if True: #Slime Forest Enemies
 
     Funky_Fungus = Enemy(
         DisplayName = "Funky Fungus",
-        Moves = [equipment.Fungal_Thorns,equipment.Funky_Dance],
+        Moves = [[equipment.Fungal_Thorns,0,100],[equipment.Funky_Dance,0,100]],
         Weakness = ["Bow","Staff","Fire"],
         Sprite = "funky_fungus",
         Level = 3,
