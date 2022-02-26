@@ -4727,8 +4727,10 @@ def Select_Party_Member_to_Check_Stats():
 
 
 
-
-
+def Manual_Add_Char(char,lv):
+    characters.Unequipped_Characters.append(char)
+    characters.All_Recruited_Characters.append(char)
+    Instant_Level_Up(char,lv)
 
 
 
@@ -4737,7 +4739,11 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-
+Instant_Level_Up(characters.Protipole,4)
+Manual_Add_Char(characters.Startole,4)
+Manual_Add_Char(characters.Bipoanderer,4)
+Manual_Add_Char(characters.Wicole,4)
+Gold += 100000
 
 
 screen.mainloop()

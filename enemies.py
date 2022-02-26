@@ -158,7 +158,7 @@ if True: #Slime Forest Enemies
 
     Slimeinoid_A = Enemy(
         DisplayName = "Slimeinoid A",
-        Moves = [equipment.Fire_Breath,equipment.Uppercut,equipment.War_Cry],
+        Moves = [[equipment.Fire_Breath,0,100],[equipment.Uppercut,0,100],[equipment.War_Cry,0,100]],
         Weakness = ["Sword","Water"],
         Sprite = "slimeinoid",
         Level = 2,
@@ -177,7 +177,7 @@ if True: #Slime Forest Enemies
 
     Slimeinoid_B = Enemy(
         DisplayName = "Slimeinoid B",
-        Moves = [equipment.Fire_Breath,equipment.Uppercut,equipment.War_Cry],
+        Moves = [[equipment.Fire_Breath,0,100],[equipment.Uppercut,0,100],[equipment.War_Cry,0,100]],
         Weakness = ["Sword","Water"],
         Sprite = "slimeinoid",
         Level = 2,
@@ -196,7 +196,7 @@ if True: #Slime Forest Enemies
 
     Shufflin_Shrub_A = Enemy(
         DisplayName = "Shufflin Shrub A",
-        Moves = [equipment.Bingus_Energy_Wave,equipment.Grassroots],
+        Moves = [[equipment.Bingus_Energy_Wave,0,100],[equipment.Grassroots,0,100]],
         Weakness = ["Fists","Fire"],
         Sprite = "shufflinshrub",
         Level = 2,
@@ -215,7 +215,7 @@ if True: #Slime Forest Enemies
 
     Shufflin_Shrub_B = Enemy(
         DisplayName = "Shufflin Shrub B",
-        Moves = [equipment.Bingus_Energy_Wave,equipment.Grassroots],
+        Moves = [[equipment.Bingus_Energy_Wave,0,100],[equipment.Grassroots,0,100]],
         Weakness = ["Fists","Fire"],
         Sprite = "shufflinshrub",
         Level = 2,
@@ -234,7 +234,7 @@ if True: #Slime Forest Enemies
 
     Raging_Soul = Enemy(
         DisplayName = "Raging Soul",
-        Moves = [equipment.Abyssal_Inferno,equipment.Fire_Breath,equipment.Cursed_Prayer],
+        Moves = [[equipment.Abyssal_Inferno,0,100],[equipment.Fire_Breath,0,100],[equipment.Cursed_Prayer,0,100]],
         #Moves = [equipment.Fireball],#,equipment.Cut],
         Weakness = ["Bow","Water"],
         Sprite = "ragingsoul",
@@ -265,5 +265,67 @@ if True: #Slime Forest Encounters
     sf2_encounter2 = [[Shufflin_Shrub_A,Shufflin_Shrub_B,Slimeinoid_A],"Normal"]
     sf2_encounter3 = [[Shufflin_Shrub_A,Slimeinoid_A,Skull_Slime_A],"Normal"]
     raging_soul_boss = [[Raging_Soul,Shufflin_Shrub_A,Shufflin_Shrub_B],"Normal"]
+
+if True: #Ruins of Time Enemies
+    Gyrobifastigium_A = Enemy(
+        DisplayName = "Gyrobifastigium A",
+        Moves = [[equipment.Three_Space,0,100],[equipment.Prismatic_Honeycomb,0,100],[equipment.Geom_Strike,0,100]],
+        Weakness = ["Staff","Water","Gun"],
+        Sprite = "gyrobifastigium",
+        Level = 6,
+        EXP = 375,
+        Gold = 150,
+        ATK = 325,
+        MAG = 325,
+        HLG = 500,
+        DEF = 350,
+        RES = 400,
+        Max_HP = 500,
+        Max_SP = 750,
+        Bio = "The truth, partically and not fully.\nYet above us.\nThe past.",
+        Effects = []
+    )
+
+    Gyrobifastigium_B = Enemy(
+        DisplayName = "Gyrobifastigium B",
+        Moves = [[equipment.Three_Space,0,100],[equipment.Prismatic_Honeycomb,0,100],[equipment.Geom_Strike,0,100]],
+        Weakness = ["Staff","Water","Gun"],
+        Sprite = "gyrobifastigium",
+        Level = 6,
+        EXP = 375,
+        Gold = 150,
+        ATK = 325,
+        MAG = 325,
+        HLG = 500,
+        DEF = 350,
+        RES = 400,
+        Max_HP = 500,
+        Max_SP = 750,
+        Bio = "The truth, partically and not fully.\nYet above us.\nThe past.",
+        Effects = []
+    )
+
+    Gyrobifastigium_C = Enemy(
+        DisplayName = "Gyrobifastigium C",
+        Moves = [[equipment.Three_Space,0,100],[equipment.Prismatic_Honeycomb,0,100],[equipment.Geom_Strike,0,100]],
+        Weakness = ["Staff","Water","Gun"],
+        Sprite = "gyrobifastigium",
+        Level = 6,
+        EXP = 375,
+        Gold = 150,
+        ATK = 325,
+        MAG = 325,
+        HLG = 500,
+        DEF = 350,
+        RES = 400,
+        Max_HP = 500,
+        Max_SP = 750,
+        Bio = "The truth, partically and not fully.\nYet above us.\nThe past.",
+        Effects = []
+    )
+
+
+if True: #Ruins of Time Enemies
+    rot1_encounter1 = [[Gyrobifastigium_A,Gyrobifastigium_B,Gyrobifastigium_C],"Normal"]
 
 

@@ -202,8 +202,8 @@ if True: #Party Members
     MAG = 75,
     MAG_Growth = 18,
     
-    HLG = 10,
-    HLG_Growth = 18,
+    HLG = 12,
+    HLG_Growth = 19,
 
     Max_HP = 550,
     Current_HP = 550,

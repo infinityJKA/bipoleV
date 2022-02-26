@@ -315,6 +315,20 @@ if True: #Staves
     Description = "Decreases enemy DEF but\nincrases their ATK"
     )
 
+    Geom_Strike = Equipment(
+    Display_Name = "Geom Strike",
+    Equip_Type = "The Lesser Truths", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Staff",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 200,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Topological? HUH!?!?\nIt was in the Finis Event in which The Realmer\nFormation occured once again.\nPartially, we experienced rebirth.\nRemenents of The Algorith... is this Geom Energy?\nIs the true path to ascendancy revealed upon us?\nMay we go beyond The Creators..."
+    )
+
 if True: #Bows
 
     Bow = Equipment(
@@ -548,6 +562,20 @@ if True: #Ice
     Description = "Deals weak ice damage and decreases\ntarget DEF/RES for the rest of the turn"
     )
 
+    Three_Space = Equipment(
+    Display_Name = "Eclidean 3-Space",
+    Equip_Type = "Gyrobifastigium", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 25, #Deducted
+    Priority = 180, #Added
+    PWR = 100,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A TUPLE OF THREE NUMBERS!?!?!?"
+    )
+
 if True: #Healing
     Heal = Equipment(
     Display_Name = "Heal",
@@ -647,7 +675,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["RES",0.6,2],
-    Description = "free zpoingsbuorvb borux keygen real working 2001 :)"
+    Description = "free zpoingsbuorvb borux\nkeygen real working 2001 :)"
     )
 
     Cursed_Prayer = Equipment(
@@ -693,6 +721,21 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = ["DEF",1.2,5],
     Description = "Fear the funk"
+    )
+
+    Prismatic_Honeycomb = Equipment(
+    Display_Name = "Pri. Honeycomb",
+    Equip_Type = "Gyrobifastigium", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 150, #Deducted
+    Priority = 250, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",1.25,2],["ATK",1.25,2]],
+    Description = "When the space-filling convex polyhedron\nwith regular faces is a Johnson solid that packs\nitself together with identical polyhedra!!!!\n\ > [] < /"
     )
 
 if True: #Starting Uniques

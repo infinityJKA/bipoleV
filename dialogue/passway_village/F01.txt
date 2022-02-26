@@ -1,0 +1,5 @@
+nothing
+test
+#ENCOUNTER rot1_encounter1
+test end
+#DESTROY_SELF
