@@ -275,14 +275,14 @@ if True: #Ruins of Time Enemies
         Level = 6,
         EXP = 375,
         Gold = 150,
-        ATK = 325,
-        MAG = 325,
+        ATK = 375,
+        MAG = 375,
         HLG = 500,
         DEF = 350,
         RES = 400,
         Max_HP = 500,
         Max_SP = 750,
-        Bio = "The truth, partically and not fully.\nYet above us.\nThe past.",
+        Bio = "The truth, partically and not fully.\nYet still above us... the past...",
         Effects = []
     )
 
@@ -294,14 +294,14 @@ if True: #Ruins of Time Enemies
         Level = 6,
         EXP = 375,
         Gold = 150,
-        ATK = 325,
-        MAG = 325,
+        ATK = 375,
+        MAG = 375,
         HLG = 500,
         DEF = 350,
         RES = 400,
         Max_HP = 500,
         Max_SP = 750,
-        Bio = "The truth, partically and not fully.\nYet above us.\nThe past.",
+        Bio = "The truth, partically and not fully.\nYet still above us... the past...",
         Effects = []
     )
 
@@ -313,17 +313,35 @@ if True: #Ruins of Time Enemies
         Level = 6,
         EXP = 375,
         Gold = 150,
-        ATK = 325,
-        MAG = 325,
+        ATK = 375,
+        MAG = 375,
         HLG = 500,
         DEF = 350,
         RES = 400,
         Max_HP = 500,
         Max_SP = 750,
-        Bio = "The truth, partically and not fully.\nYet above us.\nThe past.",
+        Bio = "The truth, partically and not fully.\nYet still above us... the past...",
         Effects = []
     )
 
+    Dodecahedron_A = Enemy(
+        DisplayName = "Dodecahedron A",
+        Moves = [[equipment.Convex_Polytope,0,100],[equipment.Stellation,0,100],[equipment.Geom_Strike,0,100]],
+        Weakness = ["Lance","Ice","Gun"],
+        Sprite = "dodecahedron",
+        Level = 7,
+        EXP = 375,
+        Gold = 165,
+        ATK = 375,
+        MAG = 375,
+        HLG = 500,
+        DEF = 400,
+        RES = 425,
+        Max_HP = 650,
+        Max_SP = 875,
+        Bio = "Dodecahedron!!!",
+        Effects = []
+    )
 
 if True: #Ruins of Time Enemies
     rot1_encounter1 = [[Gyrobifastigium_A,Gyrobifastigium_B,Gyrobifastigium_C],"Normal"]

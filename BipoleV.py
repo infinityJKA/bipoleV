@@ -4610,7 +4610,7 @@ def print_enemy_stats():
     else:
         print("no active effects on "+char.DisplayName)
         effects = effects + "N/A"
-    write_text(char.DisplayName+"\nEXP Level Determinant: "+str(char.Level)+"\nHP: "+str(char.Current_HP)+"/"+str(char.Max_HP)+"\nSP: "+str(char.Current_SP)+"/"+str(char.Max_SP)+"\n ATK: "+str(char.ATK)+"\n MAG: "+str(char.MAG)+"\n HLG: "+str(char.HLG)+"\n DEF: "+str(char.DEF)+"\n RES: "+str(char.RES)+"\n\nWeak to:\n"+str(char.Weakness).replace("[","").replace("]","").replace("'","")+"\n\n"+effects+"\n\nMoves:\n"+str(currently_equipped_names).replace("[","").replace("]","").replace("'","")+"\n\n[A]/[B] Select Move\n[Right] Check Move\n[Left] Return")
+    write_text(char.DisplayName+"\nEXP Level Determinant: "+str(char.Level)+"\nHP: "+str(char.Current_HP)+"/"+str(char.Max_HP)+"\nSP: "+str(char.Current_SP)+"/"+str(char.Max_SP)+"\n ATK: "+str(char.ATK)+"\n MAG: "+str(char.MAG)+"\n HLG: "+str(char.HLG)+"\n DEF: "+str(char.DEF)+"\n RES: "+str(char.RES)+"\n\nWeak to:\n"+str(char.Weakness).replace("[","").replace("]","").replace("'","")+"\n\n"+effects+"\n\nMoves:\n"+str(currently_equipped_names)+"\n\n"+char.Bio+"\n\n[A]/[B] Select Move\n[Right] Check Move\n[Left] Return")
     global right_command
     global d_command
     right_button.config(command=eval(check_enemy_stat_return_to))

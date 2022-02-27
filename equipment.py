@@ -11,6 +11,7 @@ class Equipment:
     PWR = 150,
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = "HP", #The stat to heal,
+    Multi_Effect = False,
     Inflict = ["ATK",1.2,3], #Stat to boost, amount to boost by, turns to last
     Description = "test"
     ):
@@ -23,6 +24,7 @@ class Equipment:
         self.PWR = PWR
         self.Priority = Priority
         self.Purchasing_Price = Purchasing_Price
+        self.Multi_Effect = Multi_Effect
         self.Heal_Stat = Heal_Stat
         self.Inflict = Inflict
         self.Description = Description
@@ -323,7 +325,7 @@ if True: #Staves
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 0, #Deducted
     Priority = 0, #Added
-    PWR = 200,
+    PWR = 150,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Topological? HUH!?!?\nIt was in the Finis Event in which The Realmer\nFormation occured once again.\nPartially, we experienced rebirth.\nRemenents of The Algorith... is this Geom Energy?\nIs the true path to ascendancy revealed upon us?\nMay we go beyond The Creators..."
@@ -371,6 +373,20 @@ if True: #Bows
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A weak bow that deals magic damage"
+    )
+
+    Convex_Polytope = Equipment(
+    Display_Name = "Convex Polytope",
+    Equip_Type = "Dodecahedron", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Bow",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 25, #Deducted
+    Priority = 0, #Added
+    PWR = 115,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Buzzwords."
     )
 
 if True: #Fire
@@ -569,8 +585,8 @@ if True: #Ice
     Move_Type = "Magic", #Physical, Magic, Heal, Boost
     Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 25, #Deducted
-    Priority = 180, #Added
-    PWR = 100,
+    Priority = 0, #Added
+    PWR = 115,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A TUPLE OF THREE NUMBERS!?!?!?"
@@ -727,7 +743,7 @@ if True: #Boosts
     Display_Name = "Pri. Honeycomb",
     Equip_Type = "Gyrobifastigium", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Boost",
-    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 150, #Deducted
     Priority = 250, #Added
@@ -736,6 +752,21 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",1.25,2],["ATK",1.25,2]],
     Description = "When the space-filling convex polyhedron\nwith regular faces is a Johnson solid that packs\nitself together with identical polyhedra!!!!\n\ > [] < /"
+    )
+
+    Stellation = Equipment(
+    Display_Name = "Stellation",
+    Equip_Type = "Dodecahedron", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 150, #Deducted
+    Priority = 250, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["DEF",1.5,2],
+    Description = "STELLATING POLYHEDRA!?!?!?!?!?"
     )
 
 if True: #Starting Uniques
