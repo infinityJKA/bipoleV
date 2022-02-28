@@ -345,5 +345,6 @@ if True: #Ruins of Time Enemies
 
 if True: #Ruins of Time Enemies
     rot1_encounter1 = [[Gyrobifastigium_A,Gyrobifastigium_B,Gyrobifastigium_C],"Normal"]
+    rot1_encounter2 = [[Dodecahedron_A,Gyrobifastigium_A,Gyrobifastigium_B],"Normal"]
 
 

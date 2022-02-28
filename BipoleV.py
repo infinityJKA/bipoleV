@@ -880,6 +880,11 @@ def perform_dialogue():
         maps.current_location[1][cords[1]][cords[0]] = ["000"]
         did_move = False
         refresh()
+    elif "#OVERRIDE_SELF" in line:
+        cords = maps.return_player_cords()
+        maps.current_location[1][cords[1]][cords[0]] = [line.replace('#OVERRIDE_SELF ','')]
+        did_move = False
+        refresh()
     elif line == "#RECRUIT":
         dialogue_index += 1
         line = (dialogue[dialogue_index])
@@ -1754,9 +1759,14 @@ def generate_background():
     global top_background_image
 
     cords = maps.return_player_cords()
-    bottomest_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottomest_layer/"+maps.current_location[3]+".png").convert("RGBA")
-    bottomest_background_sprite = ImageTk.PhotoImage(bottomest_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
-    sprites_canvas.itemconfig(bottomest_background_image, image = bottomest_background_sprite)
+    if "n" in maps.current_location[1][cords[1]][cords[0]][0]:
+        bottomest_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottomest_layer/"+maps.current_location[9]+".png").convert("RGBA")
+        bottomest_background_sprite = ImageTk.PhotoImage(bottomest_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
+        sprites_canvas.itemconfig(bottomest_background_image, image = bottomest_background_sprite)
+    else:
+        bottomest_background_sprite_unform = Image.open(str(current_directory)+"/world/"+world_color+"/bottomest_layer/"+maps.current_location[3]+".png").convert("RGBA")
+        bottomest_background_sprite = ImageTk.PhotoImage(bottomest_background_sprite_unform.resize(dimensions,resample=Image.NEAREST))
+        sprites_canvas.itemconfig(bottomest_background_image, image = bottomest_background_sprite)
     print("")
     top = []
     bottom = []

@@ -25,4 +25,4 @@ Wicole:[@]Not everyday that you're able[@]to see the Holy Cards.
 Wicole
 -pass-
 Wicole joined your party!
-#DESTROY_SELF
+#OVERRIDE_SELF n00

@@ -23,4 +23,4 @@ Bipoanderer:[@]I shall help you retrieve the Holy Cards!
 Bipoanderer
 -pass-
 Bipoanderer joined your party!
-#DESTROY_SELF
+#OVERRIDE_SELF n00

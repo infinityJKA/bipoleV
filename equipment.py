@@ -85,19 +85,19 @@ if True: #Fists
     Description = "632(x)"
     )
 
-    Weakening_Punch = Equipment(
-    Display_Name = "Weakening Punch",
+    Weakening_Taunt = Equipment(
+    Display_Name = "Weakening Taunt",
     Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Fists",
-    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 25, #Deducted
     Priority = 125, #Added
     PWR = 100,
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = ["WKN",1.2],
-    Description = "Perform a weak punch and weaken the enemy"
+    Inflict = ["WKN",1.2,3],
+    Description = "Weaken the enemy with 1.2 WKN for 3 turns"
     )
 
 if True: #Swords
