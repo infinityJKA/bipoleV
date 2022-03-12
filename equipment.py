@@ -375,6 +375,20 @@ if True: #Bows
     Description = "A weak bow that deals magic damage"
     )
 
+    LP_Throw = Equipment(
+    Display_Name = "LP Throw",
+    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Bow",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 1000, #Deducted
+    Priority = 2500, #Added
+    PWR = 125,
+    Purchasing_Price = 7500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "What the hell is going on!?!?!?"
+    )
+
     Convex_Polytope = Equipment(
     Display_Name = "Convex Polytope",
     Equip_Type = "Dodecahedron", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
