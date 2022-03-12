@@ -1,0 +1,16 @@
+yhtims
+Bonus Shop:[@]placeholder
+#SHOP_EQUIPMENT
+The Bonus Shop
+Bronze_Gauntlets
+Cut
+Jab
+Wooden_Staff
+Bow
+Fireball
+Aqua
+Freeze
+Heal
+#SHOP_END
+Bonus Shop:[@]End
+#END

@@ -113,7 +113,7 @@ if True: #Swords
     PWR = 75,
     Purchasing_Price = 350, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Deals weaker sword damage and gains\nless priority."
+    Description = "Deals very weak sword damage and\ngain minimal priority."
     )
 
     Cut = Equipment(
@@ -677,6 +677,35 @@ if True: #Healing
     Description = "WHY DO THE ENEMIES GET AOE HEALING!?!?!?\nWHY DO THE ENEMIES GET AOE HEALING!?!?!?\nWHY DO THE ENEMIES GET AOE HEALING!?!?!?"
     )
     
+if True: #Guns
+    The_22XX = Equipment(
+    Display_Name = "The 22XX",
+    Equip_Type = "Protipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 700, #Added
+    PWR = 100,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "An ancient weapon from a previous civilization.\nThe side of the gun reads \"22XX\"."
+    )
+
+    Enderscope_X = Equipment(
+    Display_Name = "Enderscope X",
+    Equip_Type = "Archle", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 1000, #Deducted
+    Priority = 50, #Added
+    PWR = 150,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "The Enderscope X ultilizes human Mana\ngeneration using CELL technology. The rifle was\ninvented by scientist Criz Zzir, and was used\nto arm the Bastion rebels."
+    )
+
 if True: #Boosts
     Energize = Equipment(
     Display_Name = "Energize",
@@ -1088,6 +1117,10 @@ if True:
         text_file="humphrey_lore"
     )
 
-
+    bonus_shop_pass = Key_Item(
+        Display_Name="Bonus Shop Pass",
+        sprite="mreconomy",
+        text_file="bonus_shop_pass"
+    )
 
 key_item_inventory = [test_key,sussy_explosive, humphrey_lore]

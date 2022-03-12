@@ -10,5 +10,5 @@ _
 #MOVE_TO
 Ruins_of_Time1
 17
-8
+9
 West
