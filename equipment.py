@@ -258,6 +258,20 @@ if True: #Lances
     Description = "The weak thorns of a fungus\n(Do fungi even have thorns? Well, they do now!)"
     )
 
+    Prime_Sieve = Equipment(
+    Display_Name = "Prime Sieve",
+    Equip_Type = "Eratosthenesoid", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Lance",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 165,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Extermination of the unworthy must\nbe enacted upon synthesization.\nWe must approach ascention."
+    )
+
 if True: #Staves
 
     Wooden_Staff = Equipment(
@@ -488,6 +502,20 @@ if True: #Fire
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "\"KIDS! DO NOT SMOKE!\nSmoking very dangerous for your lungs\nand your safety. If someone offers\nyou a cigarette, make sure to decline!\"\n-the back of the lighter"
+    )
+
+    Global_Projection = Equipment(
+    Display_Name = "Global Projection",
+    Equip_Type = "Eratosthenesoid", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 25, #Deducted
+    Priority = 0, #Added
+    PWR = 125,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Stop projecting."
     )
 
 if True: #Water
@@ -810,6 +838,21 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = ["DEF",1.5,2],
     Description = "STELLATING POLYHEDRA!?!?!?!?!?"
+    )
+
+    Polymath = Equipment(
+    Display_Name = "Polymath",
+    Equip_Type = "Eratosthenesoid", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",1.25,3],["RES",1.25,3],["ATK",1.25,3],["HLG",1.25,3],["MAG",1.25,3]],
+    Description = "Beta moment."
     )
 
 if True: #Starting Uniques

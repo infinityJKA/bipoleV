@@ -272,8 +272,8 @@ if True: #Ruins of Time Enemies
         Moves = [[equipment.Three_Space,0,100],[equipment.Prismatic_Honeycomb,0,100],[equipment.Geom_Strike,0,100]],
         Weakness = ["Staff","Water","Gun"],
         Sprite = "gyrobifastigium",
-        Level = 6,
-        EXP = 375,
+        Level = 4,
+        EXP = 300,
         Gold = 150,
         ATK = 375,
         MAG = 375,
@@ -291,8 +291,8 @@ if True: #Ruins of Time Enemies
         Moves = [[equipment.Three_Space,0,100],[equipment.Prismatic_Honeycomb,0,100],[equipment.Geom_Strike,0,100]],
         Weakness = ["Staff","Water","Gun"],
         Sprite = "gyrobifastigium",
-        Level = 6,
-        EXP = 375,
+        Level = 4,
+        EXP = 300,
         Gold = 150,
         ATK = 375,
         MAG = 375,
@@ -310,8 +310,8 @@ if True: #Ruins of Time Enemies
         Moves = [[equipment.Three_Space,0,100],[equipment.Prismatic_Honeycomb,0,100],[equipment.Geom_Strike,0,100]],
         Weakness = ["Staff","Water","Gun"],
         Sprite = "gyrobifastigium",
-        Level = 6,
-        EXP = 375,
+        Level = 4,
+        EXP = 300,
         Gold = 150,
         ATK = 375,
         MAG = 375,
@@ -329,8 +329,8 @@ if True: #Ruins of Time Enemies
         Moves = [[equipment.Convex_Polytope,0,100],[equipment.Stellation,0,100],[equipment.Geom_Strike,0,100]],
         Weakness = ["Lance","Ice","Gun"],
         Sprite = "dodecahedron",
-        Level = 7,
-        EXP = 375,
+        Level = 5,
+        EXP = 325,
         Gold = 165,
         ATK = 375,
         MAG = 375,
@@ -343,8 +343,90 @@ if True: #Ruins of Time Enemies
         Effects = []
     )
 
-if True: #Ruins of Time Enemies
+    Dodecahedron_B = Enemy(
+        DisplayName = "Dodecahedron B",
+        Moves = [[equipment.Convex_Polytope,0,100],[equipment.Stellation,0,100],[equipment.Geom_Strike,0,100]],
+        Weakness = ["Lance","Ice","Gun"],
+        Sprite = "dodecahedron",
+        Level = 5,
+        EXP = 325,
+        Gold = 165,
+        ATK = 375,
+        MAG = 375,
+        HLG = 500,
+        DEF = 400,
+        RES = 425,
+        Max_HP = 650,
+        Max_SP = 875,
+        Bio = "Dodecahedron!!!",
+        Effects = []
+    )
+
+    Eratosthenesoid_A = Enemy(
+        DisplayName = "Eratosthenesoid A",
+        Moves = [[equipment.Polymath,75,100],[equipment.Global_Projection,0,75],[equipment.Prime_Sieve,50,100],[equipment.Geom_Strike,75,100]],
+        Weakness = ["Fire","Gun"],
+        Sprite = "eratosthenesoid",
+        Level = 6,
+        EXP = 350,
+        Gold = 150,
+        ATK = 850,
+        MAG = 825,
+        HLG = 900,
+        DEF = 400,
+        RES = 425,
+        Max_HP = 1000,
+        Max_SP = 1250,
+        Bio = "Circumference.",
+        Effects = []
+    )
+
+    Eratosthenesoid_B = Enemy(
+        DisplayName = "Eratosthenesoid B",
+        Moves = [[equipment.Polymath,75,100],[equipment.Global_Projection,0,75],[equipment.Prime_Sieve,50,100],[equipment.Geom_Strike,75,100]],
+        Weakness = ["Fire","Gun"],
+        Sprite = "eratosthenesoid",
+        Level = 6,
+        EXP = 350,
+        Gold = 150,
+        ATK = 850,
+        MAG = 825,
+        HLG = 900,
+        DEF = 400,
+        RES = 425,
+        Max_HP = 1000,
+        Max_SP = 1250,
+        Bio = "Circumference.",
+        Effects = []
+    )
+
+    Eratosthenesoid_C = Enemy(
+        DisplayName = "Eratosthenesoid C",
+        Moves = [[equipment.Polymath,75,100],[equipment.Global_Projection,0,75],[equipment.Prime_Sieve,50,100],[equipment.Geom_Strike,75,100]],
+        Weakness = ["Fire","Gun"],
+        Sprite = "eratosthenesoid",
+        Level = 6,
+        EXP = 350,
+        Gold = 150,
+        ATK = 850,
+        MAG = 825,
+        HLG = 900,
+        DEF = 400,
+        RES = 425,
+        Max_HP = 1000,
+        Max_SP = 1250,
+        Bio = "Circumference.",
+        Effects = []
+    )
+
+
+
+if True: #Ruins of Time Encounters
     rot1_encounter1 = [[Gyrobifastigium_A,Gyrobifastigium_B,Gyrobifastigium_C],"Normal"]
     rot1_encounter2 = [[Dodecahedron_A,Gyrobifastigium_A,Gyrobifastigium_B],"Normal"]
+
+    rot2_encounter1 = [[Eratosthenesoid_A,Dodecahedron_A,Dodecahedron_B],"Normal"]
+    rot2_encounter2 = [[Eratosthenesoid_A,Dodecahedron_A,Gyrobifastigium_A],"Normal"]
+    rot2_encounter3 = [[Eratosthenesoid_A,Gyrobifastigium_A,Gyrobifastigium_B],"Normal"]
 
 

@@ -3578,7 +3578,11 @@ def Enemy_Turn():
         for move in Current_Character.Moves:
             if move[0].SP_Cost <= Current_Character.Current_SP:
                 if (Current_Character.Current_HP/Current_Character.Max_HP)*100 >= move[1] and (Current_Character.Current_HP/Current_Character.Max_HP)*100 <= move[2]:
+                    print("USABLE "+move[0].DisplayName+" "+str(move[2])+" >= "+str(Current_Character.Current_HP/Current_Character.Max_HP*100)+"HP >= "+str(move[1]))
                     moves_possible += 1
+                else:
+                    print("NOT USABLE "+move[0].DisplayName+" "+str(move[2])+" >= "+str(Current_Character.Current_HP/Current_Character.Max_HP*100)+"HP >= "+str(move[1]))
+                
         if moves_possible == 0:
             write_text(Current_Character.DisplayName+" did nothing")
             character_to_action_index += 1
@@ -4427,7 +4431,7 @@ def Get_EXP_From_Enemy():
         if char.Current_HP > 0:
             exp_mul = 1
             if char.Level > target.Level:
-                exp_mul = char.Level - target.Level + 1
+                exp_mul = ((char.Level - target.Level)*1.75) + 1
             exp_to_gain = round(target.EXP/exp_mul)
             char.EXP += exp_to_gain
             if char.EXP >= 1000:
@@ -4749,10 +4753,12 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,4)
-Manual_Add_Char(characters.Startole,4)
-Manual_Add_Char(characters.Bipoanderer,4)
-Manual_Add_Char(characters.Wicole,4)
+Instant_Level_Up(characters.Protipole,8)
+Manual_Add_Char(characters.Startole,8)
+Manual_Add_Char(characters.Bipoanderer,8)
+Manual_Add_Char(characters.Wicole,8)
+Manual_Add_Char(characters.Bithecary,3)
+Manual_Add_Char(characters.Archle,3)
 Gold += 100000
 
 
