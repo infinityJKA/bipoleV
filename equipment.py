@@ -1150,7 +1150,7 @@ if True:
 
     sussy_explosive = Key_Item(
         Display_Name="Sussy Device",
-        sprite="mreconomy",
+        sprite="sussy_device",
         text_file="sussy_device"
     )
 

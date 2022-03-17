@@ -1,5 +1,6 @@
 from faulthandler import disable
 import tkinter as tk
+from tkinter import dialog
 from tkinter.filedialog import askopenfilename
 from tkinter import * 
 import os
@@ -777,6 +778,9 @@ shop_end_index = 0
 pawn_current = "equip"
 pawn_mul = 0.5
 
+multichoice_index = 0
+multichoice_list = []
+
 def perform_dialogue():
     disable_inputs()
     global dialogue
@@ -817,6 +821,8 @@ def perform_dialogue():
     global current_encounter_all
     global current_encounter
     global did_move
+    global multichoice_index
+    global multichoice_list
 
     line = (dialogue[dialogue_index])
     if line == "#CLEAR":
@@ -1195,6 +1201,27 @@ def perform_dialogue():
                     print("changed to 000")
         dialogue_index += 1
         advance_text()
+    elif line == "#INIT_MULTICHOICE":
+        multichoice_index = 0
+        dialogue_index += 1
+        perform_dialogue()
+    elif line == "#MULTICHOICE":
+        multichoice_list = eval(dialogue[dialogue_index+2])
+        thing_to_write = dialogue[dialogue_index+1]+"\n\n"+multichoice_list[multichoice_index]+"\n\n<--    -->\n[A] Select\n[B] Close"
+        write_text(thing_to_write.replace('[@]',"\n"))
+        a_command = "multichoice_move_left()"
+        left_command = "multichoice_move_left()"
+        left_button.config(command=multichoice_move_left)
+        d_command = "multichoice_move_right()"
+        right_command = "multichoice_move_right()"
+        right_button.config(command=multichoice_move_right)
+        q_command = "multichoice_select()"
+        a_button.config(command=multichoice_select)
+        e_command = "multichoice_return()"
+        b_button.config(command=multichoice_return)
+    elif "#GOTO " in line:
+        dialogue_index = search_for("/==/."+line.replace('#GOTO ',''))
+        perform_dialogue()
     else:
         write_text(line.replace('[@]',"\n"))
         dialogue_index += 1
@@ -1202,6 +1229,48 @@ def perform_dialogue():
         g_command = "advance_text()"
         talk_button.config(command=advance_text)
         
+
+def multichoice_move_left():
+    disable_inputs()
+    print("multichoice_move_left")
+    global multichoice_index
+    global multichoice_list
+    if multichoice_index <= 0:
+        multichoice_index = len(multichoice_list)-1
+    else:
+        multichoice_index -= 1
+    perform_dialogue()
+
+def multichoice_move_right():
+    disable_inputs()
+    print("multichoice_move_right")
+    global multichoice_index
+    global multichoice_list
+    if multichoice_index >= len(multichoice_list)-1:
+        multichoice_index = 0
+    else:
+        multichoice_index += 1
+    perform_dialogue()
+    
+def multichoice_select():
+    disable_inputs()
+    print("multichoice_select")
+    global multichoice_list
+    global multichoice_index
+    global dialogue_index
+    global dialogue
+    dialogue_index = search_for("/==/."+multichoice_list[multichoice_index])
+    perform_dialogue()
+
+def multichoice_return():
+    disable_inputs()
+    print("multichoice_return")
+    global multichoice_list
+    global multichoice_index
+    global dialogue_index
+    global dialogue
+    dialogue_index = search_for("/==/."+dialogue[dialogue_index+3])
+    perform_dialogue()
 
 def search_for(text):
     ind = 0
