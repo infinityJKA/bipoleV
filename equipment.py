@@ -735,6 +735,82 @@ if True: #Guns
     )
 
 if True: #Boosts
+    
+    Equivalent_Exchange_I = Equipment(
+    Display_Name = "Equivalent Exchange I",
+    Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Multiboost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 750, #Deducted
+    Priority = 200, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.5,3],["MAG",0.5,3]],
+    Description = "1.5x ATK for 0.5x MAG (3 turns)\nEvery timeline has its correspondents,\nyou too."
+    )
+
+    Equivalent_Exchange_II = Equipment(
+    Display_Name = "Equivalent Exchange II",
+    Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Multiboost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 750, #Deducted
+    Priority = 200, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["MAG",1.5,3],["ATK",0.5,3]],
+    Description = "1.5x MAG for 0.5x ATK (3 turns)\nEvery timeline has its correspondents,\nyou too."
+    )
+
+    Equivalent_Exchange_III = Equipment(
+    Display_Name = "Equivalent Exchange III",
+    Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Multiboost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 750, #Deducted
+    Priority = 200, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",1.5,3],["RES",0.5,3]],
+    Description = "1.5x DEF for 0.5x RES (3 turns)\nEvery timeline has its correspondents,\nyou too."
+    )
+
+    Equivalent_Exchange_IV = Equipment(
+    Display_Name = "Equivalent Exchange IV",
+    Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Multiboost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 750, #Deducted
+    Priority = 200, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["RES",1.5,3],["DEF",0.5,3]],
+    Description = "1.5x RES for 0.5x DEF (3 turns)\nEvery timeline has its correspondents,\nyou too."
+    )
+
+    Equivalent_Exchange_V = Equipment(
+    Display_Name = "Equivalent Exchange V",
+    Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Multiboost",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 3500, #Deducted
+    Priority = 450, #Added
+    PWR = 8,
+    Purchasing_Price = 1500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "SP", #The stat to heal,
+    Inflict = [],
+    Description = "Every timeline has its correspondents,\nyou too."
+    )
+    
     Energize = Equipment(
     Display_Name = "Energize",
     Equip_Type = "Mana Fungus", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -1206,4 +1282,4 @@ if True:
         text_file="bonus_shop_pass"
     )
 
-key_item_inventory = [test_key,sussy_explosive, humphrey_lore]
+key_item_inventory = [bonus_shop_pass,sussy_explosive, humphrey_lore]

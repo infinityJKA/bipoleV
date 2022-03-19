@@ -881,6 +881,18 @@ def perform_dialogue():
             thing = dialogue[dialogue_index+2]
         dialogue_index = search_for("/==/."+thing)
         perform_dialogue()
+    elif "#SENDIFKEYITEM " in line:
+        keytocheck = (line.replace("#SENDIFKEYITEM ",""))
+        haskey = False
+        for k in equipment.key_item_inventory:
+            if k == eval("equipment."+keytocheck):
+                haskey = True
+        if haskey:
+            thing = dialogue[dialogue_index+1]
+        else:
+            thing = dialogue[dialogue_index+2]
+        dialogue_index = search_for("/==/."+thing)
+        perform_dialogue()
     elif line == "#DESTROY_SELF":
         cords = maps.return_player_cords()
         maps.current_location[1][cords[1]][cords[0]] = ["000"]
@@ -981,7 +993,8 @@ def perform_dialogue():
         dialogue_index += 2
         line = (dialogue[dialogue_index])
         print(line)
-        vision_facing = line
+        if line != "NO CHANGE":
+            vision_facing = line
         dialogue_index += 1
         print(line)
         did_move = False

@@ -1,0 +1,16 @@
+nothing
+#SENDIFKEYITEM bonus_shop_pass
+has
+doesnt
+_
+/==/.has
+You pass through the aura...
+#OVERRIDE_SELF n00
+_
+/==/.doesnt
+A mysterious aura blocks[@]your way...
+#MOVE_TO
+Ruins_of_Time1
+6
+22
+NO CHANGE
