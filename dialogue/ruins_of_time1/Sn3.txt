@@ -12,7 +12,7 @@ Dyad Distichouan:[@]What do you want to[@]talk about?
 #INIT_MULTICHOICE
 #MULTICHOICE
 [Select a topic]
-["Who are you?","Antediluvian Sacrosanct Agglomerate","Evan Levi","Why are you here?","The Finis Event","The Bonus Shop"]
+["Who are you?","Antediluvian Sacrosanct Agglomerate","Evan Levi","The Finis Event","The Bonus Shop"]
 START
 _
 /==/.Who are you?
@@ -43,6 +43,31 @@ Dyad Distichouan:[@]Anyhow, being able to freely experience[@]life is more than 
 Dyad Distichouan:[@]I only wanted to become God for the freedom.
 Dyad Distichouan:[@]...
 #GOTO Talk
+_
+/==/.Evan Levi
+Dyad Distichouan:[@]Evan was the founder of the[@]Leviathan, all the way back since[@]22nd century.
+Dyad Distichouan:[@]He made himself essentially immortal[@]through using CELL technology[@]and cybernetics, similar to how we[@]did in the ASA.
+Dyad Distichouan:[@]Evan's power wasn't as strong as ours[@]though, and we were able to threaten[@]him into having some power in the Leviathan.
+Dyad Distichouan:[@]He would build us a base in Luna, and in[@]return we would gurantee his safety[@]until the Finis Event and gave him[@]a little of our more advanced CELL technology.
+Dyad Distichouan:[@]...
+#GOTO Talk
+_
+/==/.The Finis Event
+Dyad Distichouan:[@]Evan's plan with the Finis Event was[@]to incite a Time of Judgement upon the realm[@]in order to eradicate most of humanity and[@]create a new world of destruction as a punishment[@]for humanity's sins.
+Dyad Distichouan:[@]However, this plan didn't fully work.
+Dyad Distichouan:[@]A human known as Canvas almost killed[@]Evan when he was starting the Finis Event.
+Dyad Distichouan:[@]This caused the Nexters to see hope and[@]worth in the future of humanity, and intervened[@]with the event.
+Dyad Distichouan:[@]Earth's lands were shifted and all[@]Realmers on the planet gained natural Mana capabilities.
+Dyad Distichouan:[@]So now, humanity was split between two[@]species, the Lunarians who gained no[@]new traits from the Finis Event, and then[@]the Manatians such as you.
+Dyad Distichouan:[@]Manatians have the natural ability to[@]generate and control Mana, the energy[@]used to perform magic spells.
+Dyad Distichouan:[@]The control of mana also brought way[@]to the natural use of Magica, the physical[@]manifestation of Mana energy, used[@]most often in conjuration.
+Dyad Distichouan:[@]This also led to the creation of[@]Magica-based lifeforms created upon the[@]Earth by the Nexters following the Finis[@]Event, such as slimes.
+Dyad Distichouan:[@]The entities found in these ruins[@], the Lesser Truthes, are different though.
+Dyad Distichouan:[@]They are relics of the higher entities[@]from after the Finis Event from entities[@]involved in the recreation, such as the[@]Nexters and Previousers.
+Dyad Distichouan:[@]A few select Realmers from the[@]Finis Event were chosen to be reincarnated[@]with a significantly more powerful, non-aging[@]form, such as Artxe here.
+Dyad Distichouan:[@]...
+#GOTO Talk
+_
 _
 _
 /==/.Shop
