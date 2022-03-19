@@ -1,6 +1,6 @@
 dyad_distichouan
-/==/.START
 Dyad Distichouan:[@]Hello, is there something[@]you need?
+/==/.START
 #INIT_MULTICHOICE
 #MULTICHOICE
 [Select an action]
@@ -13,7 +13,7 @@ Dyad Distichouan:[@]What do you want to[@]talk about?
 #MULTICHOICE
 [Select a topic]
 ["Who are you?","Antediluvian Sacrosanct Agglomerate","Evan Levi","The Finis Event","The Bonus Shop"]
-START
+BACKTOSTART
 _
 /==/.Who are you?
 Dyad Distichouan:[@]I am Dyad Distichouan,[@]second luminary of the Antediluvian[@]Sacrosanct Agglomerate.
@@ -23,19 +23,19 @@ Dyad Distichouan:[@]...
 _
 _
 /==/.Antediluvian Sacrosanct Agglomerate
-Dyad Distichouan:[@]The Antediluvian Sacrosanct Agglomerate[@]is a secret society formed prior to[@]the Finis Event, in which we tried to become God.
+Dyad Distichouan:[@]The Antediluvian Sacrosanct Agglomerate[@]is a secret society formed prior to the[@]Finis Event, in which we tried to become God.
 Dyad Distichouan:[@]The group consisted of five "Luminaries".
 Dyad Distichouan:[@]Ark Primo, the First Luminary.
 Dyad Distichouan:[@]Ternion Triumvir, the Third Luminary
 Dyad Distichouan:[@]Tetra Quadrumvirate, the Fourth Luminary
 Dyad Distichouan:[@]Lustrum Quincunx, the Fifth Luminary.
 Dyad Distichouan:[@]I was the Second Luminary.
-Dyad Distichouan:[@]In order to ascend, we utilized the[@]newly-developed CELL technology and cybernetics[@] to augment our bodies.
-Dyad Distichouan:[@]In doing so, we essentially became[@]gods among men, at least in terms of strength.
+Dyad Distichouan:[@]In order to ascend, we utilized the[@]newly-developed CELL technology and[@]cybernetics to augment our bodies.
+Dyad Distichouan:[@]In doing so, we essentially became gods[@]among men, at least in terms of strength.
 Dyad Distichouan:[@]We worked directly with Evan Levi and[@]the Leviathan in order to assure our placement[@]on Luna before the Finis Event occured.
 Dyad Distichouan:[@]After the Finis Event, though, Ark[@]Primo had somehow been killed.
 Dyad Distichouan:[@]This caused conflict between the[@]remaining members and fighting broke out.
-Dyad Distichouan:[@]The only thing keeping us together[@]was our common goal of godhood, so it[@]was inevitable conflict would happen eventually.
+Dyad Distichouan:[@]The only thing keeping us together[@]was our common goal of godhood, so it was[@]inevitable conflict would happen[@]eventually.
 Dyad Distichouan:[@]With Ark's death, however, we were[@]unable to reach the power we had[@]planned to obtain, and our ascention[@]plan ultimately failed.
 Dyad Distichouan:[@]As for me, I'm finished with attempting[@]the ascention plan.
 Dyad Distichouan:[@]I've already become stronger than most[@]other mortals, and I don't want to risk[@]my life fighting the other luminaries.
@@ -48,35 +48,68 @@ _
 Dyad Distichouan:[@]Evan was the founder of the[@]Leviathan, all the way back since[@]22nd century.
 Dyad Distichouan:[@]He made himself essentially immortal[@]through using CELL technology[@]and cybernetics, similar to how we[@]did in the ASA.
 Dyad Distichouan:[@]Evan's power wasn't as strong as ours[@]though, and we were able to threaten[@]him into having some power in the Leviathan.
-Dyad Distichouan:[@]He would build us a base in Luna, and in[@]return we would gurantee his safety[@]until the Finis Event and gave him[@]a little of our more advanced CELL technology.
+Dyad Distichouan:[@]He would build us a base in Luna, and in[@]return we would gurantee his safety[@]until the Finis Event and gave him a[@]little of our more advanced CELL technology.
 Dyad Distichouan:[@]...
 #GOTO Talk
 _
 /==/.The Finis Event
-Dyad Distichouan:[@]Evan's plan with the Finis Event was[@]to incite a Time of Judgement upon the realm[@]in order to eradicate most of humanity and[@]create a new world of destruction as a punishment[@]for humanity's sins.
+Dyad Distichouan:[@]Evan's plan with the Finis Event was[@]to incite a Time of Judgement upon the realm[@]in order to eradicate most of humanity and[@]create a new world of destruction as a[@]punishment for humanity's sins.
 Dyad Distichouan:[@]However, this plan didn't fully work.
 Dyad Distichouan:[@]A human known as Canvas almost killed[@]Evan when he was starting the Finis Event.
-Dyad Distichouan:[@]This caused the Nexters to see hope and[@]worth in the future of humanity, and intervened[@]with the event.
-Dyad Distichouan:[@]Earth's lands were shifted and all[@]Realmers on the planet gained natural Mana capabilities.
+Dyad Distichouan:[@]This caused the Nexters to see hope and[@]worth in the future of humanity, and[@]intervened with the event.
+Dyad Distichouan:[@]Earth's lands were shifted and all[@]Realmers on the planet gained natural Mana[@]capabilities.
 Dyad Distichouan:[@]So now, humanity was split between two[@]species, the Lunarians who gained no[@]new traits from the Finis Event, and then[@]the Manatians such as you.
 Dyad Distichouan:[@]Manatians have the natural ability to[@]generate and control Mana, the energy[@]used to perform magic spells.
 Dyad Distichouan:[@]The control of mana also brought way[@]to the natural use of Magica, the physical[@]manifestation of Mana energy, used[@]most often in conjuration.
 Dyad Distichouan:[@]This also led to the creation of[@]Magica-based lifeforms created upon the[@]Earth by the Nexters following the Finis[@]Event, such as slimes.
-Dyad Distichouan:[@]The entities found in these ruins[@], the Lesser Truthes, are different though.
+Dyad Distichouan:[@]The entities found in these ruins,[@]the Lesser Truthes, are different though.
 Dyad Distichouan:[@]They are relics of the higher entities[@]from after the Finis Event from entities[@]involved in the recreation, such as the[@]Nexters and Previousers.
 Dyad Distichouan:[@]A few select Realmers from the[@]Finis Event were chosen to be reincarnated[@]with a significantly more powerful, non-aging[@]form, such as Artxe here.
 Dyad Distichouan:[@]...
 #GOTO Talk
 _
+/==/.The Bonus Shop
+Dyad Distichouan:[@]The Bonus Shop is a strange place.
+Dyad Distichouan:[@]It isn't its own realm, but it isn't[@]fully in the New Realm either.
+Dyad Distichouan:[@]Gates to it appear in strange places,[@]such as here in the Ruins of Time.
+Dyad Distichouan:[@]The Ruins of Time seem to have a strong[@]disconnection from the rest of the[@]realm though, with the Lesser Truthes and[@]such.
+Dyad Distichouan:[@]I originally discovered the Bonus Shop[@]when I was exploring Metalimnion, but it[@]was a different location of the Bonus Shop.
+Dyad Distichouan:[@]If you ever enter Metalimnion, why not[@]try looking for it?
+Dyad Distichouan:[@]To me, the Bonus Shop represents the[@]ultimate freeedom: not bound to one[@]realm but not restricted from[@]any either.
+Dyad Distichouan:[@]Though its powers may be unexplainable,[@]its powers lead freedom and freedom[@]is the truth.
+Dyad Distichouan:[@]...
+#GOTO Talk
+_
+/==/.BACKTOSTART
+Dyad Distichouan:[@]...
+Dyad Distichouan:[@]Need anything else?
+#GOTO START
+_
 _
 _
 /==/.Shop
-
+Dyad Distichouan:[@]Here's what I've got.
+#SHOP_ITEM
+THE BONUS SHOP
+Hzeroslashtwo
+e
+Zx
+TileXtwoAS
+#SHOP_END
+Dyad Distichouan:[@]...
+Dyad Distichouan:[@]Need anything else?
+#GOTO START
+_
+_
+_
 /==/.Battle
-
-/==/.Leave
-
-
+(this battle will be added to a[@]future version of this game)
+Dyad Distichouan:[@]...
+Dyad Distichouan:[@]Need anything else?
+#GOTO START
+_
+_
+_
 /==/.LEAVE
 Dyad Distichouan:[@]Farewell.
 #END

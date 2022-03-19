@@ -1117,6 +1117,46 @@ if True:
     Description = "the j!?"
     )
 
+    Hzeroslashtwo = Consumable_Item(
+    Display_Name = "H(0/2)",
+    Purchasing_Price = 1250,
+    Target = "Party", #Single or Party
+    Stat = "HP",
+    Percent_or_Static = "Percent",
+    Amount = 1.3,
+    Description = "BONUS SHOP ITEM\n17.1324207031\n(Bipole 17 reference)"
+    )
+
+    e = Consumable_Item(
+    Display_Name = "E",
+    Purchasing_Price = 250,
+    Target = "Single", #Single or Party
+    Stat = "HP",
+    Percent_or_Static = "Percent",
+    Amount = 1.25,
+    Description = "BONUS SHOP ITEM\n17.1324207031\n(Bipole 17 reference)"
+    )
+
+    Zx = Consumable_Item(
+    Display_Name = "ZX",
+    Purchasing_Price = 1000,
+    Target = "Party", #Single or Party
+    Stat = "SP",
+    Percent_or_Static = "Percent",
+    Amount = 1.15,
+    Description = "BONUS SHOP ITEM\n17.1324207031\n(Bipole 17 reference)"
+    )
+
+    TileXtwoAS = Consumable_Item(
+    Display_Name = "TileX2AS",
+    Purchasing_Price = 1000,
+    Target = "Single", #Single or Party
+    Stat = "SP",
+    Percent_or_Static = "Percent",
+    Amount = 1.5,
+    Description = "BONUS SHOP ITEM\n17.1324207031\n(Bipole 17 reference)"
+    )
+
     Oatmeal = Consumable_Item(
     Display_Name = "Oatmeal",
     Purchasing_Price = 500,
