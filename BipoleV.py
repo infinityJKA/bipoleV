@@ -910,6 +910,14 @@ def perform_dialogue():
         characters.Unequipped_Characters.append(eval("characters."+line))
         dialogue_index += 1
         perform_dialogue()
+    elif "#GAIN_KEYITEM" in line:
+        thing_to_get = getattr(equipment,line.replace('#GAIN_KEYITEM ',''))
+        equipment.key_item_inventory.append(thing_to_get)
+        dialogue_index += 1
+        write_text("Obtained "+thing_to_get.DisplayName+"!\n["+thing_to_get.DisplayName+" was added to your KEY ITEMS]")
+        space_command = "advance_text()"
+        g_command = "advance_text()"
+        talk_button.config(command=advance_text)
     elif "#GAIN_EQUIPMENT " in line:
         if len(equipment.equipment_inventory) < 20:
             thing_to_get = getattr(equipment,line.replace('#GAIN_EQUIPMENT ',''))

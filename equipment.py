@@ -1278,8 +1278,8 @@ if True:
 
     bonus_shop_pass = Key_Item(
         Display_Name="Bonus Shop Pass",
-        sprite="mreconomy",
+        sprite="bonus_shop_pass",
         text_file="bonus_shop_pass"
     )
 
-key_item_inventory = [bonus_shop_pass,sussy_explosive, humphrey_lore]
+key_item_inventory = [sussy_explosive, humphrey_lore]
