@@ -24,7 +24,9 @@ class Party_Character:
     RES = 200,
     RES_Growth =20,
     Effects = [],
-    Priority = 0000
+    Priority = 0000,
+    Max_Action_Count = 1,
+    Current_Action_Count = 0
     ):
         self.DisplayName = Display_Name
         self.Usable_Weapons = Usable_Weapons
@@ -50,6 +52,8 @@ class Party_Character:
         self.RES_Growth = RES_Growth
         self.Effects = Effects
         self.Priority = Priority
+        self.Max_Action_Count = Max_Action_Count
+        self.Current_Action_Count = Current_Action_Count
 
 List_of_All_Recruitable_Party_Members = []
 

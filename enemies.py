@@ -18,7 +18,9 @@ class Enemy:
     Current_SP = 100,
     Max_SP = 100,
     Bio = "this is the default bio",
-    Effects = []
+    Effects = [],
+    Max_Action_Count = 1,
+    Current_Action_Count = 0,
     ):
         self.DisplayName = DisplayName
         self.Moves = Moves
@@ -38,6 +40,8 @@ class Enemy:
         self.Max_SP = Max_SP
         self.Bio = Bio
         self.Effects = Effects
+        self.Max_Action_Count = Max_Action_Count
+        self.Current_Action_Count = Current_Action_Count
 
 if True: #Slime Forest Enemies
     Red_Slime_A = Enemy(
@@ -419,7 +423,24 @@ if True: #Ruins of Time Enemies
         Effects = []
     )
 
-
+    Nynety = Enemy(
+            DisplayName = "Nynety",
+            Moves = [[equipment.Polymath,75,100],[equipment.Global_Projection,0,75],[equipment.Prime_Sieve,50,100],[equipment.Geom_Strike,75,100]],
+            Weakness = ["Fire","Gun"],
+            Sprite = "eratosthenesoid",
+            Level = 6,
+            EXP = 350,
+            Gold = 150,
+            ATK = 850,
+            MAG = 825,
+            HLG = 900,
+            DEF = 400,
+            RES = 425,
+            Max_HP = 1000,
+            Max_SP = 1250,
+            Bio = "Circumference.",
+            Effects = []
+        )
 
 if True: #Ruins of Time Encounters
     rot1_encounter1 = [[Gyrobifastigium_A,Gyrobifastigium_B,Gyrobifastigium_C],"Normal"]

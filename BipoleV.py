@@ -4133,7 +4133,9 @@ def Enemy_Perform_Move():
                 space_command = "Enemy_Perform_Move()"
             else:
                 #write_text("But nothing happened!")
-                character_to_action_index += 1
+                Current_Character.Current_Action_Count += 1
+                if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
+                    character_to_action_index += Move_to_Use.Action_Count
                 a_button.config(command=Enemy_Turn)
                 talk_button.config(command=Enemy_Turn)
                 q_command = "Enemy_Turn()"
@@ -4157,7 +4159,9 @@ def Enemy_Perform_Move():
                 q_command = "Enemy_Perform_Move()"
                 space_command = "Enemy_Perform_Move()"
             else:
-                character_to_action_index += 1
+                Current_Character.Current_Action_Count += 1
+                if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
+                    character_to_action_index += Move_to_Use.Action_Count
                 a_button.config(command=Enemy_Turn)
                 talk_button.config(command=Enemy_Turn)
                 q_command = "Enemy_Turn()"
@@ -4187,14 +4191,16 @@ def Enemy_Perform_Move():
                 q_command = "Enemy_Perform_Move()"
                 space_command = "Enemy_Perform_Move()"
             else:
-                character_to_action_index += 1
+                Current_Character.Current_Action_Count += Move_to_Use.Action_Count
+                if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
+                    character_to_action_index += 1
                 a_button.config(command=Enemy_Turn)
                 talk_button.config(command=Enemy_Turn)
                 q_command = "Enemy_Turn()"
                 space_command = "Enemy_Turn()"
     else:
         #write_text("But nothing happend!")
-        character_to_action_index += 1
+        character_to_action_index += Move_to_Use.Action_Count
         a_button.config(command=Enemy_Turn)
         talk_button.config(command=Enemy_Turn)
         q_command = "Enemy_Turn()"
@@ -4423,6 +4429,8 @@ def Check_If_Player_Dead():
     global character_to_action_index
     global perform_move_index
     global Move_Target
+    global Current_Character
+    global Move_to_Use
     print("check if player dead")
     if target.Current_HP <= 0:
         target.Current_HP = 0
@@ -4439,11 +4447,15 @@ def Check_If_Player_Dead():
         if perform_move_index <= len(Move_Target)-1:
             Enemy_Perform_Move()
         else:
-            character_to_action_index += 1
+            Current_Character.Current_Action_Count += Move_to_Use.Action_Count
+            if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
+                character_to_action_index += 1
             Enemy_Turn()
 
 def Check_If_Party_Dead():
     global character_to_action_index
+    global Current_Character
+    global Move_to_Use
     print('check if party dead')
     number_dead = 0
     for char in characters.Current_Party:
@@ -4467,7 +4479,9 @@ def Check_If_Party_Dead():
         q_command = "load_save()"
         e_command = "sys.exit()"
     else:
-        character_to_action_index += 1
+        Current_Character.Current_Action_Count += Move_to_Use.Action_Count
+        if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
+            character_to_action_index += 1
         Enemy_Turn()
 
 
@@ -4691,7 +4705,7 @@ def print_enemy_stats():
     for thing in char.Moves:
         if tempindex != 0:
             currently_equipped_names = currently_equipped_names + ","
-        if tempindex%4 == 0 and tempindex != 0:
+        if tempindex%3 == 0 and tempindex != 0:
             currently_equipped_names = currently_equipped_names + "\n"
         else:
             currently_equipped_names = currently_equipped_names + " "
@@ -4843,12 +4857,12 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,4)
-Manual_Add_Char(characters.Startole,4)
-Manual_Add_Char(characters.Bipoanderer,4)
-Manual_Add_Char(characters.Wicole,4)
-# Manual_Add_Char(characters.Bithecary,3)
-# Manual_Add_Char(characters.Archle,3)
+Instant_Level_Up(characters.Protipole,7)
+Manual_Add_Char(characters.Startole,7)
+Manual_Add_Char(characters.Bipoanderer,7)
+Manual_Add_Char(characters.Wicole,7)
+Manual_Add_Char(characters.Bithecary,7)
+Manual_Add_Char(characters.Archle,7)
 Gold += 3000
 
 

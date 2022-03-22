@@ -1,4 +1,7 @@
 
+from argparse import Action
+
+
 class Equipment:
     def __init__(self,
     Display_Name = "DISPLAY NAME",
@@ -13,7 +16,8 @@ class Equipment:
     Heal_Stat = "HP", #The stat to heal,
     Multi_Effect = False,
     Inflict = ["ATK",1.2,3], #Stat to boost, amount to boost by, turns to last
-    Description = "test"
+    Description = "test",
+    Action_Count = 1
     ):
         self.DisplayName = Display_Name
         self.Equip_Type = Equip_Type
@@ -28,6 +32,7 @@ class Equipment:
         self.Heal_Stat = Heal_Stat
         self.Inflict = Inflict
         self.Description = Description
+        self.Action_Count = Action_Count
 
 if True: #Fists
 
