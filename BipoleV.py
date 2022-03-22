@@ -4843,13 +4843,13 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,8)
-Manual_Add_Char(characters.Startole,8)
-Manual_Add_Char(characters.Bipoanderer,8)
-Manual_Add_Char(characters.Wicole,8)
-Manual_Add_Char(characters.Bithecary,3)
-Manual_Add_Char(characters.Archle,3)
-Gold += 100000
+Instant_Level_Up(characters.Protipole,4)
+Manual_Add_Char(characters.Startole,4)
+Manual_Add_Char(characters.Bipoanderer,4)
+Manual_Add_Char(characters.Wicole,4)
+# Manual_Add_Char(characters.Bithecary,3)
+# Manual_Add_Char(characters.Archle,3)
+Gold += 3000
 
 
 screen.mainloop()

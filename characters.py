@@ -59,7 +59,7 @@ if True: #Party Members
     Display_Name = "Protipole",
     Usable_Weapons = ["Sword","Lance","Fire","Healing","Protipole"],
     Weakness = ["Staff","Water"],
-    Equipped= [equipment.Fire_Blast,equipment.Slice,equipment.Recover],#[equipment.Champion],
+    Equipped= [equipment.Champion,equipment.Jab,equipment.Recover],#[equipment.Champion],
     Level = 1,
     Effects = [],
     
@@ -87,7 +87,6 @@ if True: #Party Members
     RES_Growth = 17
     )
     List_of_All_Recruitable_Party_Members.append(Protipole)
-
 
     Startole = Party_Character(
     Display_Name = "Startole",

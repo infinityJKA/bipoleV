@@ -144,6 +144,20 @@ if True: #Swords
     Description = "Cut the opponent with an average strike"
     )
 
+    Slash = Equipment(
+    Display_Name = "Slash",
+    Equip_Type = "Sword", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 250, #Added
+    PWR = 200,
+    Purchasing_Price = 1500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Cut the opponent with a strong strike"
+    )
+
     Sweep = Equipment(
     Display_Name = "Sweep",
     Equip_Type = "Sword", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -1264,7 +1278,7 @@ if True:
         text_file="test_item"
     )
 
-    sussy_explosive = Key_Item(
+    sussy_device = Key_Item(
         Display_Name="Sussy Device",
         sprite="sussy_device",
         text_file="sussy_device"
@@ -1282,4 +1296,4 @@ if True:
         text_file="bonus_shop_pass"
     )
 
-key_item_inventory = [sussy_explosive, humphrey_lore]
+key_item_inventory = [sussy_device, humphrey_lore]
