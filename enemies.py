@@ -424,23 +424,23 @@ if True: #Ruins of Time Enemies
     )
 
     Nynety = Enemy(
-            DisplayName = "Nynety",
-            Moves = [[equipment.Polymath,75,100],[equipment.Global_Projection,0,75],[equipment.Prime_Sieve,50,100],[equipment.Geom_Strike,75,100]],
-            Weakness = ["Fire","Gun"],
-            Sprite = "eratosthenesoid",
-            Level = 6,
-            EXP = 350,
-            Gold = 150,
-            ATK = 850,
-            MAG = 825,
-            HLG = 900,
-            DEF = 400,
-            RES = 425,
-            Max_HP = 1000,
-            Max_SP = 1250,
-            Bio = "Circumference.",
-            Effects = []
-        )
+        DisplayName = "Nynety",
+        Moves = [[equipment.Branching,98,100],[equipment.Dimensional_Reaction,98,100],[equipment.Nuclear_Fission,98,100]],
+        Weakness = ["Sword","Gun"],
+        Sprite = "nynety",
+        Level = 10,
+        EXP = 600,
+        Gold = 450,
+        ATK = 850,
+        MAG = 825,
+        HLG = 900,
+        DEF = 400,
+        RES = 425,
+        Max_HP = 15000,
+        Max_SP = 1250,
+        Bio = "The most powerful Lesser Truth of the\nRuins of Time.",
+        Effects = []
+    )
 
 if True: #Ruins of Time Encounters
     rot1_encounter1 = [[Gyrobifastigium_A,Gyrobifastigium_B,Gyrobifastigium_C],"Normal"]
@@ -449,5 +449,6 @@ if True: #Ruins of Time Encounters
     rot2_encounter1 = [[Eratosthenesoid_A,Dodecahedron_A,Dodecahedron_B],"Normal"]
     rot2_encounter2 = [[Eratosthenesoid_A,Dodecahedron_A,Gyrobifastigium_A],"Normal"]
     rot2_encounter3 = [[Eratosthenesoid_A,Gyrobifastigium_A,Gyrobifastigium_B],"Normal"]
+    rot2_boss = [[Nynety,Gyrobifastigium_A,Gyrobifastigium_B],"Normal"]
 
 

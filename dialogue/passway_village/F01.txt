@@ -1,5 +1,5 @@
 nothing
 test
-#ENCOUNTER rot2_encounter1
+#ENCOUNTER rot2_boss
 test end
 #DESTROY_SELF

@@ -2,7 +2,11 @@ sellers
 Sellers:[@]Welcome!
 #SHOP_EQUIPMENT
 Passway Village Mechant Sellers
-
+Disarm
+Daunt
+Power_Flag
+Strength_Potion
+Mentality_Potion
 #SHOP_END
 Sellers:[@]Come again!
 #END

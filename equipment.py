@@ -537,6 +537,21 @@ if True: #Fire
     Description = "Stop projecting."
     )
 
+    Dimensional_Reaction = Equipment(
+    Display_Name = "Dimensional Reaction",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 250,
+    Action_Count = 0.1,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "In some places, the barrier between\ndifferent realms and timelines may thin..."
+    )
+
 if True: #Water
     Aqua = Equipment(
     Display_Name = "Aqua",
@@ -753,13 +768,118 @@ if True: #Guns
     Description = "The Enderscope X ultilizes human Mana\ngeneration using CELL technology. The rifle was\ninvented by scientist Criz Zzir, and was used\nto arm the Bastion rebels."
     )
 
+    Branching = Equipment(
+    Display_Name = "Branching",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 250,
+    Action_Count = 0.1,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "The universe ever expands, with The Algorithm endlessly\nstemming from the singularity point of the Creators."
+    )
+
 if True: #Boosts
-    
+
+    Strength_Potion = Equipment(
+    Display_Name = "Strength Potion",
+    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 350, #Deducted
+    Priority = 150, #Added
+    PWR = 0,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["ATK",1.5,3],
+    Description = "Inflict 1.5x ATK for 3 turns."
+    )
+
+    Mentality_Potion = Equipment(
+    Display_Name = "Mentality Potion",
+    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 350, #Deducted
+    Priority = 150, #Added
+    PWR = 0,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["MAG",1.5,3],
+    Description = "Inflict 1.5x MAG for 3 turns."
+    )
+
+    Power_Flag = Equipment(
+    Display_Name = "Power Flag",
+    Equip_Type = "Startole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Multiboost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 175, #Deducted
+    Priority = 225, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.25,3],["MAG",1.25,3]],
+    Description = "1.5x ATK and 1.5x MAG for 3 turns."
+    )
+
+    Disarm = Equipment(
+    Display_Name = "Disarm",
+    Equip_Type = "Protipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Multiboost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 200, #Deducted
+    Priority = 250, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",0.8,4],["MAG",0.8,4],["DEF",0.7,3],["RES",0.7,3]],
+    Description = "Inflict 0.8x ATK/MAG for 4 turns\nand 0.7x DEF/RES for 3 turns."
+    )
+
+    Daunt = Equipment(
+    Display_Name = "Daunt",
+    Equip_Type = "Protipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Multiboost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 300, #Deducted
+    Priority = 350, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",0.85,3],["MAG",0.85,3],["DEF",0.85,3],["RES",0.85,3]],
+    Description = "Inflict 0.85x ATK/MAG/DEF/RES for 3 turns."
+    )
+
+    Mana_Aura = Equipment(
+    Display_Name = "Mana Aura",
+    Equip_Type = "Wicole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 400, #Deducted
+    Priority = 150, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["MAG",1.45,3],
+    Description = "Inflict 1.45x MAG for 3 turns."
+    )
+
     Equivalent_Exchange_I = Equipment(
     Display_Name = "Equivalent Exchange I",
     Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Multiboost",
-    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 750, #Deducted
     Priority = 200, #Added
@@ -774,7 +894,7 @@ if True: #Boosts
     Display_Name = "Equivalent Exchange II",
     Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Multiboost",
-    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 750, #Deducted
     Priority = 200, #Added
@@ -789,7 +909,7 @@ if True: #Boosts
     Display_Name = "Equivalent Exchange III",
     Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Multiboost",
-    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 750, #Deducted
     Priority = 200, #Added
@@ -804,7 +924,7 @@ if True: #Boosts
     Display_Name = "Equivalent Exchange IV",
     Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Multiboost",
-    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 750, #Deducted
     Priority = 200, #Added
@@ -818,7 +938,7 @@ if True: #Boosts
     Equivalent_Exchange_V = Equipment(
     Display_Name = "Equivalent Exchange V",
     Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
-    Damage_Type = "Multiboost",
+    Damage_Type = "Heal",
     Move_Type = "Heal", #Physical, Magic, Heal, Boost
     Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 3500, #Deducted
@@ -902,7 +1022,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["DEF",1.2,5],
-    Description = "Fear the funk"
+    Description = "Fear the funk."
     )
 
     Prismatic_Honeycomb = Equipment(
@@ -917,7 +1037,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",1.25,2],["ATK",1.25,2]],
-    Description = "When the space-filling convex polyhedron\nwith regular faces is a Johnson solid that packs\nitself together with identical polyhedra!!!!\n\ > [] < /"
+    Description = "When creating realms, something known as The Algorithm\nwas used by many Nexters, notably Azure."
     )
 
     Stellation = Equipment(
@@ -932,7 +1052,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["DEF",1.5,2],
-    Description = "STELLATING POLYHEDRA!?!?!?!?!?"
+    Description = "Shifts among the structures of Realms are\nespecially common following creations or reformations."
     )
 
     Polymath = Equipment(
@@ -947,7 +1067,23 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",1.25,3],["RES",1.25,3],["ATK",1.25,3],["HLG",1.25,3],["MAG",1.25,3]],
-    Description = "Beta moment."
+    Description = "The Lesser Truths... residues of the\nfull and holy truth: creation."
+    )
+
+    Nuclear_Fission = Equipment(
+    Display_Name = "Nuclear Fission",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Nynety",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 0.05,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",1.5,2],["RES",1.5,2],["ATK",1.5,2],["MAG",1.5,2],["HLG",1.5,2]],
+    Description = "Nuclear warfare proved further\ndangerous with the advent of CELL\ntechnology, a notable factor in Evan's\nplans of triggering a Time of Judgement."
     )
 
 if True: #Starting Uniques
@@ -1301,4 +1437,4 @@ if True:
         text_file="bonus_shop_pass"
     )
 
-key_item_inventory = [sussy_device, humphrey_lore]
+key_item_inventory = [humphrey_lore]
