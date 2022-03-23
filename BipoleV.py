@@ -3987,6 +3987,17 @@ def initialize_enemy_move():
     update_party_text()
     Enemy_Perform_Move()
 
+def Enemy_Perform_Again():
+    disable_inputs()
+    global q_command
+    global space_command
+    global Current_Character
+    write_text("Another!\n"+Current_Character.DisplayName+" acts again!")
+    a_button.config(command=Enemy_Turn)
+    talk_button.config(command=Enemy_Turn)
+    q_command = "Enemy_Turn()"
+    space_command = "Enemy_Turn()"
+
 def Enemy_Perform_Move():
     disable_inputs()
     print("Enemy_Perform_Move")
@@ -4139,10 +4150,15 @@ def Enemy_Perform_Move():
                 Current_Character.Current_Action_Count += 1
                 if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
                     character_to_action_index += Move_to_Use.Action_Count
-                a_button.config(command=Enemy_Turn)
-                talk_button.config(command=Enemy_Turn)
-                q_command = "Enemy_Turn()"
-                space_command = "Enemy_Turn()"
+                    a_button.config(command=Enemy_Turn)
+                    talk_button.config(command=Enemy_Turn)
+                    q_command = "Enemy_Turn()"
+                    space_command = "Enemy_Turn()"
+                else:
+                    a_button.config(command=Enemy_Perform_Again)
+                    talk_button.config(command=Enemy_Perform_Again)
+                    q_command = "Enemy_Perform_Again()"
+                    space_command = "Enemy_Perform_Again()"
         elif Move_to_Use.Move_Type == "Boost":
             print(Move_Target)
             print(target)
@@ -4453,7 +4469,9 @@ def Check_If_Player_Dead():
             Current_Character.Current_Action_Count += Move_to_Use.Action_Count
             if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
                 character_to_action_index += 1
-            Enemy_Turn()
+                Enemy_Turn()
+            else:
+                Enemy_Perform_Again()
 
 def Check_If_Party_Dead():
     global character_to_action_index
@@ -4485,7 +4503,9 @@ def Check_If_Party_Dead():
         Current_Character.Current_Action_Count += Move_to_Use.Action_Count
         if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
             character_to_action_index += 1
-        Enemy_Turn()
+            Enemy_Turn()
+        else:
+            Enemy_Perform_Again()
 
 
 def Check_If_Enemy_Dead():

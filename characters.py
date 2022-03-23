@@ -63,7 +63,7 @@ if True: #Party Members
     Display_Name = "Protipole",
     Usable_Weapons = ["Sword","Lance","Fire","Healing","Protipole"],
     Weakness = ["Staff","Water"],
-    Equipped= [equipment.Champion,equipment.Jab,equipment.Recover],#[equipment.Champion],
+    Equipped= [equipment.Champion,equipment.Slash,equipment.Recover],#[equipment.Champion],
     Level = 1,
     Effects = [],
     
@@ -129,7 +129,7 @@ if True: #Party Members
     Display_Name = "Bipoanderer",
     Usable_Weapons = ["Sword","Bow","Water","Bipoanderer"],
     Weakness = ["Lance","Ice"],
-    Equipped= [equipment.Long_Bow,equipment.Hydro,equipment.Slice],#[equipment.Power_Charge],
+    Equipped= [equipment.Slice,equipment.Hydro,equipment.Long_Bow],#[equipment.Power_Charge],
     Level = 1,
     Effects = [],
     
@@ -228,7 +228,7 @@ if True: #Party Members
     Display_Name = "Archle",
     Usable_Weapons = ["Bow","Fire","Archle"],
     Weakness = ["Staff","Water"],
-    Equipped= [equipment.Camoflauge],
+    Equipped= [equipment.Flame_Blade,equipment.Camoflauge],
     Level = 1,
     Effects = [],
     

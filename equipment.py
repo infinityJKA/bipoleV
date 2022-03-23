@@ -234,6 +234,21 @@ if True: #Swords
     Description = "A weak bite from a wild creature"
     )
 
+    Tangent = Equipment(
+    Display_Name = "Tangent",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 300,
+    Action_Count = 0.4,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "The Algorithm was designed to generate\nRealmers based off of the Nexters. However, the\nAlgorithm becomes less stable as it expands further out\nin the realm."
+    )
+
 if True: #Lances
 
     Jab = Equipment(
@@ -567,6 +582,21 @@ if True: #Fire
     Description = "In some places, the barrier between\ndifferent realms and timelines may thin..."
     )
 
+    Nontotient = Equipment(
+    Display_Name = "Nontotient",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 200,
+    Action_Count = 0.4,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "The highest entities to exist are\nthe Creators, who created a layer of lower entities.\nThose entities would then advance enough to create\ntheir own lower entities, and the process repeated.\nEventually, the Nexters were created. Afterwards,\nthe Realmers were created by the Nexters."
+    )
+
 if True: #Water
     Aqua = Equipment(
     Display_Name = "Aqua",
@@ -857,7 +887,7 @@ if True: #Boosts
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["ATK",1.25,3],["MAG",1.25,3]],
-    Description = "1.5x ATK and 1.5x MAG for 3 turns."
+    Description = "1.25x ATK and 1.5x MAG for 3 turns."
     )
 
     Disarm = Equipment(
@@ -1114,6 +1144,54 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",1.5,2],["RES",1.5,2],["ATK",1.5,2],["MAG",1.5,2],["HLG",1.5,2]],
     Description = "Nuclear warfare proved further\ndangerous with the advent of CELL\ntechnology, a notable factor in Evan's\nplans of triggering a Time of Judgement."
+    )
+
+    Nuclear_Fission = Equipment(
+    Display_Name = "Nuclear Fission",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Nynety",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 0.05,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",1.5,2],["RES",1.5,2],["ATK",1.5,2],["MAG",1.5,2],["HLG",1.5,2]],
+    Description = "Nuclear warfare proved further\ndangerous with the advent of CELL\ntechnology, a notable factor in Evan's\nplans of triggering a Time of Judgement."
+    )
+
+    Reciprocal  = Equipment(
+    Display_Name = "Reciprocal",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Nynety",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 0.4,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.4,2],["MAG",1.4,2],["DEF",1.25,2],["RES",1.25,2],["HLG",1.1,2]],
+    Description = "All entities in a given have an alternate\nuniverse correspondent in another timeline,\nwith the exception being some certain entities granted\nexistence beyond the confines of a single timeline.\nHowever, these entities still have correspondent in\ndifferent time clusters, the collective of multiple timelines."
+    )
+
+    Fold = Equipment(
+    Display_Name = "Fold",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Nynety",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 0.4,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",0.9,2],["MAG",0.9,2],["DEF",0.85,2],["RES",0.85,2],["HLG",0.8,2]],
+    Description = "Every realm has a 'border', the end of\nwhere reality functions properly."
     )
 
 if True: #Starting Uniques
