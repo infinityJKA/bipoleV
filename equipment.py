@@ -105,6 +105,21 @@ if True: #Fists
     Description = "Weaken the enemy with 1.2 WKN for 3 turns"
     )
 
+    Sine = Equipment(
+    Display_Name = "Sine",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fists",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 250,
+    Action_Count = 0.5,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "In another timeline in which the Nexters\nreformed the world, many territories were\nnamed after aspects of the holy Truthes."
+    )
+
 if True: #Swords
 
     Dagger = Equipment(
@@ -596,6 +611,21 @@ if True: #Water
     Description = "Deals slight water damage and decreases\nATK/MAG for 2 turns to all enemies"
     )
 
+    Cosine = Equipment(
+    Display_Name = "Cosine",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 250,
+    Action_Count = 0.5,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "In territories named after the\nholy Truthes, the origins of their\nnames have largely been forgotten to\nthe passage of time."
+    )
+
 if True: #Ice
     Freeze = Equipment(
     Display_Name = "Freeze",
@@ -780,7 +810,7 @@ if True: #Guns
     Action_Count = 0.1,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "The universe ever expands, with The Algorithm endlessly\nstemming from the singularity point of the Creators."
+    Description = "The universe ever expands, with The Algorithm\nendlessly stemming from the singularity\npoint of the Creators."
     )
 
 if True: #Boosts

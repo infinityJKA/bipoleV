@@ -3684,7 +3684,8 @@ def Enemy_Turn():
             possible_moves = []
             for move in Current_Character.Moves:
                 if move[0].SP_Cost <= Current_Character.Current_SP:
-                    possible_moves.append(move[0])
+                    if (Current_Character.Current_HP/Current_Character.Max_HP)*100 >= move[1] and (Current_Character.Current_HP/Current_Character.Max_HP)*100 <= move[2]:
+                        possible_moves.append(move[0])
             Move_to_Use = possible_moves[random.randint(0,len(possible_moves)-1)]
             print("move to use: "+Move_to_Use.DisplayName)
             total_priority = 0
@@ -3747,6 +3748,8 @@ def Enemy_Turn():
         
     else:
         write_text("Player Turn")
+        for enem in current_encounter:
+            enem.Current_Action_Count = 0
         character_to_action_index = 0
         talk_button.config(command=Combat_Start_Player_Turn)
         a_button.config(command=Combat_Start_Player_Turn)

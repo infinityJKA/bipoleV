@@ -425,7 +425,7 @@ if True: #Ruins of Time Enemies
 
     Nynety = Enemy(
         DisplayName = "Nynety",
-        Moves = [[equipment.Branching,98,100],[equipment.Dimensional_Reaction,98,100],[equipment.Nuclear_Fission,98,100]],
+        Moves = [[equipment.Branching,98,100],[equipment.Dimensional_Reaction,98,100],[equipment.Nuclear_Fission,98,100],[equipment.Sine,75,97],[equipment.Cosine,75,97]],
         Weakness = ["Sword","Gun"],
         Sprite = "nynety",
         Level = 10,
