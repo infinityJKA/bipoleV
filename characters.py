@@ -228,7 +228,7 @@ if True: #Party Members
     Display_Name = "Archle",
     Usable_Weapons = ["Bow","Fire","Archle"],
     Weakness = ["Staff","Water"],
-    Equipped= [equipment.Flame_Blade,equipment.Camoflauge],
+    Equipped= [equipment.Enderscope_X,equipment.Flame_Blade,equipment.Camoflauge],
     Level = 1,
     Effects = [],
     

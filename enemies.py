@@ -425,7 +425,7 @@ if True: #Ruins of Time Enemies
 
     Nynety = Enemy(
         DisplayName = "Nynety",
-        Moves = [[equipment.Branching,98,100],[equipment.Dimensional_Reaction,98,100],[equipment.Nuclear_Fission,98,100],[equipment.Sine,75,97],[equipment.Cosine,75,97],[equipment.Tangent,25,75],[equipment.Reciprocal,25,75],[equipment.Fold,25,75],[equipment.Nontotient,25,75]],
+        Moves = [[equipment.Branching,98,100],[equipment.Dimensional_Reaction,98,100],[equipment.Nuclear_Fission,98,100],[equipment.Sine,75,97],[equipment.Cosine,75,97],[equipment.Tangent,25,75],[equipment.Reciprocal,25,75],[equipment.Fold,0,75],[equipment.Nontotient,0,75],[equipment.Solution,0,25],[equipment.Hyperbolic,0,25]],
         Weakness = ["Sword","Gun"],
         Sprite = "nynety",
         Level = 10,
@@ -433,11 +433,11 @@ if True: #Ruins of Time Enemies
         Gold = 450,
         ATK = 850,
         MAG = 825,
-        HLG = 900,
+        HLG = 20,
         DEF = 400,
         RES = 425,
         Max_HP = 17500,
-        Max_SP = 1250,
+        Max_SP = 9001,
         Bio = "The most powerful Lesser Truth of the\nRuins of Time.",
         Effects = []
     )

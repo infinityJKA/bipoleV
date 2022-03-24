@@ -466,6 +466,21 @@ if True: #Bows
     Description = "Buzzwords."
     )
 
+    Solution = Equipment(
+    Display_Name = "Solution",
+    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Bow",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 300,
+    Action_Count = 0.2,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "The Creators strived to create or discover an existence\nabove them, thus creating the Creations: demi-gods\nto the Creators. Many other demi-gods to\ndifferent hierachies were formed through various\nways, such as the Nexters creating the Dimensionals:\ndemi-gods to the Realmers."
+    )
+
 if True: #Fire
 
     Fireball = Equipment(
@@ -799,6 +814,21 @@ if True: #Healing
     Description = "WHY DO THE ENEMIES GET AOE HEALING!?!?!?\nWHY DO THE ENEMIES GET AOE HEALING!?!?!?\nWHY DO THE ENEMIES GET AOE HEALING!?!?!?"
     )
     
+    Hyperbolic = Equipment(
+    Display_Name = "Hyperbolic",
+    Equip_Type = "Healing", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Healing, Gun
+    Damage_Type = "Heal",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 75, #Deducted
+    Priority = 0, #Added
+    PWR = 30,
+    Action_Count = 0.3,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "HP", #The stat to heal,
+    Description = "As more time passes from a creation or\na reformation, the residual Lesser Truthes will\nreduced more and more."
+    )
+
 if True: #Guns
     The_22XX = Equipment(
     Display_Name = "The 22XX",
@@ -820,9 +850,9 @@ if True: #Guns
     Damage_Type = "Gun",
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 1000, #Deducted
+    SP_Cost = 400, #Deducted
     Priority = 50, #Added
-    PWR = 150,
+    PWR = 200,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "The Enderscope X ultilizes human Mana\ngeneration using CELL technology. The rifle was\ninvented by scientist Criz Zzir, and was used\nto arm the Bastion rebels."
