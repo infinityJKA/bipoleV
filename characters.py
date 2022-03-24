@@ -63,7 +63,7 @@ if True: #Party Members
     Display_Name = "Protipole",
     Usable_Weapons = ["Sword","Lance","Fire","Healing","Protipole"],
     Weakness = ["Staff","Water"],
-    Equipped= [equipment.Champion,equipment.Slash,equipment.Recover],#[equipment.Champion],
+    Equipped= [equipment.Disarm,equipment.Slash,equipment.Recover],#[equipment.Champion],
     Level = 1,
     Effects = [],
     
@@ -96,7 +96,7 @@ if True: #Party Members
     Display_Name = "Startole",
     Usable_Weapons = ["Fists","Lance", "Startole"],
     Weakness = ["Bow","Fire"],
-    Equipped= [equipment.Guard,equipment.Iron_Gauntlets,equipment.Stab],
+    Equipped= [equipment.Guard,equipment.Power_Flag,equipment.Stab],
     Level = 1,
     Effects = [],
     

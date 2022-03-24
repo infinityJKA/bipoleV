@@ -911,7 +911,7 @@ if True: #Boosts
     Damage_Type = "Multiboost",
     Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 175, #Deducted
+    SP_Cost = 100, #Deducted
     Priority = 225, #Added
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
@@ -926,7 +926,7 @@ if True: #Boosts
     Damage_Type = "Multiboost",
     Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 200, #Deducted
+    SP_Cost = 125, #Deducted
     Priority = 250, #Added
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
@@ -941,7 +941,7 @@ if True: #Boosts
     Damage_Type = "Multiboost",
     Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 300, #Deducted
+    SP_Cost = 150, #Deducted
     Priority = 350, #Added
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
