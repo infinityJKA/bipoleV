@@ -887,10 +887,15 @@ def perform_dialogue():
         for k in equipment.key_item_inventory:
             if k == eval("equipment."+keytocheck):
                 haskey = True
+                print(k.DisplayName+" is "+eval("equipment."+keytocheck).DisplayName)
+            else:
+                print(k.DisplayName+" isn't "+eval("equipment."+keytocheck).DisplayName)
         if haskey:
             thing = dialogue[dialogue_index+1]
+            print("HAS KEY ITEM")
         else:
             thing = dialogue[dialogue_index+2]
+            print("DOESN'T HAVE KEY ITEM")
         dialogue_index = search_for("/==/."+thing)
         perform_dialogue()
     elif line == "#DESTROY_SELF":
@@ -4909,7 +4914,7 @@ start_menu_control_set()
 # Manual_Add_Char(characters.Wicole,5)
 # Manual_Add_Char(characters.Bithecary,1)
 # Manual_Add_Char(characters.Archle,1)
-Gold += 3000
+# Gold += 3000
 
 
 screen.mainloop()

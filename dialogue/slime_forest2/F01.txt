@@ -6,7 +6,7 @@ You are suddenly attacked by the[@]Raging Soul!
 (*The Raging Soul evaporates*)
 #SET_TILE
 Bieace_Castle_Town
-7
-9
+11
+6
 T10
 #DESTROY_SELF

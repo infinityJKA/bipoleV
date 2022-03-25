@@ -1216,9 +1216,9 @@ if True: #Starting Uniques
     Damage_Type = "Gun",
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
     Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 0, #Deducted
-    Priority = 700, #Added
-    PWR = 100,
+    SP_Cost = 150, #Deducted
+    Priority = 225, #Added
+    PWR = 150,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "An ancient weapon from a previous civilization.\nThe side of the gun reads \"22XX\"."
@@ -1235,8 +1235,8 @@ if True: #Starting Uniques
     PWR = 0,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = ["ATK",1.2,2],
-    Description = "Oh yeah let's do this\nLEEEEEEEEEEEEERRRRRROOOOOOOYYYYYYYYYY..."
+    Inflict = ["ATK",1.4,2],
+    Description = "Protipole is a renowned warrior of the\nBieace Empire, having succeeded in multiple\nquests across his years of service."
     )
 
     Multiboost_Test = Equipment(
@@ -1265,8 +1265,8 @@ if True: #Starting Uniques
     PWR = 0,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = ["DEF",1.05,2],
-    Description = "Distract enemies by making them more\nlikely to attack you"
+    Inflict = ["DEF",1.1,2],
+    Description = "Distract enemies by making them more\nlikely to attack you."
     )
 
     Power_Charge = Equipment(
@@ -1281,7 +1281,7 @@ if True: #Starting Uniques
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["ATK",2.5,2],
-    Description = "No, there is no \"genkai\" for you\nto break here"
+    Description = "Give yourself 2.5x ATK for 2 turns."
     )
 
     Thunderstorm = Equipment(
@@ -1295,7 +1295,7 @@ if True: #Starting Uniques
     PWR = 100,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Finally, an AOE attack!"
+    Description = "Deals water damage to all enemies."
     )
 
     Concoction = Equipment(
@@ -1309,7 +1309,7 @@ if True: #Starting Uniques
     PWR = 5,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = "SP", #The stat to heal,
-    Description = "Skill issue."
+    Description = "Restore SP to a single ally."
     )
 
     Camoflauge = Equipment(
@@ -1571,4 +1571,4 @@ if True:
         text_file="ecochecker"
     )
 
-key_item_inventory = [humphrey_lore,sussy_device]
+key_item_inventory = [humphrey_lore]
