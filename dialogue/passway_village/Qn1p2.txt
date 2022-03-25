@@ -1,0 +1,58 @@
+mreconomy2
+#SENDIFKEYITEM sussy_device
+has
+doesnt
+_
+/==/.has
+Mr. Economy:[@]Swag.
+Mr. Economy:[@]Now let's go kill this guy!
+#REMOVE_KEYITEM sussy_device
+[Protipole handed over the Sussy Device]
+#SET_IMAGE ikohnomex_gouhenupp
+Ikohnomex Gouhenupp:[@]...
+#SET_IMAGE mreconomy2
+Mr. Economy:[@]...
+#SET_IMAGE ikohnomex_gouhenupp
+Ikohnomex Gouhenupp:[@]...
+Ikohnomex Gouhenupp:[@]Hmmmm?
+Ikohnomex Gouhenupp:[@]What is it?
+#SET_IMAGE mreconomy2
+Mr. Economy:[@]Hey, ol' buddy!
+Mr. Economy:[@]I've got a present for you!
+#SET_IMAGE ikohnomex_gouhenupp
+Ikohnomex Gouhenupp:[@]?
+[Mr. Economy gives Ikohnomex a[@]wrapped box]
+Ikohnomex Gouhenupp:[@]Thanks?????
+[Ikohnomex opens the box and[@]holds the Sussy Device]
+Ikohnomex Gouhenupp:[@]And this is... a...????
+#SET_IMAGE mreconomy2
+Mr. Economy:[@]You silly goose!
+Mr. Economy:[@]It's a time bomb!
+#SET_IMAGE ikohnomex_gouhenupp
+Ikohnomex Gouhenupp:[@]Wh...
+#CLEAR
+[Ikohnomex dies in a violent explosion]
+#SET_IMAGE mreconomy2
+Mr. Economy:[@]Ah ha ha!
+Mr. Economy:[@]Free land!
+Mr. Economy:[@]It's mine now!
+Mr. Economy:[@]Thanks for helping out, me boy!
+Mr. Economy:[@]Have this Eco-Checker as a token[@]of my thanks.
+Mr. Economy:[@]It will let you get a short overview[@]of every economy at once!
+#GAIN_KEYITEM ecochecker
+Mr. Economy:[@]Farewell!
+#SET_TILE
+Passway_Village
+9
+18
+Tn3
+#OVERRIDE_SELF n00
+_
+/==/.doesnt
+Mr. Economy:[@]Are you stupid or something?
+Mr. Economy:[@]Hurry up and get my Sussy Device.
+Mr. Economy:[@]I left it in the Bonus Shop,[@]so go get it for me.
+Mr. Economy:[@]The Bonus Shop is in the first[@]area of the Ruins of Time, but[@]you'll need a special pass to get in.
+Mr. Economy:[@]I also forgot my pass in the[@]second area of the ruins, so you[@]can take that and use it.
+Mr. Economy:[@]Come back once you get me my[@]Sussy Device so I can kill[@]lil' Ikohnomex-boy here.
+#END

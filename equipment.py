@@ -231,7 +231,7 @@ if True: #Swords
     PWR = 100,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "A weak bite from a wild creature"
+    Description = "A weak bite from a wild creature."
     )
 
     Tangent = Equipment(
@@ -246,7 +246,7 @@ if True: #Swords
     Action_Count = 0.4,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "The Algorithm was designed to generate\nRealmers based off of the Nexters. However, the\nAlgorithm becomes less stable as it expands further out\nin the realm."
+    Description = "The Algorithm was designed to generate\nRealmers based off of the Nexters. However, the\nAlgorithm becomes less stable as it expands\nfurther out in the realm."
     )
 
 if True: #Lances
@@ -351,6 +351,21 @@ if True: #Staves
     Description = "An average staff"
     )
 
+    Enrage = Equipment(
+    Display_Name = "Enrage",
+    Equip_Type = "Staff", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Staff",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 100,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.4,2],["DEF",0.5,2]],
+    Description = "Decreases DEF but increases\nATK."
+    )
+
     Grassroots = Equipment(
     Display_Name = "Grassroots",
     Equip_Type = "Enemy", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -362,22 +377,7 @@ if True: #Staves
     PWR = 175,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "To the moon (trust me bro)"
-    )
-
-    Enrage = Equipment(
-    Display_Name = "Slow",
-    Equip_Type = "Staff", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
-    Damage_Type = "Staff",
-    Move_Type = "Boost", #Physical, Magic, Heal, Boost
-    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 0, #Deducted
-    Priority = 100, #Added
-    PWR = 100,
-    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
-    Heal_Stat = None, #The stat to heal,
-    Inflict = [["ATK",1.4,2],["DEF",0.5,2]],
-    Description = "Decreases enemy DEF but\nincrases their ATK"
+    Description = "Prior to the Finis Event, human settlements\non Luna have led to a division of humanity.\nThe Manarians of the Earth and the Lunarians\nof the moon."
     )
 
     Geom_Strike = Equipment(
@@ -463,7 +463,7 @@ if True: #Bows
     PWR = 115,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Buzzwords."
+    Description = "The Algorithm becomes progressively more\ncomplex as it forms the world. The\ntruth of the universe and its beginning is\nsimplicity."
     )
 
     Solution = Equipment(
@@ -478,7 +478,7 @@ if True: #Bows
     Action_Count = 0.2,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "The Creators strived to create or discover an existence\nabove them, thus creating the Creations: demi-gods\nto the Creators. Many other demi-gods to\ndifferent hierachies were formed through various\nways, such as the Nexters creating the Dimensionals:\ndemi-gods to the Realmers."
+    Description = "The Creators strived to create or discover an\nexistence above them, thus creating the\nCreations: demi-gods to the Creators. Many\nother demi-gods to different hierachies\nwere formed through various means, such\nas the Nexters creating the Dimensionals:\ndemi-gods to the Realmers."
     )
 
 if True: #Fire
@@ -537,7 +537,7 @@ if True: #Fire
     PWR = 175,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Burning fire from the hatred of the\nRaging Soul"
+    Description = "Burning fire from the hatred of the\nRaging Soul."
     )
 
     Fire_Breath = Equipment(
@@ -551,7 +551,7 @@ if True: #Fire
     PWR = 100,
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Now that's a lot of (aoe fire) damage!"
+    Description = "The slimes are formed of Magica created\nby the Nexters following the\nFinis Event."
     )
 
     CigaretteLighter = Equipment(
@@ -609,7 +609,7 @@ if True: #Fire
     Action_Count = 0.4,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "The highest entities to exist are\nthe Creators, who created a layer of lower entities.\nThose entities would then advance enough to create\ntheir own lower entities, and the process repeated.\nEventually, the Nexters were created. Afterwards,\nthe Realmers were created by the Nexters."
+    Description = "The highest entities to exist are\nthe Creators, who created a layer of lower\nentities. Those entities would then advance\nenough to create their own lower entities,\nand the process repeated. Eventually, the\nNexters were created. Afterwards, the Realmers\nwere created by the Nexters."
     )
 
 if True: #Water
@@ -740,7 +740,7 @@ if True: #Ice
     PWR = 115,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "A TUPLE OF THREE NUMBERS!?!?!?"
+    Description = "Though the Nexters and Realmers may reside\nas three-dimensional entities, many higher\nentities have much more different forms."
     )
 
 if True: #Healing
@@ -826,7 +826,7 @@ if True: #Healing
     Action_Count = 0.3,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = "HP", #The stat to heal,
-    Description = "As more time passes from a creation or\na reformation, the residual Lesser Truthes will\nreduced more and more."
+    Description = "As more time passes from a creation or a\nreformation, the residual Lesser Truthes\nwill reduced more and more."
     )
 
 if True: #Guns
@@ -850,7 +850,7 @@ if True: #Guns
     Damage_Type = "Gun",
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 400, #Deducted
+    SP_Cost = 250, #Deducted
     Priority = 50, #Added
     PWR = 200,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
@@ -1052,12 +1052,12 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["ATK",1.6,2],
-    Description = "Wait the enemies get boosts too!?!??!?!?!?\nwtfffffffff unfair cringed unbased unpoggers"
+    Description = "Many monsters can convert their physical\nMagica into Mana for use in spells."
     )
 
     Bingus_Energy_Wave = Equipment(
-    Display_Name = "Bingus Energy Wave",
-    Equip_Type = "y*oure mom", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Display_Name = "Energy Wave",
+    Equip_Type = "Enemy", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Boost",
     Move_Type = "Boost", #Physical, Magic, Heal, Boost
     Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
@@ -1067,7 +1067,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["RES",0.6,2],
-    Description = "free zpoingsbuorvb borux\nkeygen real working 2001 :)"
+    Description = "Despite being made up of Magica,\nmonsters still have the capability to\ngenerate their own Mana and Magica."
     )
 
     Cursed_Prayer = Equipment(
@@ -1127,7 +1127,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",1.25,2],["ATK",1.25,2]],
-    Description = "When creating realms, something known as The Algorithm\nwas used by many Nexters, notably Azure."
+    Description = "When creating realms, something known as\nThe Algorithm was used by many Nexters,\nnotably Azure."
     )
 
     Stellation = Equipment(
@@ -1142,7 +1142,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["DEF",1.5,2],
-    Description = "Shifts among the structures of Realms are\nespecially common following creations or reformations."
+    Description = "Shifts among the structures of Realms are\nespecially common following creations or\nreformations."
     )
 
     Polymath = Equipment(
@@ -1176,22 +1176,6 @@ if True: #Boosts
     Description = "Nuclear warfare proved further\ndangerous with the advent of CELL\ntechnology, a notable factor in Evan's\nplans of triggering a Time of Judgement."
     )
 
-    Nuclear_Fission = Equipment(
-    Display_Name = "Nuclear Fission",
-    Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
-    Damage_Type = "Nynety",
-    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
-    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 0, #Deducted
-    Priority = 0, #Added
-    PWR = 0,
-    Action_Count = 0.05,
-    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
-    Heal_Stat = None, #The stat to heal,
-    Inflict = [["DEF",1.5,2],["RES",1.5,2],["ATK",1.5,2],["MAG",1.5,2],["HLG",1.5,2]],
-    Description = "Nuclear warfare proved further\ndangerous with the advent of CELL\ntechnology, a notable factor in Evan's\nplans of triggering a Time of Judgement."
-    )
-
     Reciprocal  = Equipment(
     Display_Name = "Reciprocal",
     Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -1205,7 +1189,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["ATK",1.4,2],["MAG",1.4,2],["DEF",1.25,2],["RES",1.25,2],["HLG",1.1,2]],
-    Description = "All entities in a given have an alternate\nuniverse correspondent in another timeline,\nwith the exception being some certain entities granted\nexistence beyond the confines of a single timeline.\nHowever, these entities still have correspondent in\ndifferent time clusters, the collective of multiple timelines."
+    Description = "All entities in a given have an alternate\nuniverse correspondent in another timeline,\nwith the exception being some certain entities\ngranted existence beyond the confines of a\nsingle timeline. However, these entities still\nhave correspondent in different time clusters,\nthe collective of multiple timelines."
     )
 
     Fold = Equipment(
@@ -1575,4 +1559,16 @@ if True:
         text_file="bonus_shop_pass"
     )
 
-key_item_inventory = [humphrey_lore]
+    mysterious_crystals = Key_Item(
+        Display_Name="Mysterious Crystals",
+        sprite="mysterious_crystals",
+        text_file="mysterious_crystals"
+    )
+
+    ecochecker = Key_Item(
+        Display_Name="Eco-Checker",
+        sprite="ecochecker",
+        text_file="ecochecker"
+    )
+
+key_item_inventory = [humphrey_lore,sussy_device]

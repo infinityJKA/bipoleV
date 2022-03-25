@@ -918,6 +918,12 @@ def perform_dialogue():
         space_command = "advance_text()"
         g_command = "advance_text()"
         talk_button.config(command=advance_text)
+    elif "#REMOVE_KEYITEM" in line:
+        thing_to_get = getattr(equipment,line.replace('#REMOVE_KEYITEM ',''))
+        equipment.key_item_inventory.remove(thing_to_get)
+        print("removed key item")
+        dialogue_index += 1
+        advance_text()
     elif "#GAIN_EQUIPMENT " in line:
         if len(equipment.equipment_inventory) < 20:
             thing_to_get = getattr(equipment,line.replace('#GAIN_EQUIPMENT ',''))
@@ -4880,12 +4886,12 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,5)
-Manual_Add_Char(characters.Startole,5)
-Manual_Add_Char(characters.Bipoanderer,5)
-Manual_Add_Char(characters.Wicole,5)
-Manual_Add_Char(characters.Bithecary,1)
-Manual_Add_Char(characters.Archle,1)
+# Instant_Level_Up(characters.Protipole,5)
+# Manual_Add_Char(characters.Startole,5)
+# Manual_Add_Char(characters.Bipoanderer,5)
+# Manual_Add_Char(characters.Wicole,5)
+# Manual_Add_Char(characters.Bithecary,1)
+# Manual_Add_Char(characters.Archle,1)
 Gold += 3000
 
 
