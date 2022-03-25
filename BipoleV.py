@@ -969,6 +969,23 @@ def perform_dialogue():
         # g_command = "advance_text()"
         # talk_button.config(command=advance_text)
         advance_text()
+    elif line == "#ECOCHECKER":
+        locs = []
+        for loc in maps.List_of_All_Locations:
+            if loc[8][1][0] != "no eco":
+                locs.append(loc)
+        txt = ""
+        index = 0
+        for loc in locs:
+            if index != 0:
+                txt = txt + "\n"
+            txt = txt + loc[0] + " | " + str(loc[8][0]) + " (" + loc[8][1][0] + ", " + str(loc[8][1][1]) + ")"
+            index += 1
+        write_text(txt)
+        dialogue_index += 1
+        space_command = "advance_text()"
+        g_command = "advance_text()"
+        talk_button.config(command=advance_text)
     elif line == "#ECONOMY":
         thing = maps.current_location[8]
         print(thing)
