@@ -7,8 +7,8 @@ _
 #CHOICE =Recruit Bithecary?=[@][A] Yes[@][B] No
 #CHOICE_RESULT
 Bithecary:[@]Yees! Run away you utter simpelton![@]Fear me mortal! Fear me!
-Bithecary:[@]You are not but a scared, limbless ant[@]squirming away in fear from my[@]mighty existence!
-Bithecary:[@]So run! Run as far as your mortal legs[@]can take you! And trip into the[@]vehement blazes that are burning land of hell!
+Bithecary:[@]You are but a scared, limbless ant[@]squirming away in fear from my[@]mighty existence!
+Bithecary:[@]So run! Run as far as your mortal legs[@]can take you! And trip into the vehement[@]blazes that are burning land of hell!!!
 Bithecary:[@]Ahahahahahaha!!!
 #END
 _
@@ -46,7 +46,7 @@ Bithecary:[@]Word to your mother.
 #RECRUIT
 Bithecary
 Bithecary joined your party!
-#DESTROY_SELF
+#OVERRIDE_SELF n00
 _
 /==/.DONTPAY
 /==/.CANT
@@ -58,7 +58,7 @@ Bithecary:[@]Ha ha!!!
 Bithecary:[@]Yes, run!!!!!!!!!!
 Bithecary:[@]Run away you utter simpelton!
 Bithecary:[@]Fear me mortal! Fear me!
-Bithecary:[@]You are not but a scared, limbless ant[@]squirming away in fear from my[@]mighty existence!
-Bithecary:[@]So run! Run as far as your mortal legs[@]can take you! And trip into the[@]vehement blazes that are burning land of hell!!!
+Bithecary:[@]You are but a scared, limbless ant[@]squirming away in fear from my[@]mighty existence!
+Bithecary:[@]So run! Run as far as your mortal legs[@]can take you! And trip into the vehement[@]blazes that are burning land of hell!!!
 Bithecary:[@]Ahahahahahaha!!!
 #END

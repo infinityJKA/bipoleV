@@ -2,15 +2,12 @@ solds
 Solds:[@]Welcome!
 #SHOP_EQUIPMENT
 Passway Village Mechant Solds
-Weakening_Taunt
 Dagger
 Sweep
 Sword_Lance
 Flame_Blade
 Lance_Sword
 Magic_Bow
-Enrage
-Signal_Flare
 Flood
 Blizzard
 Shatter

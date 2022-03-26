@@ -66,7 +66,7 @@ if True: #Fists
 
     Slam = Equipment(
     Display_Name = "Slam",
-    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Equip_Type = "Slime", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 0, #Deducted
@@ -74,7 +74,7 @@ if True: #Fists
     PWR = 100,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "A weak body slam"
+    Description = "The slimes are formed of Magica created\nby the Nexters following the\nFinis Event."
     )
 
     Uppercut = Equipment(
@@ -98,7 +98,7 @@ if True: #Fists
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 25, #Deducted
     Priority = 125, #Added
-    PWR = 100,
+    PWR = 0,
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["WKN",1.2,3],
@@ -526,6 +526,20 @@ if True: #Fire
     Description = "Increases your priority and slightly\ndecreases your ATK for 2 turns."
     )
 
+    Spark_Potion = Equipment(
+    Display_Name = "Spark Potion",
+    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 75,
+    Purchasing_Price = 350, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deals very weak fire damage."
+    )
+
     Abyssal_Inferno = Equipment(
     Display_Name = "Abyssal Inferno",
     Equip_Type = "Fire", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -551,7 +565,7 @@ if True: #Fire
     PWR = 100,
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "The slimes are formed of Magica created\nby the Nexters following the\nFinis Event."
+    Description = "Like Manarians, the generation of Mana energy differs\nbetween species of monsters. The\nRaging Soul has the ability to copy the Mana properties\nof its recent victims, currently using Fire Mana\nfrom absorbing a Manarian soul."
     )
 
     CigaretteLighter = Equipment(
@@ -656,6 +670,20 @@ if True: #Water
     Description = "Deals slight water damage and decreases\nATK/MAG for 2 turns to all enemies"
     )
 
+    Splash_Potion = Equipment(
+    Display_Name = "Splash Potion",
+    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Water",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 75,
+    Purchasing_Price = 350, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deals very weak water damage."
+    )
+
     Cosine = Equipment(
     Display_Name = "Cosine",
     Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -727,6 +755,20 @@ if True: #Ice
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",0.5,1]],
     Description = "Deals weak ice damage and decreases\ntarget DEF/RES for the rest of the turn"
+    )
+
+    Rime_Potion = Equipment(
+    Display_Name = "Rime Potion",
+    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 75,
+    Purchasing_Price = 350, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deals very weak ice damage."
     )
 
     Three_Space = Equipment(
@@ -874,6 +916,21 @@ if True: #Guns
     )
 
 if True: #Boosts
+
+    Weakening_Taunt = Equipment(
+    Display_Name = "Weakening Taunt",
+    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fists",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 25, #Deducted
+    Priority = 125, #Added
+    PWR = 0,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["WKN",1.2,3],
+    Description = "Inflict 1.2 WKN for 3 turns."
+    )
 
     Strength_Potion = Equipment(
     Display_Name = "Strength Potion",

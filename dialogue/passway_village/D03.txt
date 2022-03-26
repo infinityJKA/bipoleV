@@ -1,0 +1,14 @@
+door1
+#CHOICE Go to Bandit Road?[@][Recommended level: 7][@]!!!DONT USE, UNFINISHED AREA WILL CRASH!!![@]!!!DONT USE, UNFINISHED AREA WILL CRASH!!![@]!!!DONT USE, UNFINISHED AREA WILL CRASH!!![@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END
+-pass-
+-pass-
+-pass- 
+_
+#MOVE_TO
+bandit_road
+17
+9
+North

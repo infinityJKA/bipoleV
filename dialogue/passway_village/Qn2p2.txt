@@ -1,0 +1,18 @@
+xuirbo
+#SENDIFEQUIPMENT CigaretteLighter
+has
+doesnt
+_
+/==/.has
+Xuirbo:[@]Hell yeah.
+Xuirbo:[@]Imma take that lighter.
+#REMOVE_EQUIPMENT CigaretteLighter
+[Xuirbo takes the lighter from[@]your inventory]
+Xuirbo:[@]Oh yeah that's some good stuff.
+Xuirbo:[@]Anyways, I can deal you some cool[@]stuff if you're interested.
+#OVERRIDE_SELF Sn5
+_
+/==/.doesnt
+Xuirbo:[@]Hey! Hey! Hey!
+Xuirbo:[@]Hurry up and get me a lighter!
+#END

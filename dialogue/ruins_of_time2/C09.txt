@@ -9,4 +9,4 @@ _
 _
 #SET_IMAGE chest2
 #GAIN_KEYITEM mysterious_crystals
-#DESTROY_SELF
+#OVERRIDE_SELF n00

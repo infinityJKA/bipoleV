@@ -873,6 +873,40 @@ def perform_dialogue():
             thing = dialogue[dialogue_index+2]
         dialogue_index = search_for("/==/."+thing)
         perform_dialogue()
+    elif "#SENDIFEQUIPMENT " in line:
+        thing_to_check = getattr(equipment,line.replace('#SENDIFEQUIPMENT ',''))
+        has = False
+        for e in equipment.equipment_inventory:
+            if e.DisplayName == thing_to_check.DisplayName:
+                has = True
+        if has:
+            goto = dialogue[dialogue_index+1]
+            print("HAS EQUIPMENT")
+        else:
+            goto = dialogue[dialogue_index+2]
+            print("DOESN'T HAVE EQUIPMENT")
+        dialogue_index = search_for("/==/."+goto)
+        perform_dialogue()
+
+        if Gold >= amount:
+            thing = dialogue[dialogue_index+1]
+        else:
+            thing = dialogue[dialogue_index+2]
+        dialogue_index = search_for("/==/."+thing)
+        perform_dialogue()
+    elif "#REMOVE_EQUIPMENT" in line:
+        thing_to_get = getattr(equipment,line.replace('#REMOVE_EQUIPMENT ',''))
+        removed = False
+        for e in equipment.equipment_inventory:
+            if e.DisplayName == thing_to_get.DisplayName:
+                if removed == False:
+                    equipment.equipment_inventory.remove(e) 
+                    print("removed equipment")
+                    removed = True
+        if removed == False:
+            print("didn't remove equipment (couldn't find)")
+        dialogue_index += 1
+        advance_text()
     elif "#SENDIFGOLD>= " in line:
         amount = (int)(line.replace("#SENDIFGOLD>= ",""))
         if Gold >= amount:
@@ -882,14 +916,14 @@ def perform_dialogue():
         dialogue_index = search_for("/==/."+thing)
         perform_dialogue()
     elif "#SENDIFKEYITEM " in line:
-        keytocheck = (line.replace("#SENDIFKEYITEM ",""))
+        keytocheck = getattr(equipment,line.replace('#SENDIFKEYITEM ',''))
         haskey = False
         for k in equipment.key_item_inventory:
-            if k == eval("equipment."+keytocheck):
+            if k.DisplayName == keytocheck.DisplayName:
                 haskey = True
-                print(k.DisplayName+" is "+eval("equipment."+keytocheck).DisplayName)
+                print(k.DisplayName+" is "+ keytocheck.DisplayName)
             else:
-                print(k.DisplayName+" isn't "+eval("equipment."+keytocheck).DisplayName)
+                print(k.DisplayName+" isn't "+ keytocheck.DisplayName)
         if haskey:
             thing = dialogue[dialogue_index+1]
             print("HAS KEY ITEM")
@@ -925,8 +959,15 @@ def perform_dialogue():
         talk_button.config(command=advance_text)
     elif "#REMOVE_KEYITEM" in line:
         thing_to_get = getattr(equipment,line.replace('#REMOVE_KEYITEM ',''))
-        equipment.key_item_inventory.remove(thing_to_get)
-        print("removed key item")
+        removed = False
+        for k in equipment.key_item_inventory:
+            if k.DisplayName == thing_to_get.DisplayName:
+                if removed == False:
+                    equipment.key_item_inventory.remove(k) 
+                    print("removed key item")
+                    removed = True
+        if removed == False:
+            print("didn't remove key item (couldn't find)")
         dialogue_index += 1
         advance_text()
     elif "#GAIN_EQUIPMENT " in line:
