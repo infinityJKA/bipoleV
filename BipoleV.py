@@ -4955,7 +4955,8 @@ start_menu_control_set()
 # Manual_Add_Char(characters.Wicole,5)
 # Manual_Add_Char(characters.Bithecary,1)
 # Manual_Add_Char(characters.Archle,1)
-# Gold += 3000
-
+# # Gold += 3000
+# maps.player_cords = [9,18]
+# maps.current_location = maps.Passway_Village
 
 screen.mainloop()
