@@ -270,6 +270,7 @@ if True: #Slime Forest Encounters
     sf2_encounter3 = [[Shufflin_Shrub_A,Slimeinoid_A,Skull_Slime_A],"Normal"]
     raging_soul_boss = [[Raging_Soul,Shufflin_Shrub_A,Shufflin_Shrub_B],"Normal"]
 
+
 if True: #Ruins of Time Enemies
     Gyrobifastigium_A = Enemy(
         DisplayName = "Gyrobifastigium A",
@@ -452,3 +453,66 @@ if True: #Ruins of Time Encounters
     rot2_boss = [[Nynety,Gyrobifastigium_A,Gyrobifastigium_B],"Normal"]
 
 
+if True: #Bandit Road Enemies
+    Crazy_Guy_A = Enemy(
+        DisplayName = "Crazy Guy A",
+        Moves = [[equipment.Dagger,75,100],[equipment.Cut,0,75],[equipment.Stab,0,75],[equipment.Slash,0,25]],
+        Weakness = ["Lance","Ice","Gun"],
+        Sprite = "crazy_guy",
+        Level = 7,
+        EXP = 200,
+        Gold = 175,
+        ATK = 875,
+        MAG = 700,
+        HLG = 900,
+        DEF = 450,
+        RES = 425,
+        Max_HP = 1500,
+        Max_SP = 1250,
+        Max_Action_Count = 3,
+        Bio = "Don't ever mess with a\ncrazy guy.",
+        Effects = []
+    )
+
+    Crazy_Guy_B = Enemy(
+        DisplayName = "Crazy Guy B",
+        Moves = [[equipment.Dagger,75,100],[equipment.Cut,0,75],[equipment.Stab,0,75],[equipment.Slash,0,25]],
+        Weakness = ["Lance","Ice","Gun"],
+        Sprite = "crazy_guy",
+        Level = 7,
+        EXP = 200,
+        Gold = 175,
+        ATK = 875,
+        MAG = 700,
+        HLG = 900,
+        DEF = 450,
+        RES = 425,
+        Max_HP = 1500,
+        Max_SP = 1250,
+        Max_Action_Count = 3,
+        Bio = "Don't ever mess with a\ncrazy guy.",
+        Effects = []
+    )
+
+    Crazy_Guy_C = Enemy(
+        DisplayName = "Crazy Guy C",
+        Moves = [[equipment.Dagger,75,100],[equipment.Cut,0,75],[equipment.Stab,0,75],[equipment.Slash,0,25]],
+        Weakness = ["Lance","Ice","Gun"],
+        Sprite = "crazy_guy",
+        Level = 7,
+        EXP = 200,
+        Gold = 175,
+        ATK = 875,
+        MAG = 700,
+        HLG = 900,
+        DEF = 450,
+        RES = 425,
+        Max_HP = 1500,
+        Max_SP = 1250,
+        Max_Action_Count = 3,
+        Bio = "Don't ever mess with a\ncrazy guy.",
+        Effects = []
+    )
+
+if True: #Bandit Road Encounters
+    br_encounter1 = [[Crazy_Guy_A,Crazy_Guy_B,Crazy_Guy_C],"Normal"]

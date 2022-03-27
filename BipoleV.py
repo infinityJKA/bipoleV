@@ -3712,6 +3712,12 @@ def Character_Turn():
     else:
         write_text("Enemy Turn")
         character_to_action_index = 0
+        for enem in current_encounter:
+            if len(enem.Effects) > 0:
+                for effect in enem.Effects:
+                    effect[2] -= 1
+                    if effect[2] <= 0:
+                        enem.Effects.remove(effect)
         Enemy_Turn()
 
 def Enemy_Turn():
@@ -4949,14 +4955,15 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-# Instant_Level_Up(characters.Protipole,5)
-# Manual_Add_Char(characters.Startole,5)
-# Manual_Add_Char(characters.Bipoanderer,5)
-# Manual_Add_Char(characters.Wicole,5)
-# Manual_Add_Char(characters.Bithecary,1)
-# Manual_Add_Char(characters.Archle,1)
-# # Gold += 3000
-# maps.player_cords = [9,18]
-# maps.current_location = maps.Passway_Village
+Instant_Level_Up(characters.Protipole,6)
+Manual_Add_Char(characters.Startole,6)
+Manual_Add_Char(characters.Bipoanderer,6)
+Manual_Add_Char(characters.Wicole,6)
+Manual_Add_Char(characters.Bithecary,2)
+Manual_Add_Char(characters.Archle,2)
+Gold += 100000
+maps.player_cords = [9,18]
+maps.current_location = maps.Passway_Village
+equipment.equipment_inventory.append(equipment.CigaretteLighter)
 
 screen.mainloop()
