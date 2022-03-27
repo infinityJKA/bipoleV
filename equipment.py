@@ -938,13 +938,13 @@ if True: #Boosts
     Damage_Type = "Boost",
     Move_Type = "Boost", #Physical, Magic, Heal, Boost
     Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 350, #Deducted
-    Priority = 150, #Added
+    SP_Cost = 300, #Deducted
+    Priority = 175, #Added
     PWR = 0,
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = ["ATK",1.5,3],
-    Description = "Inflict 1.5x ATK for 3 turns."
+    Inflict = ["ATK",1.5,4],
+    Description = "Inflict 1.5x ATK for 4 turns."
     )
 
     Mentality_Potion = Equipment(
@@ -953,13 +953,13 @@ if True: #Boosts
     Damage_Type = "Boost",
     Move_Type = "Boost", #Physical, Magic, Heal, Boost
     Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 350, #Deducted
-    Priority = 150, #Added
+    SP_Cost = 300, #Deducted
+    Priority = 175, #Added
     PWR = 0,
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = ["MAG",1.5,3],
-    Description = "Inflict 1.5x MAG for 3 turns."
+    Inflict = ["MAG",1.5,4],
+    Description = "Inflict 1.5x MAG for 4 turns."
     )
 
     Power_Flag = Equipment(

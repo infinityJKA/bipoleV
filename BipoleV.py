@@ -4119,8 +4119,8 @@ def Enemy_Perform_Move():
             target.Current_HP -= damage_to_deal
             weakness_text = ""
             if Move_to_Use.Damage_Type in target.Weakness:
-                weakness_text = "\nWEAKNESS HIT!\nDealt 1.5x damage!\nInflicted 1.3x Weakness (WKN) for 3 turns!"
-                target.Effects.append(["WKN",1.3,3])
+                weakness_text = "\nWEAKNESS HIT!\nDealt 1.5x damage!\nInflicted 1.3x Weakness (WKN) for 5 turns!"
+                target.Effects.append(["WKN",1.3,5])
             if damage_to_deal > 0:
                 write_text("Dealt "+str(damage_to_deal)+" damage to "+target.DisplayName+"!\n"+str(hp_before_damage)+" > "+str(target.Current_HP)+weakness_text)
             else:
@@ -4165,8 +4165,8 @@ def Enemy_Perform_Move():
             weakness_text = ""
             target.Current_HP -= damage_to_deal
             if Move_to_Use.Damage_Type in target.Weakness:
-                weakness_text = "\nWEAKNESS HIT!\nDealt 1.5x damage!\nInflicted 1.3x Weakness (WKN) for 3 turns!"
-                target.Effects.append(["WKN",1.3,3])
+                weakness_text = "\nWEAKNESS HIT!\nDealt 1.5x damage!\nInflicted 1.3x Weakness (WKN) for 5 turns!"
+                target.Effects.append(["WKN",1.3,5])
             if damage_to_deal > 0:
                 write_text("Dealt "+str(damage_to_deal)+" damage to "+target.DisplayName+"!\n"+str(hp_before_damage)+" > "+str(target.Current_HP)+weakness_text)
             else:
@@ -4347,8 +4347,8 @@ def Perform_Move():
             target.Current_HP -= damage_to_deal
             weakness_text = ""
             if Move_to_Use.Damage_Type in target.Weakness:
-                weakness_text = "\nWEAKNESS HIT!\nDealt 1.5x damage!\nInflicted 1.3x Weakness (WKN) for 3 turns!"
-                target.Effects.append(["WKN",1.3,3])
+                weakness_text = "\nWEAKNESS HIT!\nDealt 1.5x damage!\nInflicted 1.3x Weakness (WKN) for 5 turns!"
+                target.Effects.append(["WKN",1.3,5])
             if damage_to_deal > 0:
                 write_text("Dealt "+str(damage_to_deal)+" damage to "+target.DisplayName+"!\n"+str(hp_before_damage)+" > "+str(target.Current_HP)+weakness_text)
             else:
@@ -4391,7 +4391,7 @@ def Perform_Move():
             weakness_text = ""
             if Move_to_Use.Damage_Type in target.Weakness:
                 weakness_text = "\nWEAKNESS HIT!\nDealt 1.5x damage!\nInflicted 1.3x Weakness (WKN) for 3 turns!"
-                target.Effects.append(["WKN",1.3,3])
+                target.Effects.append(["WKN",1.3,5])
             if damage_to_deal > 0:
                 write_text("Dealt "+str(damage_to_deal)+" damage to "+target.DisplayName+"!\n"+str(hp_before_damage)+" > "+str(target.Current_HP)+weakness_text)
             else:
@@ -4955,15 +4955,16 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,6)
-Manual_Add_Char(characters.Startole,6)
-Manual_Add_Char(characters.Bipoanderer,6)
-Manual_Add_Char(characters.Wicole,6)
-Manual_Add_Char(characters.Bithecary,2)
-Manual_Add_Char(characters.Archle,2)
-Gold += 100000
-maps.player_cords = [9,18]
-maps.current_location = maps.Passway_Village
-equipment.equipment_inventory.append(equipment.CigaretteLighter)
+# Instant_Level_Up(characters.Protipole,5)
+# Manual_Add_Char(characters.Startole,5)
+# Manual_Add_Char(characters.Bipoanderer,5)
+# Manual_Add_Char(characters.Wicole,5)
+# Manual_Add_Char(characters.Bithecary,1)
+# Manual_Add_Char(characters.Archle,1)
+# Gold += 100000
+# maps.player_cords = [9,18]
+# maps.current_location = maps.Passway_Village
+# equipment.equipment_inventory.append(equipment.CigaretteLighter)
+# characters.Protipole.Equipped.append(equipment.Slash)
 
 screen.mainloop()
