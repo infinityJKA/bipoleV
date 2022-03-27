@@ -928,8 +928,8 @@ if True: #Boosts
     PWR = 0,
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = ["WKN",1.2,3],
-    Description = "Inflict 1.2 WKN for 3 turns."
+    Inflict = ["WKN",1.25,6],
+    Description = "Inflict 1.25 WKN for 6 turns."
     )
 
     Strength_Potion = Equipment(

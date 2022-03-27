@@ -4967,16 +4967,21 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,5)
-Manual_Add_Char(characters.Startole,5)
-Manual_Add_Char(characters.Bipoanderer,5)
-Manual_Add_Char(characters.Wicole,5)
-Manual_Add_Char(characters.Bithecary,1)
-Manual_Add_Char(characters.Archle,1)
+Instant_Level_Up(characters.Protipole,6)
+Manual_Add_Char(characters.Startole,6)
+Manual_Add_Char(characters.Bipoanderer,6)
+Manual_Add_Char(characters.Wicole,6)
+Manual_Add_Char(characters.Bithecary,2)
+Manual_Add_Char(characters.Archle,2)
 Gold += 100000
 maps.player_cords = [9,18]
 maps.current_location = maps.Passway_Village
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
-characters.Protipole.Equipped.append(equipment.Slash)
+characters.Protipole.Equipped = [equipment.Stab,equipment.Fire_Blast,equipment.Far_Heal]
+characters.Bipoanderer.Equipped = [equipment.Sword_Lance]
+characters.Archle.Equipped = [equipment.Long_Bow,equipment.Fire_Blast]
+characters.Startole.Equipped = [equipment.Guard,equipment.Stab,equipment.Power_Flag]
+characters.Wicole.Equipped = [equipment.Far_Heal,equipment.Congeal]
+characters.Bithecary.Equipped = [equipment.Recover,equipment.Spark_Potion,equipment.Rime_Potion]
 
 screen.mainloop()
