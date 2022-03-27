@@ -467,7 +467,7 @@ if True: #Bandit Road Enemies
         HLG = 900,
         DEF = 450,
         RES = 425,
-        Max_HP = 1500,
+        Max_HP = 1350,
         Max_SP = 1250,
         Max_Action_Count = 3,
         Bio = "Don't ever mess with a\ncrazy guy.",
@@ -487,7 +487,7 @@ if True: #Bandit Road Enemies
         HLG = 900,
         DEF = 450,
         RES = 425,
-        Max_HP = 1500,
+        Max_HP = 1350,
         Max_SP = 1250,
         Max_Action_Count = 3,
         Bio = "Don't ever mess with a\ncrazy guy.",
@@ -507,12 +507,53 @@ if True: #Bandit Road Enemies
         HLG = 900,
         DEF = 450,
         RES = 425,
-        Max_HP = 1500,
+        Max_HP = 1350,
         Max_SP = 1250,
         Max_Action_Count = 3,
         Bio = "Don't ever mess with a\ncrazy guy.",
         Effects = []
     )
 
+    Gangster_A = Enemy(
+        DisplayName = "Gangster A",
+        Moves = [[equipment.Fireball,66,100],[equipment.Freeze,33,66],[equipment.Bronze_Gauntlets,66,100],[equipment.Cut,33,66],[equipment.Sweep,0,33],[equipment.Flood,0,33]],
+        Weakness = ["Staff","Bow"],
+        Sprite = "gangster",
+        Level = 7,
+        EXP = 325,
+        Gold = 350,
+        ATK = 900,
+        MAG = 875,
+        HLG = 900,
+        DEF = 500,
+        RES = 425,
+        Max_HP = 1500,
+        Max_SP = 12500,
+        Max_Action_Count = 2,
+        Bio = "A gangster under Gangole, the leader\nof the Bandit Road Gang.",
+        Effects = []
+    )
+
+    Gangster_B = Enemy(
+        DisplayName = "Gangster B",
+        Moves = [[equipment.Fireball,66,100],[equipment.Freeze,33,66],[equipment.Bronze_Gauntlets,66,100],[equipment.Cut,33,66],[equipment.Sweep,0,33],[equipment.Flood,0,33]],
+        Weakness = ["Staff","Bow"],
+        Sprite = "gangster",
+        Level = 7,
+        EXP = 325,
+        Gold = 350,
+        ATK = 900,
+        MAG = 875,
+        HLG = 900,
+        DEF = 500,
+        RES = 425,
+        Max_HP = 1500,
+        Max_SP = 12500,
+        Max_Action_Count = 2,
+        Bio = "A gangster under Gangole, the leader\nof the Bandit Road Gang.",
+        Effects = []
+    )
+
 if True: #Bandit Road Encounters
     br_encounter1 = [[Crazy_Guy_A,Crazy_Guy_B,Crazy_Guy_C],"Normal"]
+    br_encounter2 = [[Gangster_A,Crazy_Guy_A,Crazy_Guy_B],"Normal"]

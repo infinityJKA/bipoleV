@@ -304,7 +304,7 @@ List_of_All_Locations.append(Ruins_of_Time1)
 Ruins_of_Time2 = ["Ruins of Time A2", ruins_of_time_map2, "stone", "ruins","ruins_of_time2",True,[enemies.rot2_encounter1,enemies.rot2_encounter2,enemies.rot2_encounter3],2,[0,["no eco",0],[0,0,0,0,0]],"brown"]
 List_of_All_Locations.append(Ruins_of_Time2)
 
-Bandit_Road = ["Bandit Road", bandit_road_map, "stone", "lightgrey","bandit_road",True,[enemies.br_encounter1],5,[0,["no eco",0],[0,0,0,0,0]],"lightgrey"]
+Bandit_Road = ["Bandit Road", bandit_road_map, "stone", "lightgrey","bandit_road",True,[enemies.br_encounter2],5,[0,["no eco",0],[0,0,0,0,0]],"lightgrey"]
 List_of_All_Locations.append(Bandit_Road)
 
 current_location = Bieace_Castle

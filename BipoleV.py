@@ -3737,6 +3737,7 @@ def Enemy_Turn():
     global Move_to_Use
     global target
     global Move_Target
+    global another
     if len(current_encounter)-1 >= character_to_action_index:
         Current_Character = current_encounter[character_to_action_index]
         moves_possible = 0
@@ -3771,27 +3772,34 @@ def Enemy_Turn():
                     current_total_priority = str(total_priority)
                     possible_targets.append([char,int(current_total_priority)])
             if len(possible_targets) >= 1:
-                target_priority = str(random.randint(0,total_priority))
-                print(target_priority)
-                print(target_priority)
-                print(target_priority)
-                target = []
-                for char in possible_targets:
-                    if char[1] >= int(target_priority):
-                        print(char[0].DisplayName+" "+str(char[1])+" greater than or equal to "+target_priority+" [TARGET]")
-                        target.append(char[0])
-                        break
-                    else:
-                        print(char[0].DisplayName+" "+str(char[1])+" less than "+target_priority+" [NOT TARGET]")
-                print("target: "+str(target)+" | first displayname: "+target[0].DisplayName)
+                if total_priority > 0:
+                    target_priority = str(random.randint(0,total_priority))
+                    print(target_priority)
+                    print(target_priority)
+                    print(target_priority)
+                    target = []
+                    for char in possible_targets:
+                        if char[1] >= int(target_priority):
+                            print(char[0].DisplayName+" "+str(char[1])+" greater than or equal to "+target_priority+" [TARGET]")
+                            target.append(char[0])
+                            break
+                        else:
+                            print(char[0].DisplayName+" "+str(char[1])+" less than "+target_priority+" [NOT TARGET]")
+                    print("target: "+str(target)+" | first displayname: "+target[0].DisplayName)
+                else:
+                    target = []
+                    print("total priority is 0")
+                    print("len(possible_targets) = " + str(len(possible_targets)))
+                    target.append(possible_targets[random.randint(0,len(possible_targets)-1)][0])
+                    print("target: "+str(target)+" | first displayname: "+target[0].DisplayName)
                 if Move_to_Use.Target == "One Ally":
-                    target = None
-                    lowest_hp = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
-                    possible_targets = []
-                    for enemy in current_encounter:
-                        if enemy.Current.HP < lowest_hp:
-                            target = enemy
-                            lowest_hp = enemy.Current.HP
+                        target = None
+                        lowest_hp = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
+                        possible_targets = []
+                        for enemy in current_encounter:
+                            if enemy.Current.HP < lowest_hp:
+                                target = enemy
+                                lowest_hp = enemy.Current.HP
                 elif Move_to_Use.Target == "All Allies":
                     target = current_encounter
                 elif Move_to_Use.Target == "All Enemies":
@@ -4062,12 +4070,16 @@ def initialize_enemy_move():
     update_party_text()
     Enemy_Perform_Move()
 
+another = False
+
 def Enemy_Perform_Again():
     disable_inputs()
+    global another
     global q_command
     global space_command
     global Current_Character
     write_text("Another!\n"+Current_Character.DisplayName+" acts again!")
+    another = True
     a_button.config(command=Enemy_Turn)
     talk_button.config(command=Enemy_Turn)
     q_command = "Enemy_Turn()"
@@ -4955,16 +4967,16 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-# Instant_Level_Up(characters.Protipole,5)
-# Manual_Add_Char(characters.Startole,5)
-# Manual_Add_Char(characters.Bipoanderer,5)
-# Manual_Add_Char(characters.Wicole,5)
-# Manual_Add_Char(characters.Bithecary,1)
-# Manual_Add_Char(characters.Archle,1)
-# Gold += 100000
-# maps.player_cords = [9,18]
-# maps.current_location = maps.Passway_Village
-# equipment.equipment_inventory.append(equipment.CigaretteLighter)
-# characters.Protipole.Equipped.append(equipment.Slash)
+Instant_Level_Up(characters.Protipole,5)
+Manual_Add_Char(characters.Startole,5)
+Manual_Add_Char(characters.Bipoanderer,5)
+Manual_Add_Char(characters.Wicole,5)
+Manual_Add_Char(characters.Bithecary,1)
+Manual_Add_Char(characters.Archle,1)
+Gold += 100000
+maps.player_cords = [9,18]
+maps.current_location = maps.Passway_Village
+equipment.equipment_inventory.append(equipment.CigaretteLighter)
+characters.Protipole.Equipped.append(equipment.Slash)
 
 screen.mainloop()
