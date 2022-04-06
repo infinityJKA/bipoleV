@@ -120,6 +120,21 @@ if True: #Fists
     Description = "In another timeline in which the Nexters\nreformed the world, many territories were\nnamed after aspects of the holy Truthes."
     )
 
+    Spinning_Chair = Equipment(
+    Display_Name = "Spinning Chair",
+    Equip_Type = "Gangipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fists",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 150,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Gangipole rams the party with his chair.",
+    Action_Count = 0.5
+    )
+
 if True: #Swords
 
     Dagger = Equipment(
@@ -320,6 +335,7 @@ if True: #Lances
     Heal_Stat = None, #The stat to heal,
     Description = "Extermination of the unworthy must\nbe enacted upon synthesization.\nWe must approach ascention."
     )
+
 
 if True: #Staves
 
@@ -871,6 +887,36 @@ if True: #Healing
     Description = "As more time passes from a creation or a\nreformation, the residual Lesser Truthes\nwill reduced more and more."
     )
 
+    Expensive_Cigar = Equipment(
+    Display_Name = "Expensive Cigar",
+    Equip_Type = "Gangole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Healing, Gun
+    Damage_Type = "Heal",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 999, #Added
+    PWR = 30,
+    Purchasing_Price = 99999, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "HP", #The stat to heal,
+    Description = "An expensive, custom ordered luxury cigar\nfrom the late Apothipole.",
+    Action_Count = 0.5
+    )
+
+    Huffin = Equipment(
+    Display_Name = "Huffin",
+    Equip_Type = "Gangole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Healing, Gun
+    Damage_Type = "Heal",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 999, #Added
+    PWR = 1000,
+    Purchasing_Price = 99999, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "HP", #The stat to heal,
+    Description = "Gangole rapidly inhales his cigar.",
+    Action_Count = 0.3
+    )
+
 if True: #Guns
     The_22XX = Equipment(
     Display_Name = "The 22XX",
@@ -913,6 +959,49 @@ if True: #Guns
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "The universe ever expands, with The Algorithm\nendlessly stemming from the singularity\npoint of the Creators."
+    )
+
+    Pew = Equipment(
+    Display_Name = "Pew!",
+    Equip_Type = "Gangipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 200,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Gangipole shoots you with the 22XX."
+    )
+
+    Spray = Equipment(
+    Display_Name = "Spray!",
+    Equip_Type = "Gangipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 150,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Gangipole rapidly shoots the party."
+    )
+
+    Desperation_Shot = Equipment(
+    Display_Name = "Desperation Shot",
+    Equip_Type = "Gangipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 175,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Gangipole desperately shoots you.",
+    Action_Count = 0.25,
     )
 
 if True: #Boosts

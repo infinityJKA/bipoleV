@@ -431,7 +431,7 @@ if True: #Ruins of Time Enemies
         Sprite = "nynety",
         Level = 10,
         EXP = 600,
-        Gold = 450,
+        Gold = 1000,
         ATK = 850,
         MAG = 825,
         HLG = 20,
@@ -553,6 +553,46 @@ if True: #Bandit Road Enemies
         Bio = "A gangster under Gangole, the leader\nof the Bandit Road Gang.",
         Effects = []
     )
+
+    Gangole = Enemy(
+        DisplayName = "Gangole",
+        Moves = [[equipment.Pew,98,100],[equipment.Spray,98,100],[equipment.Expensive_Cigar,95,98],[equipment.Pew,35,95],[equipment.Spray,35,95],[equipment.Expensive_Cigar,35,50],[equipment.Spinning_Chair,0,35],[equipment.Desperation_Shot,0,35],[equipment.Huffin,0,35]],
+        Weakness = ["Fists","Lance","Staff","Ice","Gun"],
+        Sprite = "gangipole",
+        Level = 10,
+        EXP = 550,
+        Gold = 2000,
+        ATK = 900,
+        MAG = 900,
+        HLG = 25,
+        DEF = 300,
+        RES = 250,
+        Max_HP = 25000,
+        Max_SP = 69420,
+        Bio = "Leader of the Bandit Road Gang, and\nwielder of The 22XX, an ancient\nweapon from the pre-Finis era.",
+        Effects = []
+    )
+
+    Jeffy_Jimovans = Enemy(
+        DisplayName = "Jeffy Jimovans",
+        Moves = [[equipment.Bronze_Gauntlets,75,100],[equipment.Slash,0,75],[equipment.Stone_Staff,0,75],[equipment.Flood,0,25],[equipment.Long_Bow,0,25]],
+        Weakness = ["Sword","Fire","Gun"],
+        Sprite = "jeffy_jimovans",
+        Level = 7,
+        EXP = 200,
+        Gold = 175,
+        ATK = 750,
+        MAG = 750,
+        HLG = 900,
+        DEF = 325,
+        RES = 275,
+        Max_HP = 1500,
+        Max_SP = 1250,
+        Max_Action_Count = 3,
+        Bio = "Jeffy Jimovans is a high ranking member of\nthe Bandit Road Gang and has served the\ngang for most of his life. He initally\njoined after he was orphaned, rising through the\nranks as a dedicated member from a young age.\nHe has developed a strong brotherhood with Erstax Humphrey,\na fellow gang member who he often hanged out with.",
+        Effects = []
+    )
+
 
 if True: #Bandit Road Encounters
     br_encounter1 = [[Crazy_Guy_A,Crazy_Guy_B,Crazy_Guy_C],"Normal"]
