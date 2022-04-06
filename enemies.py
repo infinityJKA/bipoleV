@@ -559,8 +559,8 @@ if True: #Bandit Road Enemies
         Moves = [[equipment.Pew,98,100],[equipment.Spray,98,100],[equipment.Expensive_Cigar,95,98],[equipment.Pew,35,95],[equipment.Spray,35,95],[equipment.Expensive_Cigar,35,50],[equipment.Spinning_Chair,0,35],[equipment.Desperation_Shot,0,35],[equipment.Huffin,0,35]],
         Weakness = ["Fists","Lance","Staff","Ice","Gun"],
         Sprite = "gangipole",
-        Level = 10,
-        EXP = 550,
+        Level = 9,
+        EXP = 575,
         Gold = 2000,
         ATK = 900,
         MAG = 900,
@@ -578,9 +578,9 @@ if True: #Bandit Road Enemies
         Moves = [[equipment.Bronze_Gauntlets,75,100],[equipment.Slash,0,75],[equipment.Stone_Staff,0,75],[equipment.Flood,0,25],[equipment.Long_Bow,0,25]],
         Weakness = ["Sword","Fire","Gun"],
         Sprite = "jeffy_jimovans",
-        Level = 7,
-        EXP = 200,
-        Gold = 175,
+        Level = 8,
+        EXP = 500,
+        Gold = 450,
         ATK = 750,
         MAG = 750,
         HLG = 900,
@@ -593,6 +593,24 @@ if True: #Bandit Road Enemies
         Effects = []
     )
 
+    Erstax_Humphrey = Enemy(
+        DisplayName = "Erstax Humphrey",
+        Moves = [[equipment.Impair,98,100],[equipment.Mana_Thurst,98,100],[equipment.Screwdriver_of_Fate,50,98],[equipment.Life_Transfer,50,98],[equipment.Mana_Thurst,0,50],[equipment.Impair,0,15]],
+        Weakness = ["Staff","Water"],
+        Sprite = "erstax_humphrey",
+        Level = 8,
+        EXP = 500,
+        Gold = 500,
+        ATK = 875,
+        MAG = 875,
+        HLG = 875,
+        DEF = 400,
+        RES = 425,
+        Max_HP = 10000,
+        Max_SP = 99999,
+        Bio = "I really hope this guy gets a stupid\namount of lore after this battle.",
+        Effects = []
+    )
 
 if True: #Bandit Road Encounters
     br_encounter1 = [[Crazy_Guy_A,Crazy_Guy_B,Crazy_Guy_C],"Normal"]

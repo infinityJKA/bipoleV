@@ -336,6 +336,20 @@ if True: #Lances
     Description = "Extermination of the unworthy must\nbe enacted upon synthesization.\nWe must approach ascention."
     )
 
+    Mana_Thurst = Equipment(
+    Display_Name = "Mana Thrust",
+    Equip_Type = "ERSTAX HUMPHREY", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Lance",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 175,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A CELL-tech weapon that channels mana\nenergy becomes progressively more powerful the more \ncapable its user is.",
+    ActionCount = 0.5
+    )
 
 if True: #Staves
 
@@ -408,6 +422,20 @@ if True: #Staves
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Topological? HUH!?!?\nIt was in the Finis Event in which The Realmer\nFormation occured once again.\nPartially, we experienced rebirth.\nRemenents of The Algorith... is this Geom Energy?\nIs the true path to ascendancy revealed upon us?\nMay we go beyond The Creators..."
+    )
+
+    Screwdriver_of_Fate = Equipment(
+    Display_Name = "Screwdriver of Fate",
+    Equip_Type = "ERSTAX HUMPHREY", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Staff",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 175,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A special screwdriver that can channel\nmana energy from the user. It was developed\nby Erstax Humphrey after he parted from\nHumphrey Fallen."
     )
 
 if True: #Bows
@@ -1352,6 +1380,38 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = [["ATK",0.9,2],["MAG",0.9,2],["DEF",0.85,2],["RES",0.85,2],["HLG",0.8,2]],
     Description = "Every realm has a 'border', the end of\nwhere reality functions properly."
+    )
+
+    Impair = Equipment(
+    Display_Name = "Impair",
+    Equip_Type = "ERSTAX HUMPHREY", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 150, #Deducted
+    Priority = 250, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["WKN",1.3,3],
+    Description = "A disrupting signal sent from the\ncybernetic body of a genetically modified human.",
+    Action_Count= 0.5
+    )
+
+    Life_Transfer = Equipment(
+    Display_Name = "Life Transfer",
+    Equip_Type = "CELL", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "CELL",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 1,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",1.25,3],["RES",1.25,3],["ATK",1.25,3],["MAG",1.25,3],["HLG",1.25,3]],
+    Description = "Humans obtained the power to manipulate\nlife energy through the use of CELL technology, though\ndevelopment on this department was not as explored\nas the use of mana and magica."
     )
 
 if True: #Starting Uniques
