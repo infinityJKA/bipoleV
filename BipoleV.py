@@ -4756,7 +4756,7 @@ def Instant_Level_Up(char,times):
 
 Instant_Level_Up(characters.Bithecary,4)
 Instant_Level_Up(characters.Archle,4)
-        
+Instant_Level_Up(characters.Bipouge,7)
     
      
 
@@ -4967,21 +4967,22 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-# Instant_Level_Up(characters.Protipole,6)
-# Manual_Add_Char(characters.Startole,6)
-# Manual_Add_Char(characters.Bipoanderer,6)
-# Manual_Add_Char(characters.Wicole,6)
-# Manual_Add_Char(characters.Bithecary,2)
-# Manual_Add_Char(characters.Archle,2)
-# Gold += 100000
-# maps.player_cords = [9,18]
-# maps.current_location = maps.Passway_Village
-# equipment.equipment_inventory.append(equipment.CigaretteLighter)
-# characters.Protipole.Equipped = [equipment.Stab,equipment.Fire_Blast,equipment.Far_Heal]
-# characters.Bipoanderer.Equipped = [equipment.Sword_Lance]
-# characters.Archle.Equipped = [equipment.Long_Bow,equipment.Fire_Blast]
-# characters.Startole.Equipped = [equipment.Guard,equipment.Stab,equipment.Power_Flag]
-# characters.Wicole.Equipped = [equipment.Far_Heal,equipment.Congeal]
-# characters.Bithecary.Equipped = [equipment.Recover,equipment.Spark_Potion,equipment.Rime_Potion]
+Instant_Level_Up(characters.Protipole,6)
+Manual_Add_Char(characters.Startole,6)
+Manual_Add_Char(characters.Bipoanderer,6)
+Manual_Add_Char(characters.Wicole,6)
+Manual_Add_Char(characters.Bithecary,2)
+Manual_Add_Char(characters.Archle,2)
+Gold += 100000
+maps.player_cords = [9,18]
+maps.current_location = maps.Passway_Village
+equipment.equipment_inventory.append(equipment.CigaretteLighter)
+characters.Protipole.Equipped = [equipment.Stab,equipment.Fire_Blast,equipment.Far_Heal]
+characters.Bipoanderer.Equipped = [equipment.Sword_Lance]
+characters.Archle.Equipped = [equipment.Long_Bow,equipment.Fire_Blast]
+characters.Startole.Equipped = [equipment.Guard,equipment.Stab,equipment.Power_Flag]
+characters.Wicole.Equipped = [equipment.Far_Heal,equipment.Congeal]
+characters.Bithecary.Equipped = [equipment.Recover,equipment.Spark_Potion,equipment.Rime_Potion]
+equipment.key_item_inventory.append(equipment.mysterious_crystals)
 
 screen.mainloop()

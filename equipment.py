@@ -348,7 +348,7 @@ if True: #Lances
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A CELL-tech weapon that channels mana\nenergy becomes progressively more powerful the more \ncapable its user is.",
-    ActionCount = 0.5
+    Action_Count = 0.5
     )
 
 if True: #Staves
@@ -1441,8 +1441,8 @@ if True: #Starting Uniques
     PWR = 0,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = ["ATK",1.4,2],
-    Description = "Protipole is a renowned warrior of the\nBieace Empire, having succeeded in multiple\nquests across his years of service."
+    Inflict = ["ATK",1.4,3],
+    Description = "Protipole is a renowned warrior of the\nBieace Empire, having succeeded in multiple\nquests across his years of service.\n1.4x ATK for 3 turns to one ally."
     )
 
     Multiboost_Test = Equipment(
@@ -1472,7 +1472,7 @@ if True: #Starting Uniques
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["DEF",1.1,2],
-    Description = "Distract enemies by making them more\nlikely to attack you."
+    Description = "Distract enemies by making them more\nlikely to attack you.\nAlso gain 1.1x DEF for 2 turns."
     )
 
     Power_Charge = Equipment(
@@ -1530,9 +1530,23 @@ if True: #Starting Uniques
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["ATK",1.1,2],
-    Description = "Hide from the enemy and prepare\nfor the next attack."
+    Description = "Reduce your priority and\ngain 1.1x ATK for 2 turns."
     )
 
+    Call_to_Arms = Equipment(
+        Display_Name = "Call to Arms",
+        Equip_Type = "Bipouge", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+        Damage_Type = "Bipouge",
+        Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+        Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+        SP_Cost = 450, #Deducted
+        Priority = 450, #Added
+        PWR = 0,
+        Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+        Heal_Stat = None, #The stat to heal,
+        Inflict = [["ATK",1.15,3],["MAG",1.15,3],["HLG",1.15,3],["DEF",1.3,4],["RES",1.3,4]],
+        Description = "Party gains 1.15x ATK/MAG/HLG for 3 turns\nand 1.3x DEF/RES for 4 turns."
+        )
 
 equipment_inventory = []
 

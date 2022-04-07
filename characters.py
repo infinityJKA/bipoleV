@@ -257,7 +257,38 @@ if True: #Party Members
     )
     List_of_All_Recruitable_Party_Members.append(Archle)
 
+    Bipouge = Party_Character(
+        Display_Name = "Bipogue",
+        Usable_Weapons = ["Fists","Sword","Bipouge"],
+        Weakness = ["Lance","Ice"],
+        Equipped= [equipment.Call_to_Arms],
+        Level = 1,
+        Effects = [],
+        
+        ATK = 97,
+        ATK_Growth = 18,
+        
+        MAG = 86,
+        MAG_Growth = 18,
+        
+        HLG = 7,
+        HLG_Growth = 16,
 
+        Max_HP = 575,
+        Current_HP = 575,
+        HP_Growth = 19,
+
+        Max_SP = 210,
+        Current_SP = 210,
+        SP_Growth = 17,
+        
+        DEF = 185,
+        DEF_Growth = 17,
+        
+        RES = 165,
+        RES_Growth = 17
+        )
+    List_of_All_Recruitable_Party_Members.append(Bipouge)
 
 
 Current_Party = [Protipole]
