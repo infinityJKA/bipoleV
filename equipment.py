@@ -952,7 +952,7 @@ if True: #Healing
     Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 0, #Deducted
     Priority = 999, #Added
-    PWR = 1000,
+    PWR = 350,
     Purchasing_Price = 99999, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = "HP", #The stat to heal,
     Description = "Gangole rapidly inhales his cigar.",
@@ -1033,7 +1033,7 @@ if True: #Guns
 
     Desperation_Shot = Equipment(
     Display_Name = "Desperation Shot",
-    Equip_Type = "Gangipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Equip_Type = "Gangole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Gun",
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
@@ -1042,7 +1042,7 @@ if True: #Guns
     PWR = 175,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Gangipole desperately shoots you.",
+    Description = "Gangole desperately shoots you.",
     Action_Count = 0.25,
     )
 

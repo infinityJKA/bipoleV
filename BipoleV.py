@@ -4265,9 +4265,9 @@ def Enemy_Perform_Move():
                 q_command = "Enemy_Perform_Move()"
                 space_command = "Enemy_Perform_Move()"
             else:
-                Current_Character.Current_Action_Count += 1
+                Current_Character.Current_Action_Count += Move_to_Use.Action_Count
                 if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
-                    character_to_action_index += Move_to_Use.Action_Count
+                    character_to_action_index += 1
                 a_button.config(command=Enemy_Turn)
                 talk_button.config(command=Enemy_Turn)
                 q_command = "Enemy_Turn()"
@@ -4457,7 +4457,6 @@ def Perform_Move():
                 q_command = "Perform_Move()"
                 space_command = "Perform_Move()"
             else:
-                #write_text("But nothing happened!")
                 character_to_action_index += 1
                 a_button.config(command=Character_Turn)
                 talk_button.config(command=Character_Turn)
@@ -4967,22 +4966,29 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,6)
-Manual_Add_Char(characters.Startole,6)
-Manual_Add_Char(characters.Bipoanderer,6)
+Instant_Level_Up(characters.Protipole,8)
+Manual_Add_Char(characters.Startole,8)
+Manual_Add_Char(characters.Bipoanderer,8)
 Manual_Add_Char(characters.Wicole,6)
-Manual_Add_Char(characters.Bithecary,2)
+Manual_Add_Char(characters.Bithecary,4)
 Manual_Add_Char(characters.Archle,2)
 Gold += 100000
-maps.player_cords = [9,18]
-maps.current_location = maps.Passway_Village
+#maps.player_cords = [9,18]
+#maps.current_location = maps.Passway_Village
+maps.current_location = maps.Bandit_Road
+maps.player_cords = [11,7]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
 characters.Protipole.Equipped = [equipment.Stab,equipment.Fire_Blast,equipment.Far_Heal]
-characters.Bipoanderer.Equipped = [equipment.Sword_Lance]
+characters.Bipoanderer.Equipped = [equipment.Hydro,equipment.Slice,equipment.Sword_Lance]
 characters.Archle.Equipped = [equipment.Long_Bow,equipment.Fire_Blast]
-characters.Startole.Equipped = [equipment.Guard,equipment.Stab,equipment.Power_Flag]
+characters.Startole.Equipped = [equipment.Silver_Gauntlets,equipment.Lance_Sword,equipment.Power_Flag]
 characters.Wicole.Equipped = [equipment.Far_Heal,equipment.Congeal]
-characters.Bithecary.Equipped = [equipment.Recover,equipment.Spark_Potion,equipment.Rime_Potion]
+characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Splash_Potion]
 equipment.key_item_inventory.append(equipment.mysterious_crystals)
+
+for char in characters.All_Recruited_Characters:
+    char.Current_HP = char.Max_HP
+    char.Current_SP = char.Max_SP
+
 
 screen.mainloop()

@@ -558,7 +558,7 @@ if True: #Bandit Road Enemies
         DisplayName = "Gangole",
         Moves = [[equipment.Pew,98,100],[equipment.Spray,98,100],[equipment.Expensive_Cigar,95,98],[equipment.Pew,35,95],[equipment.Spray,35,95],[equipment.Expensive_Cigar,35,50],[equipment.Spinning_Chair,0,35],[equipment.Desperation_Shot,0,35],[equipment.Huffin,0,35]],
         Weakness = ["Fists","Lance","Staff","Ice","Gun"],
-        Sprite = "gangipole",
+        Sprite = "gangole",
         Level = 9,
         EXP = 575,
         Gold = 2000,
@@ -589,15 +589,15 @@ if True: #Bandit Road Enemies
         Max_HP = 1500,
         Max_SP = 1250,
         Max_Action_Count = 3,
-        Bio = "Jeffy Jimovans is a high ranking member of\nthe Bandit Road Gang and has served the\ngang for most of his life. He initally\njoined after he was orphaned, rising through the\nranks as a dedicated member from a young age.\nHe has developed a strong brotherhood with Erstax Humphrey,\na fellow gang member who he often hanged out with.",
+        Bio = "Jeffy Jimovans is a high ranking member of the\nBandit Road Gang and has served the gang for\nmost of his life. He initally joined after he was\norphaned, rising through the ranks as a dedicated\nmember from a young age. He has developed a strong\nbrotherhood with Ersatz Humphrey, a fellow gang\nmember who he often hangs out with.",
         Effects = []
     )
 
-    Erstax_Humphrey = Enemy(
-        DisplayName = "Erstax Humphrey",
+    Ersatz_Humphrey = Enemy(
+        DisplayName = "Ersatz Humphrey",
         Moves = [[equipment.Impair,98,100],[equipment.Mana_Thurst,98,100],[equipment.Screwdriver_of_Fate,50,98],[equipment.Life_Transfer,50,98],[equipment.Mana_Thurst,0,50],[equipment.Impair,0,15]],
         Weakness = ["Staff","Water"],
-        Sprite = "erstax_humphrey",
+        Sprite = "ersatz_humphrey",
         Level = 8,
         EXP = 500,
         Gold = 500,
@@ -616,4 +616,4 @@ if True: #Bandit Road Encounters
     br_encounter1 = [[Crazy_Guy_A,Crazy_Guy_B,Crazy_Guy_C],"Normal"]
     br_encounter2 = [[Gangster_A,Crazy_Guy_A,Crazy_Guy_B],"Normal"]
     br_encounter3 = [[Crazy_Guy_A,Gangster_A,Gangster_B],"Normal"]
-    br_boss = [[Gangole,Erstax_Humphrey,Jeffy_Jimovans],"Normal"]
+    br_boss = [[Gangole,Ersatz_Humphrey,Jeffy_Jimovans],"Normal"]
