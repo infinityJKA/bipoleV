@@ -498,8 +498,6 @@ This book has been attached to[@]a clone of myself that I have released[@]upon t
 To whom is reading this and[@]defeated my clone, I await you in another Realm.
 Talk to Consul Herald at[@]Bieace Castle Town to travel across realms.
 I will have a small reward for[@]you, a little thanks for making[@]my life more interesting.
-#REMOVE_KEYITEM humphrey_lore
-#GAIN_KEYITEM humphrey_lore_read
 _
 _
 _

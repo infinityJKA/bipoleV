@@ -1,0 +1,3 @@
+consul_herald
+Consul Herald:[@]Greetings.
+#END

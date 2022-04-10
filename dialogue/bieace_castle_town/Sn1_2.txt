@@ -1,0 +1,16 @@
+yhtims
+Yhtims:[@]Hello, warrior.
+#SHOP_EQUIPMENT
+Bieace Castle Town Armory
+Bronze_Gauntlets
+Cut
+Jab
+Wooden_Staff
+Bow
+Fireball
+Aqua
+Freeze
+Heal
+#SHOP_END
+Yhtims:[@]Come again!
+#END

@@ -1787,6 +1787,12 @@ if True:
         text_file="humphrey_lore"
     )
 
+    humphrey_lore_read = Key_Item(
+        Display_Name="HUMPHREY LORE (read)",
+        sprite="humphrey_lore",
+        text_file="humphrey_lore_READ"
+    )
+
     bonus_shop_pass = Key_Item(
         Display_Name="Bonus Shop Pass",
         sprite="bonus_shop_pass",

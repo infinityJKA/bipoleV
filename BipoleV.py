@@ -4973,10 +4973,10 @@ Manual_Add_Char(characters.Wicole,6)
 Manual_Add_Char(characters.Bithecary,4)
 Manual_Add_Char(characters.Archle,2)
 Gold += 100000
-#maps.player_cords = [9,18]
-#maps.current_location = maps.Passway_Village
-maps.current_location = maps.Bandit_Road
-maps.player_cords = [11,7]
+maps.player_cords = [9,18]
+maps.current_location = maps.Passway_Village
+# maps.current_location = maps.Bandit_Road
+# maps.player_cords = [11,7]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
 characters.Protipole.Equipped = [equipment.Stab,equipment.Fire_Blast,equipment.Far_Heal]
 characters.Bipoanderer.Equipped = [equipment.Hydro,equipment.Slice,equipment.Sword_Lance]
