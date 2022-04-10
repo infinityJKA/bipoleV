@@ -47,7 +47,7 @@ if True: #Fists
     PWR = 100,
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Perform a weak punch"
+    Description = "Perform a weak punch."
     )
 
     Iron_Gauntlets = Equipment(
@@ -61,7 +61,21 @@ if True: #Fists
     PWR = 150,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Perform an average punch"
+    Description = "Perform an average punch."
+    )
+
+    Silver_Gauntlets = Equipment(
+    Display_Name = "Silver Gauntlets",
+    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fists",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 250, #Added
+    PWR = 200,
+    Purchasing_Price = 1500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Perform a strong punch."
     )
 
     Slam = Equipment(

@@ -616,3 +616,4 @@ if True: #Bandit Road Encounters
     br_encounter1 = [[Crazy_Guy_A,Crazy_Guy_B,Crazy_Guy_C],"Normal"]
     br_encounter2 = [[Gangster_A,Crazy_Guy_A,Crazy_Guy_B],"Normal"]
     br_encounter3 = [[Crazy_Guy_A,Gangster_A,Gangster_B],"Normal"]
+    br_boss = [[Gangole,Erstax_Humphrey,Jeffy_Jimovans],"Normal"]
