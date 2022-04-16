@@ -1,8 +1,16 @@
 siphon_cognoscente
 Siphon Cognoscente:[@]Hello!
-Siphon Cognoscente:[@]Would you like to travel to Passway Village?
+#CHOICE = Travel to Passway Village? =[@][A] Yes[@][B] No
+#CHOICE_RESULT_GO_TO
+YES
+NO
+_
+/==/.YES
 #MOVE_TO
 Passway_Village
 17
 10
 South
+_
+/==/.NO
+#END

@@ -1,6 +1,11 @@
 siphon_cognoscente
 Siphon Cognoscente:[@]Hello!
-Siphon Cognoscente:[@]Would you like to travel to Bieace Castle Town?
+#CHOICE = Travel to Bieace Castle Town? =[@][A] Yes[@][B] No
+#CHOICE_RESULT_GO_TO
+YES
+NO
+_
+/==/.YES
 #SET_TILE
 Bieace_Castle_Town
 11
@@ -11,4 +16,7 @@ Bieace_Castle_Town
 6
 12
 North
+#END
+_
+/==/.NO
 #END
