@@ -1873,6 +1873,46 @@ if True:
     Description = "BONUS SHOP ITEM\n17.1324207031\n(Bipole 17 reference)"
     )
 
+    Zx = Consumable_Item(
+    Display_Name = "ZX",
+    Purchasing_Price = 750,
+    Target = "Party", #Single or Party
+    Stat = "SP",
+    Percent_or_Static = "Percent",
+    Amount = 1.10,
+    Description = "BONUS SHOP ITEM\n17.1324207031\n(Bipole 17 reference)"
+    )
+
+    Soda = Consumable_Item(
+    Display_Name = "Rosskabob",
+    Purchasing_Price = 250,
+    Target = "Single", #Single or Party
+    Stat = "SP",
+    Percent_or_Static = "Static",
+    Amount = 100,
+    Description = "It's like sparkling sparkling water."
+    )
+    
+    Rosskabob = Consumable_Item(
+    Display_Name = "Rosskabob",
+    Purchasing_Price = 750,
+    Target = "Single", #Single or Party
+    Stat = "SP",
+    Percent_or_Static = "Static",
+    Amount = 350,
+    Description = "How is this item in this timeline?"
+    )
+
+    Hand_Sanitizer = Consumable_Item(
+    Display_Name = "Hand Sanitizer",
+    Purchasing_Price = 350,
+    Target = "Single", #Single or Party
+    Stat = "SP",
+    Percent_or_Static = "Percent",
+    Amount = -100,
+    Description = "Please do not drink hand sanitizer."
+    )
+
     Oatmeal = Consumable_Item(
     Display_Name = "Oatmeal",
     Purchasing_Price = 500,

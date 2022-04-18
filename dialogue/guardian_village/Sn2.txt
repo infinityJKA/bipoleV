@@ -1,0 +1,10 @@
+knird
+Knird:[@]Hello![@]This is the Guardian Village Tavern!
+#SHOP_ITEM
+Guardian Village Tavern
+Soda
+Rosskabob
+Hand_Sanitizer
+#SHOP_END
+Knird:[@]Have nice day!
+#END
