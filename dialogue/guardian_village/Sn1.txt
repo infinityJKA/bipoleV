@@ -9,7 +9,7 @@ Holy_Staff
 Snipe
 Inferno
 Torrent
-Blizzard
+Cryoablate
 Mend
 #SHOP_END
 Smra Relaed:[@]Farewell.

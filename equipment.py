@@ -770,7 +770,19 @@ if True: #Water
     Description = "An average water attack."
     )
 
-    
+    Torrent = Equipment(
+    Display_Name = "Torrent",
+    Equip_Type = "Water", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Water",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 110, #Deducted
+    Priority = 190, #Added
+    PWR = 200,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A strong water attack."
+    )
 
     Flood = Equipment(
     Display_Name = "Flood",
@@ -845,8 +857,8 @@ if True: #Ice
     Description = "An average ice attack."
     )
 
-    Blizzard = Equipment(
-    Display_Name = "Blizzard",
+    Cryoablate = Equipment(
+    Display_Name = "Cryoablate",
     Equip_Type = "Ice", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Ice",
     Move_Type = "Magic", #Physical, Magic, Heal, Boost
