@@ -1702,6 +1702,36 @@ if True: #Starting Uniques
         Inflict = [["ATK",1.15,3],["MAG",1.15,3],["HLG",1.15,3],["DEF",1.3,4],["RES",1.3,4]],
         Description = "Party gains 1.15x ATK/MAG/HLG for 3 turns\nand 1.3x DEF/RES for 4 turns."
         )
+    
+    Razzion_Guiding = Equipment(
+        Display_Name = "Razzion Guiding",
+        Equip_Type = "Alls Ros", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+        Damage_Type = "Alls Ros",
+        Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+        Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+        SP_Cost = 450, #Deducted
+        Priority = 400, #Added
+        PWR = 0,
+        Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+        Heal_Stat = None, #The stat to heal,
+        Inflict = [["ATK",1.15,15],["MAG",1.15,15],["HLG",1.15,15]],
+        Description = "Inflict 1.15x ATK/MAG/HLG for 15 turns."
+        )
+
+    Medkit = Equipment(
+    Display_Name = "Medkit",
+    Equip_Type = "Birowth", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Birowth",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = -500, #Deducted
+    Priority = 500, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["RES",1.1,2],
+    Description = "Gain 500 SP and 1.1x RES for 2 turns."
+    )
 
 equipment_inventory = []
 

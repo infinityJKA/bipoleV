@@ -290,6 +290,71 @@ if True: #Party Members
         )
     List_of_All_Recruitable_Party_Members.append(Bipouge)
 
+    Alls_Ros = Party_Character(
+    Display_Name = "All Ros",
+    Usable_Weapons = ["Staff","Fire","Water","Ice","Healing","Alls Ros"],
+    Weakness = ["Fists","Sword", "Lance"],
+    Equipped= [equipment.Razzion_Guiding],
+    Level = 1,
+    Effects = [],
+    
+    ATK = 85,
+    ATK_Growth = 18,
+    
+    MAG = 95,
+    MAG_Growth = 18,
+    
+    HLG = 11,
+    HLG_Growth = 18,
+
+    Max_HP = 500,
+    Current_HP = 500,
+    HP_Growth = 19,
+
+    Max_SP = 325,
+    Current_SP = 325,
+    SP_Growth = 8,
+    
+    DEF = 175,
+    DEF_Growth = 17,
+    
+    RES = 200,
+    RES_Growth = 17
+    )
+    List_of_All_Recruitable_Party_Members.append(Alls_Ros)
+
+    Birowth = Party_Character(
+    Display_Name = "Birowth",
+    Usable_Weapons = ["Lance","Ice","Birowth"],
+    Weakness = ["Fists","Bow"],
+    Equipped= [equipment.Medkit],#[equipment.Disarm,equipment.Slash,equipment.Recover],#[equipment.Champion],
+    Level = 1,
+    Effects = [],
+    
+    ATK = 70,
+    ATK_Growth = 19,
+    
+    MAG = 70,
+    MAG_Growth = 19,
+    
+    HLG = 10,
+    HLG_Growth = 17,
+
+    Max_HP = 386,
+    Current_HP = 385,
+    HP_Growth = 20,
+
+    Max_SP = 125,
+    Current_SP = 125,
+    SP_Growth = 18,
+    
+    DEF = 100,
+    DEF_Growth = 18,
+    
+    RES = 100,
+    RES_Growth = 18
+    )
+    List_of_All_Recruitable_Party_Members.append(Birowth)
 
 Current_Party = [Protipole]
 Unequipped_Characters = []

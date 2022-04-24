@@ -33,11 +33,13 @@ Razzipole:[@]Alls Ros is the priest of[@]this church.
 Razzipole:[@]From what I've heard, he[@]has travelled across the world,[@]even to Eviole.
 Razzipole:[@]Lately, he had been getting[@]vision of the Holy Cards and[@]your arrival.
 Razzipole:[@]...
+#GOTO Talk
 _
 /==/.Church
 Razzipole:[@]This church has existence[@]since the founding of Guardian[@]Village.
 Razzipole:[@]The village was once the[@]head of Bieace's Razzion church,[@]though now it is only a place[@]of pilgrimage. 
 Razzipole:[@]...
+#GOTO Talk
 _
 /==/.BACKTOSTART
 Razzipole:[@]Did you need anything else?
