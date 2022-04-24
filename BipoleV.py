@@ -4756,6 +4756,7 @@ def Instant_Level_Up(char,times):
 Instant_Level_Up(characters.Bithecary,4)
 Instant_Level_Up(characters.Archle,4)
 Instant_Level_Up(characters.Bipouge,7)
+Instant_Level_Up(characters.Alls_Ros,8)
     
      
 
@@ -4972,6 +4973,7 @@ Manual_Add_Char(characters.Bipoanderer,8)
 Manual_Add_Char(characters.Wicole,6)
 Manual_Add_Char(characters.Bithecary,4)
 Manual_Add_Char(characters.Archle,2)
+# Manual_Add_Char(characters.Birowth,13)
 Gold += 100000
 # maps.player_cords = [9,18]
 # maps.current_location = maps.Passway_Village

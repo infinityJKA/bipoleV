@@ -1014,7 +1014,7 @@ if True: #Healing
     )
 
     Healing_Aura = Equipment(
-    Display_Name = "Heal",
+    Display_Name = "Healing Aura",
     Equip_Type = "Healing", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Healing, Gun
     Damage_Type = "Heal",
     Move_Type = "Heal", #Physical, Magic, Heal, Boost
@@ -1028,7 +1028,7 @@ if True: #Healing
     )
 
     Holy_Light = Equipment(
-    Display_Name = "Heal",
+    Display_Name = "Holy Light",
     Equip_Type = "Healing", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Healing, Gun
     Damage_Type = "Heal",
     Move_Type = "Heal", #Physical, Magic, Heal, Boost
@@ -1926,7 +1926,7 @@ if True:
     )
 
     Soda = Consumable_Item(
-    Display_Name = "Rosskabob",
+    Display_Name = "Soda",
     Purchasing_Price = 250,
     Target = "Single", #Single or Party
     Stat = "SP",

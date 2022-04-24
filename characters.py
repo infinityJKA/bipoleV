@@ -331,27 +331,27 @@ if True: #Party Members
     Level = 1,
     Effects = [],
     
-    ATK = 70,
+    ATK = 75,
     ATK_Growth = 19,
     
-    MAG = 70,
+    MAG = 75,
     MAG_Growth = 19,
     
     HLG = 10,
     HLG_Growth = 17,
 
-    Max_HP = 386,
-    Current_HP = 385,
+    Max_HP = 390,
+    Current_HP = 390,
     HP_Growth = 20,
 
-    Max_SP = 125,
-    Current_SP = 125,
+    Max_SP = 135,
+    Current_SP = 135,
     SP_Growth = 18,
     
-    DEF = 100,
+    DEF = 125,
     DEF_Growth = 18,
     
-    RES = 100,
+    RES = 125,
     RES_Growth = 18
     )
     List_of_All_Recruitable_Party_Members.append(Birowth)

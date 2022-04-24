@@ -1,0 +1,25 @@
+birowth
+Birowth:[@]Hmmm...
+Birowth:[@]You look pretty important.
+Birowth:[@]You probably do cool stuff, like[@]questing and exploring, right?
+Birowth:[@]Even though Guardian Village might[@]be spiritually important or whatever,[@]there isn't anything exciting here.
+Birowth:[@]So I'm reeeally bored.
+Birowth:[@]If you're on a cool adventure,[@]could I come along?
+_
+#CHOICE =Recruit Birowth?=[@][A] Yes[@][B] No
+#CHOICE_RESULT
+Birowth:[@]Awww come on!
+Birowth:[@]Please, I can't stand this boring[@]village anymore!
+#END
+-pass-
+-pass-
+_
+Protipole:[@]Sure, just don't get in[@]the way.
+Birowth:[@]Yeah! Let's go!
+Birowth:[@]This is going to be so cool!
+Birowth:[@]Oh yeah I also don't have any[@]combat experience, so I hope[@]you all can teach me.
+#RECRUIT
+Birowth
+-pass-
+Birowth joined your party!
+#OVERRIDE_SELF n00

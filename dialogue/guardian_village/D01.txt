@@ -10,5 +10,5 @@ _
 #MOVE_TO
 Bandit_Road
 11
-17
-North
+4
+South

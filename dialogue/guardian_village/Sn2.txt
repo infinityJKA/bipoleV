@@ -1,5 +1,5 @@
 knird
-Knird:[@]Hello![@]This is the Guardian Village Tavern!
+Knird:[@]Hello and welcome to the[@]Guardian Village Tavern!
 #SHOP_ITEM
 Guardian Village Tavern
 Soda
