@@ -1,0 +1,72 @@
+nexus
+Nexus:[@]Welcome.
+/==/.START
+#INIT_MULTICHOICE
+#MULTICHOICE
+[Select an action]
+["Talk","Shop","Sell"]
+LEAVE
+_
+/==/.Talk
+Nexus:[@]What do you need?
+#INIT_MULTICHOICE
+#MULTICHOICE
+[Select a topic]
+["Who are you?","Metalimnion","Mythos"]
+BACKTOSTART
+_
+/==/.Who are you?
+Nexus:[@]I am Nexus of the Metalimnion[@]Conclave.
+Nexus:[@]I serve here as an armourer.
+#GOTO Talk
+_
+/==/.Metalimnion
+Nexus:[@]Metalimnion is basically a place[@]that's between different realms.
+Nexus:[@]We, the Metalimnion Conclave,[@]control passages between realms in[@]places such as this.
+Nexus:[@]If you want to hear more, you[@]should ask Mythos about it.
+#GOTO Talk
+_
+_
+/==/.Mythos
+Nexus:[@]Mythos is a historian.
+Nexus:[@]He's the most knowledgeable one[@]here about Metalimnion and its history.
+Nexus:[@]He's also in charge of our taxes. 
+#GOTO Talk
+_
+_
+_
+/==/.BACKTOSTART
+Nexus:[@]Anything else you need?
+#GOTO START
+_
+_
+_
+/==/.Shop
+Artxe:[@]Here's my selection.
+#SHOP_EQUIPMENT
+The Bonus Shop
+Equivalent_Exchange_I
+Equivalent_Exchange_II
+Equivalent_Exchange_III
+Equivalent_Exchange_IV
+Equivalent_Exchange_V
+#SHOP_END
+Artxe:[@]Need something else?
+#GOTO START
+_
+_
+_
+/==/.Sell
+Artxe:[@]What do you want to sell?
+#PAWN_INIT_VAR
+#PAWN
+The Bonus Shop
+0.75
+Artxe:[@]Need something else?
+#GOTO START
+_
+_
+_
+/==/.LEAVE
+Artxe:[@]Goodbye.
+#END

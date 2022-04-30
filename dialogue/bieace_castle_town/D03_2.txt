@@ -1,3 +1,18 @@
 consul_herald
 Consul Herald:[@]Greetings.
+Consul Herald:[@]Do you want to travel to[@]Metalimnion?
+#CHOICE = Travel to Metalimnion? =[@][A] Yes[@][B] No
+#CHOICE_RESULT_GO_TO
+YES
+NO
+_
+/==/.YES
+#MOVE_TO
+Metalimnion
+7
+12
+North
+_
+/==/.NO
+#END
 #END
