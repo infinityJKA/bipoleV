@@ -17,7 +17,7 @@ BACKTOSTART
 _
 /==/.Who are you?
 Nexus:[@]I am Nexus of the Metalimnion[@]Conclave.
-Nexus:[@]I serve here as an armourer.
+Nexus:[@]I serve here as an armorer.
 #GOTO Talk
 _
 /==/.Metalimnion
@@ -42,31 +42,31 @@ _
 _
 _
 /==/.Shop
-Artxe:[@]Here's my selection.
+Nexus:[@]What do you want?
 #SHOP_EQUIPMENT
-The Bonus Shop
-Equivalent_Exchange_I
-Equivalent_Exchange_II
-Equivalent_Exchange_III
-Equivalent_Exchange_IV
-Equivalent_Exchange_V
+Metalimnion Armorer Nexus
+Lumio_Sword
+Beryl_Javelin
+Quick_Slice
+Rapid_Slice
+Shining_Staff
 #SHOP_END
-Artxe:[@]Need something else?
+Nexus:[@]Anything else you need?
 #GOTO START
 _
 _
 _
 /==/.Sell
-Artxe:[@]What do you want to sell?
+Nexus:[@]What are you selling?
 #PAWN_INIT_VAR
 #PAWN
-The Bonus Shop
-0.75
-Artxe:[@]Need something else?
+Metalimnion Armorer Nexus
+0.85
+Nexus:[@]Anything else you need?
 #GOTO START
 _
 _
 _
 /==/.LEAVE
-Artxe:[@]Goodbye.
+Nexus:[@]Good luck out there.
 #END

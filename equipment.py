@@ -216,7 +216,7 @@ if True: #Swords
     SP_Cost = 40, #Deducted
     Priority = 250, #Added
     PWR = 80,
-    Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Deals sword damage to all enemies"
     )
@@ -247,6 +247,62 @@ if True: #Swords
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A sword that deals lance damage"
+    )
+
+    Lumio_Sword = Equipment(
+    Display_Name = "Lumio Sword",
+    Equip_Type = "Protipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Magica", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 175, #Added
+    PWR = 150,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A glowing sword that deals magic damage."
+    )
+
+    Quick_Slice = Equipment(
+    Display_Name = "Quick Slice",
+    Equip_Type = "Bipouge", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 85, #Added
+    PWR = 150,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "An average strike with lower priority."
+    )
+
+    Swipe = Equipment(
+    Display_Name = "Swipe",
+    Equip_Type = "Bipouge", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 40, #Deducted
+    Priority = 125, #Added
+    PWR = 80,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deals sword damage to all enemies\nwith a lower priority."
+    )
+
+    Rapid_Slice = Equipment(
+    Display_Name = "Swipe",
+    Equip_Type = "Bipouge", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 80, #Deducted
+    Priority = 300, #Added
+    PWR = 150,
+    Purchasing_Price = 1500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Quickly slice all enemies."
     )
 
     Bite = Equipment(
@@ -322,7 +378,6 @@ if True: #Lances
     Description = "An strong attack using a lance."
     )
 
-
     Lance_Sword = Equipment(
     Display_Name = "Lance-Sword",
     Equip_Type = "Lance", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -335,6 +390,20 @@ if True: #Lances
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A lance that deals sword damage"
+    )
+
+    Beryl_Javelin = Equipment(
+    Display_Name = "Beryl Javelin",
+    Equip_Type = "Lance", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Lance",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 50, #Deducted
+    Priority = 400, #Added
+    PWR = 150,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A special lance with a distractingly\ninteresting aquamarine material."
     )
 
     Fungal_Thorns = Equipment(
@@ -422,6 +491,20 @@ if True: #Staves
     Purchasing_Price = 1500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A powerful staff."
+    )
+
+    Shining_Staff = Equipment(
+    Display_Name = "Shining Staff",
+    Equip_Type = "Staff", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Staff",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 250, #Added
+    PWR = 200,
+    Purchasing_Price = 1500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A powerful staff that deals magic damage."
     )
 
     Enrage = Equipment(
