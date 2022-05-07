@@ -1,0 +1,48 @@
+mythos
+Mythos:[@]Hello there.
+Mythos:[@]What do you want to learn[@]about?
+/==/.START
+#INIT_MULTICHOICE
+#MULTICHOICE
+[Select an action]
+["Who are you?","Metalimnion","Realms","Timelines","Humphrey","Finis Event"]
+LEAVE
+_
+_
+/==/.Who are you?
+Mythos:[@]I am Mythos of the[@]Metalimnion Conclave.
+Mythos:[@]I work here as a historian.
+Mythos:[@]And also do taxes.
+Mythos:[@]Feel free to ask me any[@]questions you might have about Metalimnion.
+#GOTO BACKTOSTART
+_
+_
+/==/.Metalimnion
+Mythos:[@]Metalimnion is, put simply,[@]a location coexisting on two realms[@]at once.
+Mythos:[@]Not just here, but all of the[@]world's overlaps are metalimnions.
+Mythos:[@]The Metalmnion Conclave is a[@]centeralized organization that controls[@]travel between realms through metalimnions.
+Mythos:[@]The Metalmnions are theorized to[@]have formed from the Finis Event of[@]2300 AD.
+Mythos:[@]With the restructuring of the Earth[@]in becoming the New Realm, the threads[@]between realms was weakened, allowing[@]places such as this to be formed[@]between the gaps.
+Mythos:[@]Think of it like a wall between two[@]houses: the wall was destroyed and left[@]a hole in the ground. That hole was[@]then covered with a small bridge, allowing[@]travel between both houses.
+Mythos:[@]In this, the houses are realms and[@]the bridge is Metalimnion.
+Mythos:[@]The bridge isn't a house, though[@]it contains some elements of what is[@]in a house.
+Mythos:[@]Metalimnion isn't its own realm,[@]but you can still use it to travel between[@]different realms.
+Mythos:[@]Specifically, Metalimnion is[@]partially in all of the realms[@]that it connects.
+Mythos:[@]After all, a bridge must be[@]connected with whatever it's[@]connecting.
+#GOTO BACKTOSTART
+_
+_
+/==/.Realms
+Mythos:[@]Realms are basically different[@]locations that you normally can't travel[@]between.
+Mythos:[@]Why they even exist is currently[@]unknown, but some special circumstances,[@]such as Metalimnion, allow for Realm travel.
+#GOTO BACKTOSTART
+_
+_
+/==/.BACKTOSTART
+Mythos:[@]Want to learn about anything[@]else?
+#GOTO START
+_
+_
+/==/.LEAVE
+Mythos:[@]Farewell.
+#END
