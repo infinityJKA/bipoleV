@@ -389,12 +389,12 @@ if True: #Lances
     PWR = 65,
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "A lance that deals sword damage"
+    Description = "A lance that deals sword damage."
     )
 
     Beryl_Javelin = Equipment(
     Display_Name = "Beryl Javelin",
-    Equip_Type = "Lance", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Equip_Type = "Startole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Lance",
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
@@ -404,6 +404,20 @@ if True: #Lances
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A special lance with a distractingly\ninteresting aquamarine material."
+    )
+
+    Spear_of_Staves = Equipment(
+    Display_Name = "Spear of Staves",
+    Equip_Type = "Bipouge", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Staff",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 65,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A lance that deals staff damage."
     )
 
     Fungal_Thorns = Equipment(
@@ -882,6 +896,20 @@ if True: #Water
     Description = "Deals slight water damage and decreases\nATK/MAG for 2 turns to all enemies"
     )
 
+    Drown = Equipment(
+    Display_Name = "Drown",
+    Equip_Type = "Water", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Heal",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 175, #Added
+    PWR = -50,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "SP", #The stat to heal,
+    Description = "Decreases enemy SP."
+    )
+
     Splash_Potion = Equipment(
     Display_Name = "Splash Potion",
     Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -995,6 +1023,36 @@ if True: #Ice
     Purchasing_Price = 350, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Deals very weak ice damage."
+    )
+
+    Stop = Equipment(
+    Display_Name = "Stop",
+    Equip_Type = "Ice", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 500, #Deducted
+    Priority = 225, #Added
+    PWR = 0,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["ATK",0.15,1],
+    Description = "Inflict 0.15x ATK for 1 turn."
+    )
+
+    Pause = Equipment(
+    Display_Name = "Pause",
+    Equip_Type = "Ice", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 500, #Deducted
+    Priority = 225, #Added
+    PWR = 0,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["MAG",0.15,1],
+    Description = "Inflict 0.15x MAG for 1 turn."
     )
 
     Three_Space = Equipment(
@@ -1452,6 +1510,36 @@ if True: #Boosts
     Description = "1.5x RES for 0.5x DEF (3 turns)\nEvery timeline has its correspondents,\nyou too."
     )
     
+    Mana_Charge = Equipment(
+    Display_Name = "Mana Charge",
+    Equip_Type = "Wicole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 400, #Deducted
+    Priority = 150, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["MAG",1.75,3],
+    Description = "Inflict 1.75x MAG for 3 turns."
+    )
+
+    Mana_Overcharge = Equipment(
+    Display_Name = "Mana Overcharge",
+    Equip_Type = "Wicole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 600, #Deducted
+    Priority = 250, #Added
+    PWR = 0,
+    Purchasing_Price = 1250, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["MAG",2,3],
+    Description = "Gain 2x MAG for 3 turns."
+    )
+
     Energize = Equipment(
     Display_Name = "Energize",
     Equip_Type = "Mana Fungus", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun

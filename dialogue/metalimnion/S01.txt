@@ -49,7 +49,13 @@ Lumio_Sword
 Beryl_Javelin
 Quick_Slice
 Rapid_Slice
+Spear_of_Staves
 Shining_Staff
+Drown
+Stop
+Pause
+Mana_Charge
+Mana_Overcharge
 #SHOP_END
 Nexus:[@]Anything else you need?
 #GOTO START
