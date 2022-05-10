@@ -5,7 +5,7 @@ Mythos:[@]What do you want to learn[@]about?
 #INIT_MULTICHOICE
 #MULTICHOICE
 [Select an action]
-["Who are you?","Metalimnion","Realms","Timelines","Humphrey","Finis Event"]
+["Who are you?","Metalimnion","Realms","Timelines","AUs/PUs","Humphrey","Finis Event"]
 LEAVE
 _
 _
@@ -35,10 +35,52 @@ _
 /==/.Realms
 Mythos:[@]Realms are basically different[@]locations that you normally can't travel[@]between.
 Mythos:[@]Why they even exist is currently[@]unknown, but some special circumstances,[@]such as Metalimnion, allow for Realm travel.
+Mythos:[@]The realm that us Manarians and[@]Lunarians come from is the Surface Realm.
+#GOTO BACKTOSTART
+_
+_
+/==/.Timelines
+Mythos:[@]Timelines are similar to Realms,[@]but are a bit more complicated.
+Mythos:[@]So like, think about what would[@]happen if you traveled back in time.
+Mythos:[@]If you traveled back to time and[@]changed the past, how would the events[@]leading up to your life have changed?
+Mythos:[@]Would it even be possible that[@]you'd exist?
+Mythos:[@]It would be impossible to travel[@]back in time.
+Mythos:[@]Except it isn't.
+Mythos:[@]Enter the timelines.
+Mythos:[@]Say that you are in year 200,[@]and you want to travel to[@]year 100.
+Mythos:[@]When you travel from 200 to 100,[@]you cause a new timeline to form[@]starting from year 100 of that[@]original timeline.
+Mythos:[@]Every event up until year 100 of[@]the new timeline would be the[@]same as the old timeline, but now the[@]events afterwards will change because you've[@]entered it and turned it into an alternate timeline.
+Mythos:[@]So now, there is a timeline that's[@]in year 200, and also one that's in[@]year 100.
+Mythos:[@]Since you opened the new one while[@]it was year 200 in the old timeline, the[@]new timeline is running parallel to the old one[@]in year 100.
+Mythos:[@]What I mean by this is that it is[@]year 200 in the old timeline while the new[@]one is in year 100.
+Mythos:[@]So this would mean that in year 450[@]of the old timeline, it would be year 350[@]in the new timeline.
+Mythos:[@]Of course, the events that happen in[@]this years will be different since you've[@]changed the future. But you get[@]what I mean.
+Mythos:[@]If one is somehow able to travel[@]between timelines, they can essentially move[@]between two different universes.
+Mythos:[@]This is why alternate timelines are[@]sometimes called Alternate Universes, or AUs.
+Mythos:[@]As you've likely guessed by now,[@]each timeline has their own realms; realms are[@]not shared between AUs.
+Mythos:[@]Realms are just locations after all,[@]you'd expect your house to exist in both[@]timelines if you opened one up to a day ago.
+Mythos:[@]If you want a more technical explanation,[@]ask me about AUs and PUs.
+#GOTO BACKTOSTART
+_
+_
+/==/.AUs/PUs
+Mythos:[@]This will get very complicated.
+Mythos:[@]New alternate timelines don't just[@]come out from nowhere.
+Mythos:[@]There's actually an infinite amount[@]of dormant parallel universes running[@]alongside any given timeline.
+Mythos:[@]We call these PUs.
+Mythos:[@]When a new timeline is formed,[@]a PU is converted into an AU.
+Mythos:[@]This new AU, after an infinitely[@]small amount of time larger than 0 passes,[@]gains its own infinite amount of parallel PUs.
+Mythos:[@]This is because it has now defined[@]itself as its own unique timeline and not[@]just a PU.
+Mythos:[@]This process is called PU-AU Conversion,[@]or P-AC
+Mythos:[@]However, during the infinitely small[@]amount of time larger than 0 between[@]when the PU will be turned to an AU[@]and when it actually becomes a AU from[@]the unique diverging event (usually something[@]entering it), the timeline is stuck in a strange[@]state called a Indivertible P-AC State, or IP-ACS.
+Mythos:[@]With an IP-ACS, the PU hasn't defined[@]itself as its own AU yet, but the decision[@]to do so has been put into motion.
+Mythos:[@]Now, how does this relate to literally[@]anything that you need to know?
+Mythos:[@]It doesn't.
 #GOTO BACKTOSTART
 _
 _
 /==/.BACKTOSTART
+Mythos:[@]...
 Mythos:[@]Want to learn about anything[@]else?
 #GOTO START
 _
