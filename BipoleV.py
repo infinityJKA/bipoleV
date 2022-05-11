@@ -1312,6 +1312,41 @@ def perform_dialogue():
     elif "#GOTO " in line:
         dialogue_index = search_for("/==/."+line.replace('#GOTO ',''))
         perform_dialogue()
+    elif line == "#PERFORM_WARP_TILE":
+        standing_on = maps.return_tile_on()
+        print("STANDING ON: "+standing_on)
+        warp_letter = None
+        warp_number = None
+        if "w" in standing_on:
+            warp_letter = "w"
+        else:
+            warp_letter = "W"
+        warp_number = standing_on.replace(warp_letter,"")
+        print("warp_letter: "+warp_letter)
+        print("warp_number: "+warp_number)
+        traveling_to = None
+        if warp_letter == "w":
+            traveling_to = "W"
+        else:
+            traveling_to = "w"
+        traveling_to = traveling_to + warp_number
+        print("traveling_to: "+traveling_to)
+        row_index = 0
+        col_index = 0
+        for row in maps.current_location[1]:
+            print(row)
+            col_index = 0
+            for thing in row:
+                print(thing)
+                print(thing[0])
+                if thing[0] == traveling_to:
+                    print("WARP POINT FOUND")
+                    maps.player_tracking[maps.player_cords[1]][maps.player_cords[0]] = [""]
+                    maps.player_tracking[row_index][col_index] = ["player"]
+                col_index += 1
+            row_index += 1
+        dialogue_index += 1
+        advance_text()
     else:
         write_text(line.replace('[@]',"\n"))
         dialogue_index += 1
@@ -1772,6 +1807,11 @@ def refresh():
         dialouge = [line.rstrip('\n') for line in open(current_directory+"/dialogue/"+maps.current_location[4]+"/"+standing_on+".txt")]
         set_character_sprite(2,dialouge[0])
         start_dialogue(dialouge_file)
+    elif standing_on.startswith("W") or standing_on.startswith("w"):
+        set_character_sprite(2,"warp")
+        write_text("[WARP]")
+        dialouge_file = "warp"
+        enable_movement_controls()
 
     
 def update_party_text():
@@ -1897,7 +1937,7 @@ def map_icon(thing):
         return "■"
     elif thing.startswith("_") == True:
         return "□"
-    elif thing.startswith("w") == True:
+    elif thing.startswith("w") == True or thing.startswith("W") == True:
         return "()"
     elif thing.startswith("s") == True:
         return "⦿"

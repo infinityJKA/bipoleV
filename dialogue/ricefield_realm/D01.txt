@@ -1,4 +1,4 @@
-door1
+warp
 #CHOICE Return to Metalmnion?[@][A] Yes[@][B] No
 _
 #CHOICE_RESULT
