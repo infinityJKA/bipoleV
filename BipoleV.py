@@ -1812,8 +1812,34 @@ def refresh():
         write_text("[WARP]")
         dialouge_file = "warp"
         enable_movement_controls()
-
-    
+    elif standing_on.startswith("s"):
+        standing_on = maps.return_tile_on()
+        print("STANDING ON: "+standing_on)
+        swap_number = standing_on.replace("s","")
+        print("swap_number: "+swap_number)
+        traveling_to = "r" + swap_number
+        print("traveling_to: "+traveling_to)
+        row_index = 0
+        col_index = 0
+        for row in maps.current_location[1]:
+            print(row)
+            col_index = 0
+            for thing in row:
+                print(thing)
+                print(thing[0])
+                if thing[0] == traveling_to:
+                    print("SWAP RECIEVER FOUND")
+                    maps.player_tracking[maps.player_cords[1]][maps.player_cords[0]] = [""]
+                    maps.player_tracking[row_index][col_index] = ["player"]
+                col_index += 1
+            row_index += 1
+        write_text("STEPPED ON A SWAP TILE!\n\nSENDING TO RECIEVER TILE!")
+        talk_button.config(command=refresh)
+        g_command = "refresh()"
+        space_command = "refresh()"
+    elif standing_on.startswith("r"):
+        write_text("[SWAP RECIEVER TILE]")
+        enable_movement_controls()
 def update_party_text():
     member_index = 0
     party_member1.config(text=characters.Current_Party[member_index].DisplayName + "  HP " + str(characters.Current_Party[member_index].Current_HP) + "/" + str(characters.Current_Party[member_index].Max_HP) + "  SP " + str(characters.Current_Party[member_index].Current_SP) + "/" + str(characters.Current_Party[member_index].Max_SP) + "  PR " + str(characters.Current_Party[member_index].Priority))
