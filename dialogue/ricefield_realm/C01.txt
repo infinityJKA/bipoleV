@@ -1,0 +1,12 @@
+chest1
+#CHOICE Open the chest?[@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END
+-pass-
+-pass-
+-pass- 
+_
+#SET_IMAGE chest2
+#GAIN_KEYITEM bonus_shop_pass_ii
+#DESTROY_SELF

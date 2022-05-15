@@ -2193,4 +2193,10 @@ if True:
         text_file="ecochecker"
     )
 
+    bonus_shop_pass_ii = Key_Item(
+        Display_Name="Bonus Shop Pass II",
+        sprite="bonus_shop_pass_ii",
+        text_file="bonus_shop_pass_ii"
+    )
+
 key_item_inventory = [humphrey_lore]

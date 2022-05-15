@@ -1966,9 +1966,9 @@ def map_icon(thing):
     elif thing.startswith("w") == True or thing.startswith("W") == True:
         return "()"
     elif thing.startswith("s") == True:
-        return "⦿"
-    elif thing.startswith("r") == True:
         return "⦾"
+    elif thing.startswith("r") == True:
+        return "⦻"
     elif thing.startswith("000") == True or thing.startswith("n"):
         return ""
     else:
