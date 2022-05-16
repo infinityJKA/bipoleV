@@ -78,6 +78,21 @@ if True: #Fists
     Description = "Perform a strong punch."
     )
 
+    Weakening_Taunt = Equipment(
+    Display_Name = "Weakening Taunt",
+    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fists",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 25, #Deducted
+    Priority = 125, #Added
+    PWR = 0,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["WKN",1.2,3],
+    Description = "Weaken the enemy with 1.2 WKN for 3 turns"
+    )
+
     Slam = Equipment(
     Display_Name = "Slam",
     Equip_Type = "Slime", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -102,21 +117,6 @@ if True: #Fists
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "632(x)"
-    )
-
-    Weakening_Taunt = Equipment(
-    Display_Name = "Weakening Taunt",
-    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
-    Damage_Type = "Fists",
-    Move_Type = "Boost", #Physical, Magic, Heal, Boost
-    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 25, #Deducted
-    Priority = 125, #Added
-    PWR = 0,
-    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
-    Heal_Stat = None, #The stat to heal,
-    Inflict = ["WKN",1.2,3],
-    Description = "Weaken the enemy with 1.2 WKN for 3 turns"
     )
 
     Sine = Equipment(
@@ -147,6 +147,35 @@ if True: #Fists
     Heal_Stat = None, #The stat to heal,
     Description = "Gangipole rams the party with his chair.",
     Action_Count = 0.5
+    )
+
+    Heavy_Punch = Equipment(
+    Display_Name = "Heavy Punch",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fists",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 250,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "He's a farmer, he's got the muscle\nto punch."
+    )
+
+    Speedy_Punch = Equipment(
+    Display_Name = "Speedy Punch",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fists",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 210,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A very speedy punch.",
+    Action_Count = 0.65,
     )
 
 if True: #Swords
@@ -334,6 +363,20 @@ if True: #Swords
     Description = "The Algorithm was designed to generate\nRealmers based off of the Nexters. However, the\nAlgorithm becomes less stable as it expands\nfurther out in the realm."
     )
 
+    Pocket_Knife = Equipment(
+    Display_Name = "Pocket Knife",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 250,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "He's a farmer, he's also got a\npocket knife."
+    )
+
 if True: #Lances
 
     Jab = Equipment(
@@ -418,6 +461,20 @@ if True: #Lances
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A lance that deals staff damage."
+    )
+
+    Pitchfork = Equipment(
+    Display_Name = "Pitchfork",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Lance",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 225,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "It's a very pointy pitchfork.\n(Haha get it? Point? Like Point Farmer? No?)"
     )
 
     Fungal_Thorns = Equipment(
@@ -924,6 +981,21 @@ if True: #Water
     Description = "Deals very weak water damage."
     )
 
+    Irrigation = Equipment(
+    Display_Name = "Irrigation",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Water",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 300, #Deducted
+    Priority = 0, #Added
+    PWR = 200,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [],
+    Description = "Do points even need irrigation?\nWell, he also needs to farm food to eat."
+    )
+
     Cosine = Equipment(
     Display_Name = "Cosine",
     Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -1195,6 +1267,20 @@ if True: #Healing
     Heal_Stat = "SP", #The stat to heal,
     Inflict = [],
     Description = "Every timeline has its correspondents,\nyou too."
+    )
+
+    Point_Harvest = Equipment(
+    Display_Name = "Point Harvest",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Healing, Gun
+    Damage_Type = "Heal",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 333, #Deducted
+    Priority = 0, #Added
+    PWR = 20,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "HP", #The stat to heal,
+    Description = "What even are \"points\"?."
     )
 
     Healing_Spores = Equipment(
@@ -1555,6 +1641,22 @@ if True: #Boosts
     Description = "Many monsters can convert their physical\nMagica into Mana for use in spells."
     )
 
+    Bountiful = Equipment(
+    Display_Name = "Bountiful",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Multiboost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 225, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.15,4],["MAG",1.15,4],["HLG",1.15,4]],
+    Description = "Points are sort of like an energy\nthing, if you think about it.",
+    Action_Count = 0.5
+    )
+
     Bingus_Energy_Wave = Equipment(
     Display_Name = "Energy Wave",
     Equip_Type = "Enemy", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -1738,6 +1840,21 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",1.25,3],["RES",1.25,3],["ATK",1.25,3],["MAG",1.25,3],["HLG",1.25,3]],
     Description = "Humans obtained the power to manipulate\nlife energy through the use of CELL technology, though\ndevelopment on this department was not as explored\nas the use of mana and magica."
+    )
+
+    Arrgh = Equipment(
+    Display_Name = "Arrgh!",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 200, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["ATK",2.5,2],
+    Description = "Arrgh!"
     )
 
 if True: #Starting Uniques

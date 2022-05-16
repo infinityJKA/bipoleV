@@ -1,0 +1,6 @@
+nothing
+!?
+battle test
+#ENCOUNTER rr_encounter1
+battle test over
+#DESTROY_SELF

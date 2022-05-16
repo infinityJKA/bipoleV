@@ -617,3 +617,87 @@ if True: #Bandit Road Encounters
     br_encounter2 = [[Gangster_A,Crazy_Guy_A,Crazy_Guy_B],"Normal"]
     br_encounter3 = [[Crazy_Guy_A,Gangster_A,Gangster_B],"Normal"]
     br_boss = [[Gangole,Ersatz_Humphrey,Jeffy_Jimovans],"Normal"]
+
+if True: #Ricefield Realm Enemies
+    Point_Farmer_A = Enemy(
+        DisplayName = "Point Farmer A",
+        Moves = [[equipment.Pitchfork,0,100],[equipment.Irrigation,0,100],[equipment.Point_Harvest,0,99],[equipment.Bountiful,0,100]],
+        Weakness = ["Staff","Bow","Ice","Gun"],
+        Sprite = "point_farmer",
+        Level = 8,
+        EXP = 325,
+        Gold = 425,
+        ATK = 1100,
+        MAG = 1025,
+        HLG = 8,
+        DEF = 725,
+        RES = 650,
+        Max_HP = 1500,
+        Max_SP = 3500,
+        Max_Action_Count = 1,
+        Bio = "A simple point farmer, he harvests\npoints in the Ricefield Realm.",
+        Effects = []
+    )
+
+    Point_Farmer_B = Enemy(
+        DisplayName = "Point Farmer B",
+        Moves = [[equipment.Pitchfork,0,100],[equipment.Irrigation,0,100],[equipment.Point_Harvest,0,100],[equipment.Bountiful,0,100]],
+        Weakness = ["Staff","Bow","Ice","Gun"],
+        Sprite = "point_farmer",
+        Level = 8,
+        EXP = 325,
+        Gold = 425,
+        ATK = 1100,
+        MAG = 1025,
+        HLG = 8,
+        DEF = 725,
+        RES = 650,
+        Max_HP = 1500,
+        Max_SP = 3500,
+        Max_Action_Count = 1,
+        Bio = "A simple point farmer, he harvests\npoints in the Ricefield Realm.",
+        Effects = []
+    )
+
+    Bonus_Farmer_A = Enemy(
+        DisplayName = "Bonus Farmer A",
+        Moves = [[equipment.Heavy_Punch,51,100],[equipment.Pocket_Knife,51,100],[equipment.Speedy_Punch,0,50],[equipment.Arrgh,0,50]],
+        Weakness = ["Lance","Fire","Water","Gun"],
+        Sprite = "bonus_farmer",
+        Level = 8,
+        EXP = 400,
+        Gold = 475,
+        ATK = 1125,
+        MAG = 950,
+        HLG = 3,
+        DEF = 925,
+        RES = 450,
+        Max_HP = 1750,
+        Max_SP = 3000,
+        Max_Action_Count = 2,
+        Bio = "Bonus Farmers, they're not as popular as\nthe basic Point Farmers, but they're\njust as cool, if not cooler.",
+        Effects = []
+    )
+
+    Bonus_Farmer_B = Enemy(
+        DisplayName = "Bonus Farmer B",
+        Moves = [[equipment.Heavy_Punch,51,100],[equipment.Pocket_Knife,51,100],[equipment.Speedy_Punch,0,50],[equipment.Arrgh,0,50]],
+        Weakness = ["Lance","Fire","Water","Gun"],
+        Sprite = "bonus_farmer",
+        Level = 8,
+        EXP = 400,
+        Gold = 475,
+        ATK = 1125,
+        MAG = 950,
+        HLG = 3,
+        DEF = 925,
+        RES = 450,
+        Max_HP = 1750,
+        Max_SP = 3000,
+        Max_Action_Count = 2,
+        Bio = "Bonus Farmers, they're not as popular as\nthe basic Point Farmers, but they're\njust as cool, if not cooler.",
+        Effects = []
+    )
+
+if True: #Ricefield Realm Encounters
+    rr_encounter1 = [[Bonus_Farmer_A,Bonus_Farmer_B,Point_Farmer_B],"Normal"]

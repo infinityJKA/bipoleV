@@ -5045,6 +5045,8 @@ Manual_Add_Char(characters.Bipoanderer,8)
 Manual_Add_Char(characters.Wicole,6)
 Manual_Add_Char(characters.Bithecary,4)
 Manual_Add_Char(characters.Archle,2)
+Manual_Add_Char(characters.Alls_Ros,0)
+Manual_Add_Char(characters.Birowth,0)
 # Manual_Add_Char(characters.Birowth,13)
 Gold += 100000
 # maps.player_cords = [9,18]
@@ -5052,12 +5054,14 @@ Gold += 100000
 maps.current_location = maps.Bandit_Road
 maps.player_cords = [11,4]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
-characters.Protipole.Equipped = [equipment.Stab,equipment.Fire_Blast,equipment.Far_Heal]
+characters.Protipole.Equipped = [equipment.Pierce,equipment.The_22XX,equipment.Healing_Aura] #EQUIP =========================
 characters.Bipoanderer.Equipped = [equipment.Hydro,equipment.Slice,equipment.Sword_Lance]
 characters.Archle.Equipped = [equipment.Long_Bow,equipment.Fire_Blast]
-characters.Startole.Equipped = [equipment.Silver_Gauntlets,equipment.Lance_Sword,equipment.Power_Flag]
+characters.Startole.Equipped = [equipment.Pierce,equipment.Spear_of_Staves,equipment.Power_Flag] #EQUIP =========================
 characters.Wicole.Equipped = [equipment.Far_Heal,equipment.Congeal]
-characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Splash_Potion]
+characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Spark_Potion] #EQUIP =========================
+characters.Alls_Ros.Equipped = [equipment.Shining_Staff,equipment.Holy_Light,equipment.Blizzard] #EQUIP =========================
+
 equipment.key_item_inventory.append(equipment.mysterious_crystals)
 
 for char in characters.All_Recruited_Characters:
