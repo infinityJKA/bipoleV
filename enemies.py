@@ -699,5 +699,25 @@ if True: #Ricefield Realm Enemies
         Effects = []
     )
 
+    Omega_Point_Farmer_A = Enemy(
+        DisplayName = "Omega Point Farmer A",
+        Moves = [[equipment.Fire_Trick,0,100],[equipment.Douse,0,100],[equipment.Ice_Cube,0,100],[equipment.Recover,0,100],[equipment.Bet,51,100],[equipment.Raise,0,50]],
+        Weakness = ["Fists","Sword","Lance","Bow"],
+        Sprite = "omega_point_farmer",
+        Level = 8,
+        EXP = 425,
+        Gold = 500,
+        ATK = 875,
+        MAG = 1150,
+        HLG = 3,
+        DEF = 725,
+        RES = 1000,
+        Max_HP = 1925,
+        Max_SP = 4250,
+        Max_Action_Count = 2,
+        Bio = "A rare kind of Point Farmer, trained\nat The Shadow Market and The Point Casino.",
+        Effects = []
+    )
+
 if True: #Ricefield Realm Encounters
-    rr_encounter1 = [[Bonus_Farmer_A,Bonus_Farmer_B,Point_Farmer_B],"Normal"]
+    rr_encounter1 = [[Omega_Point_Farmer_A,Point_Farmer_A],"Normal"]

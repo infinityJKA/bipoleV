@@ -895,6 +895,20 @@ if True: #Fire
     Description = "The highest entities to exist are\nthe Creators, who created a layer of lower\nentities. Those entities would then advance\nenough to create their own lower entities,\nand the process repeated. Eventually, the\nNexters were created. Afterwards, the Realmers\nwere created by the Nexters."
     )
 
+    Fire_Trick = Equipment(
+    Display_Name = "Fire Trick",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 150, #Deducted
+    Priority = 0, #Added
+    PWR = 100,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Being at The Shadow Market and\nThe Point Casino, you'll learn a\nfew things. Like fire tricks.\nDon't play with fire, kids."
+    )
+
 if True: #Water
     Aqua = Equipment(
     Display_Name = "Aqua",
@@ -1009,6 +1023,20 @@ if True: #Water
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "In territories named after the\nholy Truthes, the origins of their\nnames have largely been forgotten to\nthe passage of time."
+    )
+
+    Douse = Equipment(
+    Display_Name = "Douse",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Water",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 150, #Deducted
+    Priority = 0, #Added
+    PWR = 200,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Always carry a bucket on you."
     )
 
 if True: #Ice
@@ -1139,6 +1167,21 @@ if True: #Ice
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Though the Nexters and Realmers may reside\nas three-dimensional entities, many higher\nentities have much more different forms."
+    )
+
+    Ice_Cube = Equipment(
+    Display_Name = "Ice_Cube",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 50, #Deducted
+    Priority = 0, #Added
+    PWR = 100,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "It doesn't hurt much to get\nhit by an ice cube, but it\nis very quick.",
+    Action_Count = 0.7
     )
 
 if True: #Healing
@@ -1638,7 +1681,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["ATK",1.6,2],
-    Description = "Many monsters can convert their physical\nMagica into Mana for use in spells."
+    Description = "Many monsters can convert their physical\nMagica into Mana for use in spells.\n1.6x ATK for 2 turns."
     )
 
     Bountiful = Equipment(
@@ -1653,7 +1696,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["ATK",1.15,4],["MAG",1.15,4],["HLG",1.15,4]],
-    Description = "Points are sort of like an energy\nthing, if you think about it.",
+    Description = "Points are sort of like an energy\nthing, if you think about it.\n1.15x ATK/MAG/HLG for 4 turns.",
     Action_Count = 0.5
     )
 
@@ -1669,7 +1712,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["RES",0.6,2],
-    Description = "Despite being made up of Magica,\nmonsters still have the capability to\ngenerate their own Mana and Magica."
+    Description = "Despite being made up of Magica,\nmonsters still have the capability to\ngenerate their own Mana and Magica.\n0.6x RES for 2 turns."
     )
 
     Cursed_Prayer = Equipment(
@@ -1684,7 +1727,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",0.3,3],["RES",0.3,3]],
-    Description = "An evil prayer chanted upon the\nenemies of the Raging Soul"
+    Description = "An evil prayer chanted upon the\nenemies of the Raging Soul.\n0.3x DEF/RES for 3 turns."
     )
 
     War_Cry = Equipment(
@@ -1699,7 +1742,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["ATK",3,3],
-    Description = "wqejoiwjeoiuwqjeoiwqjeoiwqjeoiwqjeiowqjeiowqjoiewqjeoiwqjqwefqasfeewrsddaqaweqafwfqefewrsfewffeqfqewgewqgweqgefqwedsaewqedwqefewioewqjoiewjqi\nwejiowqjeiowjiewqfeqwfqdewfqweoewqjioewqjioewjoiewqjioewqjieowqwqijewoiejwqiejwqiejwioej\niwqjeoiwqjeiowqjeiowqjioewqjeiowqjeiowqjeiowqjeiowqjeoiwqjeiowqjeiowqewjiq"
+    Description = "wqejoiwjeoiuwqjeoiwqjeoiwqjeoiwqjeiowqjeiowqjoiewqjeoiwqjqwefqasfeewrsddaqaweqafwfqefewrsfewffeqfqewgewqgweqgefqwedsaewqedwqefewioewqjoiewjqi\nwejiowqjeiowjiewqfeqwfqdewfqweoewqjioewqjioewjoiewqjioewqjieowqwqijewoiejwqiejwqiejwioej\niwqjeoiwqjeiowqjeiowqjioewqjeiowqjeiowqjeiowqjeiowqjeoiwqjeiowqjeiowqewjiq\n3x ATK for 3 turns."
     )
 
     Funky_Dance = Equipment(
@@ -1714,7 +1757,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["DEF",1.2,5],
-    Description = "Fear the funk."
+    Description = "Fear the funk.\n1.2x DEF for 5 turns."
     )
 
     Prismatic_Honeycomb = Equipment(
@@ -1729,7 +1772,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",1.25,2],["ATK",1.25,2]],
-    Description = "When creating realms, something known as\nThe Algorithm was used by many Nexters,\nnotably Azure."
+    Description = "When creating realms, something known as\nThe Algorithm was used by many Nexters,\nnotably Azure.\n1.25x ATK/DEF for 2 turns."
     )
 
     Stellation = Equipment(
@@ -1744,7 +1787,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["DEF",1.5,2],
-    Description = "Shifts among the structures of Realms are\nespecially common following creations or\nreformations."
+    Description = "Shifts among the structures of Realms are\nespecially common following creations or\nreformations.\n1.5x DEF for 2 turns."
     )
 
     Polymath = Equipment(
@@ -1759,7 +1802,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",1.25,3],["RES",1.25,3],["ATK",1.25,3],["HLG",1.25,3],["MAG",1.25,3]],
-    Description = "The Lesser Truths... residues of the\nfull and holy truth: creation."
+    Description = "The Lesser Truths... residues of the\nfull and holy truth: creation.\n1.25x DEF/RES/ATK/HLG/MAG for 3 turns."
     )
 
     Nuclear_Fission = Equipment(
@@ -1775,7 +1818,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",1.5,2],["RES",1.5,2],["ATK",1.5,2],["MAG",1.5,2],["HLG",1.5,2]],
-    Description = "Nuclear warfare proved further\ndangerous with the advent of CELL\ntechnology, a notable factor in Evan's\nplans of triggering a Time of Judgement."
+    Description = "Nuclear warfare proved further\ndangerous with the advent of CELL\ntechnology, a notable factor in Evan's\nplans of triggering a Time of Judgement.\n1.5x DEF/RES/ATK/MAG/HLG for 2 turns."
     )
 
     Reciprocal  = Equipment(
@@ -1791,7 +1834,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["ATK",1.4,2],["MAG",1.4,2],["DEF",1.25,2],["RES",1.25,2],["HLG",1.1,2]],
-    Description = "All entities in a given have an alternate\nuniverse correspondent in another timeline,\nwith the exception being some certain entities\ngranted existence beyond the confines of a\nsingle timeline. However, these entities still\nhave correspondent in different time clusters,\nthe collective of multiple timelines."
+    Description = "All entities in a given have an alternate\nuniverse correspondent in another timeline,\nwith the exception being some certain entities\ngranted existence beyond the confines of a\nsingle timeline. However, these entities still\nhave correspondent in different time clusters,\nthe collective of multiple timelines.\n1.4x ATK/MAG for 2 turns.\n1.25x DEF/RES for 2 turns.\n1.1x HLG for 2 turns."
     )
 
     Fold = Equipment(
@@ -1807,7 +1850,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["ATK",0.9,2],["MAG",0.9,2],["DEF",0.85,2],["RES",0.85,2],["HLG",0.8,2]],
-    Description = "Every realm has a 'border', the end of\nwhere reality functions properly."
+    Description = "Every realm has a 'border', the end of\nwhere reality functions properly.\n0.9x ATK/MAG for 2 turns.\n0.85x DEF/RES for 2 turns.\n0.8x HLG for 2 turns."
     )
 
     Impair = Equipment(
@@ -1822,7 +1865,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["WKN",1.3,3],
-    Description = "A disrupting signal sent from the\ncybernetic body of a genetically modified human.",
+    Description = "A disrupting signal sent from the\ncybernetic body of a genetically modified human.\n1.3x WKN for 3 turns.",
     Action_Count= 0.5
     )
 
@@ -1839,7 +1882,7 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = [["DEF",1.25,3],["RES",1.25,3],["ATK",1.25,3],["MAG",1.25,3],["HLG",1.25,3]],
-    Description = "Humans obtained the power to manipulate\nlife energy through the use of CELL technology, though\ndevelopment on this department was not as explored\nas the use of mana and magica."
+    Description = "Humans obtained the power to manipulate\nlife energy through the use of CELL technology, though\ndevelopment on this department was not as explored\nas the use of mana and magica.\n1.25x ATK/MAG/HLG/DEF/RES for 3 turns."
     )
 
     Arrgh = Equipment(
@@ -1854,7 +1897,39 @@ if True: #Boosts
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["ATK",2.5,2],
-    Description = "Arrgh!"
+    Description = "Arrgh!\n2.5x ATK for 2 turns."
+    )
+
+    Bet = Equipment(
+    Display_Name = "Bet",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 1,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.25,4],["MAG",1.25,4],["HLG",1.25,4]],
+    Description = "Yes! Yes! Yes!\n1.25x ATK/MAG/HLG for 4 turns."
+    )
+
+    Raise = Equipment(
+    Display_Name = "Raise",
+    Equip_Type = "Farmer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 0.6,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.2,5],["MAG",1.2,5],["HLG",1.2,5],["DEF",1.1,3],["RES",1.1,3]],
+    Description = "No! No! No!\n1.2x ATK/MAG/HLG for 5 turns.\n1.1x DEF/RES for 3 turns."
     )
 
 if True: #Starting Uniques
