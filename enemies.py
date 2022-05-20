@@ -624,8 +624,8 @@ if True: #Ricefield Realm Enemies
         Moves = [[equipment.Pitchfork,0,100],[equipment.Irrigation,0,100],[equipment.Point_Harvest,0,99],[equipment.Bountiful,0,100]],
         Weakness = ["Staff","Bow","Ice","Gun"],
         Sprite = "point_farmer",
-        Level = 8,
-        EXP = 325,
+        Level = 9,
+        EXP = 375,
         Gold = 425,
         ATK = 1100,
         MAG = 1025,
@@ -644,8 +644,8 @@ if True: #Ricefield Realm Enemies
         Moves = [[equipment.Pitchfork,0,100],[equipment.Irrigation,0,100],[equipment.Point_Harvest,0,100],[equipment.Bountiful,0,100]],
         Weakness = ["Staff","Bow","Ice","Gun"],
         Sprite = "point_farmer",
-        Level = 8,
-        EXP = 325,
+        Level = 9,
+        EXP = 375,
         Gold = 425,
         ATK = 1100,
         MAG = 1025,
@@ -664,7 +664,7 @@ if True: #Ricefield Realm Enemies
         Moves = [[equipment.Heavy_Punch,51,100],[equipment.Pocket_Knife,51,100],[equipment.Speedy_Punch,0,50],[equipment.Arrgh,0,50]],
         Weakness = ["Lance","Fire","Water","Gun"],
         Sprite = "bonus_farmer",
-        Level = 8,
+        Level = 9,
         EXP = 400,
         Gold = 475,
         ATK = 1125,
@@ -684,7 +684,7 @@ if True: #Ricefield Realm Enemies
         Moves = [[equipment.Heavy_Punch,51,100],[equipment.Pocket_Knife,51,100],[equipment.Speedy_Punch,0,50],[equipment.Arrgh,0,50]],
         Weakness = ["Lance","Fire","Water","Gun"],
         Sprite = "bonus_farmer",
-        Level = 8,
+        Level = 9,
         EXP = 400,
         Gold = 475,
         ATK = 1125,
@@ -704,8 +704,8 @@ if True: #Ricefield Realm Enemies
         Moves = [[equipment.Fire_Trick,0,100],[equipment.Douse,0,100],[equipment.Ice_Cube,0,100],[equipment.Recover,0,100],[equipment.Bet,51,100],[equipment.Raise,0,50]],
         Weakness = ["Fists","Sword","Lance","Bow"],
         Sprite = "omega_point_farmer",
-        Level = 8,
-        EXP = 425,
+        Level = 9,
+        EXP = 550,
         Gold = 500,
         ATK = 875,
         MAG = 1150,
@@ -720,4 +720,6 @@ if True: #Ricefield Realm Enemies
     )
 
 if True: #Ricefield Realm Encounters
-    rr_encounter1 = [[Omega_Point_Farmer_A,Point_Farmer_A],"Normal"]
+    rr_encounter1 = [[Bonus_Farmer_A,Point_Farmer_A,Point_Farmer_B],"Normal"]
+    rr_encounter2 = [[Bonus_Farmer_A,Bonus_Farmer_B,Point_Farmer_A],"Normal"]
+    rr_encounter3 = [[Omega_Point_Farmer_A,Point_Farmer_A],"Normal"]

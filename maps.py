@@ -408,7 +408,7 @@ List_of_All_Locations.append(Guardian_Village)
 Metalimnion = ["Metalimnion", metalimnion_map, "stone", "magic1","metalimnion",False,[],0,[100.00,["Rising",1],[95.23,94.21,93.43,95.32,98.56]],"brown","safe"]
 List_of_All_Locations.append(Guardian_Village)
 
-Ricefield_Realm = ["Ricefield Realm", ricefield_realm_map, "stone", "dark_green","ricefield_realm",False,[enemies.sf2_encounter1,enemies.sf2_encounter2,enemies.sf2_encounter3],5,[0,["no eco",0],[0,0,0,0,0]],"dark_green","dangerous"]
+Ricefield_Realm = ["Ricefield Realm", ricefield_realm_map, "stone", "dark_green","ricefield_realm",True,[enemies.rr_encounter1,enemies.rr_encounter2,enemies.rr_encounter3],1,[0,["no eco",0],[0,0,0,0,0]],"dark_green","dangerous"]
 List_of_All_Locations.append(Guardian_Village)
 
 current_location = Bieace_Castle
