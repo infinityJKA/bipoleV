@@ -377,6 +377,36 @@ if True: #Swords
     Description = "He's a farmer, he's also got a\npocket knife."
     )
 
+    Burst_Slash_X = Equipment(
+    Display_Name = "Burst Slash X",
+    Equip_Type = "HFAU", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 125,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "He's a farmer, he's also got a\npocket knife.",
+    Action_Count = 0.2
+    )
+
+    Burst_Slash_Y = Equipment(
+    Display_Name = "Burst Slash Y",
+    Equip_Type = "HFAU", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 75,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "He's a farmer, he's also got a\npocket knife.",
+    Action_Count = 0.2
+    )
+
 if True: #Lances
 
     Jab = Equipment(
@@ -1385,6 +1415,22 @@ if True: #Healing
     Action_Count = 0.3
     )
 
+    Umbral_Vociferation = Equipment(
+    Display_Name = "Umbral Vociferation",
+    Equip_Type = "HFAU", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Heal",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 500, #Deducted
+    Priority = 0, #Added
+    PWR = -5,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "SP", #The stat to heal,
+    Inflict = [],
+    Description = "Every timeline has its correspondents,\nyou too."
+    )
+
+
 if True: #Guns
     The_22XX = Equipment(
     Display_Name = "The 22XX",
@@ -1931,6 +1977,24 @@ if True: #Boosts
     Inflict = [["ATK",1.2,5],["MAG",1.2,5],["HLG",1.2,5],["DEF",1.1,3],["RES",1.1,3]],
     Description = "No! No! No!\n1.2x ATK/MAG/HLG for 5 turns.\n1.1x DEF/RES for 3 turns."
     )
+
+    Await = Equipment(
+    Display_Name = "Await...",
+    Equip_Type = "HFAU", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 1,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.1,5],["DEF",1.1,5],["RES",1.1,5]],
+    Description = "HFAU is a patient man. He does not\nrush things or do things uncompleted.\n1.1x ATK/DEF/RES for 5 turns."
+    )
+
+
 
 if True: #Starting Uniques
 

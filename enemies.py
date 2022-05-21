@@ -719,7 +719,28 @@ if True: #Ricefield Realm Enemies
         Effects = []
     )
 
+    Hyper_Final_Assassin_Ultra = Enemy(
+        DisplayName = "Hyper Final Assassin Ultra",
+        Moves = [[equipment.Await,98,100],[equipment.Burst_Slash_X,80,97],[equipment.Burst_Slash_Y,80,97],[equipment.Umbral_Vociferation,70,80]],
+        Weakness = ["Staff", "Bow","Water"],
+        Sprite = "hyper_final_assassin_ultra",
+        Level = 11,
+        EXP = 1000,
+        Gold = 4750,
+        ATK = 1100,
+        MAG = 1025,
+        HLG = 10,
+        DEF = 500,
+        RES = 500,
+        Max_HP = 45725,
+        Max_SP = 10000,
+        Max_Action_Count = 1,
+        Bio = "Hyper Final Assassin Ultra (HFAU) is\nan elite warrior raised in the toils of war.\nHe wields the Sanguineous Blade: a powerful blade powered\nby the Reliquary of Souls, a crystal containing the Life Energy\nof his slain enemies, embedded into the blade's handle.\nIn 654 RT, HFAU slays and absorbs a Shadow Entity formed\nfrom The Shadow that had escaped from the Dark\nTome in 605 RT, prior to the Shadow being resealed by Bizard in 685 RT.",
+        Effects = []
+    )
+
 if True: #Ricefield Realm Encounters
     rr_encounter1 = [[Bonus_Farmer_A,Point_Farmer_A,Point_Farmer_B],"Normal"]
     rr_encounter2 = [[Bonus_Farmer_A,Bonus_Farmer_B,Point_Farmer_A],"Normal"]
     rr_encounter3 = [[Omega_Point_Farmer_A,Point_Farmer_A],"Normal"]
+    rr_boss = [[Omega_Point_Farmer_A],"Normal"]
