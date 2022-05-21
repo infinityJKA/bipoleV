@@ -5039,13 +5039,13 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,8)
-Manual_Add_Char(characters.Startole,8)
+Instant_Level_Up(characters.Protipole,8+3)
+Manual_Add_Char(characters.Startole,8+3)
 Manual_Add_Char(characters.Bipoanderer,8)
 Manual_Add_Char(characters.Wicole,6)
-Manual_Add_Char(characters.Bithecary,4)
+Manual_Add_Char(characters.Bithecary,4+3)
 Manual_Add_Char(characters.Archle,2)
-Manual_Add_Char(characters.Alls_Ros,0)
+Manual_Add_Char(characters.Alls_Ros,0+3)
 Manual_Add_Char(characters.Birowth,0)
 # Manual_Add_Char(characters.Birowth,13)
 Gold += 100000
@@ -5054,7 +5054,7 @@ Gold += 100000
 maps.current_location = maps.Bandit_Road
 maps.player_cords = [11,4]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
-characters.Protipole.Equipped = [equipment.Pierce,equipment.The_22XX,equipment.Healing_Aura] #EQUIP =========================
+characters.Protipole.Equipped = [equipment.Spear_of_Staves,equipment.Recover,equipment.Healing_Aura]#[equipment.Pierce,equipment.The_22XX,equipment.Healing_Aura] #EQUIP =========================
 characters.Bipoanderer.Equipped = [equipment.Hydro,equipment.Slice,equipment.Sword_Lance]
 characters.Archle.Equipped = [equipment.Long_Bow,equipment.Fire_Blast]
 characters.Startole.Equipped = [equipment.Pierce,equipment.Spear_of_Staves,equipment.Power_Flag] #EQUIP =========================

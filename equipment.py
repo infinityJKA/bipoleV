@@ -388,8 +388,8 @@ if True: #Swords
     PWR = 125,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "He's a farmer, he's also got a\npocket knife.",
-    Action_Count = 0.2
+    Description = "HFAU wields the Sanguineous Blade: a\npowerful blade powered by the Reliquary\nof Souls, a crystal containing the Life\nEnergy of his slain enemies, embedded\ninto the blade's handle.",
+    Action_Count = 0.1
     )
 
     Burst_Slash_Y = Equipment(
@@ -404,7 +404,7 @@ if True: #Swords
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "He's a farmer, he's also got a\npocket knife.",
-    Action_Count = 0.2
+    Action_Count = 0.1
     )
 
 if True: #Lances
@@ -1427,7 +1427,7 @@ if True: #Healing
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = "SP", #The stat to heal,
     Inflict = [],
-    Description = "Every timeline has its correspondents,\nyou too."
+    Description = "In 654 RT, HFAU slayed and absorbed a\nShadow Entity formed from The Shadow that\nhad escaped from the Dark Tome in\n605 RT, prior to The Shadow being resealed\nby Bizard in 685 RT."
     )
 
 

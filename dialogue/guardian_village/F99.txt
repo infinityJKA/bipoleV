@@ -1,6 +1,6 @@
 nothing
 !?
 battle test
-#ENCOUNTER rr_encounter1
+#ENCOUNTER rr_boss
 battle test over
 #DESTROY_SELF
