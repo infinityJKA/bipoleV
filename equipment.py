@@ -78,21 +78,6 @@ if True: #Fists
     Description = "Perform a strong punch."
     )
 
-    Weakening_Taunt = Equipment(
-    Display_Name = "Weakening Taunt",
-    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
-    Damage_Type = "Fists",
-    Move_Type = "Boost", #Physical, Magic, Heal, Boost
-    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 25, #Deducted
-    Priority = 125, #Added
-    PWR = 0,
-    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
-    Heal_Stat = None, #The stat to heal,
-    Inflict = ["WKN",1.2,3],
-    Description = "Weaken the enemy with 1.2 WKN for 3 turns"
-    )
-
     Slam = Equipment(
     Display_Name = "Slam",
     Equip_Type = "Slime", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -1531,8 +1516,8 @@ if True: #Boosts
     PWR = 0,
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = ["WKN",1.25,6],
-    Description = "Inflict 1.25 WKN for 6 turns."
+    Inflict = ["WKN",1.25,7],
+    Description = "Inflict 1.25 WKN for 7 turns."
     )
 
     Strength_Potion = Equipment(
@@ -1631,7 +1616,7 @@ if True: #Boosts
     Damage_Type = "Multiboost",
     Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 750, #Deducted
+    SP_Cost = 50, #Deducted
     Priority = 200, #Added
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
@@ -1646,7 +1631,7 @@ if True: #Boosts
     Damage_Type = "Multiboost",
     Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 750, #Deducted
+    SP_Cost = 50, #Deducted
     Priority = 200, #Added
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
@@ -1661,7 +1646,7 @@ if True: #Boosts
     Damage_Type = "Multiboost",
     Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 750, #Deducted
+    SP_Cost = 50, #Deducted
     Priority = 200, #Added
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
@@ -1676,7 +1661,7 @@ if True: #Boosts
     Damage_Type = "Multiboost",
     Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 750, #Deducted
+    SP_Cost = 50, #Deducted
     Priority = 200, #Added
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
@@ -2126,8 +2111,8 @@ if True: #Starting Uniques
         PWR = 0,
         Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
         Heal_Stat = None, #The stat to heal,
-        Inflict = [["ATK",1.15,3],["MAG",1.15,3],["HLG",1.15,3],["DEF",1.3,4],["RES",1.3,4]],
-        Description = "Party gains 1.15x ATK/MAG/HLG for 3 turns\nand 1.3x DEF/RES for 4 turns."
+        Inflict = [["ATK",1.3,4],["MAG",1.3,4],["HLG",1.3,4],["DEF",1.2,3],["RES",1.2,3]],
+        Description = "Party gains 1.3x ATK/MAG/HLG for 4 turns\nand 1.2x DEF/RES for 3 turns."
         )
     
     Razzion_Guiding = Equipment(

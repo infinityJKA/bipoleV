@@ -313,7 +313,7 @@ if True: #Party Members
 
     Max_SP = 325,
     Current_SP = 325,
-    SP_Growth = 8,
+    SP_Growth = 18,
     
     DEF = 175,
     DEF_Growth = 17,

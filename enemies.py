@@ -721,7 +721,7 @@ if True: #Ricefield Realm Enemies
 
     Hyper_Final_Assassin_Ultra = Enemy(
         DisplayName = "Hyper Final Assassin Ultra",
-        Moves = [[equipment.Await,98,100],[equipment.Burst_Slash_X,80,97],[equipment.Burst_Slash_Y,80,97],[equipment.Await,70,80],[equipment.Umbral_Vociferation,70,80]],
+        Moves = [[equipment.Await,98,100],[equipment.Burst_Slash_X,80,97],[equipment.Burst_Slash_Y,80,97],[equipment.Await,60,80],[equipment.Umbral_Vociferation,60,80]],
         Weakness = ["Staff", "Bow","Water"],
         Sprite = "hyper_final_assassin_ultra",
         Level = 11,
