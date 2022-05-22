@@ -388,7 +388,7 @@ if True: #Swords
     PWR = 125,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "placeholder text",
+    Description = "In 654 RT, HFAU slayed and absorbed a\nShadow Entity formed from The Shadow that\nhad escaped from the Dark Tome in\n605 RT, prior to The Shadow being resealed\nby Bizard in 685 RT.",
     Action_Count = 0.1
     )
 
@@ -403,7 +403,7 @@ if True: #Swords
     PWR = 750,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "placeholder text",
+    Description = "HFAU has used some of the Reliquary\nof Souls's absorbed Life Energy on himself,\nallowing him to live for centuries.",
     Action_Count = 0.5
     )
 
@@ -418,7 +418,7 @@ if True: #Swords
     PWR = 375,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "placeholder text",
+    Description = "After The Shadow escaped from the\nDark Tome in 605 RT, most of it\nwas resealed by Magiole. However, some\nof it escaped and gew in power until it\nattacked the Bieace Counsel of Magic again in\n685, in which it was sealed by Bizard using\nthe Holy Cards passed down to him from\nLengenro.",
     Action_Count = 0.5
     )
 
@@ -474,7 +474,7 @@ if True: #Lances
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 0, #Deducted
     Priority = 100, #Added
-    PWR = 65,
+    PWR = 100,
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A lance that deals sword damage."
@@ -1442,7 +1442,7 @@ if True: #Healing
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = "SP", #The stat to heal,
     Inflict = [],
-    Description = "In 654 RT, HFAU slayed and absorbed a\nShadow Entity formed from The Shadow that\nhad escaped from the Dark Tome in\n605 RT, prior to The Shadow being resealed\nby Bizard in 685 RT.",
+    Description = "The Sanguineous Blade was forged\nprior to the Finis Event by a scientist\nknown as Vlud First in 2994 AN. It uses\nCELL technology to not only harness Mana,\nbut also the Life Energy those it strikes while\nactivated. The wielder of the blade can activate\nthe LE absorption by sending a signal of Mana\nenergy through parts of the hilt.",
     Action_Count = 0.5
     )
 
@@ -1470,7 +1470,7 @@ if True: #Guns
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 250, #Deducted
     Priority = 50, #Added
-    PWR = 200,
+    PWR = 225,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "The Enderscope X ultilizes human Mana\ngeneration using CELL technology. The rifle was\ninvented by scientist Criz Zzir, and was used\nto arm the Bastion rebels."

@@ -5043,13 +5043,13 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,8+3)
-Manual_Add_Char(characters.Startole,8+3)
+Instant_Level_Up(characters.Protipole,8+3-1)
+Manual_Add_Char(characters.Startole,8+3-1)
 Manual_Add_Char(characters.Bipoanderer,8+3)
 Manual_Add_Char(characters.Wicole,6+3)
 Manual_Add_Char(characters.Bithecary,4+3)
-Manual_Add_Char(characters.Archle,2+3+2)
-Manual_Add_Char(characters.Alls_Ros,0+3)
+Manual_Add_Char(characters.Archle,2+3+2-1)
+Manual_Add_Char(characters.Alls_Ros,0+3-1)
 Manual_Add_Char(characters.Birowth,0+3)
 # Manual_Add_Char(characters.Birowth,13)
 Gold += 100000
