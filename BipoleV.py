@@ -4497,8 +4497,8 @@ def Perform_Move():
             # amount_to_heal = round((Current_Character.HLG*hlg_mul*Move_to_Use.PWR)/(target.DEF*hlg_mul))
             amount_to_heal = round(Current_Character.HLG*hlg_mul*Move_to_Use.PWR)
             print("amount_to_heal before cut: "+str(amount_to_heal))
-            if amount_to_heal < 0:
-                amount_to_heal = 0
+            # if amount_to_heal < 0:
+            #     amount_to_heal = 0
             if target.Current_HP <= 0:
                 write_text(target.DisplayName+" is defeated and can't be healed")
             elif Move_to_Use.Heal_Stat == "HP":
@@ -4519,8 +4519,10 @@ def Perform_Move():
                 else:
                     write_text(target.DisplayName + " didn't restore SP!")
                 target.Current_SP += amount_to_heal
-                if amount_to_heal > 0:
-                    write_text("Restored "+str(amount_to_heal)+"SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
+                if amount_to_heal > 0 and Move_to_Use.PWR > 0:
+                    write_text("Restored "+str(amount_to_heal)+" SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
+                elif Move_to_Use.PWR < 0:
+                    write_text("Drain "+str(amount_to_heal*-1)+" SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
             else:
                 print("error, no stat to heal")
             update_party_text()
@@ -5046,7 +5048,7 @@ Manual_Add_Char(characters.Startole,8+3)
 Manual_Add_Char(characters.Bipoanderer,8+3)
 Manual_Add_Char(characters.Wicole,6+3)
 Manual_Add_Char(characters.Bithecary,4+3)
-Manual_Add_Char(characters.Archle,2+3)
+Manual_Add_Char(characters.Archle,2+3+2)
 Manual_Add_Char(characters.Alls_Ros,0+3)
 Manual_Add_Char(characters.Birowth,0+3)
 # Manual_Add_Char(characters.Birowth,13)
@@ -5056,10 +5058,10 @@ Gold += 100000
 maps.current_location = maps.Bandit_Road
 maps.player_cords = [11,4]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
-characters.Protipole.Equipped = [equipment.Spear_of_Staves,equipment.Recover,equipment.Disarm]# USE [equipment.Pierce,equipment.The_22XX,equipment.Healing_Aura]
+characters.Protipole.Equipped = [equipment.Spear_of_Staves,equipment.Healing_Aura,equipment.Disarm]# USE [equipment.Pierce,equipment.The_22XX,equipment.Healing_Aura]
 characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Power_Flag,equipment.Guard]# USE #EQUIP =========================
 characters.Bipoanderer.Equipped = [equipment.Hydro,equipment.Slice,equipment.Sword_Lance]
-characters.Archle.Equipped = [equipment.Snipe,equipment.Fire_Blast] #USE
+characters.Archle.Equipped = [equipment.Snipe] #USE
 characters.Wicole.Equipped = [equipment.Shining_Staff,equipment.Holy_Light]
 characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Spark_Potion]
 characters.Alls_Ros.Equipped = [equipment.Shining_Staff,equipment.Holy_Light,equipment.Equivalent_Exchange_III]
