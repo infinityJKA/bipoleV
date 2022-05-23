@@ -1347,6 +1347,33 @@ def perform_dialogue():
             row_index += 1
         dialogue_index += 1
         advance_text()
+    elif line == "#POINT_CASINO":
+        win_number = random.randint(0,200)
+        if(win_number == 0):
+            write_text("==========================\nJACKPOT!!!  WON 10000G!!!\n==========================\n    (You won 10,000 G!)")
+            Gold += 10000
+        elif(win_number < 6):
+            write_text("==========================\nMINIJACKPOT!  WON 2000G!\n==========================\n    (You won 2,000 G!)")
+            Gold += 2000
+        elif(win_number < 21):
+            write_text("==========================\nWON 750G!\n==========================\n      (You won 750 G!)")
+            Gold += 750
+        elif(win_number < 40):
+            write_text("==========================\nWON 250G!\n==========================\n      (You won 250 G!)")
+            Gold += 250
+        elif(win_number < 60):
+            write_text("==========================\nWON 12G!\n==========================\n      (You won 12 G!)")
+            Gold += 12
+        elif(win_number < 72):
+            write_text("==========================\nWON 1G!\n==========================\n      (You won 1 G!)")
+            Gold += 1
+        else:
+            write_text("==========================\nYOU LOST!\n==========================\n       (Luck issue.)")
+        filedisplay.config(text="Location: "+maps.current_location[0]+"\nGold: "+str(Gold))
+        dialogue_index += 1
+        space_command = "advance_text()"
+        g_command = "advance_text()"
+        talk_button.config(command=advance_text)
     else:
         write_text(line.replace('[@]',"\n"))
         dialogue_index += 1
@@ -5043,7 +5070,7 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,8+3-1)
+Instant_Level_Up(characters.Protipole,8+3-1+100)
 Manual_Add_Char(characters.Startole,8+3-1)
 Manual_Add_Char(characters.Bipoanderer,8+3)
 Manual_Add_Char(characters.Wicole,6+3)
