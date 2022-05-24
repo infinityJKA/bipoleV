@@ -3624,7 +3624,40 @@ def save_data_from_menu():
 
 
 def open_stats():
-    pass
+    disable_inputs()
+    global multi_char_stat_to_show
+    multi_char_stat_to_show = None
+    global text_to_use_in_multi
+    global temporary_text_to_use_in_multi
+    global multiselect_index
+    global list_to_use_in_multi
+    global multi_use_displayname
+    global char_stat_return_to
+    char_stat_return_to = "open_stats"
+    multiselect_index = 0
+    text_to_use_in_multi = "\n- - - - - - - - - - -\nCharacter Stats\n- - - - - - - - - - -\n\n[Left] Select\n"
+    temporary_text_to_use_in_multi = text_to_use_in_multi
+    list_to_use_in_multi = characters.All_Recruited_Characters
+    multi_use_displayname = True
+    write_text(write_multiselect())
+    global up_command
+    global w_command
+    up_button.config(command=multiselect_move_up)
+    up_command = 'multiselect_move_up()'
+    w_command = 'multiselect_move_up()'
+    global down_command
+    global s_command
+    down_button.config(command=multiselect_move_down)
+    down_command = 'multiselect_move_down()'
+    s_command = 'multiselect_move_down()'
+    global e_command
+    b_button.config(command=exit_menu)
+    e_command = "exit_menu()"
+    global left_command
+    global a_command
+    left_button.config(command=print_char_stats)
+    left_command = 'print_char_stats()'
+    a_command = 'print_char_stats()'
 
 yes_no_result = False
 def yes_no_controls():
