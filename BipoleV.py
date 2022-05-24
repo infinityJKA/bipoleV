@@ -1072,6 +1072,11 @@ def perform_dialogue():
         print(line)
         if line != "NO CHANGE":
             vision_facing = line
+        if maps.current_location[10] == "safe":
+            print("SAVE ZONE, AUTOSAVING...")
+            autosave_data()
+        else:
+            print("ZONE IS NOT SAFE, WILL NOT AUTOSAVE")
         dialogue_index += 1
         print(line)
         did_move = False
@@ -3757,8 +3762,50 @@ def load_save():
     equipment.key_item_inventory = loaded_thing[11]
     print("finished loading save")
     #print(maps.player_tracking)
+    if maps.current_location[10] == "safe":
+        print("SAVE ZONE, AUTOSAVING...")
+        autosave_data()
+    else:
+        print("ZONE IS NOT SAFE, WILL NOT AUTOSAVE")
     refresh()
 
+def load_autosave():
+    print("reading autosave...")
+    loaded_thing = []
+    with open("autosave.dat", "rb") as f:
+        loaded_thing = pickle.load(f)
+    print("finished reading save")
+    print("loading save...")
+    global Gold
+    global vision_facing
+    unformatted_locations = loaded_thing[0]
+    for unform_loc in unformatted_locations:
+        for loc in maps.List_of_All_Locations:
+            if unform_loc[4] == loc[4]:
+                print("unform_loc and loc match found")
+                for map in maps.List_of_All_Maps:
+                    if loc[1] == map:
+                        print("map match found")
+                        thing_index = 0
+                        for linething in unform_loc[1]:
+                            map[thing_index] = linething
+                            thing_index += 1
+                        loc[8] = unform_loc[8]
+                        #map = unform_loc[1]
+                loc[7] = unform_loc[7]
+    characters.List_of_All_Recruitable_Party_Members = loaded_thing[1]
+    characters.Current_Party = loaded_thing[2]
+    characters.All_Recruited_Characters = loaded_thing[3]
+    equipment.equipment_inventory = loaded_thing[4]
+    equipment.item_inventory = loaded_thing[5]
+    Gold = loaded_thing[6]
+    maps.current_location = loaded_thing[7]
+    maps.player_tracking = loaded_thing[8]
+    vision_facing = loaded_thing[9]
+    characters.Unequipped_Characters = loaded_thing[10]
+    equipment.key_item_inventory = loaded_thing[11]
+    print("finished loading save")
+    refresh()
 
 def save_data():
     global Gold
@@ -3778,12 +3825,34 @@ def save_data():
         equipment.key_item_inventory
     ]
     with open("save.dat", "wb") as f:
-        # pickle.dump(len(stuff), f)
-        # for value in stuff:
-        #     pickle.dump(value, f)
+        pickle.dump(stuff, f)
+
+def autosave_data():
+    global Gold
+    global vision_facing
+    stuff = [
+        maps.List_of_All_Locations,
+        characters.List_of_All_Recruitable_Party_Members,
+        characters.Current_Party,
+        characters.All_Recruited_Characters,
+        equipment.equipment_inventory,
+        equipment.item_inventory,
+        Gold,
+        maps.current_location,
+        maps.player_tracking,
+        vision_facing,
+        characters.Unequipped_Characters,
+        equipment.key_item_inventory
+    ]
+    with open("autosave.dat", "wb") as f:
         pickle.dump(stuff, f)
 
 def start_menu_new_game():
+    if maps.current_location[10] == "safe":
+        print("SAVE ZONE, AUTOSAVING...")
+        autosave_data()
+    else:
+        print("ZONE IS NOT SAFE, WILL NOT AUTOSAVE")
     start_dialogue_direct("/dialogue/bieace_castle/intro.txt")
 
 character_to_action_index = 0
@@ -4713,14 +4782,18 @@ def Check_If_Party_Dead():
         "===================\n"+
         "\n"+
         "[A] Load Save\n"
-        "[B] Close Game"
+        "[B] Load Autosave\n"
+        "[SAVE] Close Game"
         )
         global q_command
         global e_command
+        global one_command
         a_button.config(command=load_save)
-        b_button.config(command=sys.exit)
+        b_button.config(command=load_autosave)
+        save_button.config(command=sys.exit)
         q_command = "load_save()"
-        e_command = "sys.exit()"
+        e_command = "load_autosave()"
+        one_command = "sys.exit()"
     else:
         Current_Character.Current_Action_Count += Move_to_Use.Action_Count
         if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
@@ -5103,7 +5176,7 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,8+3-1+100)
+Instant_Level_Up(characters.Protipole,1)#8+3-1+100)
 Manual_Add_Char(characters.Startole,8+3-1)
 Manual_Add_Char(characters.Bipoanderer,8+3)
 Manual_Add_Char(characters.Wicole,6+3)
