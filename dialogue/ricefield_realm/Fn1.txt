@@ -10,4 +10,4 @@ HFAU:[@]You are strong, but[@]not strong enough.
 HFAU:[@]You have passed this[@]test, but you must continue[@]to grow stronger.
 #SET_BIG_IMAGE nothing
 (HFAU disappeared..)
-#DESTROY_SELF
+#OVERRIDE_SELF n00

@@ -8,5 +8,5 @@ _
 -pass- 
 _
 #SET_IMAGE chest2
-#GAIN_EQUIPMENT LP_Throw
+#GAIN_EQUIPMENT Phalanx
 #DESTROY_SELF

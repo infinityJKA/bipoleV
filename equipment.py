@@ -740,7 +740,7 @@ if True: #Bows
 
     LP_Throw = Equipment(
     Display_Name = "LP Throw",
-    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Equip_Type = "Bow", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Bow",
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
     Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
@@ -750,6 +750,20 @@ if True: #Bows
     Purchasing_Price = 7500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "What the hell is going on!?!?!?"
+    )
+
+    Airstrike = Equipment(
+    Display_Name = "Airstrike",
+    Equip_Type = "Bow", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Bow",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 350, #Added
+    PWR = 130,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Obligatory Bipole Retro: Empires reference.\nDeals bow damage to all enemies."
     )
 
     Convex_Polytope = Equipment(
@@ -1534,6 +1548,20 @@ if True: #Guns
     Action_Count = 0.25,
     )
 
+    Boat = Equipment(
+    Display_Name = "Boat",
+    Equip_Type = "Water Tile", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 1, #Deducted
+    Priority = 100, #Added
+    PWR = 1000000000,
+    Purchasing_Price = 15, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "1000000000 attack and 1 defense.\nCan only attack or move on water\n(there aren’t any water tiles)."
+    )
+
 if True: #Boosts
 
     Weakening_Taunt = Equipment(
@@ -1729,6 +1757,66 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = ["MAG",2,3],
     Description = "Gain 2x MAG for 3 turns."
+    )
+
+    Burst_Plant = Equipment(
+    Display_Name = "Burst Plant",
+    Equip_Type = "Fire", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 150, #Deducted
+    Priority = 300, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",0.7,3],],
+    Description = "Obligatory Bipole Retro: Empires reference.\nInflict 0.7x DEF for 3 turns."
+    )
+
+    Knife_Rain = Equipment(
+    Display_Name = "Knife Rain",
+    Equip_Type = "Fire", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 375, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",0.5,1],],
+    Description = "Obligatory Bipole Retro: Empires reference.\nInflict 0.4x DEF for 1 turn."
+    )
+
+    Phalanx = Equipment(
+    Display_Name = "Phalanx",
+    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 150, #Deducted
+    Priority = 300, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",1.3,3],],
+    Description = "Obligatory Bipole Retro: Empires reference.\nInflict 1.3x DEF for 3 turns."
+    )
+
+    Altar = Equipment(
+    Display_Name = "Altar",
+    Equip_Type = "Staff", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 150, #Deducted
+    Priority = 300, #Added
+    PWR = 0,
+    Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.3,3],],
+    Description = "Obligatory Bipole Retro: Empires reference.\nInflict 1.3x ATK for 3 turns."
     )
 
     Energize = Equipment(
@@ -2469,6 +2557,12 @@ if True:
         Display_Name="Bonus Shop Pass II",
         sprite="bonus_shop_pass_ii",
         text_file="bonus_shop_pass_ii"
+    )
+
+    ricefield_key = Key_Item(
+        Display_Name="Ricefield Key",
+        sprite="ricefield_key",
+        text_file="ricefield_key"
     )
 
 key_item_inventory = [humphrey_lore]

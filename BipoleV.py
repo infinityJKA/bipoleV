@@ -59,9 +59,9 @@ if True:
     stat_button.config(font=(mainfont,14),fg='cyan')
     stat_button.grid(row=0,column=0)
 
-    stat_button = tk.Button(master=topsidebotmfram,text="KEY ITEMS",width=10,height=2,relief=RAISED, bg='black')
-    stat_button.config(font=(mainfont,14),fg='yellow')
-    stat_button.grid(row=0,column=1)
+    key_button = tk.Button(master=topsidebotmfram,text="KEY ITEMS",width=10,height=2,relief=RAISED, bg='black')
+    key_button.config(font=(mainfont,14),fg='yellow')
+    key_button.grid(row=0,column=1)
 
     centrow = tk.Frame(master=mainframe, relief=tk.RAISED, bg='black')
     centrow.grid(row=1, column=0)
@@ -589,6 +589,7 @@ def disable_inputs():
     party_button.config(command=nothing)
     item_button.config(command=nothing)
     talk_button.config(command=nothing)
+    key_button.config(command=nothing)
 
 def write_text(the_text):
     dialouge.config(text=the_text)
@@ -2451,7 +2452,7 @@ def enable_movement_controls():
     three_command = "open_stats()"
 
     global four_command
-    stat_button.config(command=open_key_items)
+    key_button.config(command=open_key_items)
     four_command = "open_key_items()"
 
 did_move = False
@@ -5176,7 +5177,7 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,1)#8+3-1+100)
+Instant_Level_Up(characters.Protipole,25)#8+3-1+100)
 Manual_Add_Char(characters.Startole,8+3-1)
 Manual_Add_Char(characters.Bipoanderer,8+3)
 Manual_Add_Char(characters.Wicole,6+3)
@@ -5200,6 +5201,8 @@ characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipme
 characters.Alls_Ros.Equipped = [equipment.Shining_Staff,equipment.Holy_Light,equipment.Equivalent_Exchange_III]
 
 equipment.key_item_inventory.append(equipment.mysterious_crystals)
+equipment.key_item_inventory.append(equipment.humphrey_lore_read)
+equipment.key_item_inventory.append(equipment.ecochecker)
 
 for char in characters.All_Recruited_Characters:
     char.Current_HP = char.Max_HP

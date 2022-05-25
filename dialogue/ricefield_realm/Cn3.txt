@@ -9,4 +9,4 @@ _
 _
 #SET_IMAGE chest2
 #GAIN_KEYITEM ricefield_key
-#DESTROY_SELF
+#OVERRIDE_SELF n00
