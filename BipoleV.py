@@ -1380,6 +1380,43 @@ def perform_dialogue():
         space_command = "advance_text()"
         g_command = "advance_text()"
         talk_button.config(command=advance_text)
+    elif "#WALL_SWAP " in line:
+        already_swapped = []
+        r_index = 0
+        for row in maps.current_location[1]:
+            print(row)
+            t_index = 0
+            for thing in row:
+                print(thing)
+                print("_"+line.replace('#WALL_SWAP ','')+" vs ")
+                print(thing[0])
+                if thing[0] == "_"+line.replace('#WALL_SWAP ',''):
+                    thing[0]= "-"+line.replace('#WALL_SWAP ','')
+                    print("changed to -"+line.replace('#WALL_SWAP ',''))
+                    already_swapped.append([r_index,t_index])
+                t_index += 1
+            r_index += 1
+        r_index = 0
+        for row in maps.current_location[1]:
+            print(row)
+            t_index = 0
+            for thing in row:
+                print(thing)
+                print("-"+line.replace('#WALL_SWAP ','')+" vs ")
+                print(thing[0])
+                if thing[0] == "-"+line.replace('#WALL_SWAP ',''):
+                    has_swapped = False
+                    for swapped in already_swapped:
+                        if swapped[0] == r_index and swapped[1] == t_index:
+                            has_swapped = True
+                            print("not swapping, tile was just swapped")
+                    if has_swapped == False:
+                        thing[0]= "_"+line.replace('#WALL_SWAP ','')
+                        print("changed to _"+line.replace('#WALL_SWAP ',''))
+                t_index += 1
+            r_index += 1
+        dialogue_index += 1
+        advance_text()
     else:
         write_text(line.replace('[@]',"\n"))
         dialogue_index += 1
@@ -1739,7 +1776,7 @@ def refresh():
     global space_command
     global g_command
     global r_command
-    if standing_on == "000":
+    if standing_on == "000" or standing_on.startswith("-"):
         global did_move
         if did_move == True:
             did_move = False
@@ -2002,7 +2039,7 @@ def map_icon(thing):
         return "⦾"
     elif thing.startswith("r") == True:
         return "⦻"
-    elif thing.startswith("000") == True or thing.startswith("n"):
+    elif thing.startswith("000") == True or thing.startswith("n") or thing.startswith("-"):
         return ""
     else:
         return "error"

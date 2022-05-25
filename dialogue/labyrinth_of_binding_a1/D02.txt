@@ -1,0 +1,14 @@
+door1
+#CHOICE Descend further into the ruins?[@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END
+-pass-
+-pass-
+-pass- 
+_
+#MOVE_TO
+Ruins_of_Time2
+7
+4
+South

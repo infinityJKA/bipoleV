@@ -2685,4 +2685,28 @@ if True:
         text_file="useless_award"
     )
 
+    card1 = Key_Item(
+        Display_Name="Card 1",
+        sprite="card1",
+        text_file="card1"
+    )
+
+    card2 = Key_Item(
+        Display_Name="Card 2",
+        sprite="card2",
+        text_file="card2"
+    )
+
+    neville_coin = Key_Item(
+        Display_Name="Neville Coin",
+        sprite="neville_coin",
+        text_file="neville_coin"
+    )
+
+    virginity_hat = Key_Item(
+        Display_Name="Virginity Hat",
+        sprite="virginity_hat",
+        text_file="virginity_hat"
+    )
+
 key_item_inventory = [humphrey_lore]
