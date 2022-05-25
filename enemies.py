@@ -618,6 +618,7 @@ if True: #Bandit Road Encounters
     br_encounter3 = [[Crazy_Guy_A,Gangster_A,Gangster_B],"Normal"]
     br_boss = [[Gangole,Ersatz_Humphrey,Jeffy_Jimovans],"Normal"]
 
+
 if True: #Ricefield Realm Enemies
     Point_Farmer_A = Enemy(
         DisplayName = "Point Farmer A",
@@ -744,3 +745,68 @@ if True: #Ricefield Realm Encounters
     rr_encounter2 = [[Bonus_Farmer_A,Bonus_Farmer_B,Point_Farmer_A],"Normal"]
     rr_encounter3 = [[Omega_Point_Farmer_A,Point_Farmer_A],"Normal"]
     rr_boss = [[Hyper_Final_Assassin_Ultra],"Big"]
+
+if True: #Metalimnion Enemies
+    Radical_Warper = Enemy(
+        DisplayName = "Radical Warper",
+        Moves = [[equipment.Skateboard,0,100],[equipment.Boombox,0,100]],
+        Weakness = ["Sword","Bow","Water","Gun"],
+        Sprite = "radical_warper",
+        Level = 13,
+        EXP = 350,
+        Gold = 900,
+        ATK = 1100,
+        MAG = 1025,
+        HLG = 8,
+        DEF = 750,
+        RES = 700,
+        Max_HP = 2500,
+        Max_SP = 500,
+        Max_Action_Count = 1,
+        Bio = "He's more radical at warping than\nyou are.",
+        Effects = []
+    )
+
+    Picky_Jimmy = Enemy(
+        DisplayName = "Picky Jimmy",
+        Moves = [[equipment.Comically_Large_Pick,50,100],[equipment.Epic_Guitar_Riff,0,50]],
+        Weakness = ["Fists","Lance","Ice","Gun"],
+        Sprite = "picky_jimmy",
+        Level = 13,
+        EXP = 425,
+        Gold = 7,
+        ATK = 1100,
+        MAG = 1025,
+        HLG = 10,
+        DEF = 725,
+        RES = 725,
+        Max_HP = 2250,
+        Max_SP = 500,
+        Max_Action_Count = 1,
+        Bio = "Picky Jimmy is currently high on weed.",
+        Effects = []
+    )
+
+    Gunman_Greg = Enemy(
+        DisplayName = "Gunman Greg",
+        Moves = [[equipment.Pew_Pew,0,100],[equipment.Silver_Gauntlets,0,100]],
+        Weakness = ["Sword","Staff","Bow","Fire"],
+        Sprite = "gunman_greg",
+        Level = 13,
+        EXP = 400,
+        Gold = 700,
+        ATK = 1400,
+        MAG = 1025,
+        HLG = 9,
+        DEF = 775,
+        RES = 700,
+        Max_HP = 2500,
+        Max_SP = 500,
+        Max_Action_Count = 1,
+        Bio = "Warper, Picky, and Greg make up an\nindie rock band called The Metalimnioners.\nPicky plays the guitar, Warper plays a cassette,\nand Greg plays with a gun.",
+        Effects = []
+    )
+
+if True: #Metalimnion Encounters
+    mboss1 = [[Radical_Warper,Picky_Jimmy,Gunman_Greg],"Normal"]
+

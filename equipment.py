@@ -565,6 +565,20 @@ if True: #Lances
     Action_Count = 0.5
     )
 
+    Comically_Large_Pick = Equipment(
+    Display_Name = "Comically Large Pick",
+    Equip_Type = "Picky Jimmy", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Lance",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 225,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "The Comically Large Pick is forged\nfrom the bone arrow of over\nten different ostriches."
+    )
+
 if True: #Staves
 
     Wooden_Staff = Equipment(
@@ -678,6 +692,20 @@ if True: #Staves
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A special screwdriver that can channel\nmana energy from the user. It was developed\nby Erstax Humphrey after he parted from\nHumphrey Fallen."
+    )
+
+    Skateboard = Equipment(
+    Display_Name = "Skateboard",
+    Equip_Type = "Radical Warper", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Staff",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 250,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "BONK!"
     )
 
 if True: #Bows
@@ -966,6 +994,21 @@ if True: #Fire
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Being at The Shadow Market and\nThe Point Casino, you'll learn a\nfew things. Like fire tricks.\nDon't play with fire, kids."
+    )
+
+    Epic_Guitar_Riff = Equipment(
+    Display_Name = "Epic Guitar Riff",
+    Equip_Type = "Picky Jimmy", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 145,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Fire damage bc you know it's fire.",
+    Action_Count = 0.1
     )
 
 if True: #Water
@@ -1490,6 +1533,62 @@ if True: #Guns
     Description = "The Enderscope X ultilizes human Mana\ngeneration using CELL technology. The rifle was\ninvented by scientist Criz Zzir, and was used\nto arm the Bastion rebels."
     )
 
+    Boat = Equipment(
+    Display_Name = "Boat",
+    Equip_Type = "Water Tile", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 1, #Deducted
+    Priority = 100, #Added
+    PWR = 1000000000,
+    Purchasing_Price = 15, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "1000000000 attack and 1 defense.\nCan only attack or move on water\n(there aren’t any water tiles)."
+    )
+
+    Rubber_Bullets = Equipment(
+    Display_Name = "Rubber Bullets",
+    Equip_Type = "Bow", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 75,
+    Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deals very weak gun damage."
+    )
+
+    Assault_Rifle = Equipment(
+    Display_Name = "Assault Rifle",
+    Equip_Type = "Birowth", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 375, #Added
+    PWR = 200,
+    Purchasing_Price = 2250, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deal strong gun damage."
+    )
+
+    Shotgun = Equipment(
+    Display_Name = "Assault Rifle",
+    Equip_Type = "Birowth", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 500, #Added
+    PWR = 135,
+    Purchasing_Price = 2250, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Deals gun damage to all enemies."
+    )
+
     Branching = Equipment(
     Display_Name = "Branching",
     Equip_Type = "Nynety", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -1548,19 +1647,19 @@ if True: #Guns
     Action_Count = 0.25,
     )
 
-    Boat = Equipment(
-    Display_Name = "Boat",
-    Equip_Type = "Water Tile", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
-    Damage_Type = "Gun",
-    Move_Type = "Physical", #Physical, Magic, Heal, Boost
-    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 1, #Deducted
-    Priority = 100, #Added
-    PWR = 1000000000,
-    Purchasing_Price = 15, #Sells for half of the purchasing price, cannot be sold if 0
-    Heal_Stat = None, #The stat to heal,
-    Description = "1000000000 attack and 1 defense.\nCan only attack or move on water\n(there aren’t any water tiles)."
-    )
+    Pew_Pew = Equipment(
+        Display_Name = "Pew Pew",
+        Equip_Type = "Gunman Greg", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+        Damage_Type = "Gun",
+        Move_Type = "Physical", #Physical, Magic, Heal, Boost
+        Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+        SP_Cost = 0, #Deducted
+        Priority = 500, #Added
+        PWR = 150,
+        Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+        Heal_Stat = None, #The stat to heal,
+        Description = "Greg shoots his gun (the gun\nis called the Pew Pewer)."
+        )
 
 if True: #Boosts
 
@@ -2098,6 +2197,21 @@ if True: #Boosts
     Description = "HFAU is a patient man. He does not\nrush things or do things uncompleted.\n1.1x ATK/DEF/RES for 5 turns."
     )
 
+    Boombox = Equipment(
+    Display_Name = "Boombox",
+    Equip_Type = "Radical Warper", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 0.6,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.5,4],["MAG",1.5,4],["HLG",1.5,4]],
+    Description = "1.5x ATK/MAG/HLG for 4 turns."
+    )
 
 
 if True: #Starting Uniques
@@ -2563,6 +2677,12 @@ if True:
         Display_Name="Ricefield Key",
         sprite="ricefield_key",
         text_file="ricefield_key"
+    )
+
+    useless_award = Key_Item(
+        Display_Name="Useless Award",
+        sprite="useless_award",
+        text_file="useless_award"
     )
 
 key_item_inventory = [humphrey_lore]

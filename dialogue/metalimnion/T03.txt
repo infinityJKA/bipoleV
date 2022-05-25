@@ -47,11 +47,14 @@ Radical Warper:[@]Oh you messed up.
 Radical Warper:[@]Oh you messed up big time.
 Radical Warper:[@]Oh no no no.
 Radical Warper:[@]...
-Radical Warper:[@]PICKY JIMMY!
-Radical Warper:[@]GUNMAN GREG!
+Radical Warper:[@]PICKY!
+Radical Warper:[@]GREG!
 Radical Warper:[@]LET'S GET EMMMM!!!
-[insert battle here]
-#END
+#ENCOUNTER mboss1
+Radical Warper:[@]...
+Radical Warper:[@]Screw you.
+#GAIN_KEYITEM useless_award
+#OVERRIDE_SELF T03_2
 _
 _
 /==/.LEAVE
