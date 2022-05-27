@@ -1,13 +1,5 @@
 nothing
-???:[@]!!!
-???:[@]I some power from your soul.
-#SET_BIG_IMAGE hyper_final_assassin_ultra
-[Hyper Final Assassin Ultra appears!]
-HFAU:[@]Allow me to test your strength.
-#ENCOUNTER rr_boss
-HFAU:[@]...
-HFAU:[@]You are strong, but[@]not strong enough.
-HFAU:[@]You have passed this[@]test, but you must continue[@]to grow stronger.
-#SET_BIG_IMAGE nothing
-(HFAU disappeared..)
+test
+#ENCOUNTER lob_encounter2
+end test
 #DESTROY_SELF

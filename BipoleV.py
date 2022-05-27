@@ -5214,14 +5214,14 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,25)#8+3-1+100)
-Manual_Add_Char(characters.Startole,8+3-1)
+Instant_Level_Up(characters.Protipole,12)#8+3-1+100)
+Manual_Add_Char(characters.Startole,12)
 Manual_Add_Char(characters.Bipoanderer,8+3)
 Manual_Add_Char(characters.Wicole,6+3)
 Manual_Add_Char(characters.Bithecary,4+3)
-Manual_Add_Char(characters.Archle,2+3+2-1)
-Manual_Add_Char(characters.Alls_Ros,0+3-1)
-Manual_Add_Char(characters.Birowth,0+3)
+Manual_Add_Char(characters.Archle,8)
+Manual_Add_Char(characters.Alls_Ros,0+3-1+2)
+Manual_Add_Char(characters.Birowth,12)
 # Manual_Add_Char(characters.Birowth,13)
 Gold += 100000
 # maps.player_cords = [9,18]
@@ -5229,17 +5229,21 @@ Gold += 100000
 maps.current_location = maps.Bandit_Road
 maps.player_cords = [11,4]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
-characters.Protipole.Equipped = [equipment.Spear_of_Staves,equipment.Healing_Aura,equipment.Disarm]# USE [equipment.Pierce,equipment.The_22XX,equipment.Healing_Aura]
-characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Power_Flag,equipment.Guard]# USE #EQUIP =========================
+characters.Protipole.Equipped = [equipment.Spear_of_Staves,equipment.Healing_Aura,equipment.The_22XX] #
+characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Pierce,equipment.Guard] #
 characters.Bipoanderer.Equipped = [equipment.Hydro,equipment.Slice,equipment.Sword_Lance]
-characters.Archle.Equipped = [equipment.Snipe] #USE
+characters.Archle.Equipped = [equipment.Snipe, equipment.Inferno, equipment.Enderscope_X]
 characters.Wicole.Equipped = [equipment.Shining_Staff,equipment.Holy_Light]
 characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Spark_Potion]
-characters.Alls_Ros.Equipped = [equipment.Shining_Staff,equipment.Holy_Light,equipment.Equivalent_Exchange_III]
+characters.Bipouge.Equipped = [equipment.Spear_of_Staves,equipment.Holy_Light,equipment.Flood] #
+characters.Alls_Ros.Equipped = [equipment.Shining_Staff,equipment.Holy_Light,equipment.Flood] #
+characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Shatter,equipment.Shotgun] #
 
 equipment.key_item_inventory.append(equipment.mysterious_crystals)
 equipment.key_item_inventory.append(equipment.humphrey_lore_read)
 equipment.key_item_inventory.append(equipment.ecochecker)
+equipment.key_item_inventory.append(equipment.bonus_shop_pass_ii)
+
 
 for char in characters.All_Recruited_Characters:
     char.Current_HP = char.Max_HP

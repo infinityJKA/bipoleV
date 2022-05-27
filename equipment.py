@@ -463,7 +463,7 @@ if True: #Lances
     PWR = 200,
     Purchasing_Price = 1500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "An strong attack using a lance."
+    Description = "A strong attack using a lance."
     )
 
     Lance_Sword = Equipment(
@@ -1011,6 +1011,20 @@ if True: #Fire
     Action_Count = 0.1
     )
 
+    Skull_Flame = Equipment(
+    Display_Name = "Skull Flame",
+    Equip_Type = "Fire", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 110, #Deducted
+    Priority = 190, #Added
+    PWR = 175,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A powerful wave of flames\nemitted by the floating skull."
+    )
+
 if True: #Water
     Aqua = Equipment(
     Display_Name = "Aqua",
@@ -1202,15 +1216,15 @@ if True: #Ice
     Display_Name = "Shatter",
     Equip_Type = "Ice", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Ice",
-    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 50, #Deducted
+    SP_Cost = 100, #Deducted
     Priority = 90, #Added
     PWR = 100,
     Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = [["DEF",0.5,1]],
-    Description = "Deals weak ice damage and decreases\ntarget DEF/RES for the rest of the turn"
+    Inflict = [["DEF",0.5,1],["RES",0.5,1]],
+    Description = "0.5x DEF/RES for the rest of the turn."
     )
 
     Rime_Potion = Equipment(
@@ -1284,6 +1298,20 @@ if True: #Ice
     Heal_Stat = None, #The stat to heal,
     Description = "It doesn't hurt much to get\nhit by an ice cube, but it\nis very quick.",
     Action_Count = 0.7
+    )
+
+    Skull_Frost = Equipment(
+    Display_Name = "Skull Frost",
+    Equip_Type = "Ice", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 110, #Deducted
+    Priority = 190, #Added
+    PWR = 175,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A powerful wave of frost\nemitted by a skulsorer."
     )
 
 if True: #Healing
@@ -1576,7 +1604,7 @@ if True: #Guns
     )
 
     Shotgun = Equipment(
-    Display_Name = "Assault Rifle",
+    Display_Name = "Shotgun",
     Equip_Type = "Birowth", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Gun",
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
@@ -2213,6 +2241,37 @@ if True: #Boosts
     Description = "1.5x ATK/MAG/HLG for 4 turns."
     )
 
+    Skel_Boost = Equipment(
+    Display_Name = "Skel-Boost",
+    Equip_Type = "Skeleton", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 1,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.15,4],["MAG",1.15,4],["HLG",1.15,4]],
+    Description = "Skeletons.\n1.15x ATK/MAG/HLG for 4 turns."
+    )
+
+    Necrobsorber = Equipment(
+    Display_Name = "Necrobsorber",
+    Equip_Type = "Skeleton", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 1,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",0.85,4],["MAG",0.85,4],["HLG",0.85,4]],
+    Description = "The power of a skulsorer is not\nto be underestimated. They have\nthe ability to manipulate both Mana\nEnergy and Life Energy without external aid.\n0.85x ATK/MAG/HLG for 4 turns."
+    )
 
 if True: #Starting Uniques
 

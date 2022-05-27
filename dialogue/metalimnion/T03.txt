@@ -51,6 +51,7 @@ Radical Warper:[@]PICKY!
 Radical Warper:[@]GREG!
 Radical Warper:[@]LET'S GET EMMMM!!!
 #ENCOUNTER mboss1
+#SET_IMAGE radical_warper
 Radical Warper:[@]...
 Radical Warper:[@]Screw you.
 #GAIN_KEYITEM useless_award

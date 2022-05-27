@@ -751,7 +751,7 @@ if True: #Metalimnion Enemies
         DisplayName = "Radical Warper",
         Moves = [[equipment.Skateboard,0,100],[equipment.Boombox,0,100]],
         Weakness = ["Sword","Bow","Water","Gun"],
-        Sprite = "radical_warper",
+        Sprite = "radical_warper2",
         Level = 13,
         EXP = 350,
         Gold = 900,
@@ -810,3 +810,128 @@ if True: #Metalimnion Enemies
 if True: #Metalimnion Encounters
     mboss1 = [[Radical_Warper,Picky_Jimmy,Gunman_Greg],"Normal"]
 
+if True: #Labyrinth of Binding Enemies:
+    Skeleton_Soldier_A = Enemy(
+        DisplayName = "Skeleton Soldier A",
+        Moves = [[equipment.Pierce,0,100]],
+        Weakness = ["Bow","Staff","Fire"],
+        Sprite = "skeleton_soldier",
+        Level = 13,
+        EXP = 350,
+        Gold = 525,
+        ATK = 4750,
+        MAG = 3275,
+        HLG = 9,
+        DEF = 850,
+        RES = 900,
+        Max_HP = 3000,
+        Max_SP = 1000,
+        Max_Action_Count = 1,
+        Bio = "A skeleton that was reanimated to\nbe a soldier guarding something.",
+        Effects = []
+    )
+
+    Skel_Floater_A = Enemy(
+        DisplayName = "Skel-Floater A",
+        Moves = [[equipment.Inferno,0,100],[equipment.Skull_Flame,0,100],[equipment.Skel_Boost,0,100],[equipment.Healing_Aura,0,75]],
+        Weakness = ["Fists","Lance","Gun"],
+        Sprite = "skel-floater",
+        Level = 13,
+        EXP = 325,
+        Gold = 500,
+        ATK = 3250,
+        MAG = 3550,
+        HLG = 12,
+        DEF = 725,
+        RES = 775,
+        Max_HP = 2000,
+        Max_SP = 1500,
+        Max_Action_Count = 2,
+        Bio = "A reanimated skull that's flying in the air.",
+        Effects = []
+    )
+
+    Skel_Floater_B = Enemy(
+        DisplayName = "Skel-Floater A",
+        Moves = [[equipment.Inferno,0,100],[equipment.Skull_Flame,0,100],[equipment.Skel_Boost,0,100],[equipment.Healing_Aura,0,75]],
+        Weakness = ["Fists","Lance","Gun"],
+        Sprite = "skel-floater",
+        Level = 13,
+        EXP = 325,
+        Gold = 500,
+        ATK = 3250,
+        MAG = 3550,
+        HLG = 12,
+        DEF = 725,
+        RES = 775,
+        Max_HP = 2000,
+        Max_SP = 1500,
+        Max_Action_Count = 2,
+        Bio = "A reanimated skull that's flying in the air.",
+        Effects = []
+    )
+
+    Skulsorer_A = Enemy(
+        DisplayName = "Skulsorer A",
+        Moves = [[equipment.Cryoablate,0,100],[equipment.Skull_Frost,0,100],[equipment.Necrobsorber,0,100],[equipment.Healing_Aura,0,75]],
+        Weakness = ["Lance","Staff","Bow","Fire"],
+        Sprite = "skulsorer",
+        Level = 13,
+        EXP = 425,
+        Gold = 625,
+        ATK = 3425,
+        MAG = 3575,
+        HLG = 13,
+        DEF = 725,
+        RES = 800,
+        Max_HP = 7500,
+        Max_SP = 7500,
+        Max_Action_Count = 2,
+        Bio = "A sorcerer skeleton. Kind of cool.",
+        Effects = []
+    )
+
+    Shield_Skelly_A = Enemy(
+        DisplayName = "Shield Skelly A",
+        Moves = [[equipment.Slash,0,100]],
+        Weakness = ["Lance","Staff","Fire","Ice","Gun"],
+        Sprite = "shield_skelly",
+        Level = 13,
+        EXP = 350,
+        Gold = 525,
+        ATK = 4750,
+        MAG = 3275,
+        HLG = 9,
+        DEF = 3750,
+        RES = 600,
+        Max_HP = 3000,
+        Max_SP = 1000,
+        Max_Action_Count = 1,
+        Bio = "It has a very strong shield, trust me.",
+        Effects = []
+    )
+
+    Shield_Skelly_B = Enemy(
+        DisplayName = "Shield Skelly B",
+        Moves = [[equipment.Slash,0,100]],
+        Weakness = ["Lance","Fire","Water","Gun"],
+        Sprite = "shield_skelly",
+        Level = 13,
+        EXP = 350,
+        Gold = 525,
+        ATK = 5250,
+        MAG = 2500,
+        HLG = 9,
+        DEF = 15250,
+        RES = 600,
+        Max_HP = 3000,
+        Max_SP = 1000,
+        Max_Action_Count = 1,
+        Bio = "It has a very strong shield, trust me.",
+        Effects = []
+    )
+
+
+if True: #Labyrinth of Binding Encounters
+    lob_encounter1 = [[Skeleton_Soldier_A,Skel_Floater_A,Skel_Floater_B],"Normal"]
+    lob_encounter2 = [[Skulsorer_A,Shield_Skelly_A,Shield_Skelly_B],"Normal"]
