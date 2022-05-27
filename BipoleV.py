@@ -3978,6 +3978,7 @@ def Enemy_Turn():
     global Move_Target
     global another
     if len(current_encounter)-1 >= character_to_action_index:
+        print("character_to_action_index = "+str(character_to_action_index))
         Current_Character = current_encounter[character_to_action_index]
         moves_possible = 0
         for move in Current_Character.Moves:
@@ -4477,7 +4478,7 @@ def Enemy_Perform_Move():
                 #write_text("But nothing happened!")
                 Current_Character.Current_Action_Count += 1
                 if Current_Character.Current_Action_Count >= Current_Character.Max_Action_Count:
-                    character_to_action_index += Move_to_Use.Action_Count
+                    character_to_action_index += 1
                     a_button.config(command=Enemy_Turn)
                     talk_button.config(command=Enemy_Turn)
                     q_command = "Enemy_Turn()"
@@ -5238,6 +5239,7 @@ characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipme
 characters.Bipouge.Equipped = [equipment.Spear_of_Staves,equipment.Holy_Light,equipment.Flood] #
 characters.Alls_Ros.Equipped = [equipment.Shining_Staff,equipment.Holy_Light,equipment.Flood] #
 characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Shatter,equipment.Shotgun] #
+#LEVEL 17 AT END OF THE LABYRINTH
 
 equipment.key_item_inventory.append(equipment.mysterious_crystals)
 equipment.key_item_inventory.append(equipment.humphrey_lore_read)

@@ -457,7 +457,7 @@ List_of_All_Locations.append(Metalimnion)
 Ricefield_Realm = ["Ricefield Realm", ricefield_realm_map, "stone", "dark_green","ricefield_realm",True,[enemies.rr_encounter1,enemies.rr_encounter2,enemies.rr_encounter3],2,[0,["no eco",0],[0,0,0,0,0]],"brown","dangerous"]
 List_of_All_Locations.append(Ricefield_Realm)
 
-Labyrinth_of_Binding_A1 = ["Labyrinth of Binding A1", labyrinth_of_binding_a1_map, "stone", "magic2","labyrinth_of_binding_a1",False,[enemies.rr_encounter1,enemies.rr_encounter2,enemies.rr_encounter3],2,[0,["no eco",0],[0,0,0,0,0]],"magic2","dangerous"]
+Labyrinth_of_Binding_A1 = ["Labyrinth of Binding A1", labyrinth_of_binding_a1_map, "stone", "magic2","labyrinth_of_binding_a1",True,[enemies.lob_encounter1,enemies.lob_encounter2],2,[0,["no eco",0],[0,0,0,0,0]],"magic2","dangerous"]
 List_of_All_Locations.append(Ricefield_Realm)
 
 current_location = Bieace_Castle
