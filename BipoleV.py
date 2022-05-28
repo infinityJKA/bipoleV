@@ -88,7 +88,7 @@ if True:
     #     bottomerer_background_images_sides.append(sprites_canvas.create_image(0, 0, anchor=NW, image=bottomerer_background_sprites_sides[ind]))
     #     ind += 1
     
-    bottomerer_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"+"1001"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
+    bottomerer_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"+"0000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
     bottomerer_background_image = sprites_canvas.create_image(0, 0, anchor=NW, image=bottomerer_background_sprite)
 
     # bottomerer_background_sprites = []
@@ -114,7 +114,7 @@ if True:
     # bottomerer_background_sprites.append(bottomerer_background_sprite00010)
     # bottomerer_background_images.append(sprites_canvas.create_image(0, 0, anchor=NW, image=bottomerer_background_sprite00010))
 
-    bottomer_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottomer_layer/"+"10101"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
+    bottomer_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottomer_layer/"+"00000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
     bottomer_background_image = sprites_canvas.create_image(0, 0, anchor=NW, image=bottomer_background_sprite)
 
     # bottomer_background_sprites_sides = []
@@ -163,21 +163,21 @@ if True:
     #     bottom_background_images.append(sprites_canvas.create_image(0, 0, anchor=NW, image=bottom_background_sprites[ind]))
     #     ind += 1
 
-    bottom_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+"001"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
+    bottom_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+"000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
     bottom_background_image = sprites_canvas.create_image(0, 0, anchor=NW, image=bottom_background_sprite)
     bottomspr = [0]
     bottomimg = [0]
 
     mul = 1
 
-    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((150*mul,375*mul),resample=Image.NEAREST)))
-    bottomimg.append(sprites_canvas.create_image(50, 339, anchor=CENTER, image=bottomspr[1]))
+    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"nothing"+".png").convert("RGBA").resize((165,420),resample=Image.NEAREST)))
+    bottomimg.append(sprites_canvas.create_image(50, 320, anchor=CENTER, image=bottomspr[1]))
 
-    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((100*mul,250*mul),resample=Image.NEAREST)))
-    bottomimg.append(sprites_canvas.create_image(325, 290, anchor=CENTER, image=bottomspr[2]))
+    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((100,250),resample=Image.NEAREST)))
+    bottomimg.append(sprites_canvas.create_image(325, 310, anchor=CENTER, image=bottomspr[2]))
 
-    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((150*mul,375*mul),resample=Image.NEAREST)))
-    bottomimg.append(sprites_canvas.create_image(625, 339, anchor=CENTER, image=bottomspr[3]))
+    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"nothing"+".png").convert("RGBA").resize((165,420),resample=Image.NEAREST)))
+    bottomimg.append(sprites_canvas.create_image(625, 320, anchor=CENTER, image=bottomspr[3]))
 
     bottomspr.append(0)
     bottomimg.append(0)
@@ -198,13 +198,13 @@ if True:
     #     top_background_images.append(sprites_canvas.create_image(0, 0, anchor=NW, image=top_background_sprites[ind]))
     #     ind += 1
     
-    top_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/top_layer/"+"100"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
+    top_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/top_layer/"+"000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
     top_background_image = sprites_canvas.create_image(0, 0, anchor=NW, image=top_background_sprite)
 
     topspr = [0]
     topimg = [0]
 
-    topspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((165,420),resample=Image.NEAREST)))
+    topspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"nothing"+".png").convert("RGBA").resize((165,420),resample=Image.NEAREST)))
     topimg.append(sprites_canvas.create_image(325, 320, anchor=CENTER, image=topspr[1]))
 
 
@@ -2228,7 +2228,7 @@ def generate_background():
         loc = maps.current_location[1][cords[1]-1][cords[0]][0]
         top.append(loc)
         
-    letters_to_check = ["T","N","C","D","E","R","H","P","S","Q"]
+    letters_to_check = ["T","N","C","D","E","R","H","P","S","Q","F"]
 
     if(True): #bottomerer layer
         thing = str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"
@@ -2289,7 +2289,10 @@ def generate_background():
                 # bottomer_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
                 back_spr_num = back_spr_num + "0"
                 if ind != 0 and ind != 4:
-                    bottomerspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
+                    if ind != 2:
+                        bottomerspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize((100,250),resample=Image.NEAREST))
+                    else:
+                        bottomerspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize((60,175),resample=Image.NEAREST))
                     sprites_canvas.itemconfig(bottomerimg[ind],image=bottomerspr[ind])
                 # else:
                 #     pass
@@ -2337,7 +2340,10 @@ def generate_background():
                 # bottom_background_sprites[ind] = ImageTk.PhotoImage(spr.resize(dimensions,resample=Image.NEAREST))
                 back_spr_num = back_spr_num + "0"
                 if ind != 0 and ind != 4:
-                    bottomspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize(spr_size,resample=Image.NEAREST))
+                    if ind != 2:
+                        bottomspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").convert("RGBA").resize((165,420),resample=Image.NEAREST))
+                    else:
+                        bottomspr[ind] = ImageTk.PhotoImage(Image.open(current_directory+"/sprites/"+tile_file[0]+".png").resize((100*mul,250*mul),resample=Image.NEAREST))
                     sprites_canvas.itemconfig(bottomimg[ind],image=bottomspr[ind])
                 # else:
                 #     pass
