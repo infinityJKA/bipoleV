@@ -1,5 +1,5 @@
 nothing
 test
-#ENCOUNTER lob_encounter2
+#ENCOUNTER lob_boss1
 end test
 #DESTROY_SELF

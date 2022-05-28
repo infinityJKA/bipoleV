@@ -1013,7 +1013,7 @@ if True: #Fire
 
     Skull_Flame = Equipment(
     Display_Name = "Skull Flame",
-    Equip_Type = "Fire", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Equip_Type = "Undead", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Fire",
     Move_Type = "Magic", #Physical, Magic, Heal, Boost
     Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
@@ -1302,16 +1302,30 @@ if True: #Ice
 
     Skull_Frost = Equipment(
     Display_Name = "Skull Frost",
-    Equip_Type = "Ice", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Equip_Type = "Undead", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Ice",
     Move_Type = "Magic", #Physical, Magic, Heal, Boost
     Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 110, #Deducted
-    Priority = 190, #Added
+    Priority = 0, #Added
     PWR = 175,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "A powerful wave of frost\nemitted by a skulsorer."
+    )
+
+    Soul_Banishment = Equipment(
+    Display_Name = "Soul Banishment",
+    Equip_Type = "Necromancer", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 250, #Deducted
+    Priority = 0, #Added
+    PWR = 9999999,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "The absorbing of a soul\nfrom a powerful necromancer."
     )
 
 if True: #Healing

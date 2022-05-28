@@ -931,7 +931,27 @@ if True: #Labyrinth of Binding Enemies:
         Effects = []
     )
 
+    Eidola = Enemy(
+        DisplayName = "Eidola",
+        Moves = [[equipment.Skull_Flame,50,100],[equipment.Skull_Frost,50,100],[equipment.Necrobsorber,50,100],[equipment.Soul_Banishment,0,50]],
+        Weakness = ["Fist","Sword","Gun"],
+        Sprite = "eidola",
+        Level = 16,
+        EXP = 1200,
+        Gold = 3500,
+        ATK = 17500,
+        MAG = 17500,
+        HLG = 16,
+        DEF = 2500,
+        RES = 10000,
+        Max_HP = 25000,
+        Max_SP = 5000,
+        Max_Action_Count = 2,
+        Bio = "Eidola is an extremely powerful\nnecromancer that took control of\nthe Labyrinth of Binding.",
+        Effects = []
+    )
 
 if True: #Labyrinth of Binding Encounters
     lob_encounter1 = [[Skeleton_Soldier_A,Skel_Floater_A,Skel_Floater_B],"Normal"]
     lob_encounter2 = [[Skulsorer_A,Shield_Skelly_A,Shield_Skelly_B],"Normal"]
+    lob_boss1 = [[Eidola,Shield_Skelly_A,Shield_Skelly_B],"Normal"]
