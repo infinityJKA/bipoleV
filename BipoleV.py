@@ -5215,7 +5215,7 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,12)#8+3-1+100)
+Instant_Level_Up(characters.Protipole,12+200)#8+3-1+100)
 Manual_Add_Char(characters.Startole,12)
 Manual_Add_Char(characters.Bipoanderer,8+3)
 Manual_Add_Char(characters.Wicole,6+3)

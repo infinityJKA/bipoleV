@@ -1,0 +1,4 @@
+skeleton_soldier2
+Skeleton Soldier:[@]Past this walkway is the necromancer[@]empress Eidola.
+Skeleton Soldier:[@]She seems to be pretty popular[@]today, we don't usually get many[@]visitors.
+#END

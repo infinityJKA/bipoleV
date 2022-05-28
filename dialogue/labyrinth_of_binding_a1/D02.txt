@@ -1,5 +1,5 @@
 door1
-#CHOICE Descend further into the ruins?[@][A] Yes[@][B] No
+#CHOICE Enter the second floor?[@][A] Yes[@][B] No
 _
 #CHOICE_RESULT
 #END
@@ -8,7 +8,7 @@ _
 -pass- 
 _
 #MOVE_TO
-Ruins_of_Time2
-7
-4
-South
+Labyrinth_of_Binding_A2
+8
+16
+North
