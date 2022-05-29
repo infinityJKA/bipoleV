@@ -5221,31 +5221,31 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,12+4+200)#8+3-1+100)
+Instant_Level_Up(characters.Protipole,16+50)#8+3-1+100)
 Manual_Add_Char(characters.Startole,12)
 Manual_Add_Char(characters.Bipoanderer,8+3+4)
 Manual_Add_Char(characters.Wicole,16)
 Manual_Add_Char(characters.Bithecary,4+3)
-Manual_Add_Char(characters.Archle,8+4)
-Manual_Add_Char(characters.Alls_Ros,0+3-1+2+4)
-Manual_Add_Char(characters.Birowth,12+4)
+Manual_Add_Char(characters.Archle,12)
+Manual_Add_Char(characters.Alls_Ros,7)
+Manual_Add_Char(characters.Birowth,16)
 # Manual_Add_Char(characters.Birowth,13)
 Gold += 100000
 # maps.player_cords = [9,18]
 # maps.current_location = maps.Passway_Village
 # maps.current_location = maps.Bandit_Road
-maps.current_location = maps.Labyrinth_of_Binding_A2
-maps.player_cords = [8,16]
+maps.current_location = maps.Labyrinth_of_Binding_A3
+maps.player_cords = [6,19]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
-characters.Protipole.Equipped = [equipment.Slash,equipment.Healing_Aura,equipment.The_22XX] #
-characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Pierce,equipment.Guard] #
+characters.Protipole.Equipped = [equipment.Slash,equipment.Healing_Aura,equipment.Knife_Rain] #
+characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Pierce,equipment.Guard]
 characters.Bipoanderer.Equipped = [equipment.Hydro,equipment.Slice,equipment.Sword_Lance]
-characters.Archle.Equipped = [equipment.Snipe, equipment.Inferno, equipment.Enderscope_X]
+characters.Archle.Equipped = [equipment.Flame_Blade, equipment.Enderscope_X,equipment.Knife_Rain] #
 characters.Wicole.Equipped = [equipment.Shining_Staff,equipment.Holy_Light,equipment.Drown]
-characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Spark_Potion]
-characters.Bipouge.Equipped = [equipment.Spear_of_Staves,equipment.Holy_Light,equipment.Flood] #
-characters.Alls_Ros.Equipped = [equipment.Holy_Staff,equipment.Holy_Light,equipment.Drown] #
-characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Shatter,equipment.Shotgun] #
+characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Healing_Aura]
+characters.Bipouge.Equipped = [equipment.Spear_of_Staves,equipment.Holy_Light,equipment.Flood]
+characters.Alls_Ros.Equipped = [equipment.Cryoablate,equipment.Holy_Light,equipment.Knife_Rain] #
+characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Shatter,equipment.Medkit] #
 #LEVEL 17 AT END OF THE LABYRINTH
 
 equipment.key_item_inventory.append(equipment.mysterious_crystals)

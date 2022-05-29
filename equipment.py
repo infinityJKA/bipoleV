@@ -2003,7 +2003,7 @@ if True: #Boosts
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = [["DEF",0.7,3],],
+    Inflict = ["DEF",0.7,3],
     Description = "Obligatory Bipole Retro: Empires reference.\nInflict 0.7x DEF for 3 turns."
     )
 
@@ -2012,13 +2012,13 @@ if True: #Boosts
     Equip_Type = "Fire", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Boost",
     Move_Type = "Boost", #Physical, Magic, Heal, Boost
-    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 100, #Deducted
     Priority = 375, #Added
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = [["DEF",0.5,1],],
+    Inflict = ["DEF",0.5,1],
     Description = "Obligatory Bipole Retro: Empires reference.\nInflict 0.4x DEF for 1 turn."
     )
 
@@ -2033,7 +2033,7 @@ if True: #Boosts
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = [["DEF",1.3,3],],
+    Inflict = ["DEF",1.3,3],
     Description = "Obligatory Bipole Retro: Empires reference.\nInflict 1.3x DEF for 3 turns."
     )
 
@@ -2048,7 +2048,7 @@ if True: #Boosts
     PWR = 0,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = [["ATK",1.3,3],],
+    Inflict = ["ATK",1.3,3],
     Description = "Obligatory Bipole Retro: Empires reference.\nInflict 1.3x ATK for 3 turns."
     )
 
@@ -2391,8 +2391,8 @@ if True: #Boosts
     Action_Count = 1,
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = [["ATK",0.85,3],["MAG",0.85,3],["HLG",0.85,3],["DEF",0.9,3],["RES",0.9,3]],
-    Description = "Raidiole danced crazy!\n0.85x ATK/MAG/HLG for 3 turns\nand 0.9x DEF/RES for 3 turns."
+    Inflict = [["ATK",0.85,3],["MAG",0.85,3],["DEF",0.9,3],["RES",0.9,3]],
+    Description = "Raidiole danced crazy!\n0.85x ATK/MAG for 3 turns\nand 0.9x DEF/RES for 3 turns."
     )
 
 if True: #Starting Uniques
@@ -2890,4 +2890,11 @@ if True:
         text_file="virginity_hat"
     )
 
-key_item_inventory = [humphrey_lore]
+    the_holy_cards = Key_Item(
+        Display_Name="The Holy Cards",
+        sprite="the_holy_cards",
+        text_file="the_holy_cards"
+    )
+
+
+key_item_inventory = []

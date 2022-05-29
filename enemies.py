@@ -976,3 +976,4 @@ if True: #Labyrinth of Binding Encounters
     lob_encounter1 = [[Skeleton_Soldier_A,Skel_Floater_A,Skel_Floater_B],"Normal"]
     lob_encounter2 = [[Skulsorer_A,Shield_Skelly_A,Shield_Skelly_B],"Normal"]
     lob_boss1 = [[Eidola,Shield_Skelly_A,Shield_Skelly_B],"Normal"]
+    lob_boss2 = [[Raidiole],"Big"]
