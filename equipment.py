@@ -78,6 +78,48 @@ if True: #Fists
     Description = "Perform a strong punch."
     )
 
+    Fire_Card = Equipment(
+    Display_Name = "Fire Card",
+    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 25,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Perform an extremely weak punch\nthat deals fire damage."
+    )
+
+    Water_Card = Equipment(
+    Display_Name = "Water Card",
+    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Water",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 25,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Perform an extremely weak punch\nthat deals water damage."
+    )
+
+    Ice_Card = Equipment(
+    Display_Name = "Ice Card",
+    Equip_Type = "Fists", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ice",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 100, #Added
+    PWR = 25,
+    Purchasing_Price = 750, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Perform an extremely weak punch\nthat deals ice damage."
+    )
+
     Slam = Equipment(
     Display_Name = "Slam",
     Equip_Type = "Slime", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
@@ -190,7 +232,7 @@ if True: #Swords
     PWR = 100,
     Purchasing_Price = 500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Cut the opponent with a weak strike"
+    Description = "Cut the opponent with a weak strike."
     )
 
     Slice = Equipment(
@@ -204,7 +246,7 @@ if True: #Swords
     PWR = 150,
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Cut the opponent with an average strike"
+    Description = "Cut the opponent with an average strike."
     )
 
     Slash = Equipment(
@@ -218,7 +260,21 @@ if True: #Swords
     PWR = 200,
     Purchasing_Price = 1500, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Description = "Cut the opponent with a strong strike"
+    Description = "Cut the opponent with a strong strike."
+    )
+
+    Wrath_of_the_Ultimate_Shareholder = Equipment(
+    Display_Name = "Wrath of the Ultimate Shareholder",
+    Equip_Type = "Sword", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 50, #Deducted
+    Priority = 425, #Added
+    PWR = 250,
+    Purchasing_Price = 50000, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A legendary katana, the strongest\nsword you can get in the game."
     )
 
     Sweep = Equipment(
@@ -2395,6 +2451,22 @@ if True: #Boosts
     Description = "Raidiole danced crazy!\n0.85x ATK/MAG for 3 turns\nand 0.9x DEF/RES for 3 turns."
     )
 
+    Really_Cool_Monkey_Picture = Equipment(
+    Display_Name = "Really Cool Monkey Picture",
+    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 750, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 1,
+    Purchasing_Price = 100, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["MAG",0.5,2],
+    Description = "It's a really cool picture of a monkey.\n0.5x MAG for 2 turns."
+    )
+
 if True: #Starting Uniques
 
     The_22XX = Equipment(
@@ -2895,6 +2967,25 @@ if True:
         sprite="the_holy_cards",
         text_file="the_holy_cards"
     )
+
+    super_pure_diamond = Key_Item(
+        Display_Name="Super Pure Diamond",
+        sprite="super_pure_diamond",
+        text_file="super_pure_diamond"
+    )
+
+    virginity_propaganda = Key_Item(
+        Display_Name="Virginity Propaganda",
+        sprite="virginity_propaganda",
+        text_file="virginity_propaganda"
+    )
+
+    virginity_propaganda_signed = Key_Item(
+        Display_Name="Virginity Prop. (signed)",
+        sprite="virginity_propaganda_signed",
+        text_file="virginity_propaganda_signed"
+    )
+
 
 
 key_item_inventory = []

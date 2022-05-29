@@ -1,0 +1,27 @@
+bird
+#SENDIFKEYITEM card1
+has
+doesnt
+_
+/==/.has
+#SENDIFKEYITEM card2
+also has
+doesnt
+_
+/==/.also has
+Bird:[@]Oh! My trading cards!
+Bird:[@]Could I have them back!?
+#REMOVE_KEYITEM card1
+#REMOVE_KEYITEM card2
+[Protipole handed over the cards]
+Bird:[@]Thank you so much!
+Bird:[@]Here, I'll give you my[@]Virginity Hat!
+#GAIN_KEYITEM virginity_hat
+Bird:[@]If you want some more cards,[@]I'm willing to sell a few duplicates[@]that I have.
+#OVERRIDE_SELF S01
+_
+/==/.doesnt
+Bird:[@]If you find two trading cards in the[@]labyrinth, could you bring them back[@]to me?
+Bird:[@]I was only on the first floor of the[@]labyrinth, so both cards should be in A1.
+Bird:[@]If you bring the cards back to me, I'll[@]trade them with you for a Virginity Hat!
+#END

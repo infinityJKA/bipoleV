@@ -1,6 +1,6 @@
 consul_herald
 Consul Herald:[@]Greetings.
-Consul Herald:[@]I am Consule Herald of the Metalimnion Conclave,[@] portal comptroller of the Surface Realm.
+Consul Herald:[@]I am Consule Herald of the Metalimnion[@]Conclave, portal comptroller of the[@]Surface Realm.
 #SENDIFKEYITEM humphrey_lore_read
 has
 doesnt

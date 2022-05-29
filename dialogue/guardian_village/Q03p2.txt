@@ -1,0 +1,18 @@
+the_virginator
+#SENDIFKEYITEM virginity_propaganda_signed
+has
+doesnt
+_
+/==/.has
+The Virginator:[@]Yes!
+The Virginator:[@]You've got the propaganda signed!
+The Virginator:[@]Thank you!
+#REMOVE_KEYITEM virginity_propaganda_signed
+[Protipole handed over the[@]signed Virginity Propaganda]
+The Virginator:[@]You've done great work for[@]humanity, I say!
+The Virginator:[@]Since you've been so helpful to[@]the Virginatorz Movement, I'll let[@]you buy to strongest katana you'll ever[@]see, the Wrath of the Ultimate Shareholder.
+#OVERRIDE_SELF S02
+_
+/==/.doesnt
+The Virginator:[@]Could you go find someone who[@]regrets losing thier virginity, and[@]get them to sign the Virginity Propaganda?
+#END

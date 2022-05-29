@@ -1,0 +1,27 @@
+the_virginator
+#SENDIFKEYITEM virginity_hat
+has
+doesnt
+_
+/==/.has
+#SENDIFKEYITEM neville_coin
+also has
+doesnt
+_
+/==/.also has
+The Virginator:[@]Hmmmm...
+The Virginator:[@]A Virginity Hat and a Neville[@]Coin...
+The Virginator:[@]It seems that you really are a[@]virgin!
+The Virginator:[@]Well, welcome to the Virginatorz[@]Movement, good friend.
+The Virginator:[@]And here's your free Super Pure Diamond.
+#GAIN_KEYITEM super_pure_diamond
+The Virginator:[@]If you want to help spread our[@]movement, come talk to me again.
+The Virginator:[@]I've got some more work for you to do.
+#OVERRIDE_SELF Q03
+_
+/==/.doesnt
+The Virginator:[@]I need a virgin to help me[@]with my virginity propaganda.
+The Virginator:[@]If you can prove to me that you're[@]a virgin, I'll induct you into the Virginatorz[@]Movement and give you a Super Pure Diamond[@]as a bonus!
+The Virginator:[@]So to prove your virginity to me,[@]show me that you own a Virginity Hat and a[@]Neville Coin.
+The Virginator:[@]If you can do that, I'll let you[@]into the Virginatorz Movement.
+#END

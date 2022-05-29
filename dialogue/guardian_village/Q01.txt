@@ -1,0 +1,9 @@
+bird
+Bird:[@]Hey, you look like an[@]adventurer.
+Bird:[@]If you're going to the Labyrinth[@]of Binding, could you he me[@]out a bit?
+Bird:[@]I was frolicking in the labyrinth[@]the other day, and dropped two of[@]my trading cards!
+Bird:[@]If you find two trading cards in the[@]labyrinth, could you bring them back[@]to me?
+Bird:[@]I was only on the first floor of the[@]labyrinth, so both cards should be in A1.
+Bird:[@]If you bring the cards back to me, I'll[@]trade them with you for a Virginity Hat!
+#OVERRIDE_SELF Q01p2
+#END

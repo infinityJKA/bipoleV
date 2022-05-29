@@ -8,4 +8,22 @@ Quondam:[@]All of these old people buried[@]here centuries ago terrify me.
 Quondam:[@]You know, I should've stayed[@]a virgin.
 Quondam:[@]Kid, have some self-respect for[@]yourself and listen to my advice.
 Quondam:[@]Don't hang out with a girl who's[@]going to become a necromantic dictator.
+#SENDIFKEYITEM virginity_propaganda
+has
+doesnt
+_
+/==/.has
+Protipole:[@]Hey, if you regret losing your[@]virginity, could you sign this?
+Quondam:[@]Huh? What's this?
+Protipole:[@]It's propaganda from the, er...[@]Virginatorz Movement.
+Quondam:[@]That sounds stupid.
+Quondam:[@]But I do really regret losing my[@]virginity...
+Quondam:[@]Sure, I'll sign it.
+(Quondam signs the Virginity Propaganda!)
+#GAIN_KEYITEM virginity_propaganda_signed
+#REMOVE_KEYITEM virginity_propaganda
+Quondam:[@]Best of luck to you and your[@]"Virginatorz Movement".
+Protipole:[@]Ummm... sure. Whatever you say.
+#OVERRIDE_SELF T05_2
+/==/doesnt
 #END

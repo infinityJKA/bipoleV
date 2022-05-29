@@ -1,0 +1,26 @@
+bro2
+Bro:[@]For only 1500G, I'll give[@]you a really cool picture[@]of a monkey.
+Bro:[@]Trust me, it'll probably be[@]worth a lot if you sell it.
+#CHOICE =Pay 1500G?=[@][A] Yes[@][B] No
+#CHOICE_RESULT_GO_TO
+PAY
+DONTPAY
+_
+/==/.PAY
+#SENDIFGOLD>= 1500
+PAYING
+CANT
+_
+/==/.PAYING
+#GAIN_EQUIPMENT Really_Cool_Monkey_Picture
+#REMOVE_GOLD 1500
+Bro:[@]Come again!
+#END
+_
+/==/.DONTPAY
+Bro:[@]You're missing out, bro,[@]missing out.
+#END
+_
+/==/.CANT
+Bro:[@]Come back when you aren't[@]broke as shit.
+#END
