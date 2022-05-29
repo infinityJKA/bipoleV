@@ -579,6 +579,21 @@ if True: #Lances
     Description = "The Comically Large Pick is forged\nfrom the bone arrow of over\nten different ostriches."
     )
 
+    Spikey_Spray = Equipment(
+    Display_Name = "Spikey Spray",
+    Equip_Type = "Raidiole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Lance",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 145,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A spray of spikey bullets.",
+    Action_Count = 1
+    )
+
 if True: #Staves
 
     Wooden_Staff = Equipment(
@@ -708,6 +723,21 @@ if True: #Staves
     Description = "BONK!"
     )
 
+    Staves_Spray = Equipment(
+    Display_Name = "Staves Spray",
+    Equip_Type = "Raidiole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Staff",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 145,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A spray of bullets that somehow\ndeal staff damage.",
+    Action_Count = 1
+    )
+
 if True: #Bows
 
     Bow = Equipment(
@@ -821,6 +851,21 @@ if True: #Bows
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "The Creators strived to create or discover an\nexistence above them, thus creating the\nCreations: demi-gods to the Creators. Many\nother demi-gods to different hierachies\nwere formed through various means, such\nas the Nexters creating the Dimensionals:\ndemi-gods to the Realmers."
+    )
+
+    Piercing_Shot = Equipment(
+    Display_Name = "Piercing Shot",
+    Equip_Type = "Raidiole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Bow",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 175,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A powerful, piercing bullet.",
+    Action_Count = 0.75
     )
 
 if True: #Fire
@@ -1025,6 +1070,21 @@ if True: #Fire
     Description = "A powerful wave of flames\nemitted by the floating skull."
     )
 
+    Flaming_Shot = Equipment(
+    Display_Name = "Flaming Shot",
+    Equip_Type = "Raidiole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 175,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A powerful bullet that's literally\non fire.",
+    Action_Count = 0.75
+    )
+
 if True: #Water
     Aqua = Equipment(
     Display_Name = "Aqua",
@@ -1153,6 +1213,21 @@ if True: #Water
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Always carry a bucket on you."
+    )
+
+    Magic_Shot = Equipment(
+    Display_Name = "Magic Shot",
+    Equip_Type = "Raidiole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Water",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 175,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "A powerful, magical bullet.",
+    Action_Count = 0.75
     )
 
 if True: #Ice
@@ -1327,6 +1402,7 @@ if True: #Ice
     Heal_Stat = None, #The stat to heal,
     Description = "The absorbing of a soul\nfrom a powerful necromancer."
     )
+
 
 if True: #Healing
     Heal = Equipment(
@@ -1543,6 +1619,22 @@ if True: #Healing
     Inflict = [],
     Description = "The Sanguineous Blade was forged\nprior to the Finis Event by a scientist\nknown as Vlud First in 2994 AN. It uses\nCELL technology to not only harness Mana,\nbut also the Life Energy those it strikes while\nactivated. The wielder of the blade can activate\nthe LE absorption by sending a signal of Mana\nenergy through parts of the hilt.",
     Action_Count = 0.5
+    )
+
+    Metaphysical_Bullet = Equipment(
+    Display_Name = "Metaphysical Bullet",
+    Equip_Type = "Raidiole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 300, #Deducted
+    Priority = 0, #Added
+    PWR = -5,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "SP", #The stat to heal,
+    Inflict = [],
+    Description = "A bullet that deals damage\nto the metaphysical.",
+    Action_Count = 1
     )
 
 
@@ -2285,6 +2377,22 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = [["ATK",0.85,4],["MAG",0.85,4],["HLG",0.85,4]],
     Description = "The power of a skulsorer is not\nto be underestimated. They have\nthe ability to manipulate both Mana\nEnergy and Life Energy without external aid.\n0.85x ATK/MAG/HLG for 4 turns."
+    )
+
+    Incite_Fear = Equipment(
+    Display_Name = "Incite Fear",
+    Equip_Type = "Skeleton", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 1,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",0.85,3],["MAG",0.85,3],["HLG",0.85,3],["DEF",0.9,3],["RES",0.9,3]],
+    Description = "Raidiole danced crazy!\n0.85x ATK/MAG/HLG for 3 turns\nand 0.9x DEF/RES for 3 turns."
     )
 
 if True: #Starting Uniques

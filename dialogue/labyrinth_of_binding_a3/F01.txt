@@ -1,0 +1,30 @@
+raidiole_no_guns
+#SET_BIG_IMAGE raidiole_no_guns
+Raidiole:[@]Hey!
+Raidiole:[@]Who the hell are you?
+Raidiole:[@]If you're trying to get[@]the Holy Cards, we might[@]have a issue.
+Raidiole:[@]You, see... I'm Raidiole,[@]the commander of the god damn[@]Empire of Eviole.
+Raidiole:[@]And I want those Holy Cards.
+Raidiole:[@]I don't know if that message[@]in my castle was a prank, but it[@]makes enough sense for me to listen[@]to it!
+Protipole:[@]There was a message on your[@]castle as well?
+Raidiole:[@]Yep, and it was signed by some[@]guy called "The New Link".
+Raidiole:[@]Now I don't know what a "Link"[@]is and why it's "New"...
+Raidiole:[@]But I do know how to fight.
+Raidiole:[@]And since you're also trying to[@]find the cards...
+#SET_BIG_IMAGE raidiole_one_gun
+Raidiole:[@]We've got a little situaton.
+Raidiole:[@]And I know that girl downstairs[@]said to not mess this place up...
+#SET_BIG_IMAGE raidiole
+Raidiole:[@]But I like a little gunplay.
+#ENCOUNTER lob_boss2
+#SET_BIG_IMAGE raidiole_no_guns
+Raidiole:[@]Damn damn damn bro, you didn't[@]have to hurt me like that.
+Raidiole:[@]...
+Raidiole:[@]Shit.
+Raidiole:[@]I really want those Holy Cards...
+Raidiole:[@]But I'm probably going to die[@]if I keep fighting...
+Raidiole:[@]...
+Raidiole:[@]I must make a strategic retreat...
+#SET_IMAGE nothing
+(Raidiole runs away...)
+#DESTROY_SELF

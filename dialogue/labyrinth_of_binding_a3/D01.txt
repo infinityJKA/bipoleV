@@ -1,0 +1,14 @@
+door1
+#CHOICE Return to Guardian Village?[@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END
+-pass-
+-pass-
+-pass- 
+_
+#MOVE_TO
+Guardian_Village
+8
+4
+South

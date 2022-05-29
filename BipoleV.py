@@ -5233,8 +5233,9 @@ Manual_Add_Char(characters.Birowth,12+4)
 Gold += 100000
 # maps.player_cords = [9,18]
 # maps.current_location = maps.Passway_Village
-maps.current_location = maps.Bandit_Road
-maps.player_cords = [11,4]
+# maps.current_location = maps.Bandit_Road
+maps.current_location = maps.Labyrinth_of_Binding_A2
+maps.player_cords = [8,16]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
 characters.Protipole.Equipped = [equipment.Slash,equipment.Healing_Aura,equipment.The_22XX] #
 characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Pierce,equipment.Guard] #

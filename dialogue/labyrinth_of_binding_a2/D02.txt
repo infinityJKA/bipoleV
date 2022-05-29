@@ -1,5 +1,5 @@
 door1
-#CHOICE Descend to the first floor?[@][Recommended Level: 13][@][A] Yes[@][B] No
+#CHOICE Enter the third floor?[@][A] Yes[@][B] No
 _
 #CHOICE_RESULT
 #END
@@ -8,7 +8,7 @@ _
 -pass- 
 _
 #MOVE_TO
-Labyrinth_of_Binding_A1
-10
-20
-South
+Labyrinth_of_Binding_A3
+6
+19
+North

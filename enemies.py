@@ -951,6 +951,27 @@ if True: #Labyrinth of Binding Enemies:
         Effects = []
     )
 
+    Raidiole = Enemy(
+        DisplayName = "Raidiole",
+        Moves = [[equipment.Piercing_Shot,75,100],[equipment.Spikey_Spray,75,100],[equipment.Incite_Fear,0,90],[equipment.Metaphysical_Bullet,0,75],[equipment.Flaming_Shot,0,75],[equipment.Magic_Shot,0,75],[equipment.Staves_Spray,0,75]],
+        Weakness = ["Sword","Ice","Gun"],
+        Sprite = "raidiole",
+        Level = 16,
+        EXP = 1200,
+        Gold = 4500,
+        ATK = 17500,
+        MAG = 17500,
+        HLG = 18,
+        DEF = 3250,
+        RES = 3250,
+        Max_HP = 25000,
+        Max_SP = 15000,
+        Max_Action_Count = 3.5,
+        Bio = "Raidiole is a commander in the Empire\nof Eviole, and wishes to obtain\nthe Holy Cards before Protipole, probably\nfor evil reasons.",
+        Effects = []
+    )
+
+
 if True: #Labyrinth of Binding Encounters
     lob_encounter1 = [[Skeleton_Soldier_A,Skel_Floater_A,Skel_Floater_B],"Normal"]
     lob_encounter2 = [[Skulsorer_A,Shield_Skelly_A,Shield_Skelly_B],"Normal"]
