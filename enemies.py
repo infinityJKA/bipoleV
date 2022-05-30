@@ -979,26 +979,71 @@ if True: #Labyrinth of Binding Encounters
 
 
 if True: #Alter Realm Enemies:
-    # Red_Slime_EX_A = Enemy(
-    #     DisplayName = "Red Slime EX A",
-    #     Moves = [[equipment.Slam,0,100]],
-    #     Weakness = ["Lance","Water"],
-    #     Sprite = "red_slime",
-    #     Level = 17,
-    #     EXP = 250,
-    #     Gold = 750,
-    #     ATK = 7500,
-    #     MAG = 6250,
-    #     HLG = 18,
-    #     DEF = 4000,
-    #     RES = 4000,
-    #     Max_HP = 300,
-    #     Current_SP = 100,
-    #     Max_SP = 100,
-    #     Bio = "A stronger Red Slime from\nthe Alter Realm.",
-    #     Effects = []
-    # )
-    pass
+    Aqua = Enemy(
+        DisplayName = "Mirrored A",
+        Moves = [[equipment.Torrent,0,100],[equipment.Slash,0,100],[equipment.Flood,0,100]],
+        Weakness = ["Lance","Bow","Ice","Gun"],
+        Sprite = "aqua",
+        Level = 17,
+        EXP = 250,
+        Gold = 750,
+        ATK = 9500,
+        MAG = 9500,
+        HLG = 18,
+        DEF = 2500,
+        RES = 1750,
+        Max_HP = 2500,
+        Current_SP = 5000,
+        Max_SP = 5000,
+        Bio = "The Tale of the Infinity Realm: Expedition.",
+        Effects = [],
+        Max_Action_Count = 3
+    )
 
+    Lead = Enemy(
+        DisplayName = "Mirrored B",
+        Moves = [[equipment.Fire_Card,0,100],[equipment.Water_Card,0,100],[equipment.Ice_Card,0,100]],
+        Weakness = ["Fists","Staff","Water","Gun"],
+        Sprite = "lead",
+        Level = 17,
+        EXP = 250,
+        Gold = 750,
+        ATK = 17500,
+        MAG = 17500,
+        HLG = 18,
+        DEF = 2000,
+        RES = 2000,
+        Max_HP = 3000,
+        Current_SP = 7500,
+        Max_SP = 7500,
+        Bio = "Bipole III: Conspiracy of the Mechanical Entity.",
+        Effects = [],
+        Max_Action_Count = 5
+    )
 
+    Fael = Enemy(
+        DisplayName = "Mirrored C",
+        Moves = [[equipment.Snipe,0,5],[equipment.Recover,0,100]],
+        Weakness = ["Fists","Sword","Lance","Staff","Fire"],
+        Sprite = "fael",
+        Level = 17,
+        EXP = 250,
+        Gold = 750,
+        ATK = 9500,
+        MAG = 9500,
+        HLG = 100,
+        DEF = 1500,
+        RES = 2000,
+        Max_HP = 2500,
+        Current_SP = 5000,
+        Max_SP = 5000,
+        Bio = "The Tale of the Infinity Realm: Expedition.",
+        Effects = [],
+        Max_Action_Count = 3
+    )
+
+if True: #Alter Realm Encounters
+    ar_encounter1 = [[Aqua,Lead,Fael],"Normal"]
+    ar_encounter2 = [[Aqua,Lead,Fael],"Normal"]
+    ar_encounter3 = [[Aqua,Lead,Fael],"Normal"]
 

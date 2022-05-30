@@ -4038,14 +4038,18 @@ def Enemy_Turn():
                     print("len(possible_targets) = " + str(len(possible_targets)))
                     target.append(possible_targets[random.randint(0,len(possible_targets)-1)][0])
                     print("target: "+str(target)+" | first displayname: "+target[0].DisplayName)
-                if Move_to_Use.Target == "One Ally":
-                        target = None
-                        lowest_hp = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
-                        possible_targets = []
-                        for enemy in current_encounter:
-                            if enemy.Current.HP < lowest_hp:
-                                target = enemy
-                                lowest_hp = enemy.Current.HP
+                if Move_to_Use.Target == "Single Ally":
+                    print("SINGLE ALLY TARGET")
+                    target = None
+                    lowest_hp = -1
+                    possible_targets = []
+                    for enemy in current_encounter:
+                        if (enemy.Max_HP-enemy.Current_HP) > lowest_hp:
+                            print("new target, "+str(enemy.Max_HP-enemy.Current_HP)+" (hp lost) is more than "+str(lowest_hp))
+                            target = [enemy]
+                            lowest_hp = (enemy.Max_HP-enemy.Current_HP)
+                        else:
+                            print("no target change, "+str(enemy.Max_HP-enemy.Current_HP)+" (hp lost) is less than "+str(lowest_hp))
                 elif Move_to_Use.Target == "All Allies":
                     target = current_encounter
                 elif Move_to_Use.Target == "All Enemies":
@@ -5221,13 +5225,13 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,16+50)#8+3-1+100)
+Instant_Level_Up(characters.Protipole,16)#8+3-1+100)
 Manual_Add_Char(characters.Startole,12)
 Manual_Add_Char(characters.Bipoanderer,8+3+4)
 Manual_Add_Char(characters.Wicole,16)
 Manual_Add_Char(characters.Bithecary,4+3)
 Manual_Add_Char(characters.Archle,12)
-Manual_Add_Char(characters.Alls_Ros,7)
+Manual_Add_Char(characters.Alls_Ros,8)
 Manual_Add_Char(characters.Birowth,16)
 # Manual_Add_Char(characters.Birowth,13)
 Gold += 100000
@@ -5237,15 +5241,15 @@ Gold += 100000
 maps.current_location = maps.Labyrinth_of_Binding_A3
 maps.player_cords = [6,19]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
-characters.Protipole.Equipped = [equipment.Slash,equipment.Healing_Aura,equipment.Knife_Rain] #
+characters.Protipole.Equipped = [equipment.Wrath_of_the_Ultimate_Shareholder,equipment.Pierce,equipment.Healing_Aura] #
 characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Pierce,equipment.Guard]
 characters.Bipoanderer.Equipped = [equipment.Hydro,equipment.Slice,equipment.Sword_Lance]
-characters.Archle.Equipped = [equipment.Flame_Blade, equipment.Enderscope_X,equipment.Knife_Rain] #
+characters.Archle.Equipped = [equipment.Flame_Blade, equipment.Snipe,equipment.Enderscope_X] #
 characters.Wicole.Equipped = [equipment.Shining_Staff,equipment.Holy_Light,equipment.Drown]
 characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Healing_Aura]
 characters.Bipouge.Equipped = [equipment.Spear_of_Staves,equipment.Holy_Light,equipment.Flood]
-characters.Alls_Ros.Equipped = [equipment.Cryoablate,equipment.Holy_Light,equipment.Knife_Rain] #
-characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Shatter,equipment.Medkit] #
+characters.Alls_Ros.Equipped = [equipment.Cryoablate,equipment.Holy_Staff,equipment.Holy_Light] #
+characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Pierce,equipment.Shatter] #
 #LEVEL 17 AT END OF THE LABYRINTH
 
 equipment.key_item_inventory.append(equipment.mysterious_crystals)
