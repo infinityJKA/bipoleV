@@ -971,9 +971,34 @@ if True: #Labyrinth of Binding Enemies:
         Effects = []
     )
 
-
 if True: #Labyrinth of Binding Encounters
     lob_encounter1 = [[Skeleton_Soldier_A,Skel_Floater_A,Skel_Floater_B],"Normal"]
     lob_encounter2 = [[Skulsorer_A,Shield_Skelly_A,Shield_Skelly_B],"Normal"]
     lob_boss1 = [[Eidola,Shield_Skelly_A,Shield_Skelly_B],"Normal"]
     lob_boss2 = [[Raidiole],"Big"]
+
+
+if True: #Alter Realm Enemies:
+    # Red_Slime_EX_A = Enemy(
+    #     DisplayName = "Red Slime EX A",
+    #     Moves = [[equipment.Slam,0,100]],
+    #     Weakness = ["Lance","Water"],
+    #     Sprite = "red_slime",
+    #     Level = 17,
+    #     EXP = 250,
+    #     Gold = 750,
+    #     ATK = 7500,
+    #     MAG = 6250,
+    #     HLG = 18,
+    #     DEF = 4000,
+    #     RES = 4000,
+    #     Max_HP = 300,
+    #     Current_SP = 100,
+    #     Max_SP = 100,
+    #     Bio = "A stronger Red Slime from\nthe Alter Realm.",
+    #     Effects = []
+    # )
+    pass
+
+
+

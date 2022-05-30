@@ -2,6 +2,8 @@ radical_warper
 Radical Warper:[@]Yo yo yo kid!
 Radical Warper:[@]Do ya know 'bout warp tiles and[@]swap tiles?
 Radical Warper:[@]Bet ya don't, nerd!
+Radical Warper:[@]I'm so rad, yo, that I've got[@]a Useless Award, yeah!
+Radical Warper:[@]A Useless Award that you don't[@]have!
 /==/.START
 #INIT_MULTICHOICE
 #MULTICHOICE
