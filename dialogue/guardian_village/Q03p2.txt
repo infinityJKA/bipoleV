@@ -10,6 +10,7 @@ The Virginator:[@]Thank you!
 #REMOVE_KEYITEM virginity_propaganda_signed
 [Protipole handed over the[@]signed Virginity Propaganda]
 The Virginator:[@]You've done great work for[@]humanity, I say!
+#GAIN_KEYITEM the_power_of_self_respect
 The Virginator:[@]Since you've been so helpful to[@]the Virginatorz Movement, I'll let[@]you buy to strongest katana you'll ever[@]see, the Wrath of the Ultimate Shareholder.
 #OVERRIDE_SELF S02
 _

@@ -5257,6 +5257,11 @@ equipment.key_item_inventory.append(equipment.humphrey_lore_read)
 equipment.key_item_inventory.append(equipment.ecochecker)
 equipment.key_item_inventory.append(equipment.bonus_shop_pass_ii)
 
+equipment.key_item_inventory.append(equipment.virginity_hat)
+equipment.key_item_inventory.append(equipment.neville_coin)
+equipment.key_item_inventory.append(equipment.virginity_propaganda_signed)
+
+
 
 for char in characters.All_Recruited_Characters:
     char.Current_HP = char.Max_HP

@@ -205,6 +205,20 @@ if True: #Fists
     Action_Count = 0.65,
     )
 
+    Red_Card = Equipment(
+    Display_Name = "Red Card",
+    Equip_Type = "Investigator from Isle", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fists",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 150, #Deducted
+    Priority = 0, #Added
+    PWR = 250,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Objection!"
+    )
+
 if True: #Swords
 
     Dagger = Equipment(
@@ -476,6 +490,34 @@ if True: #Swords
     Heal_Stat = None, #The stat to heal,
     Description = "After The Shadow escaped from the\nDark Tome in 605 RT, most of it\nwas resealed by Magiole. However, some\nof it escaped and gew in power until it\nattacked the Bieace Counsel of Magic again in\n685, in which it was sealed by Bizard using\nthe Holy Cards passed down to him from\nLengenro.",
     Action_Count = 0.5
+    )
+
+    Infinite_Blade = Equipment(
+    Display_Name = "Infinite Blade",
+    Equip_Type = "Infinity", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Magic",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 50, #Deducted
+    Priority = 0, #Added
+    PWR = 210,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Infinity's Unique Spell."
+    )
+
+    Infinite_Blade_Y = Equipment(
+    Display_Name = "Infinite Blade Y",
+    Equip_Type = "Infinity", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Magic",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 350, #Deducted
+    Priority = 0, #Added
+    PWR = 300,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Infinity's Unique Spell, activated to\nit's third form."
     )
 
 if True: #Lances
@@ -1141,6 +1183,20 @@ if True: #Fire
     Action_Count = 0.75
     )
 
+    Nolmech_Blast = Equipment(
+    Display_Name = "Nolmech Blast",
+    Equip_Type = "Neville ZX", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 250, #Deducted
+    Priority = 0, #Added
+    PWR = 150,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Nolmech is an empty shell of a mechanical.\nNeville ZX's tractor possesses mechanical bodies\nand allows him to control them."
+    )
+
 if True: #Water
     Aqua = Equipment(
     Display_Name = "Aqua",
@@ -1682,7 +1738,7 @@ if True: #Healing
     Equip_Type = "Raidiole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Gun",
     Move_Type = "Heal", #Physical, Magic, Heal, Boost
-    Target = "Single Ally", #Single Enemy, Single Ally, All Enemies, All Allies 
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 300, #Deducted
     Priority = 0, #Added
     PWR = -5,
@@ -1690,6 +1746,22 @@ if True: #Healing
     Heal_Stat = "SP", #The stat to heal,
     Inflict = [],
     Description = "A bullet that deals damage\nto the metaphysical.",
+    Action_Count = 1
+    )
+
+    Infinite_Blade_X = Equipment(
+    Display_Name = "Infinite Blade X",
+    Equip_Type = "Infinity", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Sword",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 150, #Deducted
+    Priority = 0, #Added
+    PWR = -35,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "SP", #The stat to heal,
+    Inflict = [],
+    Description = "Infinity's Unique Spell, activated to\nit's second form.",
     Action_Count = 1
     )
 
@@ -1850,6 +1922,20 @@ if True: #Guns
         Heal_Stat = None, #The stat to heal,
         Description = "Greg shoots his gun (the gun\nis called the Pew Pewer)."
         )
+
+    ZXer = Equipment(
+    Display_Name = "ZXer",
+    Equip_Type = "Neville ZX", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 200,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "The ZXer is Neville ZX's signature gun.\nIt was originally the gun of a Sazuichian\nsoldier, but Neville ZX found in the ruins\nafter the Nidus Assault. He has carved \"ZXer\"\non the side of the gun."
+    )
 
 if True: #Boosts
 
@@ -2106,6 +2192,22 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = ["ATK",1.3,3],
     Description = "Obligatory Bipole Retro: Empires reference.\nInflict 1.3x ATK for 3 turns."
+    )
+
+    Really_Cool_Monkey_Picture = Equipment(
+    Display_Name = "Really Cool Monkey Picture",
+    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 750, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Action_Count = 1,
+    Purchasing_Price = 100, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["MAG",0.5,2],
+    Description = "It's a really cool picture of a monkey.\n0.5x MAG for 2 turns."
     )
 
     Energize = Equipment(
@@ -2451,20 +2553,64 @@ if True: #Boosts
     Description = "Raidiole danced crazy!\n0.85x ATK/MAG for 3 turns\nand 0.9x DEF/RES for 3 turns."
     )
 
-    Really_Cool_Monkey_Picture = Equipment(
-    Display_Name = "Really Cool Monkey Picture",
-    Equip_Type = "Bithecary", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Hot_Glue_Gun = Equipment(
+    Display_Name = "Hot Glue Gun",
+    Equip_Type = "Neville ZX", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Boost",
-    Move_Type = "Boost", #Physical, Magic, Heal, Boost
-    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
-    SP_Cost = 750, #Deducted
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
     Priority = 0, #Added
     PWR = 0,
-    Action_Count = 1,
-    Purchasing_Price = 100, #Sells for half of the purchasing price, cannot be sold if 0
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
-    Inflict = ["MAG",0.5,2],
-    Description = "It's a really cool picture of a monkey.\n0.5x MAG for 2 turns."
+    Inflict = [["DEF",0.9,3],["RES",0.9,3],["ATK",0.9,3],["MAG",0.9,3]],
+    Description = "Nani!?\n0.9x DEF/RES/ATK/MAG for 3 turns."
+    )
+
+    Question = Equipment(
+    Display_Name = "Question",
+    Equip_Type = "Investigator from Isle", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["DEF",0.8,3],["RES",0.8,3]],
+    Description = "Hmmmm...?\n0.8x DEF/RES for 3 turns."
+    )
+
+    Magic_Shield = Equipment(
+    Display_Name = "Magic Shield",
+    Equip_Type = "Egam", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 200, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["RES",1.2,3],
+    Description = "Inflict 1.2x RES for 3 turns."
+    )
+
+    Attack_Shield = Equipment(
+    Display_Name = "Attack Shield",
+    Equip_Type = "Egam", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Boost", #Physical, Magic, Heal, Boost
+    Target = "All Allies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 200, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = ["DEF",1.2,3],
+    Description = "Inflict 1.2x DEF for 3 turns."
     )
 
 if True: #Starting Uniques
@@ -2651,7 +2797,7 @@ class Consumable_Item:
         self.Amount = Amount
         self.Description = Description
 
-if True:
+if True: #Consumable_Items
 
     Water = Consumable_Item(
     Display_Name = "Water",
@@ -2876,7 +3022,7 @@ class Key_Item:
         self.sprite = sprite
         self.text_file = text_file
 
-if True:
+if True: #Key Items
 
     test_key = Key_Item(
         Display_Name="test key",
@@ -2984,6 +3130,12 @@ if True:
         Display_Name="Virginity Prop. (signed)",
         sprite="virginity_propaganda_signed",
         text_file="virginity_propaganda_signed"
+    )
+
+    the_power_of_self_respect = Key_Item(
+        Display_Name="The Power of Self-Respect",
+        sprite="the_power_of_self-respect",
+        text_file="the_power_of_self-respect"
     )
 
 

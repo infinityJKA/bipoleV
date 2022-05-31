@@ -1,3 +1,4 @@
+from numpy import Inf
 import equipment
 class Enemy:
     def __init__(self,
@@ -985,11 +986,11 @@ if True: #Alter Realm Enemies:
         Weakness = ["Lance","Bow","Ice","Gun"],
         Sprite = "aqua",
         Level = 17,
-        EXP = 250,
+        EXP = 400,
         Gold = 750,
         ATK = 9500,
         MAG = 9500,
-        HLG = 18,
+        HLG = 75,
         DEF = 2500,
         RES = 1750,
         Max_HP = 2500,
@@ -1006,11 +1007,11 @@ if True: #Alter Realm Enemies:
         Weakness = ["Fists","Staff","Water","Gun"],
         Sprite = "lead",
         Level = 17,
-        EXP = 250,
+        EXP = 300,
         Gold = 750,
-        ATK = 17500,
-        MAG = 17500,
-        HLG = 18,
+        ATK = 19000,
+        MAG = 19000,
+        HLG = 175,
         DEF = 2000,
         RES = 2000,
         Max_HP = 3000,
@@ -1023,11 +1024,11 @@ if True: #Alter Realm Enemies:
 
     Fael = Enemy(
         DisplayName = "Mirrored C",
-        Moves = [[equipment.Snipe,0,5],[equipment.Recover,0,100]],
+        Moves = [[equipment.Snipe,0,100],[equipment.Recover,0,100]],
         Weakness = ["Fists","Sword","Lance","Staff","Fire"],
         Sprite = "fael",
         Level = 17,
-        EXP = 250,
+        EXP = 300,
         Gold = 750,
         ATK = 9500,
         MAG = 9500,
@@ -1037,13 +1038,139 @@ if True: #Alter Realm Enemies:
         Max_HP = 2500,
         Current_SP = 5000,
         Max_SP = 5000,
+        Bio = "Bipole IV: Liberation of Xuir.",
+        Effects = [],
+        Max_Action_Count = 3
+    )
+
+    Neville_ZX = Enemy(
+        DisplayName = "Mirrored A",
+        Moves = [[equipment.Hot_Glue_Gun,0,100],[equipment.Nolmech_Blast,0,100],[equipment.ZXer,0,100]],
+        Weakness = ["Fists","Sword","Staff","Water"],
+        Sprite = "neville_zx",
+        Level = 17,
+        EXP = 400,
+        Gold = 750,
+        ATK = 9500,
+        MAG = 9500,
+        HLG = 125,
+        DEF = 2750,
+        RES = 1500,
+        Max_HP = 3000,
+        Current_SP = 5000,
+        Max_SP = 5000,
+        Bio = "The Hand of the Neville Prophecy.",
+        Effects = [],
+        Max_Action_Count = 3
+    )
+
+    Protag = Enemy(
+        DisplayName = "Mirrored B",
+        Moves = [[equipment.Red_Card,0,100],[equipment.Question,0,100]],
+        Weakness = ["Sword","Bow","Fire","Ice","Gun"],
+        Sprite = "protag",
+        Level = 17,
+        EXP = 300,
+        Gold = 750,
+        ATK = 11000,
+        MAG = 11000,
+        HLG = 75,
+        DEF = 1750,
+        RES = 1750,
+        Max_HP = 2500,
+        Current_SP = 5000,
+        Max_SP = 5000,
+        Bio = "Bipole R-XXI: Trials The First Chapter.",
+        Effects = [],
+        Max_Action_Count = 4
+    )
+
+    Erif = Enemy(
+        DisplayName = "Mirrored C",
+        Moves = [[equipment.Flame_Blade,0,100],[equipment.Fire_Blast,0,100],[equipment.Recover,0,100]],
+        Weakness = ["Fists","Bow","Staff","Water","Gun"],
+        Sprite = "erif",
+        Level = 17,
+        EXP = 300,
+        Gold = 750,
+        ATK = 10250,
+        MAG = 10250,
+        HLG = 25,
+        DEF = 1500,
+        RES = 1500,
+        Max_HP = 2500,
+        Current_SP = 5000,
+        Max_SP = 5000,
+        Bio = "Bipole IV: Liberation of Xuir.",
+        Effects = [],
+        Max_Action_Count = 4
+    )
+
+    Egam = Enemy(
+        DisplayName = "Mirrored A",
+        Moves = [[equipment.Attack_Shield,0,100],[equipment.Magic_Shield,0,100],[equipment.Fire_Blast,0,100],[equipment.Congeal,0,100],[equipment.Hydro,0,100]],
+        Weakness = ["Fists","Sword","Lance","Gun"],
+        Sprite = "egam",
+        Level = 17,
+        EXP = 400,
+        Gold = 750,
+        ATK = 9750,
+        MAG = 10250,
+        HLG = 25,
+        DEF = 1500,
+        RES = 2250,
+        Max_HP = 2750,
+        Current_SP = 7500,
+        Max_SP = 7500,
+        Bio = "Bipole R-XV: Battle Simple.",
+        Effects = [],
+        Max_Action_Count = 5
+    )
+
+    Infinity = Enemy(
+        DisplayName = "Mirrored B",
+        Moves = [[equipment.Infinite_Blade,50,100],[equipment.Infinite_Blade_X,0,100],[equipment.Infinite_Blade_Y,0,50]],
+        Weakness = ["Fists","Lance","Bow","Staff","Gun"],
+        Sprite = "infinity",
+        Level = 17,
+        EXP = 300,
+        Gold = 750,
+        ATK = 9750,
+        MAG = 9750,
+        HLG = 20,
+        DEF = 1500,
+        RES = 1500,
+        Max_HP = 2500,
+        Current_SP = 5000,
+        Max_SP = 5000,
         Bio = "The Tale of the Infinity Realm: Expedition.",
+        Effects = [],
+        Max_Action_Count = 4
+    )
+
+    Quest = Enemy(
+        DisplayName = "Mirrored C",
+        Moves = [[equipment.Inferno,0,100],[equipment.Cryoablate,0,100],[equipment.Torrent,0,100],[equipment.Healing_Aura,0,100]],
+        Weakness = ["Fists","Lance","Bow","Staff","Gun"],
+        Sprite = "quest",
+        Level = 17,
+        EXP = 300,
+        Gold = 750,
+        ATK = 12500,
+        MAG = 12500,
+        HLG = 20,
+        DEF = 1250,
+        RES = 1750,
+        Max_HP = 2250,
+        Current_SP = 5000,
+        Max_SP = 5000,
+        Bio = "Neville OS/Bipole R-XIX: Quest.",
         Effects = [],
         Max_Action_Count = 3
     )
 
 if True: #Alter Realm Encounters
     ar_encounter1 = [[Aqua,Lead,Fael],"Normal"]
-    ar_encounter2 = [[Aqua,Lead,Fael],"Normal"]
-    ar_encounter3 = [[Aqua,Lead,Fael],"Normal"]
+    ar_encounter2 = [[Neville_ZX,Protag,Erif],"Normal"]
+    ar_encounter3 = [[Egam,Infinity,Quest],"Normal"]
 

@@ -1,5 +1,5 @@
 nothing
 test
-#ENCOUNTER ar_encounter1
+#ENCOUNTER ar_encounter3
 end test
 #DESTROY_SELF

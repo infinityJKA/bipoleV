@@ -1,0 +1,8 @@
+The power of self-respect compels you...
+#RESTORE_ALL
+.
+..
+...
+You are filled with self-respect.
+Party HP/MP fully restored!
+#END_KEY_ITEM
