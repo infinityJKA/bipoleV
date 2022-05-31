@@ -1,5 +1,5 @@
 door1
-#CHOICE Enter the Shadow Realm?[@]= RECOMMENDED LEVEL: ? =[@][A] Yes[@][B] No
+#CHOICE Enter the Alter Realm?[@]= RECOMMENDED LEVEL: 17 =[@][A] Yes[@][B] No
 _
 #CHOICE_RESULT
 #END
@@ -8,7 +8,7 @@ _
 -pass- 
 _
 #MOVE_TO
-Ricefield_Realm
-10
-16
-NO CHANGE
+Alter_Realm
+5
+4
+South

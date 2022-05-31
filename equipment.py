@@ -2613,6 +2613,21 @@ if True: #Boosts
     Description = "Inflict 1.2x DEF for 3 turns."
     )
 
+if True: #Other
+    Finale = Equipment(
+    Display_Name = "Finale",
+    Equip_Type = "Protipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Ultimate Weapon",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 250, #Added
+    PWR = 325,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "The ultimate weapon forged by Livna."
+    )
+
 if True: #Starting Uniques
 
     The_22XX = Equipment(
@@ -3138,6 +3153,23 @@ if True: #Key Items
         text_file="the_power_of_self-respect"
     )
 
+    alter_key = Key_Item(
+        Display_Name="Alter Key",
+        sprite="ricefield_key",
+        text_file="alter_key"
+    )
+
+    surface_key = Key_Item(
+        Display_Name="Surface Key",
+        sprite="ricefield_key",
+        text_file="surface_key"
+    )
+
+    ultimate_energy_prism = Key_Item(
+        Display_Name="Ultimate Energy Prism",
+        sprite="ultimate_energy_prism",
+        text_file="ultimate_energy_prism"
+    )
 
 
 key_item_inventory = []

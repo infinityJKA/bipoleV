@@ -11,8 +11,9 @@ Consul Herald:[@]Humphrey?
 Consul Herald:[@]Very well then, you must of found[@]his book.
 Consul Herald:[@]I will allow access to his test in[@]Metalimnion.
 Consul Herald:[@]You must travel to the designated realms[@]and retrieve three keys to meet him.
-Consul Herald:[@]One key is in the Ricefield Realm,[@] another is in the Shadow Realm, and the[@]third is in the Alter Realm.
+Consul Herald:[@]One key is in the Ricefield Realm,[@]another is in the Alter Realm, and the[@]third is here in the Surface Realm.
 Consul Hearld:[@]For aid you on your test, vist[@]Yhtims for an expanded selection of equipment.
+Consul Hearld:[@]He's at this town's armory, by[@]the way.
 Consul Hearld:[@]When you want to enter Metalimnion,[@]come back here and let me know.
 #SET_TILE
 Bieace_Castle_Town

@@ -4474,7 +4474,10 @@ def Enemy_Perform_Move():
                 if amount_to_heal > 0 and Move_to_Use.PWR > 0:
                     write_text("Restored "+str(amount_to_heal)+" SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
                 elif Move_to_Use.PWR < 0:
-                    write_text("Drain "+str(amount_to_heal*-1)+" SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
+                    write_text("Drained "+str(amount_to_heal*-1)+" SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
+                    if target.Current_SP < 0:
+                        target.Current_SP = 0
+                        print("set SP to 0, was below 0")
             else:
                 print("error, no stat to heal")
             update_party_text()
@@ -4700,7 +4703,10 @@ def Perform_Move():
                 if amount_to_heal > 0 and Move_to_Use.PWR > 0:
                     write_text("Restored "+str(amount_to_heal)+" SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
                 elif Move_to_Use.PWR < 0:
-                    write_text("Drain "+str(amount_to_heal*-1)+" SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
+                    write_text("Drained "+str(amount_to_heal*-1)+" SP from "+target.DisplayName+"!\n"+str(sp_before_heal)+" > "+str(target.Current_SP))
+                    if target.Current_SP < 0:
+                        target.Current_SP = 0
+                        print("set SP to 0, was below 0")
             else:
                 print("error, no stat to heal")
             update_party_text()
@@ -4830,18 +4836,19 @@ def Check_If_Party_Dead():
         "==== GAME OVER ====\n"+
         "===================\n"+
         "\n"+
-        "[A] Load Save\n"
-        "[B] Load Autosave\n"
-        "[SAVE] Close Game"
+        "[EQUIP] Load Save\n"
+        "[PARTY] Auto-Save*\n"
+        "[SAVE] Close Game\n\n"
+        "*Only use Auto-Save if you are softlocked,\nmake sure to save manually after loading\nan Auto-Save as Auto-Saves are temporary\nand cannot be accessed from the start menu."
         )
-        global q_command
-        global e_command
+        global r_command
+        global t_command
         global one_command
-        a_button.config(command=load_save)
-        b_button.config(command=load_autosave)
+        equip_button.config(command=load_save)
+        stat_button.config(command=load_autosave)
         save_button.config(command=sys.exit)
-        q_command = "load_save()"
-        e_command = "load_autosave()"
+        r_command = "load_save()"
+        t_command = "load_autosave()"
         one_command = "sys.exit()"
     else:
         Current_Character.Current_Action_Count += Move_to_Use.Action_Count
@@ -5225,7 +5232,7 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,16)#8+3-1+100)
+Instant_Level_Up(characters.Protipole,16+100)#8+3-1+100)
 Manual_Add_Char(characters.Startole,12)
 Manual_Add_Char(characters.Bipoanderer,8+3+4)
 Manual_Add_Char(characters.Wicole,16)
@@ -5238,8 +5245,8 @@ Gold += 100000
 # maps.player_cords = [9,18]
 # maps.current_location = maps.Passway_Village
 # maps.current_location = maps.Bandit_Road
-maps.current_location = maps.Labyrinth_of_Binding_A3
-maps.player_cords = [6,19]
+maps.current_location = maps.Guardian_Village
+maps.player_cords = [4,17]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
 characters.Protipole.Equipped = [equipment.Wrath_of_the_Ultimate_Shareholder,equipment.Pierce,equipment.Healing_Aura] #
 characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Pierce,equipment.Guard]
@@ -5256,6 +5263,9 @@ equipment.key_item_inventory.append(equipment.mysterious_crystals)
 equipment.key_item_inventory.append(equipment.humphrey_lore_read)
 equipment.key_item_inventory.append(equipment.ecochecker)
 equipment.key_item_inventory.append(equipment.bonus_shop_pass_ii)
+equipment.key_item_inventory.append(equipment.ultimate_energy_prism)
+equipment.key_item_inventory.append(equipment.super_pure_diamond)
+
 
 equipment.key_item_inventory.append(equipment.virginity_hat)
 equipment.key_item_inventory.append(equipment.neville_coin)

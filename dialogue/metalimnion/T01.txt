@@ -5,7 +5,7 @@ Mythos:[@]What do you want to learn[@]about?
 #INIT_MULTICHOICE
 #MULTICHOICE
 [Select an action]
-["Who are you?","Metalimnion","Realms","Timelines","AUs/PUs","Humphrey"]
+["Who are you?","Metalimnion","Realms","Timelines","AUs/PUs","Humphrey and his quest","Siphon Cognoscenti"]
 LEAVE
 _
 _
@@ -20,8 +20,8 @@ _
 /==/.Metalimnion
 Mythos:[@]Metalimnion is, put simply,[@]a location coexisting on two realms[@]at once.
 Mythos:[@]Not just here, but all of the[@]world's overlaps are metalimnions.
-Mythos:[@]The Metalmnion Conclave is a[@]centeralized organization that controls[@]travel between realms through metalimnions.
-Mythos:[@]The Metalmnions are theorized to[@]have formed from the Finis Event of[@]2300 AD.
+Mythos:[@]The Metalimnion Conclave is a[@]centeralized organization that controls[@]travel between realms through metalimnions.
+Mythos:[@]The Metalimnions are theorized to[@]have formed from the Finis Event of[@]2300 AD.
 Mythos:[@]With the restructuring of the Earth[@]in becoming the New Realm, the threads[@]between realms was weakened, allowing[@]places such as this to be formed[@]between the gaps.
 Mythos:[@]Think of it like a wall between two[@]houses: the wall was destroyed and left[@]a hole in the ground. That hole was[@]then covered with a small bridge, allowing[@]travel between both houses.
 Mythos:[@]In this, the houses are realms and[@]the bridge is Metalimnion.
@@ -79,10 +79,25 @@ Mythos:[@]It doesn't.
 #GOTO BACKTOSTART
 _
 _
-/==/.Humphrey
+/==/.Humphrey and his quest
 Mythos:[@]Humphrey Fallen is one of the only Realmer[@]survivors of the Finis Event.
 Mythos:[@]He's also a pretty high ranking member of[@]the Metalimnion Conclave.
-Mythos:[@]Humphrey set up this quest for you, and[@]you'll get to meet him if you get a key[@]from the Ricefield Realm and Shadow Realm.
+Mythos:[@]Humphrey set up this quest for you, and[@]you'll get to meet him if you get a key[@]from the Ricefield Realm, Alter Realm, and[@]Surface Realm.
+Mythos:[@]The realm that you've been adventuring[@]in, with Bieace Castle Town and the Slime[@]Forest, is the Surface Realm, by the way.
+Mythos:[@]If you continue on your journey in the[@]Surface Realm, I'm sure you'll probably come[@]across the Surface Key.
+Mythos:[@]For the other two, you'll have to go[@]through the portals here in Metalimnion and[@]hunt down the key.
+#GOTO BACKTOSTART
+_
+_
+/==/.Siphon Cognoscenti
+Mythos:[@]The Siphon Cognoscenti are an organization,[@]similar to ours, that provides transportation.
+Mythos:[@]However, the methods of transport, and the[@]places that we transport to, are very[@]different.
+Mythos:[@]We here at the Metalimnion Conclave use[@]Metalimnion to provide travel between realms.
+Mythos:[@]Meanwhile, the Siphon Cognoscenti provides[@]transportation within the Surface Realm, through[@]the use of teleportation magic.
+Mythos:[@]So basically, it's like comparing a space[@]ship to a boat.
+Mythos:[@]You wouldn't really use a space ship to[@]travel between islands, though you technically[@]could.
+Mythos:[@]We do transportation between realms,[@]they do transportation within the New Realm.
+Mythos:[@]We're two completely seperate organizations,[@]though we have had a little bit of a rivalry.
 #GOTO BACKTOSTART
 _
 _

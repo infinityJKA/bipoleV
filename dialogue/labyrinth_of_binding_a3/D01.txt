@@ -1,5 +1,5 @@
 door1
-#CHOICE Return to Guardian Village?[@][A] Yes[@][B] No
+#CHOICE Descend to the second floor?[@][A] Yes[@][B] No
 _
 #CHOICE_RESULT
 #END
@@ -8,7 +8,7 @@ _
 -pass- 
 _
 #MOVE_TO
-Guardian_Village
+Labyrinth_of_Binding_A2
 8
 4
 South

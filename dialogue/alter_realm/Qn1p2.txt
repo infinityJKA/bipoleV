@@ -1,0 +1,26 @@
+livna
+#SENDIFKEYITEM super_pure_diamond
+has
+doesnt
+_
+/==/.has
+#SENDIFKEYITEM ultimate_energy_prism
+also has
+doesnt
+_
+/==/.also has
+Livna:[@]Oh, you brought both the[@]Super Pure Diamond and[@]the Ultimate Energy Prism!
+Livna:[@]Let me forge the Finale for you...
+#GAIN_EQUIPMENT Finale
+#REMOVE_KEYITEM super_pure_diamond
+#REMOVE_KEYITEM ultimate_energy_prism
+Livna:[@]Thanks for helping me finish[@]my training!
+#OVERRIDE_SELF Tn1
+_
+/==/.doesnt
+Livna:[@]Hello, I am a weaponsmith training[@]under Nexus of the Metalimnion Conclave.
+Livna:[@]I have come to this strange realm[@]as part of my training.
+Livna:[@]The Alter Realm is a strange place,[@]mirrors of people from alternate timelines[@]form and wander the world.
+Livna:[@]Anyhow, I need to craft my Ultimate[@]Weapon in order to complete my training.
+Livna:[@]If you have a Super Pure Diamond and[@]a Ultimate Energy Prism, I could craft the[@]Finale, my Ultimate Weapon, for you.
+#END

@@ -65,5 +65,5 @@ Eidola:[@]Anything else?
 _
 _
 /==/.LEAVE
-Mythos:[@]Farewell.
+Eidola:[@]Bye.
 #END
