@@ -4597,6 +4597,8 @@ def Perform_Move():
                         print("has wkn")
                         wkn_mul = wkn_mul*effect[1]
             atk_mul = 1
+            if Move_to_Use.DisplayName == "Finale" and target.Weakness[0] == "Ultimate Weapon":
+                atk_mul = 999999*3
             if len(Current_Character.Effects) > 0:
                 print("checking effects")
                 for effect in Current_Character.Effects:
@@ -4624,7 +4626,6 @@ def Perform_Move():
             talk_button.config(command=Check_If_Enemy_Dead)
             q_command = "Check_If_Enemy_Dead()"
             space_command = "Check_If_Enemy_Dead()"
-
         elif Move_to_Use.Move_Type == "Magic":
             print("move is magic")
             res_mul = 1
@@ -5232,13 +5233,13 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,16+3)#8+3-1+100)
+Instant_Level_Up(characters.Protipole,20)#8+3-1+100)
 Manual_Add_Char(characters.Startole,12)
-Manual_Add_Char(characters.Bipoanderer,8+3+4)
-Manual_Add_Char(characters.Wicole,16)
+Manual_Add_Char(characters.Bipoanderer,20)
+Manual_Add_Char(characters.Wicole,20)
 Manual_Add_Char(characters.Bithecary,4+3)
 Manual_Add_Char(characters.Archle,12+3)
-Manual_Add_Char(characters.Alls_Ros,8+3)
+Manual_Add_Char(characters.Alls_Ros,8+3+1)
 Manual_Add_Char(characters.Birowth,19)
 # Manual_Add_Char(characters.Birowth,13)
 Gold += 100000
@@ -5248,15 +5249,15 @@ Gold += 100000
 maps.current_location = maps.Guardian_Village
 maps.player_cords = [4,17]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
-characters.Protipole.Equipped = [equipment.Wrath_of_the_Ultimate_Shareholder,equipment.Disarm,equipment.Healing_Aura] #
+characters.Protipole.Equipped = [equipment.Finale,equipment.Disarm,equipment.Healing_Aura] #
 characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Pierce,equipment.Guard]
-characters.Bipoanderer.Equipped = [equipment.Hydro,equipment.Slice,equipment.Sword_Lance]
-characters.Archle.Equipped = [equipment.Flame_Blade, equipment.Knife_Rain,equipment.Enderscope_X] #
-characters.Wicole.Equipped = [equipment.Shining_Staff,equipment.Holy_Light,equipment.Drown]
+characters.Bipoanderer.Equipped = [equipment.Snipe,equipment.Drown]
+characters.Archle.Equipped = [equipment.Snipe, equipment.Knife_Rain, equipment.Inferno]
+characters.Wicole.Equipped = [equipment.Cryoablate,equipment.Holy_Light,equipment.Drown] #
 characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Healing_Aura]
 characters.Bipouge.Equipped = [equipment.Spear_of_Staves,equipment.Holy_Light,equipment.Flood]
-characters.Alls_Ros.Equipped = [equipment.Torrent,equipment.Holy_Staff,equipment.Holy_Light] #
-characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Pierce,equipment.Shatter] #
+characters.Alls_Ros.Equipped = [equipment.Cryoablate,equipment.Drown,equipment.Holy_Light] #
+characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Pierce,equipment.Shatter]
 #LEVEL 17 AT END OF THE LABYRINTH
 
 equipment.key_item_inventory.append(equipment.mysterious_crystals)

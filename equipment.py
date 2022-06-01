@@ -867,7 +867,7 @@ if True: #Bows
     )
 
     Snipe = Equipment(
-    Display_Name = "Long Bow",
+    Display_Name = "Snipe",
     Equip_Type = "Bow", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Bow",
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
@@ -1195,6 +1195,20 @@ if True: #Fire
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Nolmech is an empty shell of a mechanical.\nNeville ZX's tractor possesses mechanical bodies\nand allows him to control them."
+    )
+
+    Bombard = Equipment(
+    Display_Name = "Bombard",
+    Equip_Type = "Fire", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Fire",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 150,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "..."
     )
 
 if True: #Water
@@ -1768,7 +1782,7 @@ if True: #Healing
     Absorb = Equipment(
     Display_Name = "Absorb",
     Equip_Type = "Dyad", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
-    Damage_Type = "Drain",
+    Damage_Type = "Absorb",
     Move_Type = "Heal", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = -100, #Deducted
@@ -1779,6 +1793,38 @@ if True: #Healing
     Inflict = [],
     Description = "Dyad has the ability to conduct Life\nEnergy from both others and himself.",
     Action_Count = 1
+    )
+
+    Drain = Equipment(
+    Display_Name = "Drain",
+    Equip_Type = "The New Link", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Drain",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = -18,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "SP", #The stat to heal,
+    Inflict = [],
+    Description = "...",
+    Action_Count = 1
+    )
+
+    Revitalize = Equipment(
+    Display_Name = "Revitalize",
+    Equip_Type = "The New Link", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Revitalize",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 20,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "SP", #The stat to heal,
+    Inflict = [],
+    Description = "...",
+    Action_Count = 0.5
     )
 
 
@@ -1965,6 +2011,20 @@ if True: #Guns
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "Dyad has many pre-Finis weapons\nand technology."
+    )
+
+    Missile = Equipment(
+    Display_Name = "Missile",
+    Equip_Type = "The New Link", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 250,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "..."
     )
 
 if True: #Boosts
@@ -2686,6 +2746,21 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = [["ATK",0.97,3],["MAG",0.97,3],["DEF",0.97,3],["RES",0.97,3]],
     Description = "0.97x ATK/MAG/DEF/RES for 3 turns."
+    )
+
+    Gigaboost = Equipment(
+    Display_Name = "Gigaboost",
+    Equip_Type = "The New Link", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.5,3],["MAG",1.5,3],["DEF",1.75,3],["RES",1.75,3]],
+    Description = "1.5x ATK/MAG for 3 turns\nand 1.75x DEF/RES for 3 turns."
     )
 
 if True: #Other

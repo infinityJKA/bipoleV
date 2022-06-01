@@ -770,6 +770,7 @@ if True: #Ricefield Realm Encounters
     rr_encounter3 = [[Omega_Point_Farmer_A,Point_Farmer_A],"Normal"]
     rr_boss = [[Hyper_Final_Assassin_Ultra],"Big"]
 
+
 if True: #Metalimnion Enemies
     Radical_Warper = Enemy(
         DisplayName = "Radical Warper",
@@ -831,8 +832,53 @@ if True: #Metalimnion Enemies
         Effects = []
     )
 
+    New_Link_Shielded = Enemy(
+        DisplayName = "The New Link",
+        Moves = [[equipment.Missile,0,100]],
+        Weakness = ["Ultimate Weapon"],
+        Sprite = "the_new_link",
+        Level = 21,
+        EXP = 450,
+        Gold = 5000,
+        ATK = 50000,
+        MAG = 50000,
+        HLG = 999999,
+        DEF = 9999999,
+        RES = 9999999,
+        Max_HP = 999999,
+        Current_SP = 999999,
+        Max_SP = 999999,
+        Bio = "The New Link.",
+        Effects = [],
+        Max_Action_Count = 2
+    )
+
+    New_Link_No_Shield = Enemy(
+        DisplayName = "The New Link",
+        Moves = [[equipment.Slash,90,100],[equipment.Pierce,90,100],[equipment.Snipe,90,100],[equipment.Holy_Staff,90,100],[equipment.Torrent,90,100],[equipment.Soul_Banishment,80,90],[equipment.Plus,45,90],[equipment.Minus,45,90],[equipment.Drain,45,90],[equipment.Revitalize,45,79],[equipment.Bombard,0,80],[equipment.Soul_Banishment,20,44],[equipment.Gigaboost,0,50]],
+        Weakness = ["Fists","Bow","Fire","Ice","Ultimate Weapon"],
+        Sprite = "the_new_link",
+        Level = 21,
+        EXP = 1000,
+        Gold = 25000,
+        ATK = 12000,
+        MAG = 12000,
+        HLG = 30,
+        DEF = 2750,
+        RES = 2750,
+        Max_HP = 100000,
+        Current_SP = 5000,
+        Max_SP = 5000,
+        Bio = "The New Link.",
+        Effects = [],
+        Max_Action_Count = 8
+    )
+
 if True: #Metalimnion Encounters
     mboss1 = [[Radical_Warper,Picky_Jimmy,Gunman_Greg],"Normal"]
+    new_link_boss1 = [[New_Link_Shielded],"Big"]
+    new_link_boss2 = [[New_Link_No_Shield],"Big"]
+
 
 if True: #Labyrinth of Binding Enemies:
     Skeleton_Soldier_A = Enemy(
