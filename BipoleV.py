@@ -5232,14 +5232,14 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,16+100)#8+3-1+100)
+Instant_Level_Up(characters.Protipole,16+3)#8+3-1+100)
 Manual_Add_Char(characters.Startole,12)
 Manual_Add_Char(characters.Bipoanderer,8+3+4)
 Manual_Add_Char(characters.Wicole,16)
 Manual_Add_Char(characters.Bithecary,4+3)
-Manual_Add_Char(characters.Archle,12)
-Manual_Add_Char(characters.Alls_Ros,8)
-Manual_Add_Char(characters.Birowth,16)
+Manual_Add_Char(characters.Archle,12+3)
+Manual_Add_Char(characters.Alls_Ros,8+3)
+Manual_Add_Char(characters.Birowth,19)
 # Manual_Add_Char(characters.Birowth,13)
 Gold += 100000
 # maps.player_cords = [9,18]
@@ -5248,14 +5248,14 @@ Gold += 100000
 maps.current_location = maps.Guardian_Village
 maps.player_cords = [4,17]
 equipment.equipment_inventory.append(equipment.CigaretteLighter)
-characters.Protipole.Equipped = [equipment.Wrath_of_the_Ultimate_Shareholder,equipment.Pierce,equipment.Healing_Aura] #
+characters.Protipole.Equipped = [equipment.Wrath_of_the_Ultimate_Shareholder,equipment.Disarm,equipment.Healing_Aura] #
 characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Pierce,equipment.Guard]
 characters.Bipoanderer.Equipped = [equipment.Hydro,equipment.Slice,equipment.Sword_Lance]
-characters.Archle.Equipped = [equipment.Flame_Blade, equipment.Snipe,equipment.Enderscope_X] #
+characters.Archle.Equipped = [equipment.Flame_Blade, equipment.Knife_Rain,equipment.Enderscope_X] #
 characters.Wicole.Equipped = [equipment.Shining_Staff,equipment.Holy_Light,equipment.Drown]
 characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Healing_Aura]
 characters.Bipouge.Equipped = [equipment.Spear_of_Staves,equipment.Holy_Light,equipment.Flood]
-characters.Alls_Ros.Equipped = [equipment.Cryoablate,equipment.Holy_Staff,equipment.Holy_Light] #
+characters.Alls_Ros.Equipped = [equipment.Torrent,equipment.Holy_Staff,equipment.Holy_Light] #
 characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Pierce,equipment.Shatter] #
 #LEVEL 17 AT END OF THE LABYRINTH
 

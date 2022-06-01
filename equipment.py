@@ -1765,6 +1765,22 @@ if True: #Healing
     Action_Count = 1
     )
 
+    Absorb = Equipment(
+    Display_Name = "Absorb",
+    Equip_Type = "Dyad", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Drain",
+    Move_Type = "Heal", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = -100, #Deducted
+    Priority = 0, #Added
+    PWR = -18,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = "SP", #The stat to heal,
+    Inflict = [],
+    Description = "Dyad has the ability to conduct Life\nEnergy from both others and himself.",
+    Action_Count = 1
+    )
+
 
 if True: #Guns
     The_22XX = Equipment(
@@ -1935,6 +1951,20 @@ if True: #Guns
     Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Description = "The ZXer is Neville ZX's signature gun.\nIt was originally the gun of a Sazuichian\nsoldier, but Neville ZX found in the ruins\nafter the Nidus Assault. He has carved \"ZXer\"\non the side of the gun."
+    )
+
+    Bullet_Spread = Equipment(
+    Display_Name = "Bullet Spread",
+    Equip_Type = "Dyad", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Gun",
+    Move_Type = "Physical", #Physical, Magic, Heal, Boost
+    Target = "All Enemies", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 0, #Deducted
+    Priority = 0, #Added
+    PWR = 125,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Description = "Dyad has many pre-Finis weapons\nand technology."
     )
 
 if True: #Boosts
@@ -2161,7 +2191,7 @@ if True: #Boosts
     Purchasing_Price = 1000, #Sells for half of the purchasing price, cannot be sold if 0
     Heal_Stat = None, #The stat to heal,
     Inflict = ["DEF",0.5,1],
-    Description = "Obligatory Bipole Retro: Empires reference.\nInflict 0.4x DEF for 1 turn."
+    Description = "Obligatory Bipole Retro: Empires reference.\nInflict 0.5x DEF for 1 turn."
     )
 
     Phalanx = Equipment(
@@ -2611,6 +2641,51 @@ if True: #Boosts
     Heal_Stat = None, #The stat to heal,
     Inflict = ["DEF",1.2,3],
     Description = "Inflict 1.2x DEF for 3 turns."
+    )
+
+    Minus = Equipment(
+    Display_Name = "Minus",
+    Equip_Type = "Dyad", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",0.93,3],["MAG",0.93,3],["DEF",0.93,3],["RES",0.93,3]],
+    Description = "0.93x ATK/MAG/DEF/RES for 3 turns."
+    )
+
+    Plus = Equipment(
+    Display_Name = "Plus",
+    Equip_Type = "Dyad", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "Self", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",1.07,3],["MAG",1.07,3],["DEF",1.07,3],["RES",1.07,3]],
+    Description = "1.07x ATK/MAG/DEF/RES for 3 turns."
+    )
+
+    Minus_All = Equipment(
+    Display_Name = "Minus All",
+    Equip_Type = "Dyad", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Damage_Type = "Boost",
+    Move_Type = "Multiboost", #Physical, Magic, Heal, Boost
+    Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
+    SP_Cost = 100, #Deducted
+    Priority = 0, #Added
+    PWR = 0,
+    Purchasing_Price = 0, #Sells for half of the purchasing price, cannot be sold if 0
+    Heal_Stat = None, #The stat to heal,
+    Inflict = [["ATK",0.97,3],["MAG",0.97,3],["DEF",0.97,3],["RES",0.97,3]],
+    Description = "0.97x ATK/MAG/DEF/RES for 3 turns."
     )
 
 if True: #Other

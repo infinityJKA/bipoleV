@@ -444,6 +444,27 @@ if True: #Ruins of Time Enemies
         Effects = []
     )
 
+    Dyad = Enemy(
+        DisplayName = "Dyad",
+        Moves = [[equipment.Pierce,90,100],[equipment.Holy_Staff,90,100],[equipment.Inferno,90,100],[equipment.Plus,0,90],[equipment.Minus,50,90],[equipment.Minus_All,0,90],[equipment.Absorb,50,90],[equipment.Bullet_Spread,50,80],[equipment.Silver_Gauntlets,0,50],[equipment.Slash,0,50],[equipment.Pierce,0,50],[equipment.Holy_Staff,0,50],[equipment.Snipe,0,50],[equipment.Inferno,0,50],[equipment.Cryoablate,0,50],[equipment.Torrent,0,50],[equipment.Assault_Rifle,0,50]],
+        Weakness = ["Sword","Bow","Water","Gun"],
+        Sprite = "dyad_battle",
+        Level = 20,
+        EXP = 750,
+        Gold = 7500,
+        ATK = 14000,
+        MAG = 14000,
+        HLG = 50,
+        DEF = 2750,
+        RES = 2750,
+        Max_HP = 100000,
+        Current_SP = 25000,
+        Max_SP = 25000,
+        Bio = "Dyad Distichouan is the second luminary of\nthe Antediluvian Sacrosanct Agglomerate.",
+        Effects = [],
+        Max_Action_Count = 12
+    )
+
 if True: #Ruins of Time Encounters
     rot1_encounter1 = [[Gyrobifastigium_A,Gyrobifastigium_B,Gyrobifastigium_C],"Normal"]
     rot1_encounter2 = [[Dodecahedron_A,Gyrobifastigium_A,Gyrobifastigium_B],"Normal"]
@@ -452,6 +473,8 @@ if True: #Ruins of Time Encounters
     rot2_encounter2 = [[Eratosthenesoid_A,Dodecahedron_A,Gyrobifastigium_A],"Normal"]
     rot2_encounter3 = [[Eratosthenesoid_A,Gyrobifastigium_A,Gyrobifastigium_B],"Normal"]
     rot2_boss = [[Nynety,Gyrobifastigium_A,Gyrobifastigium_B],"Normal"]
+
+    dyad_boss = [[Dyad],"Big"]
 
 
 if True: #Bandit Road Enemies
@@ -1128,7 +1151,7 @@ if True: #Alter Realm Enemies:
     )
 
     Infinity = Enemy(
-        DisplayName = "Mirrored B",
+        DisplayName = "Mirrored C",
         Moves = [[equipment.Infinite_Blade,50,100],[equipment.Infinite_Blade_X,0,100],[equipment.Infinite_Blade_Y,0,50]],
         Weakness = ["Fists","Lance","Bow","Staff","Gun"],
         Sprite = "infinity",
@@ -1149,7 +1172,7 @@ if True: #Alter Realm Enemies:
     )
 
     Quest = Enemy(
-        DisplayName = "Mirrored C",
+        DisplayName = "Mirrored B",
         Moves = [[equipment.Inferno,0,100],[equipment.Cryoablate,0,100],[equipment.Torrent,0,100],[equipment.Healing_Aura,0,100]],
         Weakness = ["Fists","Lance","Bow","Staff","Gun"],
         Sprite = "quest",
@@ -1172,5 +1195,5 @@ if True: #Alter Realm Enemies:
 if True: #Alter Realm Encounters
     ar_encounter1 = [[Aqua,Lead,Fael],"Normal"]
     ar_encounter2 = [[Neville_ZX,Protag,Erif],"Normal"]
-    ar_encounter3 = [[Egam,Infinity,Quest],"Normal"]
+    ar_encounter3 = [[Egam,Quest,Infinity],"Normal"]
 

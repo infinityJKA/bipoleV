@@ -1,6 +1,6 @@
 livna
 Livna:[@]Hello, I am a weaponsmith training[@]under Nexus of the Metalimnion Conclave.
-Livna:[@]I have come to this strange realm[@]as part of my training.
+Livna:[@]I have come to this foreign realm[@]as part of my training.
 Livna:[@]The Alter Realm is a strange place,[@]mirrors of people from alternate timelines[@]form and wander the world.
 Livna:[@]Anyhow, I need to craft my Ultimate[@]Weapon in order to complete my training.
 Livna:[@]If you have a Super Pure Diamond and[@]a Ultimate Energy Prism, I could craft the[@]Finale, my Ultimate Weapon, for you.
