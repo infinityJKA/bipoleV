@@ -3321,5 +3321,11 @@ if True: #Key Items
         text_file="ultimate_energy_prism"
     )
 
+    letter = Key_Item(
+        Display_Name="Mysterious Letter",
+        sprite="letter",
+        text_file="letter"
+    )
+
 
 key_item_inventory = []

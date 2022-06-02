@@ -5266,11 +5266,17 @@ equipment.key_item_inventory.append(equipment.ecochecker)
 equipment.key_item_inventory.append(equipment.bonus_shop_pass_ii)
 equipment.key_item_inventory.append(equipment.ultimate_energy_prism)
 equipment.key_item_inventory.append(equipment.super_pure_diamond)
+equipment.key_item_inventory.append(equipment.the_holy_cards)
+
 
 
 equipment.key_item_inventory.append(equipment.virginity_hat)
 equipment.key_item_inventory.append(equipment.neville_coin)
 equipment.key_item_inventory.append(equipment.virginity_propaganda_signed)
+
+equipment.key_item_inventory.append(equipment.ricefield_key)
+equipment.key_item_inventory.append(equipment.alter_key)
+
 
 
 

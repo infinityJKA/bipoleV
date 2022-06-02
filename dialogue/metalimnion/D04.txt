@@ -1,5 +1,5 @@
 door1
-#CHOICE Enter the Shadow Realm?[@]= RECOMMENDED LEVEL: ? =[@][A] Yes[@][B] No
+#CHOICE Go through the door?[@][A] Yes[@][B] No
 _
 #CHOICE_RESULT
 #END
@@ -8,7 +8,7 @@ _
 -pass- 
 _
 #MOVE_TO
-Ricefield_Realm
+Final_Area
 10
-16
-NO CHANGE
+30
+North
