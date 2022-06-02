@@ -39,7 +39,7 @@ if True:
 
     Gold = 500
 
-    filedisplay = tk.Label(master=toprow,text="Location: Bieace Castle\nGold: 0",anchor=CENTER,relief=tk.GROOVE,width=42,height=3, bg='black')
+    filedisplay = tk.Label(master=toprow,text="Lemniscate Bipole V:\nDungeons of Biphero",anchor=CENTER,relief=tk.GROOVE,width=42,height=3, bg='black')
     filedisplay.config(font=(mainfont,25),fg='magenta2')
     filedisplay.grid(row=0, column=1)
 
@@ -88,7 +88,7 @@ if True:
     #     bottomerer_background_images_sides.append(sprites_canvas.create_image(0, 0, anchor=NW, image=bottomerer_background_sprites_sides[ind]))
     #     ind += 1
     
-    bottomerer_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"+"0000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
+    bottomerer_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottomerer_layer/"+"1111"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
     bottomerer_background_image = sprites_canvas.create_image(0, 0, anchor=NW, image=bottomerer_background_sprite)
 
     # bottomerer_background_sprites = []
@@ -114,7 +114,7 @@ if True:
     # bottomerer_background_sprites.append(bottomerer_background_sprite00010)
     # bottomerer_background_images.append(sprites_canvas.create_image(0, 0, anchor=NW, image=bottomerer_background_sprite00010))
 
-    bottomer_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottomer_layer/"+"00000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
+    bottomer_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottomer_layer/"+"01110"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
     bottomer_background_image = sprites_canvas.create_image(0, 0, anchor=NW, image=bottomer_background_sprite)
 
     # bottomer_background_sprites_sides = []
@@ -163,7 +163,7 @@ if True:
     #     bottom_background_images.append(sprites_canvas.create_image(0, 0, anchor=NW, image=bottom_background_sprites[ind]))
     #     ind += 1
 
-    bottom_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+"000"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
+    bottom_background_sprite = ImageTk.PhotoImage(Image.open(str(current_directory)+"/world/"+world_color+"/bottom_layer/"+"111"+".png").convert("RGBA").resize(dimensions,resample=Image.NEAREST))
     bottom_background_image = sprites_canvas.create_image(0, 0, anchor=NW, image=bottom_background_sprite)
     bottomspr = [0]
     bottomimg = [0]
@@ -173,7 +173,7 @@ if True:
     bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"nothing"+".png").convert("RGBA").resize((165,420),resample=Image.NEAREST)))
     bottomimg.append(sprites_canvas.create_image(50, 320, anchor=CENTER, image=bottomspr[1]))
 
-    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA").resize((100,250),resample=Image.NEAREST)))
+    bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"nothing"+".png").convert("RGBA").resize((100,250),resample=Image.NEAREST)))
     bottomimg.append(sprites_canvas.create_image(325, 310, anchor=CENTER, image=bottomspr[2]))
 
     bottomspr.append(ImageTk.PhotoImage(Image.open(str(current_directory)+"/sprites/"+"nothing"+".png").convert("RGBA").resize((165,420),resample=Image.NEAREST)))
@@ -222,7 +222,7 @@ if True:
     # character_sprite1 = PhotoImage(file = str(current_directory)+"/sprites/"+"bipoanderer.gif")
     # character_image1 = sprites_canvas.create_image(100, 362, anchor=CENTER, image=character_sprite1)
 
-    char2_background_sprite_unform = Image.open(str(current_directory)+"/sprites/"+"nothing"+".png").convert("RGBA")
+    char2_background_sprite_unform = Image.open(str(current_directory)+"/sprites/"+"protipole"+".png").convert("RGBA")
     character_sprite2 = ImageTk.PhotoImage(char2_background_sprite_unform.resize((200,500),resample=Image.NEAREST))
     character_image2 = sprites_canvas.create_image(325, 362, anchor=CENTER, image=character_sprite2)
 
@@ -236,7 +236,7 @@ if True:
 
 
     
-    dialouge = tk.Label(master=centrow, text="Lemniscate Bipole V: Dungeons of Biphero\n----------\n[A] Load Save\n[B] New Game", relief=tk.FLAT,width=50,height=30, bg='black')
+    dialouge = tk.Label(master=centrow, text="Lemniscate Bipole V:\nDungeons of Biphero\n\nMade by infinityJKA\n\n----------\n\n[A] Load Save\n[B] New Game\n\n----------\n\nRead README.txt before playing\n\n(Release v1.0)\ninfinityjka.itch.io", relief=tk.FLAT,width=50,height=30, bg='black')
     dialouge.config(font=(mainfont,12),fg='white')
     dialouge.grid(row=0,column=1)
 
@@ -341,11 +341,11 @@ if True:
     minimap_text_color = "magenta2"
 
 
-    minimap_00 = tk.Label(master=minimap_frame, text="00", relief=tk.SUNKEN,width=minimap_width,height=minimap_height)
+    minimap_00 = tk.Label(master=minimap_frame, text="x", relief=tk.SUNKEN,width=minimap_width,height=minimap_height)
     minimap_00.config(font=(mainfont,minimap_fontsize),bg=minimap_default_color,fg=minimap_text_color)
     minimap_00.grid(row=0,column=0)
 
-    minimap_10 = tk.Label(master=minimap_frame, text="10", relief=tk.SUNKEN,width=minimap_width,height=minimap_height)
+    minimap_10 = tk.Label(master=minimap_frame, text="x", relief=tk.SUNKEN,width=minimap_width,height=minimap_height)
     minimap_10.config(font=(mainfont,minimap_fontsize),bg=minimap_default_color,fg=minimap_text_color)
     minimap_10.grid(row=1,column=0)
 
@@ -362,7 +362,7 @@ if True:
     minimap_40.grid(row=4,column=0)
 
 
-    minimap_01 = tk.Label(master=minimap_frame, text="01", relief=tk.SUNKEN,width=minimap_width,height=minimap_height)
+    minimap_01 = tk.Label(master=minimap_frame, text="x", relief=tk.SUNKEN,width=minimap_width,height=minimap_height)
     minimap_01.config(font=(mainfont,minimap_fontsize),bg=minimap_default_color,fg=minimap_text_color)
     minimap_01.grid(row=0,column=1)
 
@@ -947,7 +947,10 @@ def perform_dialogue():
         dialogue_index += 1
         line = (dialogue[dialogue_index])
         characters.All_Recruited_Characters.append(eval("characters."+line))
-        characters.Unequipped_Characters.append(eval("characters."+line))
+        if len(characters.Current_Party) < 4:
+            characters.Current_Party.append(eval("characters."+line))
+        else:
+            characters.Unequipped_Characters.append(eval("characters."+line))
         dialogue_index += 1
         perform_dialogue()
     elif "#GAIN_KEYITEM" in line:
@@ -5019,6 +5022,10 @@ def Instant_Level_Up(char,times):
         print("RES "+str(res_before)+" > "+str(char.RES))
         print("\n")
 
+# Instant_Level_Up(characters.Protipole,1)
+# Instant_Level_Up(characters.Bipoanderer,1)
+# Instant_Level_Up(characters.Startole,1)
+# Instant_Level_Up(characters.Wicole,1)
 Instant_Level_Up(characters.Bithecary,4)
 Instant_Level_Up(characters.Archle,4)
 Instant_Level_Up(characters.Bipouge,7)
@@ -5233,49 +5240,49 @@ toggle_sidestep_button(True)
 start_menu_control_set()
 
 
-Instant_Level_Up(characters.Protipole,20+100)#8+3-1+100)
-Manual_Add_Char(characters.Startole,12)
-Manual_Add_Char(characters.Bipoanderer,20)
-Manual_Add_Char(characters.Wicole,20)
-Manual_Add_Char(characters.Bithecary,4+3)
-Manual_Add_Char(characters.Archle,12+3)
-Manual_Add_Char(characters.Alls_Ros,8+3+1)
-Manual_Add_Char(characters.Birowth,19)
+# Instant_Level_Up(characters.Protipole,20)#8+3-1+100)
+# Manual_Add_Char(characters.Startole,12)
+# Manual_Add_Char(characters.Bipoanderer,20)
+# Manual_Add_Char(characters.Wicole,20)
+# Manual_Add_Char(characters.Bithecary,4+3)
+# Manual_Add_Char(characters.Archle,12+3)
+# Manual_Add_Char(characters.Alls_Ros,8+3+1)
+# Manual_Add_Char(characters.Birowth,19)
 # Manual_Add_Char(characters.Birowth,13)
-Gold += 100000
+# Gold += 100000
 # maps.player_cords = [9,18]
 # maps.current_location = maps.Passway_Village
-# maps.current_location = maps.Bandit_Road
-maps.current_location = maps.Guardian_Village
-maps.player_cords = [4,17]
-equipment.equipment_inventory.append(equipment.CigaretteLighter)
-characters.Protipole.Equipped = [equipment.Finale,equipment.Disarm,equipment.Healing_Aura] #
-characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Pierce,equipment.Guard]
-characters.Bipoanderer.Equipped = [equipment.Snipe,equipment.Drown]
-characters.Archle.Equipped = [equipment.Snipe, equipment.Knife_Rain, equipment.Inferno]
-characters.Wicole.Equipped = [equipment.Cryoablate,equipment.Holy_Light,equipment.Drown] #
-characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Healing_Aura]
-characters.Bipouge.Equipped = [equipment.Spear_of_Staves,equipment.Holy_Light,equipment.Flood]
-characters.Alls_Ros.Equipped = [equipment.Cryoablate,equipment.Drown,equipment.Holy_Light] #
-characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Pierce,equipment.Shatter]
+# # maps.current_location = maps.Bandit_Road
+# maps.current_location = maps.Guardian_Village
+# maps.player_cords = [4,17]
+# equipment.equipment_inventory.append(equipment.CigaretteLighter)
+# characters.Protipole.Equipped = [equipment.Finale,equipment.Disarm,equipment.Healing_Aura] #
+# characters.Startole.Equipped = [equipment.Spear_of_Staves,equipment.Pierce,equipment.Guard]
+# characters.Bipoanderer.Equipped = [equipment.Snipe,equipment.Drown]
+# characters.Archle.Equipped = [equipment.Snipe, equipment.Knife_Rain, equipment.Inferno]
+# characters.Wicole.Equipped = [equipment.Cryoablate,equipment.Holy_Light,equipment.Drown] #
+# characters.Bithecary.Equipped = [equipment.Recover,equipment.Rime_Potion,equipment.Healing_Aura]
+# characters.Bipouge.Equipped = [equipment.Spear_of_Staves,equipment.Holy_Light,equipment.Flood]
+# characters.Alls_Ros.Equipped = [equipment.Cryoablate,equipment.Drown,equipment.Holy_Light] #
+# characters.Birowth.Equipped = [equipment.Assault_Rifle,equipment.Pierce,equipment.Shatter]
 #LEVEL 17 AT END OF THE LABYRINTH
 
-equipment.key_item_inventory.append(equipment.mysterious_crystals)
-equipment.key_item_inventory.append(equipment.humphrey_lore_read)
-equipment.key_item_inventory.append(equipment.ecochecker)
-equipment.key_item_inventory.append(equipment.bonus_shop_pass_ii)
-equipment.key_item_inventory.append(equipment.ultimate_energy_prism)
-equipment.key_item_inventory.append(equipment.super_pure_diamond)
-equipment.key_item_inventory.append(equipment.the_holy_cards)
+# equipment.key_item_inventory.append(equipment.mysterious_crystals)
+# equipment.key_item_inventory.append(equipment.humphrey_lore_read)
+# equipment.key_item_inventory.append(equipment.ecochecker)
+# equipment.key_item_inventory.append(equipment.bonus_shop_pass_ii)
+# equipment.key_item_inventory.append(equipment.ultimate_energy_prism)
+# equipment.key_item_inventory.append(equipment.super_pure_diamond)
+# equipment.key_item_inventory.append(equipment.the_holy_cards)
 
 
 
-equipment.key_item_inventory.append(equipment.virginity_hat)
-equipment.key_item_inventory.append(equipment.neville_coin)
-equipment.key_item_inventory.append(equipment.virginity_propaganda_signed)
+# equipment.key_item_inventory.append(equipment.virginity_hat)
+# equipment.key_item_inventory.append(equipment.neville_coin)
+# equipment.key_item_inventory.append(equipment.virginity_propaganda_signed)
 
-equipment.key_item_inventory.append(equipment.ricefield_key)
-equipment.key_item_inventory.append(equipment.alter_key)
+# equipment.key_item_inventory.append(equipment.ricefield_key)
+# equipment.key_item_inventory.append(equipment.alter_key)
 
 
 

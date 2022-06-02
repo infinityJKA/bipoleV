@@ -4,7 +4,7 @@ Dyad Distichouan:[@]Hello, is there something[@]you need?
 #INIT_MULTICHOICE
 #MULTICHOICE
 [Select an action]
-["Talk","Shop","Battle"]
+["Talk","Shop"]
 LEAVE
 _
 /==/.Talk
@@ -101,25 +101,6 @@ Dyad Distichouan:[@]Need anything else?
 #GOTO START
 _
 _
-_
-/==/.Battle
-Dyad Distichouan:[@]Let's play a little game.
-Dyad Distichouan:[@]I'll hold back from my true power[@]and we can have a duel.
-Dyad Distichouan:[@]If you're able to keep up, I'll[@]give you an Ultimate Energy Prism.
-#CHOICE Battle Dyad?[@][Recommended Level: 20][@][A] Yes[@][B] No
-_
-#CHOICE_RESULT
-Dyad Distichouan:[@]...
-Dyad Distichouan:[@]Need anything else?
-#GOTO START
--pass-
-_
-#ENCOUNTER dyad_boss
-#SET_IMAGE dyad_distichouan
-Dyad Distichouan:[@]Good battle.
-Dyad Distichouan:[@]Here's your Ultimate Energy Prism.
-#GAIN_KEYITEM ultimate_energy_prism
-#OVERRIDE_SELF Sn3p2
 _
 _
 _
