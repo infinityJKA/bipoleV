@@ -1,0 +1,5 @@
+kai_overworld
+Kai:[@]Wow, you actually did it.
+Kai:[@]You've beaten his game, and[@]without any curses either!
+Kai:[@]Congratulations.
+#END
