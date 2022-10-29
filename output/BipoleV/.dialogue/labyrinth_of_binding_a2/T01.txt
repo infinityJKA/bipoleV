@@ -1,0 +1,4 @@
+skeleton_soldier2
+Skeleton Soldier:[@]We are guarding the quarters of[@]necromancer empress Eidola.
+Skeleton Soldier:[@]You're the second one of come[@]visit today.
+#END

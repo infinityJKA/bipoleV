@@ -1,0 +1,5 @@
+nothing
+You stepped on a switch!
+#OPEN_PATHS 01
+You hear a path open up...
+#DESTROY_SELF

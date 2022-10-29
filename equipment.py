@@ -337,7 +337,7 @@ if True: #Swords
     Display_Name = "Lumio Sword",
     Equip_Type = "Protipole", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Sword",
-    Move_Type = "Magica", #Physical, Magic, Heal, Boost
+    Move_Type = "Magic", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 
     SP_Cost = 0, #Deducted
     Priority = 175, #Added
@@ -391,7 +391,7 @@ if True: #Swords
 
     Bite = Equipment(
     Display_Name = "Bite",
-    Equip_Type = "Sword", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
+    Equip_Type = "Enemy", #Fists, Sword, Lance, Staff, Bow, Fire, Water, Ice, Heal, Gun
     Damage_Type = "Sword",
     Move_Type = "Physical", #Physical, Magic, Heal, Boost
     Target = "Single Enemy", #Single Enemy, Single Ally, All Enemies, All Allies 

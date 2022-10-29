@@ -1,0 +1,8 @@
+nwap
+Nwap:[@]If you need to sell something,[@]you've come to the right place.
+#PAWN_INIT_VAR
+#PAWN
+Bieace Castle Town Pawner Nwap
+0.65
+Nwap:[@]Yessir!
+#END

@@ -1,0 +1,6 @@
+nothing
+test
+#ENCOUNTER new_link_boss1
+#ENCOUNTER new_link_boss2
+end test
+#DESTROY_SELF

@@ -1,0 +1,22 @@
+siphon_cognoscente
+Siphon Cognoscente:[@]Hello!
+#CHOICE = Travel to Bieace Castle Town? =[@][A] Yes[@][B] No
+#CHOICE_RESULT_GO_TO
+YES
+NO
+_
+/==/.YES
+#SET_TILE
+Bieace_Castle_Town
+11
+6
+T10
+#MOVE_TO
+Bieace_Castle_Town
+6
+12
+North
+#END
+_
+/==/.NO
+#END

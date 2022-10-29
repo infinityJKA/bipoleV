@@ -1,0 +1,14 @@
+door1
+#CHOICE Enter Bieace Castle Town?[@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END
+-pass-
+-pass-
+-pass- 
+_
+#MOVE_TO
+Bieace_Castle_Town
+12
+8
+West

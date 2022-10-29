@@ -1,0 +1,16 @@
+nothing
+#SENDIFKEYITEM bonus_shop_pass_ii
+has
+doesnt
+_
+/==/.has
+You pass through the aura...
+#OVERRIDE_SELF n00
+_
+/==/.doesnt
+A mysterious aura blocks[@]your way...
+#MOVE_TO
+Metalimnion
+11
+11
+NO CHANGE

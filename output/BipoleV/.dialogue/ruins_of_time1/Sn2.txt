@@ -1,0 +1,67 @@
+artxe
+Artxe:[@]Hello.
+/==/.START
+#INIT_MULTICHOICE
+#MULTICHOICE
+[Select an action]
+["Talk","Shop","Sell"]
+LEAVE
+_
+/==/.Talk
+Artxe:[@]What do you want to[@]talk about?
+#INIT_MULTICHOICE
+#MULTICHOICE
+[Select a topic]
+["Who are you?","Memories"]
+BACKTOSTART
+_
+/==/.Who are you?
+Artxe:[@]I am a survivor of the Finis Event,[@]though I don't remember who I am.
+Artxe:[@]I was one of the Realmers chosen to[@]be reincarnated as a stronger mortal, but[@]I lost my memories due to it.
+Artxe:[@]I go by Artxe now.
+Artxe:[@]...
+#GOTO Talk
+_
+/==/.Memories
+Artxe:[@]I lost all of my memories through[@]the reincarnation process, though[@]it seems others did not.
+Artxe:[@]Some may call the lack of memories[@]the freedom to live anew, others may[@]consider it the ultimate supression of[@]freedom and self.
+Artxe:[@]However, all I seek is meaning.
+Artxe:[@]Hoping to find some meaning in life,[@]I traveled for my memories until I[@]eventually ended up here.
+Artxe:[@]...
+#GOTO Talk
+_
+/==/.BACKTOSTART
+Artxe:[@]Need something else?
+#GOTO START
+_
+_
+_
+/==/.Shop
+Artxe:[@]Here's my selection.
+#SHOP_EQUIPMENT
+The Bonus Shop
+Equivalent_Exchange_I
+Equivalent_Exchange_II
+Equivalent_Exchange_III
+Equivalent_Exchange_IV
+Equivalent_Exchange_V
+#SHOP_END
+Artxe:[@]Need something else?
+#GOTO START
+_
+_
+_
+/==/.Sell
+Artxe:[@]What do you want to sell?
+#PAWN_INIT_VAR
+#PAWN
+The Bonus Shop
+0.75
+Artxe:[@]Need something else?
+#GOTO START
+_
+_
+_
+/==/.LEAVE
+Artxe:[@]Goodbye.
+#END

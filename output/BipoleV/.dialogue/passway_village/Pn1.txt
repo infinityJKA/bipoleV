@@ -1,0 +1,9 @@
+vendipole
+Vendipole:[@]'ello!
+Vendipole:[@]If ya got stuff ya don't need,[@]I'll buy 'em off ya!
+#PAWN_INIT_VAR
+#PAWN
+Passway Village Pawner Vendipole
+0.65
+Vendipole:[@]Come again!
+#END

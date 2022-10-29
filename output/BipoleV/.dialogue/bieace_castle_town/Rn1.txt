@@ -1,0 +1,26 @@
+Bipoanderer
+Bipoanderer:[@]I am Bipoanderer, a wandering[@]hero in search of a job.
+Bipoanderer:[@]Might you know anything that[@]needs saving?
+_
+_
+_
+_
+#CHOICE =Recruit Bipoanderer?=[@][A] Yes[@][B] No
+#CHOICE_RESULT
+Bipoanderer:[@]Oh, well let me know if you[@]ever need to save the world.
+#END
+-pass-
+-pass-
+-pass-
+_
+Protipole:[@]Actually, I'm on a quest right now.
+Bipoanderer:[@]A quest?
+Protipole:[@]Yes, I need to retrieve the Holy Cards[@]before the Empire of Eviole does.
+Protipole:[@]And I could use some help...
+Bipoanderer:[@]Say no more!
+Bipoanderer:[@]I shall help you retrieve the Holy Cards!
+#RECRUIT
+Bipoanderer
+-pass-
+Bipoanderer joined your party!
+#OVERRIDE_SELF n00

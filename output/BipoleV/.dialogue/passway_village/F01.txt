@@ -1,0 +1,5 @@
+nothing
+test
+#ENCOUNTER rot2_boss
+test end
+#DESTROY_SELF

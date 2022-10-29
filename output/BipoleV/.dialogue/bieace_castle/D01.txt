@@ -1,0 +1,14 @@
+door1
+#CHOICE Leave the castle and enter the town?[@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END
+-pass-
+-pass-
+-pass- 
+_
+#MOVE_TO
+Bieace_Castle_Town
+5
+14
+North

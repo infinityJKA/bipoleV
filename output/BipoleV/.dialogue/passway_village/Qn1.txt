@@ -1,0 +1,12 @@
+mreconomy2
+Mr. Economy:[@]You see this Ikohnomex guy next to me?
+Mr. Economy:[@]I really hate him.
+Mr. Economy:[@]I could be doing stocks there,[@]but he owns that corner of land!
+Mr. Economy:[@]You know what, why don't you[@]help me kill him?
+Mr. Economy:[@]Get me a Sussy Device.
+Mr. Economy:[@]I left mine in the Bonus Shop,[@]so go get it for me.
+Mr. Economy:[@]The Bonus Shop is in the first[@]area of the Ruins of Time, but[@]you'll need a special pass to get in.
+Mr. Economy:[@]I also forgot my pass in the[@]second area of the ruins, so you[@]can take that and use it.
+Mr. Economy:[@]Come back once you get me my[@]Sussy Device so I can kill[@]lil' Ikohnomex-boy here.
+#OVERRIDE_SELF Qn1p2
+#END

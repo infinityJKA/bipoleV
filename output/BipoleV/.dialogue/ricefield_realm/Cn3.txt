@@ -1,0 +1,12 @@
+chest1
+#CHOICE Open the chest?[@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END
+-pass-
+-pass-
+-pass- 
+_
+#SET_IMAGE chest2
+#GAIN_KEYITEM ricefield_key
+#OVERRIDE_SELF n00

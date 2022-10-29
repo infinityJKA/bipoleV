@@ -1,0 +1,21 @@
+alls_ros
+Alls Ros:[@]You must be Protipole...
+Alls Ros:[@]I have seen visions of your travel[@]to here.
+Alls Ros:[@]In the name of the holy Razz and[@]to protect this land, I wish[@]to aid you on your quest.
+_
+#CHOICE =Recruit Alls Ros?=[@][A] Yes[@][B] No
+#CHOICE_RESULT
+Alls Ros:[@]Very well then.
+Alls Ros:[@]I will be here at the church[@]if you ever need me.
+#END
+-pass-
+-pass-
+_
+Protipole:[@]Sure, I could use some help.
+Alls Ros:[@]Now, to the Labyrinth of Binding[@]we must go.
+Alls Ros:[@]The Holy Cards await us there.
+#RECRUIT
+Alls_Ros
+-pass-
+Alls Ros joined your party!
+#OVERRIDE_SELF n00

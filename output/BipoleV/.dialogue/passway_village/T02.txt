@@ -1,0 +1,5 @@
+npc1
+Villager:[@]Have you heard about the Ruins of[@]Time?
+Villager:[@]West of this village are some ancient[@]ruins.
+Villager:[@]Some say that there's great treasures[@]hidden within it.
+#END

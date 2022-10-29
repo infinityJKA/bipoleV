@@ -1,0 +1,14 @@
+door1
+#CHOICE Return to Metalimnion?[@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END
+-pass-
+-pass-
+-pass- 
+_
+#MOVE_TO
+Metalimnion
+10
+8
+South

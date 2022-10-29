@@ -1,0 +1,16 @@
+egrof
+Egrof:[@]Greetings.
+#SHOP_EQUIPMENT
+Passway Village Armorsmith Egrof
+Iron_Gauntlets
+Slice
+Stab
+Stone_Staff
+Long_Bow
+Fire_Blast
+Hydro
+Congeal
+Recover
+#SHOP_END
+Egrof:[@]So long.
+#END

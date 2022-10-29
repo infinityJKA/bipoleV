@@ -1,0 +1,4 @@
+This is a pass to enter the[@]Bonus Shop (Ruins of Time location).
+It's covered in a golden material,[@]and the text shakes like water when moved.
+A message of the back reads:[@]"The Bonus Shop is a place partially[@]in every realm, yet fully in none. If you find[@]us, you may enter using this pass."
+#END_KEY_ITEM

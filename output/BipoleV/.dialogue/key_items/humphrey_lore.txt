@@ -1,0 +1,19 @@
+_
+HUMPHREY LORE[@]by Humphrey Fallen[@]- - - - - - -[@]The solution to the universe, timeline,[@]and concept of existence.[@]You cannot revert to your previous[@]state of ignorance after experiencing[@]this literature...
+.
+..
+...
+#CHOICE Experience the SOLUTION?[@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END_KEY_ITEM
+-pass-
+-pass-
+-pass-
+_
+.
+#SET_KEY_BACK black
+..
+#CLEAR
+...
+#OPEN_DIALG experience_humphrey_lore

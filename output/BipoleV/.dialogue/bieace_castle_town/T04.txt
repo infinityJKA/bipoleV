@@ -1,0 +1,3 @@
+npc2
+Villager:[@]I heard that there's a wandering[@]hero at the tavern right now.
+#END

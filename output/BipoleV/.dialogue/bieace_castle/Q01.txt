@@ -1,0 +1,28 @@
+king2
+#SENDIFKEYITEM the_holy_cards
+has
+doesnt
+_
+/==/.has
+King Kipole III of Bieace:[@]Oh, you've returned!
+King Kipole III of Bieace:[@]And with the Holy Cards, too!
+King Kipole III of Bieace:[@]Allow me to take a look at them.
+#REMOVE_KEYITEM the_holy_cards
+[Protipole handed over the Holy Cards...]
+King Kipole III of Bieace:[@]These truly are the real thing!
+King Kipole III of Bieace:[@]To think that I'd be able to ever[@]lay my eyes on them...
+King Kipole III of Bieace:[@]You've done great work for the[@]empire, Protipole.
+King Kipole III of Bieace:[@]I'll put these cards in the castle's[@]safest treasury.
+King Kipole III of Bieace:[@]Speaking of which, I found something[@]interesting yesterday.
+King Kipole III of Bieace:[@]A letter addressed to you was found[@]in the treasury, along with a key[@]attached to it.
+#GAIN_KEYITEM surface_key
+#GAIN_KEYITEM letter
+King Kipole III of Bieace:[@]You can take the day off today,[@]you've earned it.
+King Kipole III of Bieace:[@]Feel free to catch up on any[@]other questing you might have to do.
+#OVERRIDE_SELF T01
+_
+/==/.doesnt
+King Kipole III of Bieace:[@]You have been chosen to travel to the[@]Labyrinth of Binding and retrieve[@]the cards before anyone else does.
+King Kipole III of Bieace:[@]If you would need assistance in your[@]journey, seek Startole.
+King Kipole III of Bieace:[@]Startole should be somewhere within[@]this castle, and is willing[@]to aid you on your quest.
+#END

@@ -1,0 +1,22 @@
+lock
+#SENDIFKEYITEM ricefield_key
+has
+doesnt
+_
+/==/.has
+#SENDIFKEYITEM alter_key
+also has
+doesnt
+_
+/==/.also has
+#SENDIFKEYITEM surface_key
+has three
+doesnt
+_
+/==/.has three
+[You use the three keys to unlock the door...]
+#OVERRIDE_SELF D04
+_
+/==/.doesnt
+[You need three keys to open this door...]
+#END

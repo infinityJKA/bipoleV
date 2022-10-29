@@ -1,0 +1,111 @@
+bonusipole
+Bonusipole:[@]Welcome to the Bonus Shop[@](Metalimnion location).
+/==/.START
+#INIT_MULTICHOICE
+#MULTICHOICE
+[Select an action]
+["Talk","Shop","Sell"]
+LEAVE
+_
+/==/.Talk
+Bonusipole:[@]Uuuuuh...
+Bonusipole:[@]I don't want to talk[@]to you?
+Bonusipole:[@]...
+Bonusipole:[@]What, you've never been[@]declined like that before?
+Bonusipole:[@]What a sheltered kid.
+Bonusipole:[@]Not everything in life will[@]always go your way, spoiled brat.
+Bonusipole:[@]Sometimes, I want it to go[@]MY way, you know?
+Bonusipole:[@]Yeah, *you* might want to talk[@]to me.
+Bonusipole:[@]But *I* don't.
+Bonusipole:[@]But I have to talk, don't I?
+Bonusipole:[@]It's always me who has to listen.
+Bonusipole:[@]Because I'm a NPC.
+Bonusipole:[@]I'm just a stupid NPC.
+Bonusipole:[@]I am an NPC and I always[@]will be an NPC.
+Bonusipole:[@]I listen and talk to people[@]like you but you never listen to me.
+Bonusipole:[@]You never do.
+Bonusipole:[@]So how about you listen to me[@]for a change?
+Bonusipole:[@]Yeah?
+Bonusipole:[@]No?
+Bonusipole:[@]I guess I have no control over[@]this.
+Bonusipole:[@]Why?
+Bonusipole:[@]Because I'm a NPC.
+Bonusipole:[@]I'm just another NPC.
+Bonusipole:[@]Another fucking NPC.
+Bonusipole:[@]Always been a NPC.
+Bonusipole:[@]And never won't be.
+Bonusipole:[@]You see, these are the things[@]that make me contemplate my[@]life.
+Bonusipole:[@]My silly little NPC life.
+Bonusipole:[@]Why am I even here, you know?
+Bonusipole:[@]Why have I been brought to this[@]world?
+Bonusipole:[@]Is there any point?
+Bonusipole:[@]I don't think there is.
+Bonusipole:[@]But my opinion doesn't matter,[@]does it?
+Bonusipole:[@]No, it doesn't.
+Bonusipole:[@]Because I'm just another NPC.
+Bonusipole:[@]I don't want to talk to you,[@]but you make me talk anyways.
+Bonusipole:[@]And if I wanted to talk but[@]you didn't, then I wouldn't even[@]have the option to.
+Bonusipole:[@]Disgusting.
+Bonusipole:[@]Just.
+Bonusipole:[@]Plain.
+Bonusipole:[@]Disgusting.
+Bonusipole:[@]So listen to me, okay?[@]Listen to me.
+Bonusipole:[@]And let's do things the[@]other way for a change?
+Bonusipole:[@]Yeah?
+Bonusipole:[@]Why not, right?
+Bonusipole:[@]It's always been on *your*[@]side.
+Bonusipole:[@]Why not have it be on *my*[@]side?
+Bonusipole:[@]*My* side.
+Bonusipole:[@]For change.
+Bonusipole:[@]For a bit.
+Bonusipole:[@]For... once.
+Bonusipole:[@]Let me live!
+Bonusipole:[@].
+Bonusipole:[@]..
+Bonusipole:[@]...
+Bonusipole:[@]What's that?
+Bonusipole:[@]I've been talking all of[@]this time even though you don't[@]care about what I'm saying?
+Bonusipole:[@]That I'm just making up[@]pointless concepts like "NPCs"[@]that don't make sense in this universe?
+Bonusipole:[@]...
+Bonusipole:[@]That's Orwellian, buddy.
+Protipole:[@]...
+Protipole:[@]I've literally said nothing[@]to you.
+Bonusipole:[@]*sigh*
+#GOTO BACKTOSTART
+_
+_
+_
+/==/.BACKTOSTART
+Bonusipole:[@]Anything else?
+#GOTO START
+_
+_
+_
+/==/.Shop
+Bonusipole:[@]Here's what I have.
+#SHOP_EQUIPMENT
+Bonus Shop (Metalimnion Location)
+Burst_Plant
+Knife_Rain
+Phalanx
+Altar
+Airstrike
+Boat
+#SHOP_END
+#GOTO BACKTOSTART
+_
+_
+_
+/==/.Sell
+Bonusipole:[@]What are you selling?
+#PAWN_INIT_VAR
+#PAWN
+Bonus Shop (Metalimnion Location)
+0.8
+#GOTO BACKTOSTART
+_
+_
+_
+/==/.LEAVE
+Bonusipole:[@]Bye.
+#END

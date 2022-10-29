@@ -1,0 +1,4 @@
+npc1
+Villager:[@]...
+Villager:[@]Camping.
+#END

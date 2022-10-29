@@ -1,0 +1,14 @@
+door1
+#CHOICE Go through the door?[@][A] Yes[@][B] No
+_
+#CHOICE_RESULT
+#END
+-pass-
+-pass-
+-pass- 
+_
+#MOVE_TO
+Final_Area
+10
+30
+North
