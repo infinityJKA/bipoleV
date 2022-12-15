@@ -1,3 +1,0 @@
-sign
-[Activate the four switches[@]to reach the key...]
-#END

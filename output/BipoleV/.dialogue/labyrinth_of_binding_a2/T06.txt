@@ -1,5 +1,0 @@
-shield_skelly2
-Shield Skelly:[@]The Labyrinth of Binding used[@]to be a burial ground.
-Shield Skelly:[@]But a few years ago, necromancer[@]empress Eidola came here and revived us.
-Shield Skelly:[@]So now we kind of just exist and[@]have to serve her.
-#END

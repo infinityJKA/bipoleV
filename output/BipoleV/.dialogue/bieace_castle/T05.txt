@@ -1,4 +1,0 @@
-npc1
-Guard:[@]Before you leave, make sure[@] to EQUIP some equipment.
-Guard:[@]There should be a few lying[@]around the castle if you need them.
-#END

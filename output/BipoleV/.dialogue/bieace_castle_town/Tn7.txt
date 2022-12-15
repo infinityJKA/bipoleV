@@ -1,6 +1,0 @@
-npc2
-Villager:[@]When in battle, a higher priority[@]means a higher chance to be[@]targeted by an enemy attack.
-Villager:[@]At the start of battle, your PR[@]will be reset.
-Villager:[@]Performing most moves will [@]increase your PR, while defending will[@]decrease your PR by 100.
-Villager:[@]Make sure to keep track of your PR,[@] or you might end up with one ally[@]getting ganged up by the enemies.
-#END

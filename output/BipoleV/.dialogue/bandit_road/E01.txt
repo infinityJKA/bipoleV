@@ -1,5 +1,0 @@
-nothing
-You open a locked gate.
-#OPEN_PATHS 01
-A new path opens up.
-#DESTROY_SELF

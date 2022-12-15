@@ -1,8 +1,0 @@
-spec
-Spec:[@]Greetings.
-#PAWN_INIT_VAR
-#PAWN
-Guardian Village Pawner Spec
-0.6
-Spec:[@]Farewell.
-#END

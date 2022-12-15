@@ -1,3 +1,0 @@
-This is a trading card.
-It has a picture of a man[@]man looking straight forwards.
-#END_KEY_ITEM
