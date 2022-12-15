@@ -1,4 +1,4 @@
-import equipment
+import bipolev.equipment as equipment
 class Party_Character:
     def __init__(self,
     Display_Name = "DISPLAY NAME",

@@ -1,5 +1,5 @@
 from numpy import Inf
-import equipment
+import bipolev.equipment as equipment
 class Enemy:
     def __init__(self,
     DisplayName = "DISPLAY NAME",

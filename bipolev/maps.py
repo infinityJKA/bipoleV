@@ -1,4 +1,4 @@
-import enemies
+import bipolev.enemies as enemies
 global player_cords
 global player_tracking
 player_cords = [9,15]

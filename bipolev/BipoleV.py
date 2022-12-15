@@ -6,10 +6,10 @@ from tkinter import *
 import os
 import time
 import __main__
-import maps
-import characters
-import equipment
-import enemies
+import bipolev.maps as maps
+import bipolev.characters as characters
+import bipolev.equipment as equipment
+import bipolev.enemies as enemies
 from PIL import Image
 from PIL import ImageTk
 import random
