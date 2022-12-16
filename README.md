@@ -1,29 +1,33 @@
 # THANK YOU FOR DOWNLOADING BIPOLE V: DUNGEONS OF BIPHERO
 
-(game made by [infinityJKA](https://github.com/infinityJKA) from <infinityjka.itch.io>)
+Made by [infinityJKA](https://github.com/infinityJKA) of <https://infinityjka.itch.io>.
 
-Controls:
-Key inputs for actions are mapped similar to how they are displayed on the screen.  
+## Controls
+
+Key inputs for actions are mapped similar to how they are displayed on the screen.
+
 ! ! ! CAPS LOCK WILL MESS WITH INPUTS, DON'T HAVE CAPS LOCK ENABLED ! ! !
 
-- 1 = [SAVE]
-- 2 = [TOGGLE SIDESTEP]
-- 3 = [STAT]
-- 4 = [KEY ITEMS]
-- q = [A]
-- e = [B]
-- w = [UP]
-- r = [EQUIP]
-- t = [PARTY]
-- a = [LEFT]
-- s = [DOWN]
-- d = [RIGHT]
-- f = [ITEM]
-- g = [TALK]
+| Key        | Mapping         |
+| ---------- | --------------- |
+| 1          | SAVE            |
+| 2          | TOGGLE SIDESTEP |
+| 3          | STAT            |
+| 4          | KEY ITEMS       |
+| q          | A               |
+| e          | B               |
+| w          | UP              |
+| r          | EQUIP           |
+| t          | PARTY           |
+| a          | LEFT            |
+| s          | DOWN            |
+| d          | RIGHT           |
+| f          | ITEM            |
+| g          | TALK            |
+| arrow keys | movement        |
+| space key  | for TALK        |
 
-- You can also use the arrow keys for movement and the space key for [TALK].
-
-Tips:
+## Tips
 
 - TALK TO EVERY NPC. This is really important, many NPCs have extremely important things to say.
 - TAKE NOTES. There are lots of things to keep track of in this game, take notes on enemy weaknesses, quests to complete, and areas to come back to later.
