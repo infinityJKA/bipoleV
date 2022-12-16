@@ -1,5 +1,6 @@
-save.dat
-autosave.dat
+# THESE SHOULD BE IGNORED, BUT ARE NOT YET, DUE TO LACK OF PROPER GENERATION AT STARTUP
+#save.dat
+#autosave.dat
 
 output/
 
