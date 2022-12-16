@@ -412,16 +412,16 @@ if True:
         550, 362, anchor=CENTER, image=character_sprite3
     )
 
-    dialouge = tk.Label(
+    dialogue = tk.Label(
         master=centrow,
-        text="Lemniscate Bipole V:\nDungeons of Biphero\n\nMade by infinityJKA\n\n----------\n\n[A] Load Save\n[B] New Game\n\n----------\n\nRead README.txt before playing\n\n(Release v1.0)\ninfinityjka.itch.io",
+        text="Lemniscate Bipole V:\nDungeons of Biphero\n\nMade by infinityJKA\n\n----------\n\n[A] Load Save\n[B] New Game\n\n----------\n\nRead the README before playing\n\n(Release v1.0.1)\ninfinityjka.itch.io",
         relief=tk.FLAT,
         width=50,
         height=30,
         bg="black",
     )
-    dialouge.config(font=(mainfont, 12), fg="white")
-    dialouge.grid(row=0, column=1)
+    dialogue.config(font=(mainfont, 12), fg="white")
+    dialogue.grid(row=0, column=1)
 
     botrow = tk.Frame(master=mainframe, relief=tk.RAISED, bg="black")
     botrow.grid(row=2, column=0)
@@ -1147,11 +1147,11 @@ def disable_inputs():
 
 
 def write_text(the_text):
-    dialouge.config(text=the_text)
+    dialogue.config(text=the_text)
 
 
 def clear_text():
-    dialouge.config(text="")
+    dialogue.config(text="")
 
 
 def newgame():
@@ -1324,7 +1324,8 @@ def start_dialogue(input_file):
         + maps.current_location[4]
         + "/"
         + input_file
-        + ".txt"
+        + ".txt",
+        encoding="UTF-8",
     )
     dialogue = [line.rstrip("\n") for line in file_contents]
     print(dialogue)
@@ -1421,7 +1422,8 @@ def perform_dialogue():
         thing = line.replace("#OPEN_DIALG ", "")
         dialogue_index = 0
         file_contents = open(
-            current_directory + "/dialogue/key_items/" + thing + ".txt"
+            current_directory + "/dialogue/key_items/" + thing + ".txt",
+            encoding="UTF-8",
         )
         dialogue = [line.rstrip("\n") for line in file_contents]
         print(dialogue)
@@ -2649,7 +2651,8 @@ def refresh():
                 + maps.current_location[4]
                 + "/"
                 + standing_on
-                + ".txt"
+                + ".txt",
+                encoding="UTF-8",
             )
         ]
         # print(dialogue[0])
@@ -2666,7 +2669,8 @@ def refresh():
                 + maps.current_location[4]
                 + "/"
                 + standing_on
-                + ".txt"
+                + ".txt",
+                encoding="UTF-8",
             )
         ]
         # print(dialogue[0])
@@ -2683,7 +2687,8 @@ def refresh():
                 + maps.current_location[4]
                 + "/"
                 + standing_on
-                + ".txt"
+                + ".txt",
+                encoding="UTF-8",
             )
         ]
         # print(dialogue[0])
@@ -2700,12 +2705,13 @@ def refresh():
                 + maps.current_location[4]
                 + "/"
                 + standing_on
-                + ".txt"
+                + ".txt",
+                encoding="UTF-8",
             )
         ]
         # print(dialogue[0])
         set_character_sprite(2, dialouge[0])
-        write_text("[ENTERANCE]")
+        write_text("[ENTRANCE]")
         enable_movement_controls()
     elif standing_on.startswith("H"):
         dialouge_file = standing_on
@@ -2717,7 +2723,8 @@ def refresh():
                 + maps.current_location[4]
                 + "/"
                 + standing_on
-                + ".txt"
+                + ".txt",
+                encoding="UTF-8",
             )
         ]
         # print(dialogue[0])
@@ -2734,7 +2741,8 @@ def refresh():
                 + maps.current_location[4]
                 + "/"
                 + standing_on
-                + ".txt"
+                + ".txt",
+                encoding="UTF-8",
             )
         ]
         # print(dialogue[0])
@@ -2752,7 +2760,8 @@ def refresh():
                 + maps.current_location[4]
                 + "/"
                 + standing_on
-                + ".txt"
+                + ".txt",
+                encoding="UTF-8",
             )
         ]
         # print(dialogue[0])
@@ -2769,7 +2778,8 @@ def refresh():
                 + maps.current_location[4]
                 + "/"
                 + standing_on
-                + ".txt"
+                + ".txt",
+                encoding="UTF-8",
             )
         ]
         set_character_sprite(2, dialouge[0])
@@ -3354,7 +3364,8 @@ def generate_background():
                         + maps.current_location[4]
                         + "/"
                         + lst[ind]
-                        + ".txt"
+                        + ".txt",
+                        encoding="UTF-8",
                     )
                 ]
                 # spr_sides = Image.open(thing+"00000.png").convert("RGBA")
@@ -3438,7 +3449,8 @@ def generate_background():
                         + maps.current_location[4]
                         + "/"
                         + lst[ind]
-                        + ".txt"
+                        + ".txt",
+                        encoding="UTF-8",
                     )
                 ]
                 # spr_sides = Image.open(thing+"00000.png").convert("RGBA")
@@ -3514,7 +3526,8 @@ def generate_background():
                         + maps.current_location[4]
                         + "/"
                         + lst[ind]
-                        + ".txt"
+                        + ".txt",
+                        encoding="UTF-8",
                     )
                 ]
                 back_spr_num = back_spr_num + "0"
@@ -5248,7 +5261,8 @@ def use_key_item():
     input_file = equipment.key_item_inventory[multiselect_index].text_file
     dialogue_index = 0
     file_contents = open(
-        current_directory + "/dialogue/key_items/" + input_file + ".txt"
+        current_directory + "/dialogue/key_items/" + input_file + ".txt",
+        encoding="UTF-8",
     )
     dialogue = [line.rstrip("\n") for line in file_contents]
     print(dialogue)
@@ -5485,7 +5499,7 @@ def load_save():
     # ]
     print("reading save...")
     loaded_thing = []
-    with open("save.dat", "rb") as f:
+    with open("save.dat", "rb", encoding="UTF-8") as f:
         loaded_thing = pickle.load(f)
     #     for _ in range(pickle.load(f)):
     #         thing.append(pickle.load(f))
@@ -5538,7 +5552,7 @@ def load_save():
 def load_autosave():
     print("reading autosave...")
     loaded_thing = []
-    with open("autosave.dat", "rb") as f:
+    with open("autosave.dat", "rb", encoding="UTF-8") as f:
         loaded_thing = pickle.load(f)
     print("finished reading save")
     print("loading save...")
@@ -5591,7 +5605,11 @@ def save_data():
         characters.Unequipped_Characters,
         equipment.key_item_inventory,
     ]
-    with open("save.dat", "wb") as f:
+    with open(
+        "save.dat",
+        "wb",
+        encoding="UTF-8",
+    ) as f:
         pickle.dump(stuff, f)
 
 
@@ -5612,7 +5630,11 @@ def autosave_data():
         characters.Unequipped_Characters,
         equipment.key_item_inventory,
     ]
-    with open("autosave.dat", "wb") as f:
+    with open(
+        "autosave.dat",
+        "wb",
+        encoding="UTF-8",
+    ) as f:
         pickle.dump(stuff, f)
 
 
