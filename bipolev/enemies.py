@@ -1,6 +1,9 @@
-from numpy import Inf
+try:
+    import equipment
+except ImportError:
+    from . import equipment
 
-import bipolev.equipment as equipment
+from numpy import Inf
 
 
 class Enemy:

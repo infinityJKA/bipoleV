@@ -10,12 +10,19 @@ from tkinter import dialog
 from tkinter.filedialog import askopenfilename
 
 import __main__
-from PIL import Image, ImageTk
 
-import bipolev.characters as characters
-import bipolev.enemies as enemies
-import bipolev.equipment as equipment
-import bipolev.maps as maps
+try:
+    import characters
+    import enemies
+    import equipment
+    import maps
+except ImportError:
+    from . import characters
+    from . import enemies
+    from . import equipment
+    from . import maps
+
+from PIL import Image, ImageTk
 
 current_directory = os.getcwd()
 print(current_directory)

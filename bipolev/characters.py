@@ -1,4 +1,7 @@
-import bipolev.equipment as equipment
+try:
+    import equipment
+except ImportError:
+    from . import equipment
 
 
 class Party_Character:

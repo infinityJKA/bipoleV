@@ -1,4 +1,7 @@
-import bipolev.enemies as enemies
+try:
+    import enemies
+except ImportError:
+    from . import enemies
 
 global player_cords
 global player_tracking
