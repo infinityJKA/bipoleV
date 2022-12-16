@@ -1,4 +1,5 @@
 from argparse import Action
+from typing import Any
 
 
 class Equipment:
@@ -15,7 +16,11 @@ class Equipment:
         Purchasing_Price=500,  # Sells for half of the purchasing price, cannot be sold if 0
         Heal_Stat="HP",  # The stat to heal,
         Multi_Effect=False,
-        Inflict=["ATK", 1.2, 3],  # Stat to boost, amount to boost by, turns to last
+        Inflict: list[Any] = [
+            "ATK",
+            1.2,
+            3,
+        ],  # Stat to boost, amount to boost by, turns to last
         Description="test",
         Action_Count=1,
     ):
