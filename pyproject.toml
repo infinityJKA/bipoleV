@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bipolev"
-version = "1.0.1"
+version = "1.0.0"
 description = "#26 in the Bipole Series"
 authors = ["InfinityJKA <jkajustin@gmail.com>"]
 readme = "README.md"
