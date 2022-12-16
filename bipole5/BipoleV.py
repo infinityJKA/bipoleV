@@ -22,9 +22,11 @@ except ImportError:
     from . import equipment
     from . import maps
 
+from pathlib import Path
+
 from PIL import Image, ImageTk
 
-current_directory = os.getcwd()
+current_directory: Path = Path(os.path.realpath(__file__)).parent
 print(current_directory)
 
 if True:
@@ -414,7 +416,7 @@ if True:
 
     dialogue = tk.Label(
         master=centrow,
-        text="Lemniscate Bipole V:\nDungeons of Biphero\n\nMade by infinityJKA\n\n----------\n\n[A] Load Save\n[B] New Game\n\n----------\n\nRead the README before playing\n\n(Release v1.0.1)\ninfinityjka.itch.io",
+        text="Lemniscate Bipole V:\nDungeons of Biphero\n\nMade by infinityJKA\n\n----------\n\n[A] Load Save\n[B] New Game\n\n----------\n\nRead the README before playing\n\n(Release v1.0.0)\ninfinityjka.itch.io",
         relief=tk.FLAT,
         width=50,
         height=30,
@@ -1320,11 +1322,9 @@ def start_dialogue(input_file):
     dialogue_index = 1
     file_contents = open(
         current_directory
-        + "/dialogue/"
-        + maps.current_location[4]
-        + "/"
-        + input_file
-        + ".txt",
+        / "dialogue"
+        / maps.current_location[4]
+        / (input_file + ".txt"),
         encoding="UTF-8",
     )
     dialogue = [line.rstrip("\n") for line in file_contents]
@@ -1422,7 +1422,7 @@ def perform_dialogue():
         thing = line.replace("#OPEN_DIALG ", "")
         dialogue_index = 0
         file_contents = open(
-            current_directory + "/dialogue/key_items/" + thing + ".txt",
+            current_directory / "dialogue" / "key_items" / (thing + ".txt"),
             encoding="UTF-8",
         )
         dialogue = [line.rstrip("\n") for line in file_contents]
@@ -2570,12 +2570,12 @@ def refresh():
     dialouge_file = "empty"
     dialouge = [
         line.rstrip("\n")
-        for line in current_directory
-        + "/dialogue/"
-        + maps.current_location[4]
-        + "/"
-        + dialouge_file
-        + ".txt"
+        for line in (
+            current_directory
+            / "dialogue"
+            / maps.current_location[4]
+            / (dialouge_file + ".txt")
+        )
     ]
     dialogue_index = 1
     cords = maps.return_player_cords()
@@ -2647,11 +2647,9 @@ def refresh():
             line.rstrip("\n")
             for line in open(
                 current_directory
-                + "/dialogue/"
-                + maps.current_location[4]
-                + "/"
-                + standing_on
-                + ".txt",
+                / "dialogue"
+                / maps.current_location[4]
+                / (standing_on + ".txt"),
                 encoding="UTF-8",
             )
         ]
@@ -2665,11 +2663,9 @@ def refresh():
             line.rstrip("\n")
             for line in open(
                 current_directory
-                + "/dialogue/"
-                + maps.current_location[4]
-                + "/"
-                + standing_on
-                + ".txt",
+                / "dialogue"
+                / maps.current_location[4]
+                / (standing_on + ".txt"),
                 encoding="UTF-8",
             )
         ]
@@ -2683,11 +2679,9 @@ def refresh():
             line.rstrip("\n")
             for line in open(
                 current_directory
-                + "/dialogue/"
-                + maps.current_location[4]
-                + "/"
-                + standing_on
-                + ".txt",
+                / "dialogue"
+                / maps.current_location[4]
+                / (standing_on + ".txt"),
                 encoding="UTF-8",
             )
         ]
@@ -2701,11 +2695,9 @@ def refresh():
             line.rstrip("\n")
             for line in open(
                 current_directory
-                + "/dialogue/"
-                + maps.current_location[4]
-                + "/"
-                + standing_on
-                + ".txt",
+                / "dialogue"
+                / maps.current_location[4]
+                / (standing_on + ".txt"),
                 encoding="UTF-8",
             )
         ]
@@ -2719,11 +2711,9 @@ def refresh():
             line.rstrip("\n")
             for line in open(
                 current_directory
-                + "/dialogue/"
-                + maps.current_location[4]
-                + "/"
-                + standing_on
-                + ".txt",
+                / "dialogue"
+                / maps.current_location[4]
+                / (standing_on + ".txt"),
                 encoding="UTF-8",
             )
         ]
@@ -2737,11 +2727,9 @@ def refresh():
             line.rstrip("\n")
             for line in open(
                 current_directory
-                + "/dialogue/"
-                + maps.current_location[4]
-                + "/"
-                + standing_on
-                + ".txt",
+                / "dialogue"
+                / maps.current_location[4]
+                / (standing_on + ".txt"),
                 encoding="UTF-8",
             )
         ]
@@ -2756,11 +2744,9 @@ def refresh():
             line.rstrip("\n")
             for line in open(
                 current_directory
-                + "/dialogue/"
-                + maps.current_location[4]
-                + "/"
-                + standing_on
-                + ".txt",
+                / "dialogue"
+                / maps.current_location[4]
+                / (standing_on + ".txt"),
                 encoding="UTF-8",
             )
         ]
@@ -2774,11 +2760,9 @@ def refresh():
             line.rstrip("\n")
             for line in open(
                 current_directory
-                + "/dialogue/"
-                + maps.current_location[4]
-                + "/"
-                + standing_on
-                + ".txt",
+                / "dialogue"
+                / maps.current_location[4]
+                / (standing_on + ".txt"),
                 encoding="UTF-8",
             )
         ]
@@ -3360,11 +3344,9 @@ def generate_background():
                     line.rstrip("\n")
                     for line in open(
                         current_directory
-                        + "/dialogue/"
-                        + maps.current_location[4]
-                        + "/"
-                        + lst[ind]
-                        + ".txt",
+                        / "dialogue"
+                        / maps.current_location[4]
+                        / (lst[ind] + ".txt"),
                         encoding="UTF-8",
                     )
                 ]
@@ -3445,11 +3427,9 @@ def generate_background():
                     line.rstrip("\n")
                     for line in open(
                         current_directory
-                        + "/dialogue/"
-                        + maps.current_location[4]
-                        + "/"
-                        + lst[ind]
-                        + ".txt",
+                        / "dialogue"
+                        / maps.current_location[4]
+                        / (lst[ind] + ".txt"),
                         encoding="UTF-8",
                     )
                 ]
@@ -3522,11 +3502,9 @@ def generate_background():
                     line.rstrip("\n")
                     for line in open(
                         current_directory
-                        + "/dialogue/"
-                        + maps.current_location[4]
-                        + "/"
-                        + lst[ind]
-                        + ".txt",
+                        / "dialogue"
+                        / maps.current_location[4]
+                        / (lst[ind] + ".txt"),
                         encoding="UTF-8",
                     )
                 ]
@@ -5261,7 +5239,7 @@ def use_key_item():
     input_file = equipment.key_item_inventory[multiselect_index].text_file
     dialogue_index = 0
     file_contents = open(
-        current_directory + "/dialogue/key_items/" + input_file + ".txt",
+        current_directory / "dialogue" / "key_items" / (input_file + ".txt"),
         encoding="UTF-8",
     )
     dialogue = [line.rstrip("\n") for line in file_contents]
@@ -5499,7 +5477,7 @@ def load_save():
     # ]
     print("reading save...")
     loaded_thing = []
-    with open("save.dat", "rb", encoding="UTF-8") as f:
+    with open(current_directory / "save.dat", "rb") as f:
         loaded_thing = pickle.load(f)
     #     for _ in range(pickle.load(f)):
     #         thing.append(pickle.load(f))
@@ -5552,7 +5530,10 @@ def load_save():
 def load_autosave():
     print("reading autosave...")
     loaded_thing = []
-    with open("autosave.dat", "rb", encoding="UTF-8") as f:
+    with open(
+        current_directory / "autosave.dat",
+        "rb",
+    ) as f:
         loaded_thing = pickle.load(f)
     print("finished reading save")
     print("loading save...")
@@ -5606,9 +5587,8 @@ def save_data():
         equipment.key_item_inventory,
     ]
     with open(
-        "save.dat",
+        current_directory / "save.dat",
         "wb",
-        encoding="UTF-8",
     ) as f:
         pickle.dump(stuff, f)
 
@@ -5631,9 +5611,8 @@ def autosave_data():
         equipment.key_item_inventory,
     ]
     with open(
-        "autosave.dat",
+        current_directory / "autosave.dat",
         "wb",
-        encoding="UTF-8",
     ) as f:
         pickle.dump(stuff, f)
 
@@ -5644,7 +5623,9 @@ def start_menu_new_game():
         autosave_data()
     else:
         print("ZONE IS NOT SAFE, WILL NOT AUTOSAVE")
-    start_dialogue_direct("/dialogue/bieace_castle/intro.txt")
+    start_dialogue_direct(
+        current_directory / "dialogue" / "bieace_castle" / "intro.txt"
+    )
 
 
 character_to_action_index = 0
