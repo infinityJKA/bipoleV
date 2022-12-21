@@ -53,7 +53,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Bump version
-        run: poetry version ${{ inputs.version }}
+        run: poetry version ${{ github.inputs.version }}
       - name: Build
         run: auto-py-to-exe
 
