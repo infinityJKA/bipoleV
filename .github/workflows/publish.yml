@@ -55,6 +55,16 @@ jobs:
       - name: Bump version
         run: poetry version ${{ github.inputs.version }}
       - name: Build
-        run: auto-py-to-exe
+        run: pyinstaller --noconfirm --onedir --console "./bipole5/BipoleV.py"
+      - name: Upload release artifact
+        uses: actions/upload-artifact@v3.1.1
+        with:
+          # Artifact name
+          name: Build Directory
+          path: output/
+          if-no-files-found: warn
+          # Duration after which artifact will expire in days. 0 means using default retention.
+          # Minimum 1 day. Maximum 90 days unless changed from the repository settings page.
+          retention-days: 7
 
-      # TODO: make a release, and tag the build output
+      # making a release, and tagging the build output must be done manually
