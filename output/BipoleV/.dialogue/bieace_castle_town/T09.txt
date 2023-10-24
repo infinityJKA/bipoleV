@@ -1,4 +1,0 @@
-npc1
-Economy will now be progressed...
-#PROGRESS_ECONOMY
-#END

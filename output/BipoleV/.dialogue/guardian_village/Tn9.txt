@@ -1,4 +1,0 @@
-npc2
-Villager:[@]More people than usual have been[@]entering the Labyrinth of Binding.
-Villager:[@]I wonder why?
-#END

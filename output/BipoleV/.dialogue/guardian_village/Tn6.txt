@@ -1,4 +1,0 @@
-npc1
-Villager:[@]You see the labyrinth[@]near this village?
-Villager:[@]It's real dangerous, so you[@]should stay away from it until[@]you're really prepared.
-#END

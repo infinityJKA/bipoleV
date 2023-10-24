@@ -1,4 +1,0 @@
-npc1
-Villager:[@]If someone is defeated. healing[@]items and moves won't have any[@]effect on them.
-Villager:[@]The only way to heal them is to[@]visit a Shrine of Bobbish.
-#END

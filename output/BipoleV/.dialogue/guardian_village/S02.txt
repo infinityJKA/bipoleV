@@ -1,8 +1,0 @@
-the_virginator2
-The Virginator:[@]Welcome back!
-#SHOP_EQUIPMENT
-The Virginator
-Wrath_of_the_Ultimate_Shareholder
-#SHOP_END
-The Virginator:[@]'Tis farewell.
-#END

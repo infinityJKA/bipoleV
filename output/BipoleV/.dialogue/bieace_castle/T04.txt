@@ -1,4 +1,0 @@
-npc2
-Guard:[@]Guarding the castle gates[@]all day sure gets boring.
-Guard:[@]You're lucky that you got[@]chosen for a mission, its[@]been over a year since my last mission.
-#END

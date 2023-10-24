@@ -1,6 +1,0 @@
-skel-floater2
-Skel-Floater:[@]The skeleton soldiers complain[@]about wanting shields, and the shield[@]skellies complain about wanting scarves[@]and hats.
-Skel-Floater:[@]...
-Skel-Floater:[@]I don't have either.
-Skel-Floater:[@]Or a body.
-#END

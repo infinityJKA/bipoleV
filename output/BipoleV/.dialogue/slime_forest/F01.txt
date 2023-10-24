@@ -1,8 +1,0 @@
-nothing
-!?
-#SET_IMAGE funky_fungus
-You are suddenly attacked by the[@]Funky Fungus!
-Funky Fungus:[@]*funky sounds*
-#ENCOUNTER funky_fungus_encounter
-The Funky Fungus has been slayed,[@]you may now continue through the forest.
-#DESTROY_SELF

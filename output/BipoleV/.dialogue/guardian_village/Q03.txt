@@ -1,6 +1,0 @@
-the_virginator
-The Virginator:[@]Okay kid, I've got this new[@]propaganda for the Virginatorz[@]Movement, and I want to get it signed[@]by someone who regrets losing their[@]virginity as to highlight how good[@]virginity is.
-The Virginator:[@]So could you go find someone who[@]regrets losing thier virginity, and[@]get them to sign this?
-#GAIN_KEYITEM virginity_propaganda
-#OVERRIDE_SELF Q03p2
-#END

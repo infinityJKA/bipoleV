@@ -1,6 +1,0 @@
-npc2
-Villager:[@]Up ahead is Bandit Road.
-Villager:[@]It leads to Guardian Village and[@]the Labyrinth of Binding, but it's[@]really dangerous.
-Villager:[@]If you really need to go through[@]there, you should make sure that[@]you're strong enough.
-Villager:[@]Maybe train somewhere else first?
-#END

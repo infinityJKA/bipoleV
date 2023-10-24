@@ -1,5 +1,0 @@
-bro
-Bro:[@]Hey kid, you got a Useless Medal?
-Bro:[@]I'll give you a Neville Coin for[@]a Useless Award if you've got[@]one.
-#OVERRIDE_SELF Qn3p2
-#END

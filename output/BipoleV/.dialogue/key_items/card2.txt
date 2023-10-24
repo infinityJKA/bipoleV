@@ -1,3 +1,0 @@
-This is a trading card.
-It has name with more letters than[@]you care to read, and has[@]a picture of what looks like a[@]half-built wooden car covered in primer.
-#END_KEY_ITEM

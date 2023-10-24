@@ -1,6 +1,0 @@
-npc1
-Villager:[@]So like...
-Villager:[@]Bobbish is good,[@]because he made the world.
-Villager:[@]And then...
-Villager:[@]Alexander is,[@]because he wants to[@]destroy it or something.
-#END

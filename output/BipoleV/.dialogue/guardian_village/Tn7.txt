@@ -1,4 +1,0 @@
-npc1
-Villager:[@]Don't ever drink hand sanitizer.
-Villager:[@]You gotta trust me on this one.
-#END

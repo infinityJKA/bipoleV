@@ -1,5 +1,0 @@
-shrine
-You pray at the Shrine of Bobbish...
-#RESTORE_ALL
-Party HP/MP fully restored!
-#END
