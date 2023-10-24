@@ -1,5 +1,0 @@
-shield_skelly2
-Shield Skelly:[@]Did you know that Skeleton Soldiers[@]are male, and Shield Skellies are female?
-Shield Skelly:[@]...
-Shield Skelly:[@]Shield Skellies sound stupid.
-#END

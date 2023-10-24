@@ -1,6 +1,0 @@
-#SET_IMAGE letter2
-"To you, Protipole, who has obtained[@]both the Holy Cards and the[@]Humphrey Lore..."
-"Meet me in Metalimnion behind the[@]gate that needs three keys."
-"I wish to test your strength."
-"-The New Link"
-#END_KEY_ITEM

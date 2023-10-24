@@ -1,7 +1,0 @@
-nothing
-!?
-#SET_IMAGE nynety
-You are suddenly attacked by[@]Nynety!
-#ENCOUNTER rot2_boss
-(*Nynety dissipates*)
-#DESTROY_SELF

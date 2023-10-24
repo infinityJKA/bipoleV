@@ -1,5 +1,0 @@
-npc2
-Villager:[@]You ever been to Metalimnion?
-Villager:[@]I haven't but I've heard it's cool.
-Villager:[@]You should go there if you can.
-#END

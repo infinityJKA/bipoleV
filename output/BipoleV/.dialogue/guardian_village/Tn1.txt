@@ -1,4 +1,0 @@
-npc1
-Villager:[@]I've heard that the Labyrinth[@]of Binding has lots of teleportation pads.
-Villager:[@]I wonder how they work?
-#END

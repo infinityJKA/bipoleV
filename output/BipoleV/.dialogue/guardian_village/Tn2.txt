@@ -1,3 +1,0 @@
-npc1
-Villager:[@]However, I am not drunk.
-#END

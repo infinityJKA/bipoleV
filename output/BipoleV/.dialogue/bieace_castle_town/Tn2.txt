@@ -1,6 +1,0 @@
-npc1
-Villager:[@]Everyone has their weaknesses.
-Villager:[@]If you get hit by something that[@]you're weak against, you'll take[@]150% damage from that attack and take[@]130% damage from other attacks for 3 turns.
-Villager:[@]This effect stacks, so make sure[@]you don't get hit by your weakness multiple[@]times in a row.
-Villager:[@]These effects also apply to enemies,[@]so make sure to use this to your advantage.[@]
-#END

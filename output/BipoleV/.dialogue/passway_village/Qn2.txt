@@ -1,6 +1,0 @@
-xuirbo
-Xuirbo:[@]Hey kid, you got a lighter?
-Xuirbo:[@]I gotta hit one up but[@]I lost my lighter!
-Xuirbo:[@]Lemme know when ya get one.
-#OVERRIDE_SELF Qn2p2
-#END

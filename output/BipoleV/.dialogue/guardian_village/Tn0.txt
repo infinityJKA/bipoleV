@@ -1,3 +1,0 @@
-npc2
-Villager:[@]It seems slightly busy[@]in here.
-#END
