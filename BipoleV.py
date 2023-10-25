@@ -236,7 +236,7 @@ if True:
 
 
     
-    dialouge = tk.Label(master=centrow, text="Lemniscate Bipole V:\nDungeons of Biphero\n\nMade by infinityJKA\n\n----------\n\n[A] Load Save\n[B] New Game\n\n----------\n\nRead README.txt before playing\n\n(Release v1.0)\ninfinityjka.itch.io", relief=tk.FLAT,width=50,height=30, bg='black')
+    dialouge = tk.Label(master=centrow, text="Lemniscate Bipole V:\nDungeons of Biphero\n\nMade by infinityJKA\n\n----------\n\n[A] Load Save\n[B] New Game\n\n----------\n\nRead README.md before playing\n\n(Release v1.0)\ninfinityjka.itch.io", relief=tk.FLAT,width=50,height=30, bg='black')
     dialouge.config(font=(mainfont,12),fg='white')
     dialouge.grid(row=0,column=1)
 
